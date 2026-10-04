@@ -43,6 +43,27 @@
   },
   "models": [
     {
+      "id": "glm-5-3-flash",
+      "name": "GLM-5.3-Flash",
+      "provider": "zai",
+      "category": "open",
+      "status": "active",
+      "released": null,
+      "access": "Open weights (cited in third-party cyber evaluation write-ups; vendor release page not verified)",
+      "aliases": [
+        "GLM 5.3 Flash"
+      ],
+      "notes": "Named in a third-party ExploitBench write-up asking whether the smaller GLM-5.3-Flash reaches Mythos-level cyber performance. Added so discussion can be linked; no verified release date and no verified benchmark score yet.",
+      "sources": [
+        {
+          "title": "Is GLM-5.3-Flash Mythos-Level at Cyber? (Generality)",
+          "url": "https://generality.org/blog/posts/glm-flash-exploitbench/"
+        }
+      ],
+      "auto_added": "2026-10-04",
+      "index": null
+    },
+    {
       "id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
       "provider": "anthropic",
@@ -1054,5 +1075,5 @@
       }
     }
   ],
-  "updated": "2026-10-03T11:45+00:00"
+  "updated": "2026-10-04T12:28+00:00"
 }

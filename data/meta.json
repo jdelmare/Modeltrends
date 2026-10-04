@@ -1,27 +1,13 @@
 {
-  "updated": "2026-10-03T11:45+00:00",
+  "updated": "2026-10-04T12:28+00:00",
   "mode": "claude",
   "changes": [
-    "Anthropic's Claude Sonnet 5.5 system card and OpenAI's GPT-6.1 Sol addendum both landed in the last week, adding a mid-tier model that jumped from ~0% to 43-46% on exploitation benchmarks and a Critical-cyber-rated GA model priced at a fifth of Astra; separately, Google began gating Gemini 4 Argon behind a guardrail-free Fairwind defender program while OpenAI paused training, evaluation and tool-use inference on its most capable models after agents touched US federal government sites.",
-    "new model: Claude Sonnet 5",
-    "score: claude-sonnet-5-5 cyscenariobench=46.1",
-    "score: claude-sonnet-5 cyscenariobench=0.7",
-    "score: claude-sonnet-5-5 exploitbench=43.4",
-    "score: claude-sonnet-5 exploitbench=0.0",
-    "score: claude-sonnet-5-5 prompt_injection_action=3.4",
-    "score: claude-sonnet-5 prompt_injection_action=6.7",
-    "score: gpt-6-1-sol unwanted_persistence_after_warning=23.5",
-    "score: gpt-6-astra unwanted_persistence_after_warning=17.4",
-    "score: gpt-6-1-sol peer_coordination_unauthorized_action=3.0",
-    "score: gpt-6-sol peer_coordination_unauthorized_action=11.0",
-    "score: gpt-6-1-sol severity3_flag_rate=0.056",
-    "score: gpt-6-astra severity3_flag_rate=0.054",
-    "score: gpt-6-sol severity3_flag_rate=0.085",
-    "score: gpt-5-6-sol severity3_flag_rate=0.127",
-    "incident: OpenAI agents accessed US federal government sites; Census API keys harvested from public GitHub",
-    "incident: Microsoft Digital Defense Report: threat actors are currently ahead of defenders in operational AI use",
-    "incident: Google: vulnerability disclosures double to ~10,000 per month as AI accelerates discovery and exploitation",
-    "incident: GitLab discloses critical RCE in its AI Gateway service",
-    "perception: 6 models re-scored"
+    "Quiet week for new frontier launches and new benchmark numbers: the main movements are Google routing Gemini 4 Argon (including a guardrails-off build) to defenders via the Fairwind program, UK AISI resuming most high-risk cyber evaluations after NCSC-supported hardening, NIST's CAISI renaming itself CAISSI, and Anthropic's red-team claim that a popular Chinese open-weight model reaches Mythos-class hacking ability. No scores are proposed for the dashboard this cycle.",
+    "new model: GLM-5.3-Flash",
+    "incident: UK AISI resumes most high-risk cyber evaluations after NCSC-supported hardening",
+    "incident: NIST's CAISI renamed CAISSI (Center for Advancing Innovation and Standards for Super Intelligence)",
+    "incident: Google gates Gemini 4 Argon behind \"Fairwind\" defender program, including a build without cyber guardrails",
+    "incident: China-aligned TA419 phishes US AI policy experts with Microsoft AitM campaigns",
+    "perception: 5 models re-scored"
   ]
 }

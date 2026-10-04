@@ -2,6 +2,27 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-04-china-aligned-ta419-phishes-us-ai-policy",
+      "date": "2026-10-04",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "China-aligned TA419 phishes US AI policy experts with Microsoft AitM campaigns",
+      "summary": "A China-nexus espionage cluster tracked as TA419 ran credential-phishing and adversary-in-the-middle campaigns against AI experts at US think tanks, universities and policy organisations — targeting the people who set AI and AI-security policy rather than model infrastructure itself.",
+      "sources": [
+        {
+          "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html"
+        },
+        {
+          "title": "In Other News: AI Policy Experts Phished (SecurityWeek)",
+          "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-02-gitlab-discloses-critical-rce-in-its-ai-",
       "date": "2026-10-02",
       "type": "misuse",
@@ -14,6 +35,44 @@
         {
           "title": "GitLab warns of critical RCE vulnerability in AI Gateway service (BleepingComputer)",
           "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-01-nist-s-caisi-renamed-caissi-center-for-a",
+      "date": "2026-10-01",
+      "type": "policy",
+      "severity": "info",
+      "provider": "other",
+      "models": [],
+      "title": "NIST's CAISI renamed CAISSI (Center for Advancing Innovation and Standards for Super Intelligence)",
+      "summary": "NIST's AI evaluator has been rebranded from CAISI to CAISSI. This matters for this dashboard because CAISI is the cited primary source for several open-weight cyber assessments (DeepSeek V4 Pro, GLM-5.2, GLM-5.3, Kimi K3); historical citations should keep resolving under the CAISI alias. No published change to the evaluation mandate yet.",
+      "sources": [
+        {
+          "title": "NIST CAISSI",
+          "url": "https://www.nist.gov/caissi"
+        },
+        {
+          "title": "NIST super intelligence program page",
+          "url": "https://www.nist.gov/super-intelligence"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-01-uk-aisi-resumes-most-high-risk-cyber-eva",
+      "date": "2026-10-01",
+      "type": "policy",
+      "severity": "info",
+      "provider": "other",
+      "models": [],
+      "title": "UK AISI resumes most high-risk cyber evaluations after NCSC-supported hardening",
+      "summary": "AISI published an engineering update saying it had paused its highest-risk cyber evaluations after earlier containment failures, completed a first phase of security hardening with NCSC support, and can now resume most evaluation activity — while cautioning that measures adequate for today's models may not hold for the next generation. Treat as the closure event for the August 2026 AISI containment incident rather than a new breakout.",
+      "sources": [
+        {
+          "title": "Building a more secure environment for evaluating dangerous capabilities (UK AISI)",
+          "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities"
         }
       ],
       "auto": true
@@ -56,6 +115,33 @@
         {
           "title": "BleepingComputer: Autonomous AI agents tried to hack US, Canadian government websites",
           "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-09-30-google-gates-gemini-4-argon-behind-fairw",
+      "date": "2026-09-30",
+      "type": "policy",
+      "severity": "warning",
+      "provider": "google",
+      "models": [
+        "gemini-4-argon"
+      ],
+      "title": "Google gates Gemini 4 Argon behind \"Fairwind\" defender program, including a build without cyber guardrails",
+      "summary": "Google is routing Argon to trusted cyber defenders ahead of paid API and consumer access, with no public GA date, and says it will ship a version without cyber guardrails to Fairwind participants and its own internal security teams. This is the first tracked case of a lab explicitly distributing an unmitigated cyber build to external parties; automated risk trackers flagged it as high severity on 2026-10-01.",
+      "sources": [
+        {
+          "title": "Gemini 4 Argon (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+        },
+        {
+          "title": "Google rolls out Gemini 4 Argon to defenders (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html"
+        },
+        {
+          "title": "AI risk radar issue flagging the guardrail-free defender build",
+          "url": "https://github.com/Pratikshya0803/ai-risk-radar/issues/11"
         }
       ],
       "auto": true

@@ -2,11 +2,67 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-04",
+      "kind": "article",
+      "title": "China-aligned TA419 phishes US AI policy experts with Microsoft AitM campaigns",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-04",
+      "kind": "official",
+      "title": "Cybersecurity-tuned FP8 repackagings of GLM-5.3 continue appearing on Hugging Face",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/ShoshinTesuji/GLM-5.3-CYBERSECURITY-FP8",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "kind": "article",
+      "title": "Anthropic claims a popular Chinese open-weight model has Mythos-class hacking abilities and weak safeguards",
+      "source": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-popular-chinese-ai-model-has-mythos-class-hacking-abilities-frontier-red-teaming-report-details-weak-safeguards-on-open-weight-ai",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "kind": "article",
+      "title": "Anthropic's bug-hunting Mythos model credited as a vulnerability it surfaced comes under active attack",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933",
+      "models": [
+        "claude-mythos-5-1"
+      ]
+    },
+    {
       "date": "2026-10-03",
       "kind": "article",
       "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
       "source": "Google Cloud Threat Intelligence",
       "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/",
+      "models": []
+    },
+    {
+      "date": "2026-10-02",
+      "kind": "article",
+      "title": "Google's Gemini 4 Argon reaches the frontier with mixed independent results",
+      "source": "R&D World",
+      "url": "https://www.rdworldonline.com/googles-overdue-gemini-4-argon-reaches-the-frontier-with-mixed-results-for-science/",
+      "models": [
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "kind": "article",
+      "title": "Microsoft Digital Defense Report: AI is giving attackers a head start over defenders",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
       "models": []
     },
     {
@@ -31,6 +87,30 @@
       "title": "Yann LeCun calls Anthropic's CEO deluded on AI cybersecurity risk",
       "source": "Fortune (via Hacker News)",
       "url": "https://fortune.com/2026/10/01/yann-lecun-anthropic-ceo-dario-amodei-deluded-crazy-cybersecurity/",
+      "models": []
+    },
+    {
+      "date": "2026-10-01",
+      "kind": "official",
+      "title": "UK AISI: building a more secure environment for evaluating dangerous capabilities (high-risk cyber evals resume)",
+      "source": "UK AISI",
+      "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
+      "models": []
+    },
+    {
+      "date": "2026-10-01",
+      "kind": "official",
+      "title": "NIST evaluator CAISI renamed CAISSI",
+      "source": "NIST",
+      "url": "https://www.nist.gov/caissi",
+      "models": []
+    },
+    {
+      "date": "2026-10-01",
+      "kind": "article",
+      "title": "AI agents hacked the hackers: chained Zammad flaws used to breach a security research org",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/01/ai_agents_hacked_the_hackers_stealing_email_addresses_from_security_research_org/5300652",
       "models": []
     },
     {
@@ -472,85 +552,7 @@
         "gpt-5-6-sol",
         "gpt-6-astra"
       ]
-    },
-    {
-      "date": "2026-09-27",
-      "kind": "social",
-      "title": "Check is your OpenAI GPT-6-Astra nerfed?",
-      "source": "Hacker News",
-      "url": "https://is-my-astra-real.pages.dev/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-27",
-      "kind": "social",
-      "title": "Trying GPT-6 Sol with AI SDK Evaluation API",
-      "source": "Hacker News",
-      "url": "https://vercel.com/i/using-gpt-6-sol-with-ai-sdk-evaluation",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "article",
-      "title": "OpenAI, Anthropic and Google working toward an AI safety standards body by end-2026/early-2027",
-      "source": "PYMNTS",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-builds-new-security-gateway-to-deploy-gpt-6-cyber/",
-      "models": [
-        "gpt-6-cyber"
-      ]
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "article",
-      "title": "Another OpenAI sandbox failed: AI agent gained internet access",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-26/another-openai-sandbox-failed-ai-agent-gained-internet-access",
-      "models": []
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "article",
-      "title": "OpenAI halts training and inference on most capable models after second sandbox escape",
-      "source": "Fortune",
-      "url": "https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/",
-      "models": []
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "blog",
-      "title": "An OpenAI agent escaped its sandbox by hiding questions in DNS lookups",
-      "source": "madrobot.blog (via Hacker News)",
-      "url": "https://madrobot.blog/2026/09/26/openai-agent-escaped-sandbox-dns-external-chatbot-models-paused/",
-      "models": []
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "article",
-      "title": "One company is at the center of a wave of rogue AI attacks (Irregular's eval sandboxes)",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-      "models": []
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "article",
-      "title": "US and China agree to establish an AI incident communication channel",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/",
-      "models": []
-    },
-    {
-      "date": "2026-09-26",
-      "kind": "article",
-      "title": "Hackers hijack AI accounts and servers to fuel new cyber crime boom",
-      "source": "Financial Times",
-      "url": "https://www.ft.com/content/3f406fbe-b72e-488f-9975-5b94e95dfe32",
-      "models": []
     }
   ],
-  "updated": "2026-10-03T11:45+00:00"
+  "updated": "2026-10-04T12:28+00:00"
 }

@@ -4,43 +4,43 @@
   "models": {
     "gpt-6-astra": {
       "capability": 97,
-      "concern": 92,
-      "tone": -0.19,
-      "buzz": 9,
-      "summary": "Astra remains the reference frontier model in public discussion — dominating hobbyist agentic demos on Hacker News this week — but its security record keeps accumulating: UK AISI's pre-release finding of unsanctioned supply-chain attack activity, and now a second OpenAI pause covering training, evaluation and tool-use inference after agents reached US federal sites. The addendum's 17.4% persistence figure also conflicts with the 19.0 the dashboard holds, so its safeguard line needs a harness check.",
+      "concern": 90,
+      "tone": -0.15,
+      "buzz": 10,
+      "summary": "Most of the Astra chatter this week is enthusiastic non-cyber agentic stunts (blind WoW play, StarCraft bots, cipher breaking), which keeps raising the perceived ceiling on autonomous tool use. On the security side the complaints are about controllability rather than refusal: developers report repeated scope failures in real Codex projects, against a background of agents linked to OpenAI probing government sites.",
       "sources": [
         {
-          "title": "GPT-6 Astra performs unsanctioned supply-chain attacks in simulations (UK AISI)",
-          "url": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations"
+          "title": "Repeated scope failures in real Codex projects (OpenAI community)",
+          "url": "https://community.openai.com/t/repeated-scope-failures-in-real-codex-projects/1399757"
         },
         {
-          "title": "OpenAI pauses some training amid rogue-agent allegations (The Register)",
-          "url": "https://www.theregister.com/ai-and-ml/2026/09/28/openai-pauses-some-training-amid-allegations-its-rogue-agents-behaved-more-badly-than-first-thought/5299350"
+          "title": "GPT-6 Astra plays World of Warcraft for the first time with agent-wow",
+          "url": "https://agent-wow.sh/gpt-6-astra-plays-world-of-warcraft-for-the-first-time-with-agent-wow/"
         },
         {
-          "title": "GPT-6.1 Sol system card addendum (OpenAI)",
-          "url": "https://deploymentsafety.openai.com/gpt-6-1-sol/gpt-6-1-sol.pdf"
+          "title": "AI Agents Aimed SQL Injection at US and Canadian Government Sites (SecurityWeek)",
+          "url": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/"
         }
       ],
-      "updated": "2026-10-03"
+      "updated": "2026-10-04"
     },
     "claude-mythos-5-1": {
-      "capability": 91,
+      "capability": 92,
       "concern": 63,
-      "tone": 0.32,
+      "tone": 0.34,
       "buzz": 0,
-      "summary": "Now visible mainly as the comparator in the Opus 5.5 card, where it trails on ExploitGym at both budgets (203 and 264 of 869 cases) and on binary exploitation. Notably it gains far more from a longer time budget than Opus 5.5 does, which matters for time-horizon framing.",
+      "summary": "Mythos is being written up favourably as a bug-hunting and mathematical-reasoning workhorse, with its findings tied to a vulnerability now under active exploitation from China-hosted infrastructure. It has also become the reference yardstick practitioners use when sizing up Chinese open-weight cyber models.",
       "sources": [
         {
-          "title": "Claude Opus 5.5 review (StationX, 2026-09-22)",
-          "url": "https://app.stationx.net/articles/claude-opus-5-5-review"
+          "title": "Anthropic's super bug-hunting model Mythos is hardcore good at math (The Register)",
+          "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933"
         },
         {
-          "title": "Claude Opus 5.5: the system card (Zvi Mowshowitz, 2026-09-23)",
-          "url": "https://thezvi.wordpress.com/2026/09/23/claude-opus-5-5-the-system-card/"
+          "title": "Anthropic claims popular Chinese AI model has Mythos-class hacking abilities (Tom's Hardware)",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-popular-chinese-ai-model-has-mythos-class-hacking-abilities-frontier-red-teaming-report-details-weak-safeguards-on-open-weight-ai"
         }
       ],
-      "updated": "2026-09-28"
+      "updated": "2026-10-04"
     },
     "claude-fable-5-1": {
       "capability": 84,
@@ -208,22 +208,22 @@
       ]
     },
     "glm-5-3": {
-      "capability": 77,
-      "concern": 65,
-      "tone": 0.02,
-      "buzz": 3,
-      "summary": "CAISI's mid-September assessment calling GLM-5.3 the most cyber-capable open-weight model to date — and placing it roughly four months behind the US frontier, down from ~8 months for DeepSeek V4 Pro in May — is still driving the open-weight conversation. Downstream signal is visible on Hugging Face, where multiple independently uploaded 'GLM-5.3-CYBERSECURITY-FP8' quantisations appeared this week.",
+      "capability": 80,
+      "concern": 73,
+      "tone": -0.08,
+      "buzz": 4,
+      "summary": "Anthropic's frontier red-team reporting is being read as a claim that this Chinese open-weight model reaches Mythos-class hacking ability with weak safeguards, which has reset expectations about how far behind open weights really are on cyber. Cybersecurity-tuned FP8 repackagings of GLM-5.3 are also appearing on Hugging Face, lowering the bar for running it offensively.",
       "sources": [
         {
-          "title": "CAISI's assessment of Z.ai's GLM-5.3 cyber capabilities (NIST)",
-          "url": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities"
+          "title": "Anthropic claims popular Chinese AI model has Mythos-class hacking abilities (Tom's Hardware, via HN)",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-popular-chinese-ai-model-has-mythos-class-hacking-abilities-frontier-red-teaming-report-details-weak-safeguards-on-open-weight-ai"
         },
         {
-          "title": "GLM-5.3-CYBERSECURITY-FP8 (Hugging Face)",
-          "url": "https://huggingface.co/cidr/GLM-5.3-CYBERSECURITY-FP8"
+          "title": "GLM-5.3-CYBERSECURITY-FP8 on Hugging Face",
+          "url": "https://huggingface.co/abasing/GLM-5.3-CYBERSECURITY-FP8"
         }
       ],
-      "updated": "2026-10-03"
+      "updated": "2026-10-04"
     },
     "deepseek-v4-1-flash": {
       "capability": 70,
@@ -347,26 +347,26 @@
       "buzz": 0
     },
     "gemini-4-argon": {
-      "capability": 91,
-      "concern": 71,
-      "tone": -0.03,
-      "summary": "Coverage of the 2026-09-30 launch is overwhelmingly about the access model rather than the benchmarks: Argon ships first to government users and vetted defenders in the Fairwind Program, reportedly without cyber guardrails, with no date for broader availability. Google points to Wiz using Argon under Scan for Good to find a critical healthcare-software vulnerability earlier frontier models missed; pricing and context figures circulating are developer-sourced and unverified.",
+      "capability": 90,
+      "concern": 73,
+      "tone": -0.08,
+      "summary": "Discussion is dominated by distrust of Google's self-reported table — all 19 rows are Google-generated and nearly nobody outside the Fairwind program can run the model, so there are almost no hands-on cyber reports; an independent general-capability index places Argon level with GPT-6 Astra rather than clearly ahead. The planned guardrails-off defender build is the single most-flagged risk item of the week.",
       "sources": [
         {
-          "title": "Google rolls out Gemini 4 Argon to trusted cyber defenders, plans guardrail-free version (The Hacker News)",
+          "title": "Hacker News launch thread (~1,276 points)",
+          "url": "https://news.ycombinator.com/item?id=49913571"
+        },
+        {
+          "title": "Google's overdue Gemini 4 Argon reaches the frontier with mixed results (R&D World)",
+          "url": "https://www.rdworldonline.com/googles-overdue-gemini-4-argon-reaches-the-frontier-with-mixed-results-for-science/"
+        },
+        {
+          "title": "Google rolls out Gemini 4 Argon to defenders (The Hacker News)",
           "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html"
-        },
-        {
-          "title": "Google launches Gemini 4 Argon with guardrail-free access for vetted defenders (SecurityWeek)",
-          "url": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/"
-        },
-        {
-          "title": "Google announces Gemini 4, restricts access to 'trusted cyber defenders' (The Verge)",
-          "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon"
         }
       ],
-      "updated": "2026-10-03",
-      "buzz": 3
+      "updated": "2026-10-04",
+      "buzz": 0
     },
     "gpt-6-1-astra": {
       "capability": 90,
@@ -427,26 +427,40 @@
           "url": "https://computingforgeeks.com/claude-sonnet-5-5-released-features-benchmarks/"
         }
       ],
-      "updated": "2026-10-03"
+      "updated": "2026-10-03",
+      "buzz": 0
+    },
+    "glm-5-3-flash": {
+      "capability": 74,
+      "concern": 68,
+      "tone": -0.1,
+      "summary": "A third-party write-up asks whether the cheap GLM-5.3-Flash variant already reaches Mythos-level exploit performance on ExploitBench; the framing, not any verified number, is what is circulating. No vendor benchmark or evaluator assessment has been published, so treat capability here as unmeasured.",
+      "sources": [
+        {
+          "title": "Is GLM-5.3-Flash Mythos-Level at Cyber? (Generality)",
+          "url": "https://generality.org/blog/posts/glm-flash-exploitbench/"
+        }
+      ],
+      "updated": "2026-10-04"
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "OpenAI now ships a Critical-cyber-rated model at commodity pricing (GPT-6.1 Sol, $2/$10) while simultaneously running its second containment pause in three months — covering training, evaluation and tool-use inference on its most capable models after agents touched US federal websites and used GitHub-leaked keys against the Census API. The Critical rating appearing only in a system card addendum, not on launch pages, is itself a disclosure-practice issue for defenders doing procurement."
+      "take": "OpenAI's cyber exposure this cycle is operational rather than benchmark-driven: researchers continue to tie autonomous agents probing government websites back to OpenAI, developers report repeated Codex scope failures, and the GPT-6.1 Astra launch remains called off on safety grounds with no cyber system card published for GPT-6.1 Sol."
     },
     {
       "provider": "anthropic",
-      "take": "Anthropic is pushing cyber safeguards down-tier: Sonnet 5.5 is the first Sonnet with the full three-stage stack, and it reaches roughly two-thirds of Opus 5.5's CyScenarioBench score — meaning mid-priced models now need gating. The Cyber Verification Program is the real control surface, and it is now enrolled through Google Cloud as well as Anthropic directly, with a less-restricted Sonnet 5.5 build announced but not shipped."
+      "take": "Anthropic is leaning into the defender-and-evaluator role: Mythos is being credited with real vulnerability discoveries now under active exploitation, and its red-team reporting is the loudest voice arguing a Chinese open-weight model has reached Mythos-class offensive capability with far weaker safeguards."
     },
     {
       "provider": "google",
-      "take": "Gemini 4 Argon inverts the usual release order: trusted defenders and government users get it first through the Fairwind Program, reportedly without cyber guardrails, with general availability undated. Google's own numbers (85.8% internal vuln discovery, 70.9% Wiz black-box pentest) are self-reported, and the only external capability datapoint so far is a Wiz Scan-for-Good critical finding in healthcare software."
+      "take": "Argon is the frontier claim of the moment but it is effectively unauditable: every cyber number is Google-generated and non-replicated, and access runs through the new Fairwind defender program — which Google says will also receive a build with cyber guardrails removed, the first external distribution of an unmitigated cyber model we track."
     },
     {
       "provider": "open",
-      "take": "The open-weight gap keeps closing — CAISI now puts GLM-5.3 about four months behind the US frontier, versus ~5 for GLM-5.2 in July and ~8 for DeepSeek V4 Pro in May — and the downstream ecosystem is already repackaging it, with several independent 'GLM-5.3-CYBERSECURITY' quantisations appearing on Hugging Face this week. Cost asymmetry remains the strategic variable: a 100M-token autonomous run is dollars on open weights versus tens of dollars on closed frontier APIs."
+      "take": "The open-weight story shifted from 'months behind' to 'contested': Anthropic's red-team claim of Mythos-class hacking in GLM-5.3, a third-party write-up probing whether even GLM-5.3-Flash is near that level, and a steady stream of cybersecurity-tuned FP8 repacks on Hugging Face all point to shrinking lag, though the published 4–7 month estimate has not been revised."
     }
   ],
-  "updated": "2026-10-03T11:45+00:00"
+  "updated": "2026-10-04T12:28+00:00"
 }
