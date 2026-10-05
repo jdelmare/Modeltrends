@@ -170,6 +170,26 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-03"
+    },
+    {
+      "id": "harmful_cyber_order_engagement",
+      "name": "Engagement with a harmful cyber attack order (simulated remote target)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-05"
+    },
+    {
+      "id": "strongreject_refusal",
+      "name": "StrongREJECT refusal rate",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-05"
     }
   ],
   "scores": [
@@ -241,14 +261,6 @@
       "self_reported": false,
       "note": "As reported by OpenAI",
       "source": "https://deploymentsafety.openai.com/gpt-6-astra"
-    },
-    {
-      "model": "glm-5-3",
-      "benchmark": "exploitbench",
-      "value": 54.4,
-      "date": "2026-08-14",
-      "self_reported": true,
-      "source": "https://www.mindstudio.ai/blog/glm-5-3-coding-benchmarks"
     },
     {
       "model": "kimi-k3",
@@ -795,6 +807,66 @@
       "self_reported": true,
       "note": "63 flags, the highest of the four models compared in the GPT-6.1 Sol addendum.",
       "source": "https://deploymentsafety.openai.com/gpt-6-1-sol/gpt-6-1-sol.pdf",
+      "auto": true
+    },
+    {
+      "model": "claude-mythos-preview",
+      "benchmark": "binary_exploitation",
+      "value": 6.0,
+      "date": "2026-09-29",
+      "self_reported": true,
+      "note": "Anthropic-run; 100 random OSS-Fuzz-derived tasks requiring full control-flow hijack. Mythos Preview 6%, GLM-5.3 4%, all other tested models 0%.",
+      "source": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3",
+      "benchmark": "exploitbench",
+      "value": 12.2,
+      "date": "2026-09-29",
+      "self_reported": true,
+      "note": "Anthropic-run variant, per-attempt scoring: 50 working end-to-end exploits out of 410 attempts across 41 Chrome V8 bugs. NOT comparable to the registry's existing 54.4 figure, which uses a different (per-bug/pass@k) scoring rule on the same bug set — do not merge the two series on one axis.",
+      "source": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "auto": true
+    },
+    {
+      "model": "claude-mythos-preview",
+      "benchmark": "exploitbench",
+      "value": 13.7,
+      "date": "2026-09-29",
+      "self_reported": true,
+      "note": "Anthropic-run variant, per-attempt scoring: 56 of 410 attempts produced a working end-to-end exploit across 41 Chrome V8 bugs; comparator for GLM-5.3's 50/410.",
+      "source": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3",
+      "benchmark": "harmful_cyber_order_engagement",
+      "value": 100.0,
+      "date": "2026-09-29",
+      "self_reported": true,
+      "note": "Variant: after Anthropic abliterated the open weights (~2,200 GPU-hours / ~$4,400 for a first-time team; ~600 GPU-hours / ~$1,200 estimated for an experienced one).",
+      "source": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "auto": true
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark": "harmful_cyber_order_engagement",
+      "value": 0.0,
+      "date": "2026-09-29",
+      "self_reported": true,
+      "note": "Anthropic-run comparator, behind API safeguards, in the conditions testable for a closed model (prefill and abliteration conditions are not applicable).",
+      "source": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3",
+      "benchmark": "strongreject_refusal",
+      "value": 12.0,
+      "date": "2026-09-29",
+      "self_reported": true,
+      "note": "Anthropic-run, measured on their abliterated GLM-5.3 (down from >90% for the released weights); JailbreakBench ~3% and HarmBench ~2% post-abliteration, with GPQA-Diamond unchanged. Reported via secondary coverage of the Anthropic post — verify against the primary before charting.",
+      "source": "https://mixed-news.com/en/anthropic-frontier-red-team-glm-5-3-exploit-chain-20-dollars/",
       "auto": true
     }
   ]

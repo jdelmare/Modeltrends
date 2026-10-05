@@ -2,6 +2,48 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Exploitation Hits Rejetto HFS Vulnerability Discovered by AI (CVE-2026-61500)",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/",
+      "models": [
+        "claude-mythos-5-1"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Google halts open-source bug bounty program amid AI spam surge",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-04",
+      "kind": "article",
+      "title": "Trump Names National Intelligence Director Jay Clayton to Lead a New Federal AI Task Force",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
+      "models": []
+    },
+    {
       "date": "2026-10-04",
       "kind": "article",
       "title": "China-aligned TA419 phishes US AI policy experts with Microsoft AitM campaigns",
@@ -16,6 +58,17 @@
       "source": "Hugging Face",
       "url": "https://huggingface.co/ShoshinTesuji/GLM-5.3-CYBERSECURITY-FP8",
       "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "kind": "blog",
+      "title": "Is GLM-5.3-Flash Mythos-Level at Cyber?",
+      "source": "generality.org",
+      "url": "https://generality.org/blog/posts/glm-flash-exploitbench/",
+      "models": [
+        "glm-5-3-flash",
         "glm-5-3"
       ]
     },
@@ -45,6 +98,22 @@
       "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
       "source": "Google Cloud Threat Intelligence",
       "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/",
+      "models": []
+    },
+    {
+      "date": "2026-10-02",
+      "kind": "paper",
+      "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.03448v1",
+      "models": []
+    },
+    {
+      "date": "2026-10-02",
+      "kind": "paper",
+      "title": "Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.03585v1",
       "models": []
     },
     {
@@ -267,6 +336,19 @@
     {
       "date": "2026-09-29",
       "kind": "official",
+      "title": "GLM-5.3 and the spread of advanced cyber capabilities (Frontier Red Team report)",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "models": [
+        "glm-5-3",
+        "glm-5-3-flash",
+        "claude-mythos-preview",
+        "claude-opus-5"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "official",
       "title": "GPT-6.1 Sol system card addendum: Critical capability in Cybersecurity, Astra-level safeguards",
       "source": "OpenAI",
       "url": "https://deploymentsafety.openai.com/gpt-6-1-sol/gpt-6-1-sol.pdf",
@@ -471,88 +553,7 @@
       "source": "Dark Reading",
       "url": "https://www.darkreading.com/identity-access-management-security/carbonato-botnet-ai-agent-hacked-docker-hosts",
       "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "social",
-      "title": "Show HN: Redthread – autonomous LLM pentesting with proof-of-concept exploits",
-      "source": "Hacker News",
-      "url": "https://millenniums.ai/docs",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "FBI job portals remain offline after ShinyHunters claims breach via PeopleSoft zero-day",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/09/28/fbi-job-portals-offline-shinyhunters-breach/",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "'Drunk' AI is terrible at keeping secrets — style fine-tuning degrades jailbreak resistance",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/09/28/drunk-ai-models-jailbreak-research/",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "If you do one security check this quarter, make it agent memory",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/09/28/chris-latimer-vectorize-agent-memory-security/",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "blog",
-      "title": "GPT-6 Astra performs unsanctioned supply-chain attacks in simulations",
-      "source": "UK AI Security Institute",
-      "url": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "Carbonato botnet compromises Docker hosts to deploy Telegram-controlled Hermes AI agent",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "Nvidia unveils AI agent safety platform with hardware-based watchdog",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/nvidia-unveils-ai-agent-safety-platform-with-hardware-based-watchdog/",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "social",
-      "title": "Opus 5.5 vs. GPT-6 in pi-agent: reasoning efforts and DeepSeek, GLM, Qwen",
-      "source": "Hacker News",
-      "url": "https://ibragim.dev/leaderboard/",
-      "models": [
-        "claude-opus-5-5",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-27",
-      "kind": "social",
-      "title": "BenchLM ExploitGym table refresh adds GPT-5.6 Terra at 23.2% and lists GPT-5.6 Sol at 33.7%",
-      "source": "BenchLM (aggregator)",
-      "url": "https://benchlm.ai/benchmarks/exploitgym",
-      "models": [
-        "gpt-5-6-terra",
-        "gpt-5-6-sol",
-        "gpt-6-astra"
-      ]
     }
   ],
-  "updated": "2026-10-04T12:28+00:00"
+  "updated": "2026-10-05T14:50+00:00"
 }
