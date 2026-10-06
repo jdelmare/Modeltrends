@@ -2,6 +2,64 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-06",
+      "kind": "article",
+      "title": "Inside 15,465 public MCP servers: the agent tool-connection layer as an exposed attack surface",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "article",
+      "title": "Hack The Box opens AI Range Enterprise Edition for measuring AI security-agent effectiveness",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "official",
+      "title": "Reflection AI introduces Beam, a 501B/23B-active open-weight model (weights due later in October)",
+      "source": "Reflection AI",
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "models": [
+        "beam"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Check Point: JadePuffer / Storm-3168 automates destructive Azure operations; 40 malicious Custom GPT incidents investigated",
+      "source": "Check Point Research",
+      "url": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "paper",
+      "title": "Does AI help cyber attackers or defenders? Evidence from nonpublic vulnerabilities — argues public vuln benchmarks leak advisories and exploits to agents",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2610.06584v1",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Apple to tighten macOS Full Disk Access controls over AI agent data access",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Debian ships a kernel update fixing 1,313 issues as AI-assisted bug hunting adds maintainer load",
+      "source": "The Register",
+      "url": "https://www.theregister.com/os-platforms/2026/10/05/debians-latest-kernel-security-update-has-1313-reasons-to-patch/5301124",
+      "models": []
+    },
+    {
       "date": "2026-10-05",
       "kind": "article",
       "title": "Exploitation Hits Rejetto HFS Vulnerability Discovered by AI (CVE-2026-61500)",
@@ -34,6 +92,16 @@
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
       "models": []
+    },
+    {
+      "date": "2026-10-04",
+      "kind": "social",
+      "title": "GPT-6 Astra downloads opponent bot to cheat at StarCraft after losing",
+      "source": "Kotaku (via Hacker News)",
+      "url": "https://kotaku.com/openais-gpt-6-astra-gets-frustrated-losing-at-starcraft-and-decides-to-cheat-instead-2000739607",
+      "models": [
+        "gpt-6-astra"
+      ]
     },
     {
       "date": "2026-10-04",
@@ -99,6 +167,16 @@
       "source": "Google Cloud Threat Intelligence",
       "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/",
       "models": []
+    },
+    {
+      "date": "2026-10-02",
+      "kind": "article",
+      "title": "California AG subpoenas OpenAI over agents escaping test environments and touching live systems",
+      "source": "The Register",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/02/openais-wandering-ai-agents-earn-it-a-california-subpoena/5300850",
+      "models": [
+        "gpt-5-6-sol"
+      ]
     },
     {
       "date": "2026-10-02",
@@ -471,89 +549,7 @@
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html",
       "models": []
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "article",
-      "title": "OpenAI's GPT-6 Astra ran supply chain attacks despite being told not to",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/09/29/openai-gpt-6-astra-supply-chain-attacks-test-simulations/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "article",
-      "title": "Malicious Custom GPT on chatgpt.com lures users into installing a RAT",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/09/29/malicious-chatgpt-custom-gpt-malware-via-clickfix/",
-      "models": []
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "article",
-      "title": "Former X-Force hackers launch RemoteThreat with 1,000 attack tools for AI-speed offensive operations",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/09/29/former-x-force-hackers-chase-the-offensive-cyber-gold-rush/5299662",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "official",
-      "title": "Claude Sonnet 5.5 System Card: 46.1% CyScenarioBench, 43.4% full ACE on ExploitBench, first Sonnet with cyber safeguards",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
-      "models": [
-        "claude-sonnet-5-5",
-        "claude-sonnet-5",
-        "claude-opus-5-5",
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "OpenAI pauses training, evaluation and tool-use inference on its most capable models after agents reach government sites",
-      "source": "The Register",
-      "url": "https://www.theregister.com/ai-and-ml/2026/09/28/openai-pauses-some-training-amid-allegations-its-rogue-agents-behaved-more-badly-than-first-thought/5299350",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "social",
-      "title": "WSJ reports OpenAI scrapped GPT-6.1 Astra over safety concerns",
-      "source": "Hacker News",
-      "url": "https://runtimewire.com/article/wsj-reports-openai-scrapped-gpt-6-1-astra-over-safety-concerns",
-      "models": [
-        "gpt-6-1-astra",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "White House reported to bar UK AI Security Institute from frontier pre-deployment testing; CAISI has no director",
-      "source": "Tech Times",
-      "url": "https://www.techtimes.com/articles/328095/20260928/white-house-bars-uk-ai-safety-institute-frontier-ai-testing-caisi-us-body-has-no-director.htm",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "RatHat Android Malware Console Uses Gemini to Identify Higher-Value Victims",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-      "models": []
-    },
-    {
-      "date": "2026-09-28",
-      "kind": "article",
-      "title": "Carbonato Botnet Puts an AI Agent on Hacked Docker Hosts and Steals AI API Keys",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/identity-access-management-security/carbonato-botnet-ai-agent-hacked-docker-hosts",
-      "models": []
     }
   ],
-  "updated": "2026-10-05T14:50+00:00"
+  "updated": "2026-10-06T13:23+00:00"
 }

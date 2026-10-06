@@ -43,6 +43,31 @@
   },
   "models": [
     {
+      "id": "beam",
+      "name": "Beam (Reflection AI)",
+      "provider": "other",
+      "category": "open",
+      "status": "active",
+      "released": "2026-10-05",
+      "access": "Announced 2026-10-05; weights and technical report not yet published, Apache 2.0 release stated for later in October 2026.",
+      "aliases": [
+        "Beam"
+      ],
+      "notes": "Sparse MoE, 501B total / 23B active parameters, text-only, 1M context, aimed at coding/reasoning/agentic workloads. Reflection states the model is still undergoing final red-teaming and evaluations; no cyber benchmark results have been published, so no scores are carried. Positioning claims are self-reported and unreplicated.",
+      "sources": [
+        {
+          "title": "Reflection AI — Introducing Beam",
+          "url": "https://reflection.ai/blog/introducing-beam"
+        },
+        {
+          "title": "TechCrunch — Reflection debuts Beam, an open-weight AI model",
+          "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+        }
+      ],
+      "auto_added": "2026-10-06",
+      "index": null
+    },
+    {
       "id": "glm-5-3-flash",
       "name": "GLM-5.3-Flash",
       "provider": "zai",
@@ -1075,5 +1100,5 @@
       }
     }
   ],
-  "updated": "2026-10-05T14:50+00:00"
+  "updated": "2026-10-06T13:23+00:00"
 }

@@ -190,6 +190,16 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-05"
+    },
+    {
+      "id": "gray_swan_ipi",
+      "name": "Gray Swan indirect prompt injection (attack success @15 attempts)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-06"
     }
   ],
   "scores": [
@@ -867,6 +877,16 @@
       "self_reported": true,
       "note": "Anthropic-run, measured on their abliterated GLM-5.3 (down from >90% for the released weights); JailbreakBench ~3% and HarmBench ~2% post-abliteration, with GPQA-Diamond unchanged. Reported via secondary coverage of the Anthropic post — verify against the primary before charting.",
       "source": "https://mixed-news.com/en/anthropic-frontier-red-team-glm-5-3-exploit-chain-20-dollars/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark": "gray_swan_ipi",
+      "value": 0.7,
+      "date": "2026-10-05",
+      "self_reported": true,
+      "note": "Google-reported figure relayed by an aggregator (benchlm.ai), not yet confirmed against Google's primary model documentation. Measured as attack success rate at 15 attempts; distinct from this dashboard's prompt_injection_action metric and should not be merged with it. Treat as provisional.",
+      "source": "https://benchlm.ai/cybersecurity",
       "auto": true
     }
   ]
