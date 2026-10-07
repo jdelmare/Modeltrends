@@ -6,6 +6,7 @@ A daily-updated dashboard comparing the cyber capabilities of frontier AI models
 
 | Section | Content |
 |---|---|
+| Filters | Model type (generally available, gated cyber, open-weight) or the *Eastern frontier* lab group: Alibaba, Baidu, ByteDance, DeepSeek, Moonshot AI, Qihoo 360, Tencent, Z.ai. Groups are set by `group` on a provider in `data/models.json` |
 | KPI row | Benchmark leader, best open-weight model and its lag behind the frontier, containment breakouts in the last 12 months, newest model, UK AISI capability doubling time |
 | Leaderboard | Benchmark index, perceived capability, concern, 7-day deltas and trend sparklines, buzz, incidents. Click a row to see scores, sources and commentary |
 | Capability & incidents over time | Two lanes on one time axis: benchmark index by release date (colored by GA, gated or open-weight) above, one mark per incident by week below. Models involved in incidents are ringed; hover either to see the links |

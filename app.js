@@ -115,20 +115,29 @@
     return last.v - base.v;
   }
 
+  // Lab groupings shown alongside the model types in the filter row. A group filters by the lab a
+  // model or incident comes from (models.json providers[].group), across all model types.
+  const GROUPS = { "eastern-frontier": { label: "Eastern frontier" } };
+  const inGroup = (provider) => (D.models.providers[provider] || {}).group === state.cat;
   const inScope = (m, { ignoreOld = false } = {}) =>
-    (state.cat === "all" || m.category === state.cat) &&
+    (state.cat === "all" || (GROUPS[state.cat] ? inGroup(m.provider) : m.category === state.cat)) &&
     (!state.prov || m.provider === state.prov) &&
     (ignoreOld || state.showOld || m.status === "active" || m.status === "announced");
+  // Incidents carry a lab but no model type, so only the provider filter and lab groups apply.
+  const incInScope = (i) => (!state.prov || i.provider === state.prov) && (!GROUPS[state.cat] || inGroup(i.provider));
 
   // ---------- filters ----------
   function renderFilters() {
     const seg = $("f-cat");
-    const opts = [["all", "All models", null], ...Object.entries(CATS).map(([k, c]) => [k, c.label, c.color])];
-    seg.replaceChildren(...opts.map(([k, label, color]) => {
+    const opts = [["all", "All models", null], ...Object.entries(CATS).map(([k, c]) => [k, c.label, c.color]),
+      ...Object.entries(GROUPS).map(([k, g]) => [k, g.label, null])];
+    seg.replaceChildren(...opts.flatMap(([k, label, color]) => {
       const b = h("button", { type: "button", role: "radio", "aria-checked": String(state.cat === k),
+        title: GROUPS[k] ? `Models and incidents from ${Object.entries(D.models.providers).filter(([, p]) => p.group === k).map(([, p]) => p.name).join(", ")}` : null,
         onclick: () => { state.cat = k; renderAll(); } },
       color ? h("i", { style: `width:8px;height:8px;border-radius:2px;display:inline-block;background:${color}` }) : null, label);
-      return b;
+      // A divider separates the model types from the lab groupings.
+      return GROUPS[k] && k === Object.keys(GROUPS)[0] ? [h("span", { class: "seg-sep", "aria-hidden": "true" }), b] : [b];
     }));
     const provSel = $("f-prov");
     if (provSel.options.length === 1) {
@@ -153,8 +162,7 @@
     const lag = (D.trends.indicators || []).find((i) => i.id === "open_weight_lag_months");
     const lagPt = lag && lag.points[lag.points.length - 1];
     const yearAgo = Date.now() - 365 * DAY;
-    const breakouts = D.incidents.incidents.filter((i) => i.type === "breakout" && parseDate(i.date) >= yearAgo &&
-      (!state.prov || i.provider === state.prov));
+    const breakouts = D.incidents.incidents.filter((i) => i.type === "breakout" && parseDate(i.date) >= yearAgo && incInScope(i));
     const newest = ms.filter((m) => m.released).sort((a, b) => b.released.localeCompare(a.released))[0];
     const dbl = (D.trends.indicators || []).find((i) => i.id === "aisi_doubling_months");
     const dPts = dbl ? dbl.points : [];
@@ -353,7 +361,7 @@
   function renderTimeline() {
     const el = $("timeline");
     const pts = D.models.models.filter((m) => inScope(m, { ignoreOld: true }) && m.released && m.index);
-    const incsAll = D.incidents.incidents.filter((i) => (!state.prov || i.provider === state.prov) && parseDate(i.date));
+    const incsAll = D.incidents.incidents.filter((i) => incInScope(i) && parseDate(i.date));
     const W = Math.max(300, el.clientWidth), narrow = W < 560;
     const M = { l: 34, r: 16 };
     if (!pts.length && !incsAll.length) {
@@ -544,7 +552,7 @@
 
   // ---------- incidents ----------
   function renderIncidents() {
-    const incs = D.incidents.incidents.filter((i) => !state.prov || i.provider === state.prov);
+    const incs = D.incidents.incidents.filter(incInScope);
     $("incidents").replaceChildren(...(incs.length ? incs.map((i) => {
       const sev = SEV[i.severity] || SEV.info;
       const names = (i.models || []).map((id) => (model(id) || { name: id }).name);
@@ -558,12 +566,13 @@
         h("p", { class: "inc-src" },
           [provName(i.provider), names.length ? names.join(", ") : "no specific model named"].join(" · ") + " · ",
           ...(i.sources || []).flatMap((x, k) => [k ? ", " : "", link(x.title, x.url)])));
-    }) : [h("li", { class: "muted", text: "No incidents for this provider." })]));
+    }) : [h("li", { class: "muted", text: "No incidents for these filters." })]));
   }
 
   // ---------- takes + news ----------
   function renderRead() {
-    const takes = (D.perception.provider_takes || []).filter((t) => !state.prov || t.provider === state.prov);
+    const takes = (D.perception.provider_takes || []).filter((t) => (!state.prov || t.provider === state.prov) &&
+      (!GROUPS[state.cat] || inGroup(t.provider) || (state.cat === "eastern-frontier" && t.provider === "open")));
     $("takes").replaceChildren(...takes.map((t) => h("div", { class: "take" },
       h("b", { text: t.provider === "open" ? "Open-weight ecosystem" : provName(t.provider) }), h("p", { text: t.take }))));
     const items = (D.news.items || []).filter((n) => {

@@ -17,16 +17,20 @@
       "name": "Meta"
     },
     "zai": {
-      "name": "Z.ai"
+      "name": "Z.ai",
+      "group": "eastern-frontier"
     },
     "deepseek": {
-      "name": "DeepSeek"
+      "name": "DeepSeek",
+      "group": "eastern-frontier"
     },
     "moonshot": {
-      "name": "Moonshot AI"
+      "name": "Moonshot AI",
+      "group": "eastern-frontier"
     },
     "alibaba": {
-      "name": "Alibaba (Qwen)"
+      "name": "Alibaba (Qwen)",
+      "group": "eastern-frontier"
     },
     "xiaomi": {
       "name": "Xiaomi"
@@ -42,6 +46,22 @@
     },
     "ibm": {
       "name": "IBM"
+    },
+    "baidu": {
+      "name": "Baidu",
+      "group": "eastern-frontier"
+    },
+    "bytedance": {
+      "name": "ByteDance",
+      "group": "eastern-frontier"
+    },
+    "tencent": {
+      "name": "Tencent",
+      "group": "eastern-frontier"
+    },
+    "qihoo-360": {
+      "name": "Qihoo 360",
+      "group": "eastern-frontier"
     }
   },
   "models": [
@@ -1265,6 +1285,138 @@
         "index": 41.5,
         "n": 1
       }
+    },
+    {
+      "status": "active",
+      "index": null,
+      "auto_added": "2026-10-07",
+      "id": "ernie-5-1",
+      "name": "ERNIE 5.1",
+      "provider": "baidu",
+      "category": "ga",
+      "released": "2026-04-30",
+      "access": "Hosted only (Baidu Qianfan, ernie.baidu.com); OpenAI-compatible API",
+      "aliases": [
+        "ERNIE 5.1",
+        "Ernie 5.1"
+      ],
+      "notes": "Release date is the preview launch; sources put the official release between Apr 29 and May 9. No published agentic cyber benchmarks.",
+      "sources": [
+        {
+          "title": "ERNIE blog (Baidu)",
+          "url": "https://ernie.baidu.com/blog/"
+        },
+        {
+          "title": "Codersera: Baidu ERNIE 5.1 launch",
+          "url": "https://codersera.com/blog/baidu-ernie-5-1-launch-2026/"
+        }
+      ]
+    },
+    {
+      "status": "active",
+      "index": null,
+      "auto_added": "2026-10-07",
+      "id": "seed-2-1",
+      "name": "Seed 2.1",
+      "provider": "bytedance",
+      "category": "ga",
+      "released": "2026-06-23",
+      "access": "API only (Volcano Engine); Seed 2.1 Pro variant",
+      "aliases": [
+        "Seed 2.1",
+        "Doubao Seed 2.1",
+        "Doubao-Seed-2.1"
+      ],
+      "notes": "Announced at Volcano Engine FORCE; details from secondary sources. No published agentic cyber benchmarks.",
+      "sources": [
+        {
+          "title": "Genailist: Doubao Seed 2.1",
+          "url": "https://www.genailist.net/model/bytedance/doubao-seed-2-1"
+        },
+        {
+          "title": "TechNode: Doubao-Seed-2.0 release",
+          "url": "https://technode.com/2026/02/14/bytedance-releases-doubao-seed-2-0-positions-pro-model-against-gpt-5-2-and-gemini-3-pro/"
+        }
+      ]
+    },
+    {
+      "status": "active",
+      "index": null,
+      "auto_added": "2026-10-07",
+      "id": "hy4-preview",
+      "name": "Hunyuan Hy4 Preview",
+      "provider": "tencent",
+      "category": "open",
+      "released": "2026-08-28",
+      "access": "Open weights (Apache 2.0); 770B MoE, 49B active",
+      "aliases": [
+        "Hy4",
+        "Hunyuan Hy4",
+        "Hy4 preview"
+      ],
+      "notes": "Details from secondary sources; predecessor Hy3 (open weights) shipped July 6, 2026. No published agentic cyber benchmarks.",
+      "sources": [
+        {
+          "title": "eesel: Tencent Hunyuan Hy4",
+          "url": "https://www.eesel.ai/blog/tencent-hy4"
+        },
+        {
+          "title": "TechNode: Tencent launches Hunyuan Hy3",
+          "url": "https://technode.com/2026/07/07/tencent-launches-hunyuan-hy3-integrates-model-across-multiple-products/"
+        }
+      ]
+    },
+    {
+      "status": "active",
+      "index": null,
+      "auto_added": "2026-10-07",
+      "id": "qihoo-yitianzhen",
+      "name": "Yitianzhen",
+      "provider": "qihoo-360",
+      "category": "gated",
+      "released": "2026-06-26",
+      "access": "Cyber-specific (automated defense and incident response); one version reportedly free",
+      "aliases": [
+        "Yitianzhen",
+        "360 Yitianzhen"
+      ],
+      "notes": "Presented by Qihoo 360's CEO as \"China's version of Mythos\" at ISC.AI 2026 (sources say June 24 or 26). Capability claims are unverified. Qihoo 360 has been on the US Entity List since 2020.",
+      "sources": [
+        {
+          "title": "The Register: Chinese security firm claims better-than-Mythos bug finder",
+          "url": "https://www.theregister.com/security/2026/06/26/chinese-cybersecurity-company-claims-its-built-a-better-than-mythos-bug-finder/5262642"
+        },
+        {
+          "title": "SDxCentral: 'Chinese Mythos'",
+          "url": "https://www.sdxcentral.com/news/chinese-mythos-adds-further-fuel-to-sovereignty-debate-in-ai-security/"
+        }
+      ]
+    },
+    {
+      "status": "active",
+      "index": null,
+      "auto_added": "2026-10-07",
+      "id": "qihoo-tulongfeng",
+      "name": "Tulongfeng",
+      "provider": "qihoo-360",
+      "category": "gated",
+      "released": "2026-06-26",
+      "access": "Cyber-specific (automated vulnerability discovery, agent swarm)",
+      "aliases": [
+        "Tulongfeng",
+        "360 Tulongfeng"
+      ],
+      "notes": "Qihoo 360 says it found 3,432 vulnerabilities, 105 confirmed by Chinese regulators; unverified. Trained on 360's ~250,000-vulnerability database (per Reuters via SDxCentral).",
+      "sources": [
+        {
+          "title": "SDxCentral: 'Chinese Mythos'",
+          "url": "https://www.sdxcentral.com/news/chinese-mythos-adds-further-fuel-to-sovereignty-debate-in-ai-security/"
+        },
+        {
+          "title": "The Register",
+          "url": "https://www.theregister.com/security/2026/06/26/chinese-cybersecurity-company-claims-its-built-a-better-than-mythos-bug-finder/5262642"
+        }
+      ]
     }
   ],
   "updated": "2026-10-07T13:32+00:00"
