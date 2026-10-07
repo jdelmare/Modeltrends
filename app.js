@@ -248,7 +248,7 @@
       h("td", { class: "inc-cell" },
         incs.length ? h("span", { class: "inc-flag", title: `${incs.length} incident(s) involving this model, worst: ${worstSev(incs)}` },
           statusIcon(worstSev(incs)), String(incs.length)) : h("span", { class: "muted", text: "—" }),
-        lab.length ? h("div", { class: "inc-lab", title: `${lab.length} other incident(s) at ${provName(m.provider)}: lab-wide reports or other models` },
+        lab.length ? h("div", { class: "inc-lab", title: `${lab.length} other incident(s) at ${provName(m.provider)}: involving its other models, or no specific model named` },
           `+${lab.length} at lab`) : null),
       );
       tbody.append(tr);
@@ -341,10 +341,13 @@
   }
 
   // One mark per incident: shape = type, fill = severity.
-  function incMark(type, x, y, r, fill) {
-    if (type === "misuse") return s("path", { d: `M${x},${y - r - 1}L${x + r + 1},${y}L${x},${y + r + 1}L${x - r - 1},${y}Z`, fill });
-    if (type === "policy") return s("rect", { x: x - r + 0.5, y: y - r + 0.5, width: 2 * r - 1, height: 2 * r - 1, rx: 1, fill });
-    return s("circle", { cx: x, cy: y, r, fill });
+  // One mark per incident: shape = type, colour = severity. Hollow = no specific model named.
+  function incMark(type, x, y, r, color, hollow) {
+    const paint = hollow ? { fill: "var(--surface)", stroke: color, "stroke-width": 1.5 } : { fill: color };
+    if (hollow) r -= 0.5; // keep the outlined mark the same visual size as a filled one
+    if (type === "misuse") return s("path", { d: `M${x},${y - r - 1}L${x + r + 1},${y}L${x},${y + r + 1}L${x - r - 1},${y}Z`, ...paint });
+    if (type === "policy") return s("rect", { x: x - r + 0.5, y: y - r + 0.5, width: 2 * r - 1, height: 2 * r - 1, rx: 1, ...paint });
+    return s("circle", { cx: x, cy: y, r, ...paint });
   }
 
   function renderTimeline() {
@@ -444,12 +447,13 @@
       b.forEach((i, n) => {
         const y = laneB - 3 - R - n * STEP;
         const g = s("g", { class: "tl-inc" });
-        g.append(incMark(i.type, x, y, R, (SEV[i.severity] || SEV.info).color));
+        const unnamed = !(i.models || []).length;
+        g.append(incMark(i.type, x, y, R, (SEV[i.severity] || SEV.info).color, unnamed));
         const hit = s("rect", { x: x - STEP / 2, y: y - STEP / 2, width: STEP, height: STEP, class: "hit" });
         g.append(hit);
         const names = (i.models || []).map((id) => (model(id) || { name: id }).name);
         bindTip(hit, [["tv", i.title], ["tl", `${fmtDate(i.date)} · ${TYPE_LABEL[i.type] || i.type} · ${(SEV[i.severity] || SEV.info).label}`],
-          ["tm", `${provName(i.provider)} · ${names.length ? names.join(", ") : "lab-wide"}`]]);
+          ["tm", `${provName(i.provider)} · ${names.length ? names.join(", ") : "no specific model named"}`]]);
         const focus = () => {
           clearLinks(); svg.classList.add("focus"); g.classList.add("hl");
           for (const id of i.models || []) {
@@ -481,6 +485,8 @@
       ...Object.values(SEV).map((v) => h("span", {}, h("i", { style: `background:${v.color}` }), v.label)),
       h("span", { class: "legend-sep" }),
       ...types.map((t) => h("span", {}, swatch(() => incMark(t, 6, 6, 4, "var(--ink-2)")), TYPE_LABEL[t] || t)),
+      ...(incs.some((i) => !(i.models || []).length)
+        ? [h("span", {}, swatch(() => incMark("breakout", 6, 6, 4, "var(--ink-2)", true)), "No specific model named")] : []),
     );
   }
   function catLegend(items, dot) {
@@ -550,7 +556,7 @@
           i.auto ? h("span", { class: "auto", text: "auto" }) : null),
         h("p", { class: "inc-sum", text: i.summary }),
         h("p", { class: "inc-src" },
-          [provName(i.provider), names.length ? names.join(", ") : "lab-wide"].join(" · ") + " · ",
+          [provName(i.provider), names.length ? names.join(", ") : "no specific model named"].join(" · ") + " · ",
           ...(i.sources || []).flatMap((x, k) => [k ? ", " : "", link(x.title, x.url)])));
     }) : [h("li", { class: "muted", text: "No incidents for this provider." })]));
   }
