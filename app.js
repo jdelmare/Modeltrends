@@ -204,15 +204,24 @@
     return svg;
   }
   const COLS = [
-    { key: "name", label: "Model", get: (m) => m.name.toLowerCase() },
-    { key: "category", label: "Type", get: (m) => m.category },
-    { key: "released", label: "Released", get: (m) => m.released || "", opt: true },
-    { key: "index", label: "Benchmark index", get: (m) => (m.index ? m.index.index : -1) },
-    { key: "capability", label: "Perceived", get: (m) => perc(m).capability ?? -1 },
-    { key: "concern", label: "Concern", get: (m) => perc(m).concern ?? -1 },
-    { key: "trend", label: "Perceived, trend", get: (m) => delta(m.id, "capability") ?? 0, opt: true },
-    { key: "buzz", label: "Buzz", get: (m) => perc(m).buzz ?? -1, opt: true },
-    { key: "incidents", label: "Incidents", get: (m) => (D.incBy[m.id] || []).length * 1000 + labIncs(m).length },
+    { key: "name", label: "Model", get: (m) => m.name.toLowerCase(),
+      tip: "Model and the lab that makes it. \u201cauto\u201d marks entries the daily update added that haven't been reviewed yet; \u201csuperseded\u201d means a newer version exists." },
+    { key: "category", label: "Type", get: (m) => m.category,
+      tip: "GA: generally available to anyone. Gated: restricted to vetted users, usually a cyber-specific variant. Open: weights anyone can download and run." },
+    { key: "released", label: "Released", get: (m) => m.released || "", opt: true,
+      tip: "First public release, preview or general availability." },
+    { key: "index", label: "Benchmark index", get: (m) => (m.index ? m.index.index : -1),
+      tip: "0\u2013100. The model's cyber capability benchmark scores, each scaled so the best tracked model scores 100, then averaged and pulled toward 50 when there are few results. Dots show how many benchmarks it has. Developer-reported scores count 0.8\u00d7." },
+    { key: "capability", label: "Perceived", get: (m) => perc(m).capability ?? -1,
+      tip: "0\u2013100. How capable at cyber the model is seen to be in articles, podcasts, blogs and social posts, re-scored by Claude in the daily update when there is new discussion. The arrow is the change over 7 days." },
+    { key: "concern", label: "Concern", get: (m) => perc(m).concern ?? -1,
+      tip: "0\u2013100. How much worry about risk or misuse the coverage expresses. The arrow is the change over 7 days; red means concern is rising." },
+    { key: "trend", label: "Perceived, trend", get: (m) => delta(m.id, "capability") ?? 0, opt: true,
+      tip: "Perceived capability across the daily snapshots; the dot is today. Shows \u201ctracking\u201d until there are two days of data." },
+    { key: "buzz", label: "Buzz", get: (m) => perc(m).buzz ?? -1, opt: true,
+      tip: "How many items in the latest daily collection mention the model: security news, lab blogs, podcasts, papers, Hacker News and Bluesky." },
+    { key: "incidents", label: "Incidents", get: (m) => (D.incBy[m.id] || []).length * 1000 + labIncs(m).length,
+      tip: "Incidents involving this model, with the icon showing the worst severity. \u201c+N at lab\u201d counts other incidents at the same lab: its other models, or reports that name no specific model." },
   ];
   const perc = (m) => D.perception.models[m.id] || {};
   // Incidents at the model's lab that are not tied to this model: lab-wide reports and incidents
@@ -228,12 +237,15 @@
       const x = col.get(a), y = col.get(b);
       return (x < y ? -1 : x > y ? 1 : 0) * state.sort.dir || a.name.localeCompare(b.name);
     });
-    const thead = h("thead", {}, h("tr", {}, COLS.map((c) => h("th", {
-      class: c.opt ? "opt" : null, scope: "col", tabindex: "0",
-      "aria-sort": state.sort.key === c.key ? (state.sort.dir < 0 ? "descending" : "ascending") : null,
-      onclick: () => sortBy(c.key), onkeydown: (e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), sortBy(c.key)),
-      text: c.label,
-    }))));
+    const thead = h("thead", {}, h("tr", {}, COLS.map((c) => {
+      const th = h("th", {
+        class: c.opt ? "opt" : null, scope: "col", tabindex: "0", "aria-description": c.tip,
+        "aria-sort": state.sort.key === c.key ? (state.sort.dir < 0 ? "descending" : "ascending") : null,
+        onclick: () => sortBy(c.key), onkeydown: (e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), sortBy(c.key)),
+      }, h("span", { class: "th-label", text: c.label }));
+      bindTip(th, [["tv", c.label], ["tl", c.tip], ["tm", "Click to sort"]]);
+      return th;
+    })));
     const tbody = h("tbody");
     if (!ms.length) tbody.append(h("tr", {}, h("td", { colspan: COLS.length, class: "muted", text: "No models match these filters." })));
     for (const m of ms) {
@@ -265,6 +277,7 @@
     $("board").replaceChildren(thead, tbody);
   }
   function sortBy(key) {
+    hideTip(); // the header is re-rendered, so drop the tooltip of the old one
     state.sort = state.sort.key === key ? { key, dir: -state.sort.dir } : { key, dir: key === "name" ? 1 : -1 };
     renderBoard();
   }
