@@ -39,6 +39,9 @@
     },
     "other": {
       "name": "Other / cross-industry"
+    },
+    "ibm": {
+      "name": "IBM"
     }
   },
   "models": [
@@ -1213,6 +1216,36 @@
         "index": 67.4,
         "n": 1
       }
+    },
+    {
+      "id": "granite-4-2",
+      "name": "Granite 4.2",
+      "provider": "ibm",
+      "category": "open",
+      "status": "active",
+      "released": "2026-08-25",
+      "access": "Open weights (Apache 2.0): 3B, 8B and 30B reasoning models",
+      "aliases": [
+        "Granite 4.2",
+        "IBM Granite"
+      ],
+      "notes": "No published agentic cyber benchmarks (CyberGym, Cybench, exploit suites); IBM reports coding and agent results such as SWE-bench Verified 57.0 for the 30B. IBM's security work centres on Granite Guardian, which detects risky prompts and responses.",
+      "sources": [
+        {
+          "title": "The Decoder: IBM drops open-weight Granite 4.2 family",
+          "url": "https://the-decoder.com/ibm-drops-open-weight-granite-4-2-family-with-built-in-agentic-capabilities-under-apache-2-0/"
+        },
+        {
+          "title": "Datanorth: IBM releases Granite 4.2",
+          "url": "https://datanorth.ai/news/ibm-releases-granite-4-2"
+        },
+        {
+          "title": "Granite Guardian (GitHub)",
+          "url": "https://github.com/ibm-granite/granite-guardian"
+        }
+      ],
+      "auto_added": "2026-10-07",
+      "index": null
     },
     {
       "id": "qwen3-8-max",
