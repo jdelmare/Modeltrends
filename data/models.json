@@ -1119,6 +1119,57 @@
       }
     },
     {
+      "id": "muse-spark-1-2",
+      "name": "Muse Spark 1.2",
+      "provider": "meta",
+      "category": "ga",
+      "status": "superseded",
+      "released": "2026-08-05",
+      "access": "Meta Model API; open weights promised on Aug 10, 2026 but not yet released",
+      "aliases": [
+        "Muse Spark 1.2"
+      ],
+      "watch": "Meta promised to release open weights; reclassify as open-weight once they are published.",
+      "notes": "Meta announced on Aug 10 that it would release the weights 'soon'; as of early October no Muse Spark repository had appeared on Hugging Face.",
+      "sources": [
+        {
+          "title": "Alexandr Wang (Meta) announcement",
+          "url": "https://x.com/alexandr_wang/status/2086756152034066792"
+        },
+        {
+          "title": "OrcaRouter: Muse Spark 1.2 is getting open weights",
+          "url": "https://www.orcarouter.ai/blog/meta-muse-spark-1-2-explained"
+        }
+      ],
+      "auto_added": "2026-10-07",
+      "index": null
+    },
+    {
+      "id": "muse-glimmer",
+      "name": "Muse Glimmer",
+      "provider": "meta",
+      "category": "open",
+      "status": "active",
+      "released": "2026-08-10",
+      "access": "Open weights (Apache 2.0); 30B, runs on a single 24 GB GPU",
+      "aliases": [
+        "Muse Glimmer"
+      ],
+      "notes": "Distilled from Muse Spark and tuned for local agent workflows. Meta's first open-weight release since Llama. No published agentic cyber benchmarks.",
+      "sources": [
+        {
+          "title": "VentureBeat: Meta returns to open source with Muse Glimmer",
+          "url": "https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now"
+        },
+        {
+          "title": "CNBC: Meta launches Muse Glimmer open-weight AI model",
+          "url": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html"
+        }
+      ],
+      "auto_added": "2026-10-07",
+      "index": null
+    },
+    {
       "id": "glm-5-3",
       "name": "GLM-5.3",
       "provider": "zai",

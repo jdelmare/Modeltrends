@@ -165,6 +165,18 @@ def merge(upd, today: str, models: dict, benchmarks: dict, incidents: dict,
     } for h in upd.headlines if valid_url(h.url)]
     merge_news(news, new_heads)
 
+    by_id = {m["id"]: m for m in models["models"]}
+    for cc in upd.category_changes:
+        m = by_id.get(cc.model_id)
+        if not m or m["category"] == cc.category or not valid_url(cc.source_url):
+            continue
+        m["category_changed"] = {"from": m["category"], "to": cc.category, "date": today,
+                                 "note": cc.note, "source": cc.source_url}
+        m["category"] = cc.category
+        m.pop("watch", None)
+        m["auto_added"] = today  # flags the row for review
+        changes.append(f"category: {m['name']} {m['category_changed']['from']} -> {cc.category}")
+
     ind = {i["id"]: i for i in trends.get("indicators", [])}
     for tp in upd.trend_points:
         i = ind.get(tp.indicator_id)
