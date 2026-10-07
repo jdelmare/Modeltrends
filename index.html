@@ -41,24 +41,14 @@
     </p>
   </section>
 
-  <div class="grid2">
-    <section class="card">
-      <div class="card-head">
-        <h2>Capability frontier over time</h2>
-        <p class="muted small">Benchmark index by release date. The open-weight gap is the story to watch.</p>
-      </div>
-      <div id="frontier" class="chart"></div>
-      <div class="legend" id="frontier-legend"></div>
-    </section>
-    <section class="card">
-      <div class="card-head row">
-        <h2>Benchmark explorer</h2>
-        <select id="bench-sel" aria-label="Benchmark"></select>
-      </div>
-      <p class="muted small" id="bench-desc"></p>
-      <div id="bench" class="chart"></div>
-    </section>
-  </div>
+  <section class="card">
+    <div class="card-head">
+      <h2>Capability &amp; incidents over time</h2>
+      <p class="muted small">Top: benchmark index by release date. Bottom: one mark per incident, stacked by week. Hover a model or an incident to see what links them.</p>
+    </div>
+    <div id="timeline" class="chart"></div>
+    <div class="legend" id="timeline-legend"></div>
+  </section>
 
   <div class="grid2">
     <section class="card">
@@ -66,8 +56,6 @@
         <h2>Breakouts &amp; misuse</h2>
         <p class="muted small">Models escaping containment, used by threat actors, or restricted by governments.</p>
       </div>
-      <div id="inc-chart" class="chart"></div>
-      <div class="legend" id="inc-legend"></div>
       <ol id="incidents" class="incidents"></ol>
     </section>
     <section class="card">
@@ -80,6 +68,15 @@
       <ul id="news" class="news"></ul>
     </section>
   </div>
+
+  <section class="card">
+    <div class="card-head row">
+      <h2>Benchmark explorer</h2>
+      <select id="bench-sel" aria-label="Benchmark"></select>
+    </div>
+    <p class="muted small" id="bench-desc"></p>
+    <div id="bench" class="chart"></div>
+  </section>
 
   <footer class="foot muted small">
     <p id="changes"></p>
