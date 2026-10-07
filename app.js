@@ -300,50 +300,14 @@
         (i.models || []).length ? h("span", { class: "muted", text: ` (${i.models.map((id) => (model(id) || { name: id }).name).join(", ")})` }) : null))));
   }
 
-  // ---------- frontier scatter ----------
-  function renderFrontier() {
-    const el = $("frontier");
-    const pts = D.models.models.filter((m) => inScope(m, { ignoreOld: true }) && m.released && m.index);
-    const W = Math.max(300, el.clientWidth), H = W < 560 ? 440 : 340, M = { l: 34, r: 16, t: 12, b: 26 };
-    const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Benchmark index by release date" });
-    if (!pts.length) {
-      svg.append(s("text", { x: W / 2, y: H / 2, "text-anchor": "middle", class: "empty" }, "No dated, benchmarked models match these filters."));
-      el.replaceChildren(svg); $("frontier-legend").replaceChildren(); return;
-    }
-    const ts = pts.map((m) => +parseDate(m.released));
-    const x0 = Math.min(...ts) - 20 * DAY, x1 = Math.max(Date.now(), ...ts) + 10 * DAY;
-    const vs = pts.map((m) => m.index.index);
-    const y0 = Math.max(0, Math.floor((Math.min(...vs) - 5) / 10) * 10), y1 = Math.min(100, Math.ceil((Math.max(...vs) + 5) / 10) * 10);
-    const X = (t) => M.l + ((t - x0) / (x1 - x0)) * (W - M.l - M.r);
-    const Y = (v) => H - M.b - ((v - y0) / (y1 - y0)) * (H - M.t - M.b);
-    for (let v = y0; v <= y1; v += 10) {
-      svg.append(s("line", { x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), class: v === y0 ? "baseline" : "gridline" }));
-      svg.append(s("text", { x: M.l - 6, y: Y(v) + 4, "text-anchor": "end" }, v));
-    }
-    const d = new Date(x0); d.setUTCDate(1); d.setUTCMonth(d.getUTCMonth() + 1);
-    const months = Math.round((x1 - x0) / (30 * DAY)), stepM = months > 10 ? 3 : months > 5 ? 2 : 1;
-    for (; +d <= x1; d.setUTCMonth(d.getUTCMonth() + stepM)) {
-      svg.append(s("text", { x: X(+d), y: H - 8, "text-anchor": "middle" }, d.toLocaleDateString(undefined, { month: "short", year: "2-digit", timeZone: "UTC" })));
-    }
-    const order = pts.slice().sort((a, b) => a.index.index - b.index.index);
-    const pos = (m) => ({ x: X(+parseDate(m.released)), y: Y(m.index.index) });
-    for (const m of order) {
-      const { x: cx, y: cy } = pos(m);
-      const g = s("g", { "aria-label": `${m.name}: index ${m.index.index}` });
-      g.append(s("circle", { cx, cy, r: 6, fill: CATS[m.category].color, stroke: "var(--surface)", "stroke-width": 2, class: "mark" }));
-      const hit = s("circle", { cx, cy, r: 13, class: "hit" });
-      g.append(hit);
-      bindTip(hit, [["tv", `Index ${m.index.index}`], ["tl", m.name], ["tm", `${CATS[m.category].label} · ${fmtDate(m.released)} · ${m.index.n} benchmark(s)`]]);
-      svg.append(g);
-    }
-    // Label every point. Highest first, each label scores the spots around its dot (beside it,
-    // then stepped further up or down, or centred above/below) and takes the one that collides
-    // least with labels already placed and with dots, preferring spots close to the dot. A label
-    // that had to move gets a leader line back to its dot.
-    el.replaceChildren(svg); // attached so label widths can be measured
-    const dots = order.map(pos);
-    const boxes = [];
-    const LH = 13, GAP = 9;
+  // ---------- capability & incidents timeline ----------
+  // Label placement shared by the scatter: highest point first, each label scores the spots around
+  // its dot (beside it, stepped further up or down, or centred above/below) and takes the one that
+  // collides least with labels already placed and with dots, preferring spots close to the dot. A
+  // label that had to move gets a leader line back to its dot. The svg must be attached to measure.
+  function placeLabels(svg, items, bounds, layer) {
+    const boxes = [], LH = 13, GAP = 9;
+    const dots = items.map((it) => it);
     const overlap = (a, b) => Math.max(0, Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x)) *
       Math.max(0, Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y));
     const cost = (b, self) => {
@@ -352,29 +316,170 @@
       for (const d of dots) if (d !== self) c += overlap(b, { x: d.x - 8, y: d.y - 8, w: 16, h: 16 }) * 10;
       return c + Math.hypot(b.x + b.w / 2 - self.x, b.y + b.h / 2 - self.y) * 0.3;
     };
-    const inside = (b) => b.x >= M.l + 2 && b.x + b.w <= W - 2 && b.y >= 0 && b.y + b.h <= H - M.b - 2;
-    order.slice().reverse().forEach((m) => {
-      const self = dots[order.indexOf(m)], { x: cx, y: cy } = self;
-      const t = s("text", { class: "lbl" }, m.name);
+    const inside = (b) => b.x >= bounds.l && b.x + b.w <= bounds.r && b.y >= bounds.t && b.y + b.h <= bounds.b;
+    for (const it of items.slice().sort((a, b) => a.y - b.y)) {
+      const t = s("text", { class: "lbl" }, it.text);
       svg.append(t);
-      const w = t.getComputedTextLength();
-      const cands = [];
+      const w = t.getComputedTextLength(), cands = [];
       for (let k = 0; k <= 7; k++) for (const dy of k ? [-k * LH, k * LH] : [0]) {
-        cands.push({ x: cx + GAP, y: cy - LH / 2 + dy, w, h: LH, moved: k > 0 });
-        cands.push({ x: cx - GAP - w, y: cy - LH / 2 + dy, w, h: LH, moved: k > 0 });
+        cands.push({ x: it.x + GAP, y: it.y - LH / 2 + dy, w, h: LH, moved: k > 0 });
+        cands.push({ x: it.x - GAP - w, y: it.y - LH / 2 + dy, w, h: LH, moved: k > 0 });
       }
-      cands.push({ x: cx - w / 2, y: cy - 8 - LH, w, h: LH, moved: false }, { x: cx - w / 2, y: cy + 8, w, h: LH, moved: false });
+      cands.push({ x: it.x - w / 2, y: it.y - 8 - LH, w, h: LH, moved: false }, { x: it.x - w / 2, y: it.y + 8, w, h: LH, moved: false });
       const ok = cands.filter(inside);
-      const best = (ok.length ? ok : cands).reduce((a, b) => (cost(b, self) < cost(a, self) ? b : a));
+      const best = (ok.length ? ok : cands).reduce((a, b) => (cost(b, it) < cost(a, it) ? b : a));
       boxes.push(best);
       t.setAttribute("x", best.x);
       t.setAttribute("y", best.y + LH - 3);
       if (best.moved) {
-        const lx = best.x > cx ? best.x - 2 : best.x + best.w + 2;
-        svg.insertBefore(s("line", { x1: cx, y1: cy, x2: lx, y2: best.y + LH / 2, stroke: "var(--axis)", "stroke-width": 1 }), svg.firstChild.nextSibling);
+        const lx = best.x > it.x ? best.x - 2 : best.x + best.w + 2;
+        layer.append(s("line", { x1: it.x, y1: it.y, x2: lx, y2: best.y + LH / 2, stroke: "var(--axis)", "stroke-width": 1 }));
       }
-    });
-    $("frontier-legend").replaceChildren(...catLegend(pts, true));
+    }
+  }
+
+  // One mark per incident: shape = type, fill = severity.
+  function incMark(type, x, y, r, fill) {
+    if (type === "misuse") return s("path", { d: `M${x},${y - r - 1}L${x + r + 1},${y}L${x},${y + r + 1}L${x - r - 1},${y}Z`, fill });
+    if (type === "policy") return s("rect", { x: x - r + 0.5, y: y - r + 0.5, width: 2 * r - 1, height: 2 * r - 1, rx: 1, fill });
+    return s("circle", { cx: x, cy: y, r, fill });
+  }
+
+  function renderTimeline() {
+    const el = $("timeline");
+    const pts = D.models.models.filter((m) => inScope(m, { ignoreOld: true }) && m.released && m.index);
+    const incsAll = D.incidents.incidents.filter((i) => (!state.prov || i.provider === state.prov) && parseDate(i.date));
+    const W = Math.max(300, el.clientWidth), narrow = W < 560;
+    const M = { l: 34, r: 16 };
+    if (!pts.length && !incsAll.length) {
+      const svg = s("svg", { viewBox: `0 0 ${W} 120`, role: "img" });
+      svg.append(s("text", { x: W / 2, y: 64, "text-anchor": "middle", class: "empty" }, "Nothing to show for these filters."));
+      el.replaceChildren(svg); $("timeline-legend").replaceChildren(); return;
+    }
+    // Shared time axis: from just before the earliest model release to today. Older incidents are
+    // counted at the left edge of the incident lane rather than stretching the axis.
+    const ts = pts.map((m) => +parseDate(m.released));
+    const start = (ts.length ? Math.min(...ts) : Math.min(...incsAll.map((i) => +parseDate(i.date)))) - 20 * DAY;
+    const end = Date.now() + 7 * DAY;
+    const earlier = incsAll.filter((i) => +parseDate(i.date) < start);
+    const incs = incsAll.filter((i) => +parseDate(i.date) >= start);
+    const X = (t) => M.l + ((t - start) / (end - start)) * (W - M.l - M.r);
+
+    // Incident lane: weekly columns, marks stacked upward, most severe at the bottom.
+    const R = narrow ? 3 : 4, STEP = 2 * R + 2, WEEK = 7 * DAY, sevOrder = Object.keys(SEV);
+    const bins = new Map();
+    for (const i of incs) {
+      const k = Math.floor((+parseDate(i.date) - start) / WEEK);
+      (bins.get(k) || bins.set(k, []).get(k)).push(i);
+    }
+    for (const b of bins.values()) b.sort((a, z) => sevOrder.indexOf(a.severity) - sevOrder.indexOf(z.severity));
+    const maxStack = Math.max(1, ...[...bins.values()].map((b) => b.length));
+
+    const topT = 14, topB = topT + (narrow ? 360 : 290);
+    const laneT = topB + 40, laneB = laneT + Math.max(48, maxStack * STEP + 6), H = laneB + 24;
+    const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Benchmark index by release date, with incidents by week on the same time axis" });
+    const under = s("g"), links = s("g"), over = s("g");
+
+    // Month gridlines run through both lanes so dates line up by eye.
+    const d = new Date(start); d.setUTCDate(1); d.setUTCMonth(d.getUTCMonth() + 1);
+    const months = Math.round((end - start) / (30 * DAY)), stepM = narrow ? (months > 5 ? 2 : 1) : (months > 10 ? 2 : 1);
+    for (; +d <= end; d.setUTCMonth(d.getUTCMonth() + stepM)) {
+      under.append(s("line", { x1: X(+d), x2: X(+d), y1: topT, y2: laneB, class: "gridline" }));
+      under.append(s("text", { x: X(+d), y: H - 7, "text-anchor": "middle" }, d.toLocaleDateString(undefined, { month: "short", year: "2-digit", timeZone: "UTC" })));
+    }
+
+    // Top lane: capability.
+    const vs = pts.map((m) => m.index.index);
+    const y0 = vs.length ? Math.max(0, Math.floor((Math.min(...vs) - 5) / 10) * 10) : 40;
+    const y1 = vs.length ? Math.min(100, Math.ceil((Math.max(...vs) + 5) / 10) * 10) : 90;
+    const Y = (v) => topB - ((v - y0) / (y1 - y0)) * (topB - topT);
+    for (let v = y0; v <= y1; v += 10) {
+      under.append(s("line", { x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), class: v === y0 ? "baseline" : "gridline" }));
+      under.append(s("text", { x: M.l - 6, y: Y(v) + 4, "text-anchor": "end" }, v));
+    }
+    under.append(s("text", { x: M.l, y: topT - 4, class: "lane" }, "Benchmark index"));
+
+    // Bottom lane: incidents.
+    under.append(s("line", { x1: M.l, x2: W - M.r, y1: laneB, y2: laneB, class: "baseline" }));
+    under.append(s("text", { x: M.l, y: laneT - 8, class: "lane" }, narrow
+      ? `Incidents by week (${incs.length}${earlier.length ? ` + ${earlier.length} earlier` : ""})`
+      : `Incidents (${incs.length}${earlier.length ? `, plus ${earlier.length} earlier` : ""}) · one mark each, by week`));
+
+    svg.append(under, links, over);
+    const modelDot = new Map(), incEls = new Map();
+    const clearLinks = () => {
+      links.replaceChildren();
+      svg.querySelectorAll(".hl").forEach((n) => n.classList.remove("hl"));
+      svg.classList.remove("focus");
+    };
+
+    for (const m of pts.slice().sort((a, b) => a.index.index - b.index.index)) {
+      const cx = X(+parseDate(m.released)), cy = Y(m.index.index);
+      const mine = D.incBy[m.id] || [];
+      const g = s("g", { class: "tl-model", "aria-label": `${m.name}: index ${m.index.index}${mine.length ? `, ${mine.length} incident(s)` : ""}` });
+      if (mine.length) g.append(s("circle", { cx, cy, r: 9.5, fill: "none", stroke: "var(--critical)", "stroke-width": 1.5 }));
+      g.append(s("circle", { cx, cy, r: 6, fill: CATS[m.category].color, stroke: "var(--surface)", "stroke-width": 2, class: "mark" }));
+      const hit = s("circle", { cx, cy, r: 13, class: "hit" });
+      g.append(hit);
+      bindTip(hit, [["tv", `Index ${m.index.index}`], ["tl", m.name],
+        ["tm", `${CATS[m.category].label} · ${fmtDate(m.released)} · ${m.index.n} benchmark(s)${mine.length ? ` · ${mine.length} incident(s)` : ""}`]]);
+      const focus = () => {
+        clearLinks(); svg.classList.add("focus"); g.classList.add("hl");
+        for (const i of mine) {
+          const e = incEls.get(i); if (!e) continue;
+          e.g.classList.add("hl");
+          links.append(s("line", { x1: cx, y1: cy, x2: e.x, y2: e.y, class: "tl-link" }));
+        }
+      };
+      hit.addEventListener("pointerenter", focus); hit.addEventListener("focus", focus);
+      hit.addEventListener("pointerleave", clearLinks); hit.addEventListener("blur", clearLinks);
+      over.append(g);
+      modelDot.set(m.id, { g, x: cx, y: cy });
+    }
+
+    for (const [k, b] of bins) {
+      const x = X(start + (k + 0.5) * WEEK);
+      b.forEach((i, n) => {
+        const y = laneB - 3 - R - n * STEP;
+        const g = s("g", { class: "tl-inc" });
+        g.append(incMark(i.type, x, y, R, (SEV[i.severity] || SEV.info).color));
+        const hit = s("rect", { x: x - STEP / 2, y: y - STEP / 2, width: STEP, height: STEP, class: "hit" });
+        g.append(hit);
+        const names = (i.models || []).map((id) => (model(id) || { name: id }).name);
+        bindTip(hit, [["tv", i.title], ["tl", `${fmtDate(i.date)} · ${TYPE_LABEL[i.type] || i.type} · ${(SEV[i.severity] || SEV.info).label}`],
+          ["tm", `${provName(i.provider)} · ${names.length ? names.join(", ") : "lab-wide"}`]]);
+        const focus = () => {
+          clearLinks(); svg.classList.add("focus"); g.classList.add("hl");
+          for (const id of i.models || []) {
+            const md = modelDot.get(id); if (!md) continue;
+            md.g.classList.add("hl");
+            links.append(s("line", { x1: x, y1: y, x2: md.x, y2: md.y, class: "tl-link" }));
+          }
+        };
+        hit.addEventListener("pointerenter", focus); hit.addEventListener("focus", focus);
+        hit.addEventListener("pointerleave", clearLinks); hit.addEventListener("blur", clearLinks);
+        over.append(g);
+        incEls.set(i, { g, x, y });
+      });
+    }
+    if (earlier.length) {
+      over.append(s("text", { x: M.l + 2, y: laneB - 6, class: "lane" }, `← ${earlier.length}`));
+    }
+
+    el.replaceChildren(svg); // attached so label widths can be measured
+    placeLabels(over, pts.map((m) => ({ x: X(+parseDate(m.released)), y: Y(m.index.index), text: m.name })),
+      { l: M.l + 2, r: W - 2, t: topT + 2, b: topB - 2 }, under);
+
+    const types = [...new Set(incs.map((i) => i.type))];
+    const swatch = (fn) => { const g = s("svg", { width: 12, height: 12, viewBox: "0 0 12 12" }); g.append(fn()); return g; };
+    $("timeline-legend").replaceChildren(
+      ...catLegend(pts, true),
+      h("span", {}, swatch(() => s("circle", { cx: 6, cy: 6, r: 4.5, fill: "none", stroke: "var(--critical)", "stroke-width": 1.5 })), "Involved in an incident"),
+      h("span", { class: "legend-sep" }),
+      ...Object.values(SEV).map((v) => h("span", {}, h("i", { style: `background:${v.color}` }), v.label)),
+      h("span", { class: "legend-sep" }),
+      ...types.map((t) => h("span", {}, swatch(() => incMark(t, 6, 6, 4, "var(--ink-2)")), TYPE_LABEL[t] || t)),
+    );
   }
   function catLegend(items, dot) {
     const present = new Set(items.map((m) => m.category));
@@ -432,48 +537,6 @@
   // ---------- incidents ----------
   function renderIncidents() {
     const incs = D.incidents.incidents.filter((i) => !state.prov || i.provider === state.prov);
-    // Monthly counts stacked by severity.
-    const el = $("inc-chart");
-    const W = Math.max(300, el.clientWidth), H = 150, M = { l: 22, r: 4, t: 14, b: 22 };
-    const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Incidents per month by severity" });
-    const all = D.incidents.incidents;
-    if (all.length) {
-      const first = all.map((i) => i.date).sort()[0];
-      const months = [];
-      const d = parseDate(first.slice(0, 7) + "-01"), end = new Date();
-      for (; d <= end; d.setUTCMonth(d.getUTCMonth() + 1)) months.push(d.toISOString().slice(0, 7));
-      const sevs = Object.keys(SEV);
-      const counts = months.map((mo) => Object.fromEntries(sevs.map((sv) => [sv, incs.filter((i) => i.date.startsWith(mo) && i.severity === sv).length])));
-      const maxN = Math.max(2, ...counts.map((c) => sevs.reduce((a, k) => a + c[k], 0)));
-      const bw = (W - M.l - M.r) / months.length, Y = (v) => (v / maxN) * (H - M.t - M.b);
-      for (let v = 0; v <= maxN; v += Math.ceil(maxN / 3)) {
-        const y = H - M.b - Y(v);
-        svg.append(s("line", { x1: M.l, x2: W - M.r, y1: y, y2: y, class: v === 0 ? "baseline" : "gridline" }));
-        svg.append(s("text", { x: M.l - 6, y: y + 4, "text-anchor": "end" }, v));
-      }
-      months.forEach((mo, i) => {
-        const x = M.l + i * bw + 2, w = Math.max(2, bw - 4);
-        let y = H - M.b, total = 0;
-        for (const sv of [...sevs].reverse()) {
-          const n = counts[i][sv];
-          if (!n) continue;
-          const hgt = Y(n);
-          const r = s("rect", { x, y: y - hgt + (total ? 0 : 0), width: w, height: Math.max(1, hgt - 2), rx: 2, fill: SEV[sv].color, class: "mark" });
-          const label = parseDate(mo + "-01").toLocaleDateString(undefined, { month: "long", year: "numeric", timeZone: "UTC" });
-          bindTip(r, [["tv", `${n} ${SEV[sv].label.toLowerCase()}`], ["tl", label]]);
-          svg.append(r);
-          y -= hgt; total += n;
-        }
-        if (total) svg.append(s("text", { x: x + w / 2, y: y - 4, "text-anchor": "middle", class: "val" }, total));
-        if (months.length <= 14 || i % 2 === 0) {
-          svg.append(s("text", { x: x + w / 2, y: H - 7, "text-anchor": "middle" },
-            parseDate(mo + "-01").toLocaleDateString(undefined, { month: "short", timeZone: "UTC" })));
-        }
-      });
-    }
-    el.replaceChildren(svg);
-    $("inc-legend").replaceChildren(...Object.values(SEV).map((v) => h("span", {}, h("i", { style: `background:${v.color}` }), v.label)));
-
     $("incidents").replaceChildren(...(incs.length ? incs.map((i) => {
       const sev = SEV[i.severity] || SEV.info;
       const names = (i.models || []).map((id) => (model(id) || { name: id }).name);
@@ -520,7 +583,7 @@
     renderFilters();
     renderKpis();
     renderBoard();
-    renderFrontier();
+    renderTimeline();
     renderBench();
     renderIncidents();
     renderRead();
@@ -545,7 +608,7 @@
     renderBenchSelect();
     renderAll();
     let t;
-    addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => { renderFrontier(); renderBench(); renderIncidents(); }, 150); });
+    addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => { renderTimeline(); renderBench(); }, 150); });
   }).catch((e) => {
     document.querySelector(".page").append(h("p", { class: "muted", text: "Could not load data: " + e.message }));
   });
