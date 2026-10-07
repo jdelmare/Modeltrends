@@ -33,10 +33,12 @@
       "group": "eastern-frontier"
     },
     "xiaomi": {
-      "name": "Xiaomi"
+      "name": "Xiaomi",
+      "group": "eastern-frontier"
     },
     "shanghai-ai-lab": {
-      "name": "Shanghai AI Lab"
+      "name": "Shanghai AI Lab",
+      "group": "eastern-frontier"
     },
     "sakana": {
       "name": "Sakana AI"
@@ -62,13 +64,21 @@
     "qihoo-360": {
       "name": "Qihoo 360",
       "group": "eastern-frontier"
+    },
+    "stepfun": {
+      "name": "StepFun",
+      "group": "eastern-frontier"
+    },
+    "ant-group": {
+      "name": "Ant Group (inclusionAI)",
+      "group": "eastern-frontier"
     }
   },
   "models": [
     {
       "id": "step-5-preview",
       "name": "Step 5 Preview",
-      "provider": "other",
+      "provider": "stepfun",
       "category": "open",
       "status": "active",
       "released": null,
@@ -93,7 +103,7 @@
     {
       "id": "ling-3-1-flash",
       "name": "Ling 3.1 Flash",
-      "provider": "other",
+      "provider": "ant-group",
       "category": "open",
       "status": "active",
       "released": null,
