@@ -112,6 +112,8 @@ select { font: inherit; color: var(--ink); background: var(--surface); border: 1
 .table-wrap { overflow-x: auto; margin: 0 -4px; }
 .board { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .board th { text-align: left; font-weight: 500; color: var(--muted); font-size: 12px; padding: 6px 8px; border-bottom: 1px solid var(--axis); white-space: nowrap; cursor: pointer; user-select: none; }
+.board th .th-label { text-decoration: underline dotted var(--axis); text-underline-offset: 3px; }
+.board th:hover .th-label { color: var(--ink-2); }
 .board th[aria-sort="descending"]::after { content: " ↓"; }
 .board th[aria-sort="ascending"]::after { content: " ↑"; }
 .board td { padding: 8px; border-bottom: 1px solid var(--grid); vertical-align: middle; }
@@ -184,7 +186,7 @@ select { font: inherit; color: var(--ink); background: var(--surface); border: 1
 .news .k { font-size: 14px; line-height: 1.3; text-align: center; }
 .news .m { color: var(--muted); font-size: 12px; }
 
-.tip { position: fixed; z-index: 10; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,.12); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; max-width: 260px; }
+.tip { position: fixed; z-index: 10; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,.12); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; max-width: 300px; }
 .tip .tv { font-weight: 600; font-size: 14px; }
 .tip .tl { color: var(--ink-2); }
 .tip .tm { color: var(--muted); font-size: 11.5px; }
