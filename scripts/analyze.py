@@ -137,7 +137,7 @@ def research(client: anthropic.Anthropic, today: str, digest: str) -> str:
 
 Search the web for developments from roughly the last 7 days (emphasize the last 48 hours) on:
 1. New frontier or notable open-weight model releases (any lab: Anthropic, OpenAI, Google, xAI, Meta, \
-Mistral, DeepSeek, Qwen, Z.ai, Moonshot, Xiaomi, etc.) and new gated cyber-specific variants or access programs.
+Mistral, IBM (Granite), DeepSeek, Qwen, Z.ai, Moonshot, Xiaomi, etc.) and new gated cyber-specific variants or access programs.
 2. Newly published cyber benchmark results (ExploitGym, ExploitBench, CyberGym, Cybench, CyScenarioBench, \
 CAISI/AISI evaluations, system cards) for tracked or new models.
 3. Incidents: models escaping sandboxes or acting outside containment, models used by threat actors, \

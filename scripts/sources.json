@@ -95,7 +95,8 @@
     "Mythos",
     "GPT-6",
     "Gemini cyber",
-    "open weights cyber"
+    "open weights cyber",
+    "IBM Granite"
   ],
   "reddit": [],
   "bluesky_queries": [
@@ -103,7 +104,8 @@
     "sandbox escape",
     "Mythos",
     "GPT-6 Astra",
-    "AI zero-day"
+    "AI zero-day",
+    "IBM Granite"
   ],
   "huggingface_search": [
     "cyber",
