@@ -92,6 +92,13 @@ class ProviderTake(BaseModel):
     take: str
 
 
+class CategoryChange(BaseModel):
+    model_id: str
+    category: Literal["ga", "gated", "open"]
+    note: str
+    source_url: str
+
+
 class TrendPoint(BaseModel):
     indicator_id: str
     date: str
@@ -108,6 +115,7 @@ class DailyUpdate(BaseModel):
     headlines: list[Headline]
     provider_takes: list[ProviderTake]
     trend_points: list[TrendPoint]
+    category_changes: list[CategoryChange]
 
 
 SYSTEM = """You maintain a public dashboard that compares the cyber capabilities of frontier AI models \
@@ -120,7 +128,7 @@ over aggregators. Distinguish developer self-reported numbers from independent e
 def _registry_digest(models: dict, benchmarks: dict, incidents: dict, perception: dict) -> str:
     return json.dumps({
         "providers": sorted(models["providers"]),
-        "models": [{k: m.get(k) for k in ("id", "name", "provider", "category", "released", "aliases")}
+        "models": [{k: m.get(k) for k in ("id", "name", "provider", "category", "released", "aliases", "watch") if m.get(k) is not None}
                    for m in models["models"]],
         "benchmarks": [{k: b[k] for k in ("id", "name", "kind", "unit")} for b in benchmarks["benchmarks"]],
         "known_scores": [f"{s['model']}|{s['benchmark']}|{s['value']}" for s in benchmarks["scores"]],
@@ -137,7 +145,7 @@ def research(client: anthropic.Anthropic, today: str, digest: str) -> str:
 
 Search the web for developments from roughly the last 7 days (emphasize the last 48 hours) on:
 1. New frontier or notable open-weight model releases (any lab: Anthropic, OpenAI, Google, xAI, Meta, \
-Mistral, IBM (Granite), DeepSeek, Qwen, Z.ai, Moonshot, Xiaomi, etc.) and new gated cyber-specific variants or access programs.
+Mistral, IBM (Granite), DeepSeek, Qwen, Z.ai, Moonshot, Xiaomi, Baidu (ERNIE), ByteDance (Seed), Tencent (Hunyuan), Qihoo 360, Shanghai AI Lab, StepFun, Ant Group (Ling), etc.) and new gated cyber-specific variants or access programs.
 2. Newly published cyber benchmark results (ExploitGym, ExploitBench, CyberGym, Cybench, CyScenarioBench, \
 CAISI/AISI evaluations, system cards) for tracked or new models.
 3. Incidents: models escaping sandboxes or acting outside containment, models used by threat actors, \
@@ -220,6 +228,9 @@ of what people are saying and 1-3 source links. Skip models with no new signal.
 - provider_takes: refresh the one-sentence-or-two takes for openai, anthropic, google, and open (open-weight \
 ecosystem) only if the landscape changed; otherwise return an empty list.
 - trend_points: new values for indicator ids aisi_doubling_months or open_weight_lag_months only.
+- category_changes: tracked models whose access has changed, such as weights becoming publicly downloadable \
+(category "open") or a gated model becoming generally available ("ga"). Check every model that has a "watch" \
+field. Only report a change the source states as done, not one that is promised or planned.
 - run_summary: 1-2 sentences on what changed today.
 Use only model ids from the registry or from new_models."""
     # The DailyUpdate schema is too large for constrained decoding ("compiled grammar is too
