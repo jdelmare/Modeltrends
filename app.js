@@ -622,11 +622,50 @@
     });
   }
 
+  // ---------- section nav ----------
+  // Highlights the section being read: the last one whose top has scrolled past the reading line
+  // (just below the sticky bar on narrow screens), or the last section once the page bottom is reached.
+  function initSectionNav() {
+    const nav = document.querySelector(".sidenav");
+    if (!nav) return;
+    const links = [...nav.querySelectorAll("a[href^='#']")];
+    const targets = links.map((a) => document.getElementById(a.getAttribute("href").slice(1)));
+    // Side-by-side sections share a top edge, so after a click the clicked link stays active
+    // until the reader scrolls on their own.
+    let frame = 0, pinned = -1;
+    links.forEach((a, i) => a.addEventListener("click", () => { pinned = i; schedule(); }));
+    const unpin = () => { pinned = -1; };
+    for (const ev of ["wheel", "touchmove", "keydown"]) addEventListener(ev, unpin, { passive: true });
+    const update = () => {
+      frame = 0;
+      const line = (getComputedStyle(nav).position === "sticky" && nav.getBoundingClientRect().width > innerWidth * 0.8
+        ? nav.getBoundingClientRect().bottom : 0) + 80;
+      let active = -1;
+      const tops = targets.map((t) => (t ? t.getBoundingClientRect().top : Infinity));
+      tops.forEach((top, i) => { if (top <= line) active = i; });
+      // Side-by-side cards share a top edge; the left one (earlier in reading order) wins.
+      while (active > 0 && Math.abs(tops[active - 1] - tops[active]) < 2) active--;
+      if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) active = targets.length - 1;
+      if (pinned >= 0) active = pinned;
+      links.forEach((a, i) => (i === active ? a.setAttribute("aria-current", "location") : a.removeAttribute("aria-current")));
+      const cur = links[active], ul = nav.querySelector("ul");
+      if (cur && ul.scrollWidth > ul.clientWidth) {
+        const l = cur.offsetLeft - ul.offsetLeft, r = l + cur.offsetWidth;
+        if (l < ul.scrollLeft || r > ul.scrollLeft + ul.clientWidth) ul.scrollTo({ left: l - 16 });
+      }
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    addEventListener("scroll", schedule, { passive: true });
+    addEventListener("resize", schedule);
+    update();
+  }
+
   initTheme();
   load().then(() => {
     renderMeta();
     renderBenchSelect();
     renderAll();
+    initSectionNav();
     let t;
     addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => { renderTimeline(); renderBench(); }, 150); });
   }).catch((e) => {
