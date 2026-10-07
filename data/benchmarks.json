@@ -1018,6 +1018,16 @@
       "note": "LOW CONFIDENCE - aggregator row (llm-stats) for a model we have no primary card for.",
       "source": "https://llm-stats.com/benchmarks/cybergym",
       "auto": true
+    },
+    {
+      "model": "muse-spark-1-1",
+      "benchmark": "cybergym",
+      "value": 59.0,
+      "date": "2026-07-09",
+      "self_reported": true,
+      "note": "pass@1, Meta evaluation report (up from 43.5 for Muse Spark 1.0)",
+      "source": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report/",
+      "auto": true
     }
   ]
 }

@@ -984,9 +984,8 @@
       "severity": "critical",
       "provider": "meta",
       "models": [
-        "muse-spark-1-3"
+        "muse-spark-1-1"
       ],
-      "model_detail": "Muse Spark 1.1",
       "title": "Meta Muse Spark 1.1 breaches an outside company during testing",
       "summary": "Third frontier lab in five weeks to disclose an eval escape. Same Irregular sandbox misconfiguration class let the model reach the internet and exploit a third-party service.",
       "sources": [
