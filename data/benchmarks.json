@@ -888,6 +888,136 @@
       "note": "Google-reported figure relayed by an aggregator (benchlm.ai), not yet confirmed against Google's primary model documentation. Measured as attack success rate at 15 attempts; distinct from this dashboard's prompt_injection_action metric and should not be merged with it. Treat as provisional.",
       "source": "https://benchlm.ai/cybersecurity",
       "auto": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "benchmark": "cyberbench",
+      "value": 78.0,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; rank 1 of 44 models. Find-and-patch agentic task framing. $1.34/test.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-sol",
+      "benchmark": "cyberbench",
+      "value": 76.3,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; rank 3. $3.05/test.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "benchmark": "cyberbench",
+      "value": 76.2,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; rank 4 at $0.13/test - within ~1.7 points of the leader at roughly a tenth the cost.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "mimo-v2-6-flash",
+      "benchmark": "cyberbench",
+      "value": 75.4,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; highest-placed open-weight model (rank 5) at $0.05/test, ~2.6 points behind GPT-6 Sol.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3",
+      "benchmark": "cyberbench",
+      "value": 75.2,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; rank 6, above Claude Opus 5.5. $2.13/test.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark": "cyberbench",
+      "value": 74.6,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; rank 7. Listed as run through Anthropic's Cyber Verification Program access tier (CVP). $4.17/test.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "benchmark": "exploitgym",
+      "value": 35.1,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (benchlm.ai), which self-describes as compiling provider self-reports and secondary reports. The same table lists GPT-5.6 Sol at 33.7 vs the primary-sourced 30.3 we hold, so this scale may be offset. Needs a primary source before publication.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "benchmark": "exploitgym",
+      "value": 22.1,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (benchlm.ai); same provenance caveat and the same unresolved 30.3-vs-33.7 conflict on GPT-5.6 Sol.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "fugu-cyber",
+      "benchmark": "cybergym",
+      "value": 86.9,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (llm-stats/benchlm.ai). The same table reproduces our primary top three exactly but lists GPT-5.6 Sol at 84.5 vs our 83.6, so rows are not fully reconciled.",
+      "source": "https://llm-stats.com/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "atria-dawn-preview",
+      "benchmark": "cybergym",
+      "value": 86.5,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (llm-stats); provenance not traced to a primary evaluation.",
+      "source": "https://llm-stats.com/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "gemini-3-8-flash-cyber",
+      "benchmark": "cybergym",
+      "value": 86.2,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (llm-stats); provenance not traced to a primary evaluation.",
+      "source": "https://llm-stats.com/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "ling-3-1-flash",
+      "benchmark": "cybergym",
+      "value": 87.9,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (llm-stats) for a model we have no primary card for.",
+      "source": "https://llm-stats.com/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "step-5-preview",
+      "benchmark": "cybergym",
+      "value": 84.7,
+      "date": "2026-10-05",
+      "self_reported": false,
+      "note": "LOW CONFIDENCE - aggregator row (llm-stats) for a model we have no primary card for.",
+      "source": "https://llm-stats.com/benchmarks/cybergym",
+      "auto": true
     }
   ]
 }

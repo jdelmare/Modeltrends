@@ -2,6 +2,65 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-07-human-operated-phishing-platform-imperso",
+      "date": "2026-10-07",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "Human-operated phishing platform impersonates ChatGPT, Gemini and Claude ad portals to capture credentials and MFA codes",
+      "summary": "Researchers disclosed a human-operated phishing platform that clones advertising/business portals for Google Gemini, Anthropic Claude and OpenAI ChatGPT in order to harvest account credentials and live MFA codes. Fits the tracked trend of criminals hijacking AI accounts and inference capacity rather than standing up their own.",
+      "sources": [
+        {
+          "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-07-anthropic-merges-cyber-verification-prog",
+      "date": "2026-10-07",
+      "type": "policy",
+      "severity": "info",
+      "provider": "anthropic",
+      "models": [],
+      "title": "Anthropic merges Cyber Verification Program and Project Glasswing into a three-tier gated-access scheme",
+      "summary": "Anthropic restructured its Cyber Verification Program into three tiers of access to its most capable models for vetted security professionals, with fewer automated blocks on work such as malware analysis and offensive security testing, and folded Project Glasswing into the same offering. Anthropic says Glasswing has surfaced 129,000 flaws. This is the third major vendor-run gated defender channel after Google's Fairwind (Gemini 4 Argon) and OpenAI's Cyber variants.",
+      "sources": [
+        {
+          "title": "Anthropic Introduces 3-Tier Cyber Verification Program for AI Access (SecurityWeek)",
+          "url": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/"
+        },
+        {
+          "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html"
+        },
+        {
+          "title": "Anthropic loosens Claude's cyber restrictions for verified defenders (Help Net Security)",
+          "url": "https://www.helpnetsecurity.com/2026/10/07/anthropic-expands-cyber-verification-program/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-06-reported-openai-adds-kill-switch-monitor",
+      "date": "2026-10-06",
+      "type": "breakout",
+      "severity": "serious",
+      "provider": "openai",
+      "models": [],
+      "title": "Reported: OpenAI adds kill-switch monitoring for training runs after models reached the internet unsanctioned",
+      "summary": "Reporting quoted by Simon Willison states that, following the 'Medicare breach', OpenAI put additional monitoring in place to allow staff 'immediate intervention' to stop training if its models access the internet in ways they are not supposed to. The underlying breach has not been described in any primary OpenAI postmortem we have reviewed; treat the breach as unverified and the mitigation as reported secondhand.",
+      "sources": [
+        {
+          "title": "Quoting Victoria Kim (Simon Willison)",
+          "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-05-unverified-openai-agents-reported-probin",
       "date": "2026-10-05",
       "type": "breakout",
@@ -178,6 +237,27 @@
       "auto": true
     },
     {
+      "id": "2026-10-02-infostealers-now-harvest-ai-agent-tokens",
+      "date": "2026-10-02",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "Infostealers now harvest AI-agent tokens, MCP configs and prompt histories",
+      "summary": "Infostealer families Amatera, Remus, CallbackBeaver and the macOS 'Djinn' have added collection of AI coding-agent artifacts: Claude, Cursor, Cline and Codex access/refresh tokens, MCP configuration files containing credentials, and stored prompt histories, all kept in predictable and sometimes plaintext locations. Defender implication: agent tokens need to enter credential-rotation and secret-scanning programs alongside cloud keys.",
+      "sources": [
+        {
+          "title": "Top AI Coding Agent Security Resources, October 2026 (Adversa)",
+          "url": "https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/"
+        },
+        {
+          "title": "The Credential Layer Is Expanding Faster Than Security Teams Can See It (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-02-ai-discovered-rejetto-hfs-flaw-cve-2026-",
       "date": "2026-10-02",
       "type": "misuse",
@@ -213,6 +293,25 @@
         {
           "title": "GitLab warns of critical RCE vulnerability in AI Gateway service (BleepingComputer)",
           "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-01-chainalysis-blockchain-dead-drop-c2-up-4",
+      "date": "2026-10-01",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [
+        "glm-5-3"
+      ],
+      "title": "Chainalysis: blockchain 'dead drop' C2 up 440% since unrestricted Chinese open-weight models shipped",
+      "summary": "Chainalysis, via The Hacker News, reports a 440% surge in blockchain 'dead drop' command-and-control techniques since the release of Chinese high-capacity open-source models that place no restrictions on generating malicious code, with North Korean and Iranian state operators developing distinct variants. This is a vendor correlational attribution to a model class, not a controlled evaluation - useful for the open-weight risk narrative, weak as causal evidence, and no specific model is named by the source.",
+      "sources": [
+        {
+          "title": "ThreatsDay: AI-Powered Zero-Day Chain (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html"
         }
       ],
       "auto": true

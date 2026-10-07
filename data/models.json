@@ -43,6 +43,86 @@
   },
   "models": [
     {
+      "id": "step-5-preview",
+      "name": "Step 5 Preview",
+      "provider": "other",
+      "category": "open",
+      "status": "active",
+      "released": null,
+      "access": "StepFun preview release; weight availability not confirmed from a primary source.",
+      "aliases": [
+        "Step 5 Preview",
+        "StepFun Step 5"
+      ],
+      "notes": "Added only because it appears on third-party CyberGym leaderboards; category and release date need a primary source before publishing.",
+      "sources": [
+        {
+          "title": "CyberGym leaderboard (llm-stats)",
+          "url": "https://llm-stats.com/benchmarks/cybergym"
+        }
+      ],
+      "auto_added": "2026-10-07",
+      "index": {
+        "index": 65.6,
+        "n": 1
+      }
+    },
+    {
+      "id": "ling-3-1-flash",
+      "name": "Ling 3.1 Flash",
+      "provider": "other",
+      "category": "open",
+      "status": "active",
+      "released": null,
+      "access": "Open weights (InclusionAI / Ant Group).",
+      "aliases": [
+        "Ling 3.1 Flash"
+      ],
+      "notes": "Added only because it appears on third-party CyberGym leaderboards; no primary model card or lab post reviewed. Provenance of its benchmark row is unverified (aggregator-sourced).",
+      "sources": [
+        {
+          "title": "CyberGym leaderboard (llm-stats)",
+          "url": "https://llm-stats.com/benchmarks/cybergym"
+        }
+      ],
+      "auto_added": "2026-10-07",
+      "index": {
+        "index": 67.0,
+        "n": 1
+      }
+    },
+    {
+      "id": "mistral-large-4",
+      "name": "Mistral Large 4 (\"Le Chonk\")",
+      "provider": "other",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-10-06",
+      "access": "Preview for developers, vetted cybersecurity leaders and state authorities from 2026-10-06; open weights promised 2026-10-27.",
+      "aliases": [
+        "Le Chonk",
+        "ML4",
+        "Mistral Large 4"
+      ],
+      "notes": "Mistral AI (provider not yet in registry). ~1T parameters per CNBC, though secondary outlets report 675B MoE - treat parameter count as unconfirmed. Mistral self-reports state-of-the-art performance on 'critical workloads' including cyber defense and claims it beats Chinese models on cybersecurity; no benchmark numbers and no model card published yet, and CNBC notes it still lags the frontier on coding. Recategorize to 'open' if weights ship on 10-27.",
+      "sources": [
+        {
+          "title": "Mistral AI releases Le Chonk model (CNBC)",
+          "url": "https://www.cnbc.com/2026/10/06/mistral-ai-model-le-chonk.html"
+        },
+        {
+          "title": "Mistral Large 4 launch details (Rappler)",
+          "url": "https://www.rappler.com/technology/mistral-large-4-ai-model-launch/"
+        },
+        {
+          "title": "Mistral Large 4 discussion (Simon Willison / HN)",
+          "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/"
+        }
+      ],
+      "auto_added": "2026-10-07",
+      "index": null
+    },
+    {
       "id": "beam",
       "name": "Beam (Reflection AI)",
       "provider": "other",
@@ -168,7 +248,10 @@
         }
       ],
       "auto_added": "2026-10-02",
-      "index": null
+      "index": {
+        "index": 63.1,
+        "n": 1
+      }
     },
     {
       "id": "gemini-4-argon",
@@ -483,7 +566,10 @@
         }
       ],
       "auto_added": "2026-09-28",
-      "index": null
+      "index": {
+        "index": 50.8,
+        "n": 1
+      }
     },
     {
       "id": "fugu-cyber",
@@ -504,7 +590,10 @@
         }
       ],
       "auto_added": "2026-09-28",
-      "index": null
+      "index": {
+        "index": 66.6,
+        "n": 1
+      }
     },
     {
       "id": "atria-dawn-preview",
@@ -529,7 +618,10 @@
         }
       ],
       "auto_added": "2026-09-28",
-      "index": null
+      "index": {
+        "index": 66.4,
+        "n": 1
+      }
     },
     {
       "id": "mimo-v2-6-pro",
@@ -853,8 +945,8 @@
         }
       ],
       "index": {
-        "index": 56.8,
-        "n": 1
+        "index": 67.0,
+        "n": 2
       }
     },
     {
@@ -1100,5 +1192,5 @@
       }
     }
   ],
-  "updated": "2026-10-06T13:23+00:00"
+  "updated": "2026-10-07T13:32+00:00"
 }
