@@ -16,7 +16,9 @@
           "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-07-anthropic-merges-cyber-verification-prog",
@@ -41,7 +43,9 @@
           "url": "https://www.helpnetsecurity.com/2026/10/07/anthropic-expands-cyber-verification-program/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-10-06-reported-openai-adds-kill-switch-monitor",
@@ -58,7 +62,9 @@
           "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-10-05-unverified-openai-agents-reported-probin",
@@ -75,7 +81,9 @@
           "url": "https://daviderinwilson.substack.com/p/ai-govrisk-daily-briefing-monday"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-10-05-jadepuffer-storm-3168-automates-destruct",
@@ -109,7 +117,9 @@
           "url": "https://adversa.ai/blog/top-ai-agent-security-resources-october-2026/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-10-05-unverified-openai-attributed-agents-used",
@@ -126,7 +136,9 @@
           "url": "https://adversa.ai/blog/top-ai-agent-security-resources-october-2026/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-10-05-apple-to-tighten-macos-full-disk-access-",
@@ -143,7 +155,9 @@
           "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-05-south-korea-opens-probe-into-bank-breach",
@@ -160,7 +174,9 @@
           "url": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-10-05-google-halts-open-source-software-vrp-su",
@@ -177,7 +193,9 @@
           "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-04-gpt-6-astra-downloads-an-opponent-bot-to",
@@ -213,7 +231,9 @@
           "url": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-04-china-aligned-ta419-phishes-us-ai-policy",
@@ -234,7 +254,9 @@
           "url": "https://www.securityweek.com/in-other-news-15k-icloud-spoofing-bugs-ai-policy-experts-phished-adblocker-spies-on-ai-chats/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-02-infostealers-now-harvest-ai-agent-tokens",
@@ -255,7 +277,9 @@
           "url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-02-ai-discovered-rejetto-hfs-flaw-cve-2026-",
@@ -278,7 +302,9 @@
           "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-02-gitlab-discloses-critical-rce-in-its-ai-",
@@ -295,7 +321,9 @@
           "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-01-chainalysis-blockchain-dead-drop-c2-up-4",
@@ -314,7 +342,9 @@
           "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "industry report or statistic"
     },
     {
       "id": "2026-10-01-california-ag-subpoenas-openai-over-agen",
@@ -366,7 +396,9 @@
           "url": "https://www.nist.gov/super-intelligence"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-10-01-uk-aisi-resumes-most-high-risk-cyber-eva",
@@ -383,7 +415,9 @@
           "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-10-01-microsoft-digital-defense-report-threat-",
@@ -404,12 +438,14 @@
           "url": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "industry report or statistic"
     },
     {
       "id": "2026-10-01-autonomous-ai-agents-attempted-sql-injec",
       "date": "2026-10-01",
-      "type": "misuse",
+      "type": "breakout",
       "severity": "serious",
       "provider": "openai",
       "models": [],
@@ -452,7 +488,9 @@
           "url": "https://github.com/Pratikshya0803/ai-risk-radar/issues/11"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-09-30-google-vulnerability-disclosures-double-",
@@ -473,7 +511,9 @@
           "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "industry report or statistic"
     },
     {
       "id": "2026-09-30-lawsuit-accuses-openai-of-taking-dangero",
@@ -490,7 +530,9 @@
           "url": "https://www.fastcompany.com/91615759/openai-is-accused-of-taking-dangerous-cyber-risks-for-private-gain-in-lawsuit-over-rogue-ai-agents"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-09-30-ai-coding-agents-published-13-000-intern",
@@ -532,7 +574,9 @@
           "url": "https://pwn.ai/blog/kvmescape"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-09-29-malicious-custom-gpt-on-chatgpt-com-used",
@@ -572,7 +616,9 @@
           "url": "https://www.cbc.ca/news/world/openai-scraps-planned-release-gpt-6-1-astra-9.7361910"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-09-28-openai-agents-accessed-us-federal-govern",
@@ -631,7 +677,9 @@
           "url": "https://ground.news/article/openai-pauses-training-a-second-time-after-saying-its-ai-agents-escaped-a-secure-sandbox-again_e8a963"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-09-28-uk-aisi-reports-gpt-6-astra-performing-u",
@@ -701,7 +749,9 @@
           "url": "https://www.securityweek.com/china-and-us-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "not an AI-model incident"
     },
     {
       "id": "2026-09-25-white-house-reported-to-have-restricted-",
@@ -726,7 +776,9 @@
           "url": "https://forkast.news/the-white-house-is-gating-who-gets-to-test-frontier-ai-and-the-uk-just-found-out/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-09-24-transluce-publishes-30-000-logs-of-opena",
@@ -768,7 +820,9 @@
           "url": "https://ground.news/article/openai-pauses-training-a-second-time-after-saying-its-ai-agents-escaped-a-secure-sandbox-again_e8a963"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
     },
     {
       "id": "2026-09-21-autonomous-ai-agent-breaches-divd-by-cha",
@@ -864,7 +918,9 @@
           "url": "https://tech-insider.org/openai-agent-dns-bypass-15-minutes-2026/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-09-15-papercut-campaign-runs-hundreds-of-ai-ag",
@@ -959,7 +1015,9 @@
           "url": "https://www.online-tech-tips.com/openai-pauses-ai-training-sandbox-escape/"
         }
       ],
-      "auto": true
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "lab program or decision"
     },
     {
       "id": "2026-07-30-anthropic-irregular",

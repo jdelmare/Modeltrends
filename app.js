@@ -91,6 +91,8 @@
     D.scoresBy = {};
     for (const sc of D.benchmarks.scores) (D.scoresBy[sc.model] ||= []).push(sc);
     D.benchById = Object.fromEntries(D.benchmarks.benchmarks.map((b) => [b.id, b]));
+    // Entries the pipeline or a reviewer rejected stay in the file (so they're not re-added) but aren't shown.
+    D.incidents.incidents = (D.incidents.incidents || []).filter((i) => !i.excluded);
     D.incBy = {};
     D.incByProv = {};
     for (const inc of D.incidents.incidents) {

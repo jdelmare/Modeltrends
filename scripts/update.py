@@ -119,13 +119,18 @@ def merge(upd, today: str, models: dict, benchmarks: dict, incidents: dict,
         if not srcs or not date or any(s["url"] in seen_urls for s in srcs) or slug(inc.title) in seen_titles:
             continue
         provider = slug(inc.provider)
-        incidents["incidents"].insert(0, {
+        entry = {
             "id": f"{date}-{slug(inc.title)[:40]}", "date": date, "type": inc.type,
             "severity": inc.severity, "provider": provider if provider in models["providers"] else "other",
             "models": [m for m in inc.model_ids if m in known],
             "title": inc.title, "summary": inc.summary, "sources": srcs, "auto": True,
-        })
-        changes.append(f"incident: {inc.title}")
+        }
+        # Unconfirmed reports are kept but hidden, so they're not re-reported every day;
+        # set "excluded": false (or delete the key) once a report is confirmed.
+        if not inc.confirmed:
+            entry.update(excluded=True, excluded_reason="unconfirmed")
+        incidents["incidents"].insert(0, entry)
+        changes.append(f"incident{'' if inc.confirmed else ' (unconfirmed, hidden)'}: {inc.title}")
     incidents["incidents"].sort(key=lambda i: i["date"], reverse=True)
 
     a = PERCEPTION_SMOOTHING

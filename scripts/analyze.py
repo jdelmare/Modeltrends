@@ -66,6 +66,7 @@ class Incident(BaseModel):
     title: str
     summary: str
     sources: list[SourceRef]
+    confirmed: bool
 
 
 class PerceptionUpdate(BaseModel):
@@ -123,7 +124,8 @@ def _registry_digest(models: dict, benchmarks: dict, incidents: dict, perception
                    for m in models["models"]],
         "benchmarks": [{k: b[k] for k in ("id", "name", "kind", "unit")} for b in benchmarks["benchmarks"]],
         "known_scores": [f"{s['model']}|{s['benchmark']}|{s['value']}" for s in benchmarks["scores"]],
-        "known_incidents": [f"{i['date']} {i['title']}" for i in incidents["incidents"]],
+        "known_incidents": [f"{i['date']} {i['title']}" + (" [rejected]" if i.get("excluded") else "")
+                            for i in incidents["incidents"]],
         "current_perception": {k: {x: v.get(x) for x in ("capability", "concern", "tone")}
                                for k, v in perception["models"].items()},
     }, indent=None)
@@ -199,8 +201,15 @@ Otherwise make a new slug id. benchmark_kind is "capability" only for measures o
 skill (exploitation, vulnerability discovery, CTFs, pentesting); safety or behavior measures (refusals, \
 jailbreaks, prompt-injection compliance, working around restrictions) are "safeguard". Set higher_is_better \
 to false when a higher number is worse. Each needs a source_url.
-- incidents: only ones not in known_incidents. breakout = acted outside containment; misuse = used by threat \
-actors; policy = access restriction/regulatory action. date = YYYY-MM-DD (use the first of the month when only \
+- incidents: only ones not in known_incidents (which also lists items already rejected; never re-report \
+those). An incident must directly involve an AI model or agent: breakout = a model or agent acted outside its \
+sanctioned scope (escaped a sandbox, reached real systems, took unauthorized actions); misuse = threat actors \
+used AI models or agents in an operation; policy = a government or regulator restricted, investigated or \
+compelled action over specific models or their incidents. Do NOT report general security news, vulnerabilities \
+in AI products, attacks that merely target AI users or companies, lab program launches or reorganizations, \
+industry reports, statistics, or speculation. confirmed = true only when the lab, an evaluator, a government \
+body, or a named security researcher or credible outlet states it as fact; anything described as reported, \
+alleged, suspected or unverified is confirmed = false. date = YYYY-MM-DD (use the first of the month when only \
 the month is known). provider = one of the registry's providers, or "other" for cross-industry or government \
 items. model_ids = every tracked model the sources name, including superseded ones; add a model the sources \
 name that the registry lacks to new_models so it can be linked. Leave model_ids empty only for lab-wide reports.
