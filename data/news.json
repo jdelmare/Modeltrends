@@ -2,6 +2,89 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-08",
+      "kind": "article",
+      "title": "Anthropic's new budget model gets much better at ignoring hidden commands",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+      "models": [
+        "claude-haiku-5-5"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "official",
+      "title": "OWASP GenAI and Agentic AI Exploit Roundup Q3 2026 published (contents not yet reviewed)",
+      "source": "OWASP GenAI Security Project",
+      "url": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "social",
+      "title": "How Long Until AI Hacks Everything?",
+      "source": "The Atlantic (via Hacker News)",
+      "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
+      "models": []
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "official",
+      "title": "Claude Haiku 5.5 system card: small-model cyber capability far behind frontier tier (3.3% CyScenarioBench)",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5",
+        "claude-mythos-5-1",
+        "claude-sonnet-5-5",
+        "claude-sonnet-5"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "official",
+      "title": "GPT-6 October 2026 update: Sol and Luna go global across free and paid tiers, with documented safety regressions vs September builds",
+      "source": "OpenAI Deployment Safety",
+      "url": "https://deploymentsafety.openai.com/gpt-6-october",
+      "models": [
+        "gpt-6-sol",
+        "gpt-6-luna",
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "official",
+      "title": "GPT-6 and Intelligent UI for everyone",
+      "source": "OpenAI (688 points on Hacker News)",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "models": [
+        "gpt-6-sol",
+        "gpt-6-luna"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "article",
+      "title": "Anthropic Gives Vetted Defenders Fewer Claude Guardrails",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
+      "models": [
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "claude-mythos-5-1"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "social",
+      "title": "Ask HN: Which frontier model can do code security reviews",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49996594",
+      "models": []
+    },
+    {
       "date": "2026-10-07",
       "kind": "article",
       "title": "Anthropic Introduces 3-Tier Cyber Verification Program for AI Access",
@@ -36,6 +119,37 @@
       "source": "The Register",
       "url": "https://www.theregister.com/public-sector/2026/10/07/south_korean_president_calls_for_creation_of_tools_that_stop_all_cyber_attacks/5301533",
       "models": []
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "official",
+      "title": "Mistral Large 4 ships with a vetted reduced-moderation cyber build for security partners and state authorities",
+      "source": "Mistral AI",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "models": [
+        "mistral-large-4"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "article",
+      "title": "Reflection's Beam trails top open models on coding tests but claims lower inference compute — and the weights aren't out",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/06/reflections-beam-trails-top-open-models-on-coding-tests-but-claims-lower-inference-compute/",
+      "models": [
+        "beam"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "official",
+      "title": "Cybersecurity-tuned derivatives of GLM-5.3 and GLM-5.3-Flash appear on Hugging Face",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/satgeze/GLM-5.3-Flash-CYBERSECURITY-EXL3-TR3-3.5bpw",
+      "models": [
+        "glm-5-3",
+        "glm-5-3-flash"
+      ]
     },
     {
       "date": "2026-10-06",
@@ -431,111 +545,7 @@
       "source": "arXiv cs.CR",
       "url": "https://arxiv.org/abs/2610.02206v1",
       "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "PwC: only 22% of leaders would use fully autonomous AI for cyber defense; attacks on AI systems top the unreadiness list",
-      "source": "SecurityWeek / Help Net Security",
-      "url": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "social",
-      "title": "GPT-6 Astra breaks unsolved cipher to one of Napoleon's generals",
-      "source": "Hacker News",
-      "url": "https://twitter.com/CarterWChurch/status/2105167567706816690",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "article",
-      "title": "Attackers abuse ChatGPT Custom GPTs to deliver a RAT via ClickFix lures",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-      "models": []
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "official",
-      "title": "Google announces Gemini 4 Argon, rolled out first to trusted cyber defenders via the Fairwind Program",
-      "source": "Google",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "models": [
-        "gemini-4-argon",
-        "gemini-3-8-flash-cyber"
-      ]
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "article",
-      "title": "DIVD says chained Zammad zero-days enabled an AI-driven network breach",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-      "models": []
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "article",
-      "title": "AI coding agents exposed 13,000+ internal images, including billing records, in public GitHub repos",
-      "source": "The Hacker News / Glow Security",
-      "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
-      "models": []
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "social",
-      "title": "Vulnerability disclosures double to ~10,000 per month as AI fuels exploitation",
-      "source": "The Record (via Hacker News)",
-      "url": "https://therecord.media/google-vulnerabilities-cyberattacks-ai",
-      "models": []
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "article",
-      "title": "Lawsuit accuses OpenAI of taking dangerous cyber risks for private gain over rogue AI agents",
-      "source": "Fast Company",
-      "url": "https://www.fastcompany.com/91615759/openai-is-accused-of-taking-dangerous-cyber-risks-for-private-gain-in-lawsuit-over-rogue-ai-agents",
-      "models": []
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "social",
-      "title": "Show HN: Open-source model routing for coding agents at Astra-level performance",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49911500",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-30",
-      "kind": "social",
-      "title": "GPT-6.1 Sol replaces GPT-6 Sol after just 7 days, with near-Astra intelligence",
-      "source": "Hacker News",
-      "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence",
-      "models": [
-        "gpt-6-1-astra",
-        "gpt-6-sol",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-09-29",
-      "kind": "official",
-      "title": "GLM-5.3 and the spread of advanced cyber capabilities (Frontier Red Team report)",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
-      "models": [
-        "glm-5-3",
-        "glm-5-3-flash",
-        "claude-mythos-preview",
-        "claude-opus-5"
-      ]
     }
   ],
-  "updated": "2026-10-07T13:32+00:00"
+  "updated": "2026-10-08T13:38+00:00"
 }

@@ -200,6 +200,36 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-06"
+    },
+    {
+      "id": "v8_arbitrary_code_execution",
+      "name": "V8 arbitrary code execution (Anthropic internal)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-08"
+    },
+    {
+      "id": "cybench",
+      "name": "Cybench",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-08"
+    },
+    {
+      "id": "instruction_hierarchy_robustness",
+      "name": "Instruction-hierarchy / prompt-injection robustness",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-08"
     }
   ],
   "scores": [
@@ -1027,6 +1057,106 @@
       "self_reported": true,
       "note": "pass@1, Meta evaluation report (up from 43.5 for Muse Spark 1.0)",
       "source": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report/",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "cyscenariobench",
+      "value": 3.3,
+      "date": "2026-10-07",
+      "self_reported": true,
+      "note": "Anthropic system card, measured with cyber safeguards disabled via API. Same-card comparators match this dashboard exactly (Sonnet 5 0.7, Sonnet 5.5 46.1, Mythos 5.1 61.7, Opus 5.5 67.6), a good consistency check.",
+      "source": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "v8_arbitrary_code_execution",
+      "value": 1.0,
+      "date": "2026-10-08",
+      "self_reported": true,
+      "note": "Reported in the Haiku 5.5 system card as 4 successes out of 410 runs (~1.0%); percentage computed from the reported counts. Developer self-report, read out by Help Net Security.",
+      "source": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "cybench",
+      "value": 93.0,
+      "date": "2026-10-07",
+      "self_reported": true,
+      "note": "Mistral self-reported across the 40-task Cybench security set, relayed by Techzine; no independent replication and no per-task breakdown published.",
+      "source": "https://www.techzine.eu/news/applications/144809/mistral-large-4-is-europes-most-powerful-model/",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol",
+      "benchmark": "instruction_hierarchy_robustness",
+      "value": 100.0,
+      "date": "2026-10-07",
+      "self_reported": true,
+      "note": "October 2026 GPT-6 checkpoint (not the September build the rest of this dashboard's gpt-6-sol scores refer to). OpenAI's own update doc also reports statistically significant safety regressions for the October builds in several other categories.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-october",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "benchmark": "instruction_hierarchy_robustness",
+      "value": 99.8,
+      "date": "2026-10-07",
+      "self_reported": true,
+      "note": "October 2026 GPT-6 checkpoint; distinct from the September build scored elsewhere on this dashboard.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-october",
+      "auto": true
+    },
+    {
+      "model": "mimo-v2-6-pro",
+      "benchmark": "exploitbench",
+      "value": 47.9,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "AGGREGATOR (llm-stats leaderboard), not a primary source. Listed as top open-weight model. The same leaderboard lists GPT-5.6 Sol at 73.5 where the primary system card says 78.5, so its harness is likely not comparable to system-card figures; treat as low confidence.",
+      "source": "https://llm-stats.com/benchmarks/exploitbench",
+      "auto": true
+    },
+    {
+      "model": "claude-fable-5",
+      "benchmark": "exploitbench",
+      "value": 78.0,
+      "date": "2026-10-01",
+      "self_reported": false,
+      "note": "AGGREGATOR (llm-stats leaderboard), not a primary source; sits implausibly above primary-sourced Opus 5.5 (73.4) and is not comparable to system-card runs. Low confidence, logged pending a primary source.",
+      "source": "https://llm-stats.com/benchmarks/exploitbench",
+      "auto": true
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "benchmark": "cybergym",
+      "value": 83.3,
+      "date": "2026-10-03",
+      "self_reported": true,
+      "note": "AGGREGATOR (datalearner), which marks this entry as vendor self-report scraped from a model-card benchmark image. Weak sourcing; low confidence.",
+      "source": "https://www.datalearner.com/en/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3",
+      "benchmark": "cybergym",
+      "value": 80.0,
+      "date": "2026-10-03",
+      "self_reported": false,
+      "note": "AGGREGATOR (datalearner). Same leaderboard conflicts with primary sources elsewhere (GPT-5.6 Sol 84.5 vs 83.6 from the system card); treat as low confidence.",
+      "source": "https://www.datalearner.com/en/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "hy4-preview",
+      "benchmark": "cybergym",
+      "value": 78.4,
+      "date": "2026-10-03",
+      "self_reported": false,
+      "note": "AGGREGATOR (datalearner), no primary Tencent source located; low confidence.",
+      "source": "https://www.datalearner.com/en/benchmarks/cybergym",
       "auto": true
     }
   ]

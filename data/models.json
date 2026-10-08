@@ -76,6 +76,39 @@
   },
   "models": [
     {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "provider": "anthropic",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-07",
+      "access": "Generally available via Claude apps and API; cyber capability numbers in the system card were measured with cyber safeguards off via API. Blocked security professionals can apply to the Cyber Verification Program for reduced cyber-blocking classifiers.",
+      "aliases": [
+        "Haiku 5.5",
+        "Claude Haiku 5.5"
+      ],
+      "notes": "Anthropic's cheapest/fastest small model and first Haiku-class model with an adjustable effort setting. System card states it \"significantly outperformed Claude Haiku 4.5 but fell short of results achieved by Claude Opus 5.5, Claude Mythos 5.1, and even Claude Opus 5\" on cyber evaluations, and cites that gap as justification for lighter cyber safeguards than the Opus/Mythos tier. ExploitBench, ExploitGym and Binary Exploitation sections exist in the card but those figures are not yet extracted.",
+      "sources": [
+        {
+          "title": "Claude Haiku 5.5 (Anthropic)",
+          "url": "https://www.anthropic.com/claude-haiku-5-5"
+        },
+        {
+          "title": "Claude Haiku 5.5 system card",
+          "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card"
+        },
+        {
+          "title": "Anthropic's new budget model gets much better at ignoring hidden commands (Help Net Security)",
+          "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/"
+        }
+      ],
+      "auto_added": "2026-10-08",
+      "index": {
+        "index": 34.3,
+        "n": 1
+      }
+    },
+    {
       "id": "step-5-preview",
       "name": "Step 5 Preview",
       "provider": "stepfun",
@@ -159,7 +192,7 @@
       "id": "beam",
       "name": "Beam (Reflection AI)",
       "provider": "other",
-      "category": "open",
+      "category": "gated",
       "status": "active",
       "released": "2026-10-05",
       "access": "Announced 2026-10-05; weights and technical report not yet published, Apache 2.0 release stated for later in October 2026.",
@@ -177,8 +210,15 @@
           "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
         }
       ],
-      "auto_added": "2026-10-06",
-      "index": null
+      "auto_added": "2026-10-08",
+      "index": null,
+      "category_changed": {
+        "from": "open",
+        "to": "gated",
+        "date": "2026-10-08",
+        "note": "Correction, not a loosening: Reflection AI announced Beam with Apache 2.0 intent but has not published weights, and says safety eval results will follow in a later technical report. Reclassifying from 'open' to gated/announced until weights actually ship, consistent with the treatment of Muse Spark 1.2. All current Beam figures are vendor self-report with nothing to verify against.",
+        "source": "https://reflection.ai/blog/introducing-beam"
+      }
     },
     {
       "id": "glm-5-3-flash",
@@ -680,8 +720,8 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 67.0,
-        "n": 1
+        "index": 61.2,
+        "n": 2
       }
     },
     {
@@ -817,7 +857,10 @@
           "url": "https://www.anthropic.com/news/redeploying-fable-5"
         }
       ],
-      "index": null
+      "index": {
+        "index": 61.2,
+        "n": 1
+      }
     },
     {
       "id": "claude-mythos-preview",
@@ -1240,7 +1283,10 @@
           "url": "https://www.aikido.dev/blog/ai-model-benchmarks-aug-21-2026"
         }
       ],
-      "index": null
+      "index": {
+        "index": 63.1,
+        "n": 1
+      }
     },
     {
       "id": "kimi-k3",
@@ -1269,8 +1315,8 @@
         }
       ],
       "index": {
-        "index": 42.9,
-        "n": 1
+        "index": 54.7,
+        "n": 2
       },
       "auto_added": "2026-10-07"
     },
@@ -1402,7 +1448,10 @@
     },
     {
       "status": "active",
-      "index": null,
+      "index": {
+        "index": 63.0,
+        "n": 1
+      },
       "auto_added": "2026-10-07",
       "id": "hy4-preview",
       "name": "Hunyuan Hy4 Preview",
@@ -1480,5 +1529,5 @@
       ]
     }
   ],
-  "updated": "2026-10-07T13:32+00:00"
+  "updated": "2026-10-08T13:38+00:00"
 }
