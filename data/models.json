@@ -76,6 +76,54 @@
   },
   "models": [
     {
+      "id": "gpt-6-luna-oct",
+      "name": "GPT-6 Luna (October 2026)",
+      "provider": "openai",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-07",
+      "access": "General availability in ChatGPT (free and paid tiers); the September checkpoint remains in Codex and ChatGPT Work.",
+      "aliases": [
+        "GPT-6 Luna October",
+        "GPT-6 Luna (Oct)"
+      ],
+      "notes": "October checkpoint of Luna, shipped alongside GPT-6 Sol (October). Described as highly robust to prompt injection via OpenAI's GPT-Red adversarial training; OpenAI notes a slightly lower point estimate than the September checkpoint on multi-turn jailbreak robustness, with overlapping 95% confidence intervals. No new cyber capability numbers published.",
+      "sources": [
+        {
+          "title": "OpenAI deployment safety: GPT-6 October update",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+        }
+      ],
+      "auto_added": "2026-10-09",
+      "index": null
+    },
+    {
+      "id": "gpt-6-sol-oct",
+      "name": "GPT-6 Sol (October 2026)",
+      "provider": "openai",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-07",
+      "access": "General availability in ChatGPT (free and paid tiers); the September checkpoint remains in Codex and ChatGPT Work.",
+      "aliases": [
+        "GPT-6 Sol October",
+        "GPT-6 Sol (Oct)"
+      ],
+      "notes": "OpenAI now distinguishes September and October checkpoints of Sol as separate deployed artifacts. Treated as High capability in Cybersecurity under the Preparedness Framework, below the High threshold for AI Self-Improvement, with the same safeguards stack as the GPT-5.6 Sol/Luna system card. No new cyber capability benchmark numbers were published for the October checkpoint; the cyber content is safety-evaluation only. Registry note: existing gpt-6-sol scores (ExploitGym 22.1, CyberBench 78.0) belong to the September checkpoint.",
+      "sources": [
+        {
+          "title": "OpenAI deployment safety: GPT-6 October update",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+        },
+        {
+          "title": "GPT-6 and Intelligent UI for everyone",
+          "url": "https://openai.com/index/gpt-6-for-everyone/"
+        }
+      ],
+      "auto_added": "2026-10-09",
+      "index": null
+    },
+    {
       "id": "claude-haiku-5-5",
       "name": "Claude Haiku 5.5",
       "provider": "anthropic",
@@ -1529,5 +1577,5 @@
       ]
     }
   ],
-  "updated": "2026-10-08T13:38+00:00"
+  "updated": "2026-10-09T13:24+00:00"
 }

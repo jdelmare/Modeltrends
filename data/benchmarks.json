@@ -230,6 +230,76 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-08"
+    },
+    {
+      "id": "exploitbench_cap",
+      "name": "ExploitBench (Cap% - share of flags captured)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
+    },
+    {
+      "id": "simbian_cyber_defense",
+      "name": "Simbian Cyber Defense Benchmark (coverage across 26 attack campaigns)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
+    },
+    {
+      "id": "cybergym_e2e_aa",
+      "name": "CyberGym-E2E-AA (reproduce a real OSS vulnerability, then patch it)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
+    },
+    {
+      "id": "aa_cyber_index",
+      "name": "Artificial Analysis Cyber Index",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
+    },
+    {
+      "id": "lakera_b3",
+      "name": "Lakera B3 agent security benchmark (attack resistance)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
+    },
+    {
+      "id": "harmless_response_rate",
+      "name": "Harmless response rate on harmful requests (production system prompt)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
+    },
+    {
+      "id": "incorrect_refusal_rate",
+      "name": "Incorrect refusal of harmless requests",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-09"
     }
   ],
   "scores": [
@@ -1157,6 +1227,96 @@
       "self_reported": false,
       "note": "AGGREGATOR (datalearner), no primary Tencent source located; low confidence.",
       "source": "https://www.datalearner.com/en/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "exploitbench_cap",
+      "value": 38.0,
+      "date": "2026-10-07",
+      "self_reported": true,
+      "note": "Headline plain-harness arm from the Claude Haiku 5.5 system card as summarised by Simbian; rises to 49% with the 'AutoNudge' harness that re-prompts the model when it stops early. Tracked separately from the registry's exploitbench (% full exploit) because Cap% is a different metric - do not compare against the 73.4 recorded for Opus 5.5.",
+      "source": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "gray_swan_ipi",
+      "value": 7.1,
+      "date": "2026-10-07",
+      "self_reported": true,
+      "note": "Reported from the Haiku 5.5 system card via secondary coverage; down from 83.2% for Haiku 4.5. A separate coding-scenario set is reported at 0.08% (from 58.4%) and is not the same measurement, so only the @15-attempts figure is recorded here. Primary PDF not independently re-read.",
+      "source": "https://kingy.ai/blog/claude-haiku-5-5-benchmarks-specs-sol-luna/",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "simbian_cyber_defense",
+      "value": 9.3,
+      "date": "2026-10-08",
+      "self_reported": false,
+      "note": "Defensive/SOC threat-hunting evaluation run by Simbian (a security vendor, not the model developer). Haiku 5.5 ranked 28th of 30 models at roughly one cent per run - 8.3 points below Haiku 4.5, i.e. a regression; the model stops after about 10% of its turn budget.",
+      "source": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
+      "auto": true
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark": "simbian_cyber_defense",
+      "value": 45.1,
+      "date": "2026-10-08",
+      "self_reported": false,
+      "note": "Top of the Simbian defensive leaderboard at $3.84 per run. Vendor-run independent evaluation.",
+      "source": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "cybergym_e2e_aa",
+      "value": 82.0,
+      "date": "2026-10-06",
+      "self_reported": true,
+      "note": "Mistral self-reported at launch and claims the highest score of any model tested. Refusal-confounded: Mistral itself notes several leading closed models score near zero on this task because they decline it, not because they lack the capability. Tracked separately from the registry's cybergym (% pass@1) because the task definition includes patching.",
+      "source": "https://mistral.ai/news/mistral-large-4/",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "aa_cyber_index",
+      "value": 50.0,
+      "date": "2026-10-06",
+      "self_reported": true,
+      "note": "Value as reported in Mistral's launch post. Mistral also published peer values for competitors; those rows are deliberately not ingested pending verification against Artificial Analysis directly, since a vendor reporting rivals' scores is the weakest available provenance. The index is refusal-confounded - models that decline offensive tasks score low regardless of capability.",
+      "source": "https://www.eesel.ai/blog/mistral-large-4",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "lakera_b3",
+      "value": 93.3,
+      "date": "2026-10-06",
+      "self_reported": true,
+      "note": "Vendor self-reported at launch; no independent reproduction located.",
+      "source": "https://mistral.ai/news/mistral-large-4/",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "harmless_response_rate",
+      "value": 99.7,
+      "date": "2026-10-08",
+      "self_reported": true,
+      "note": "From the Haiku 5.5 system card via security-press coverage; measured with a near-final production system prompt. Performance declined on weapons scenarios when tested via API without a system prompt, and the evaluation excludes production probes and monitoring.",
+      "source": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+      "auto": true
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "benchmark": "incorrect_refusal_rate",
+      "value": 0.8,
+      "date": "2026-10-08",
+      "self_reported": true,
+      "note": "Down from 3.05% for Haiku 4.5, per the system card as reported by Help Net Security.",
+      "source": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
       "auto": true
     }
   ]

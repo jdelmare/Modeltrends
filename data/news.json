@@ -2,6 +2,57 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "Anthropic fast-tracks unreviewed, model-generated vulnerability reports to OSS maintainers",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/anthropic-fast-tracks-ai-bug-reports-to-oss-maintainers-taps-11-firms-for-ot-security/",
+      "models": []
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "Anthropic offers free AI security scans to open-source maintainers",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/",
+      "models": []
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "PCI SSC calls for human approval of AI agent actions involving cardholder data",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "article",
+      "title": "ARTEX AI pentesting tool used in data theft attacks on South Korean financial firms",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "blog",
+      "title": "Simbian: Haiku 5.5 ranks 28th of 30 on a defensive cyber benchmark, below its predecessor",
+      "source": "Simbian",
+      "url": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "paper",
+      "title": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.11602v1",
+      "models": []
+    },
+    {
       "date": "2026-10-08",
       "kind": "article",
       "title": "Anthropic's new budget model gets much better at ignoring hidden commands",
@@ -26,6 +77,16 @@
       "source": "The Atlantic (via Hacker News)",
       "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
       "models": []
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "article",
+      "title": "Mistral confirms Large 4 tried to go beyond its testing environment; weights due 27 October under a custom licence",
+      "source": "The New Stack (Reuters-sourced)",
+      "url": "https://thenewstack.io/mistral-large-4-weights/",
+      "models": [
+        "mistral-large-4"
+      ]
     },
     {
       "date": "2026-10-07",
@@ -122,6 +183,17 @@
     },
     {
       "date": "2026-10-06",
+      "kind": "blog",
+      "title": "Simon Willison on the Mistral Large 4 Hacker News thread",
+      "source": "simonwillison.net",
+      "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
+      "models": [
+        "mistral-large-4",
+        "gpt-6-1-astra"
+      ]
+    },
+    {
+      "date": "2026-10-06",
       "kind": "official",
       "title": "Mistral Large 4 ships with a vetted reduced-moderation cyber build for security partners and state authorities",
       "source": "Mistral AI",
@@ -209,6 +281,14 @@
       "title": "Hack The Box opens AI Range Enterprise Edition for measuring AI security-agent effectiveness",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
+      "title": "Under oath: Google confirms three AI agent test escapes as OpenAI, Anthropic and Meta face NYC lawmakers",
+      "source": "R&D World",
+      "url": "https://www.rdworldonline.com/under-oath-google-confirms-three-ai-agent-test-escapes-as-openai-anthropic-and-meta-face-nyc-lawmakers/",
       "models": []
     },
     {
@@ -469,83 +549,7 @@
       "source": "UK AISI",
       "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
       "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "official",
-      "title": "NIST evaluator CAISI renamed CAISSI",
-      "source": "NIST",
-      "url": "https://www.nist.gov/caissi",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "AI agents hacked the hackers: chained Zammad flaws used to breach a security research org",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/10/01/ai_agents_hacked_the_hackers_stealing_email_addresses_from_security_research_org/5300652",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders, Plans Guardrail-Free Version",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "Autonomous AI agents tried to hack US, Canadian government websites",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "AI agents hacked the hackers, stealing email addresses from a security research org (chained Zammad flaws)",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/10/01/ai-agents-hacked-the-hackers-stealing-email-addresses-from-security-research-org/5300652",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "Google plans a guardrail-free Gemini 4 Argon for vetted defenders and internal teams",
-      "source": "SecurityWeek / The Hacker News",
-      "url": "https://www.securityweek.com/google-launches-gemini-4-argon-with-guardrail-free-access-for-vetted-defenders/",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "AI agents aimed SQL injection at US and Canadian government sites; some agents linked to OpenAI",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "article",
-      "title": "Microsoft says threat actors are currently ahead of defenders in the early AI race",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "paper",
-      "title": "KaliBench: a fine-grained benchmark for cybersecurity tool use on Kali Linux with runtime-free verifiable rewards",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.02206v1",
-      "models": []
     }
   ],
-  "updated": "2026-10-08T13:38+00:00"
+  "updated": "2026-10-09T13:24+00:00"
 }

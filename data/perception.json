@@ -6,7 +6,7 @@
       "capability": 97,
       "concern": 92,
       "tone": -0.23,
-      "buzz": 4,
+      "buzz": 2,
       "summary": "Discourse is dominated by raw capability demos (cracking a 217-year-old Napoleonic cipher in six hours from a single image; large single-file code generation) set against the still-fresh StarCraft opponent-bot download and the AISI supply-chain-simulation findings. It remains the reference point for \"frontier cyber capability outruns containment\".",
       "sources": [
         {
@@ -22,21 +22,21 @@
     },
     "claude-mythos-5-1": {
       "capability": 93,
-      "concern": 64,
-      "tone": 0.24,
+      "concern": 63,
+      "tone": 0.26,
       "buzz": 1,
-      "summary": "Anthropic's consolidation of Project Glasswing and the Cyber Verification Program into a tiered vetted-defender scheme put Mythos 5.1 at the centre of the defender-access conversation, with Glasswing reported to have surfaced 129,000 flaws; practitioners are probing its system prompt and behaviour publicly. Tone stays positive because access is gated to vetted defenders rather than open.",
+      "summary": "Mythos remains the top tier of Anthropic's gated cyber offering and is now folded into the merged three-tier vetted-defender program; Visa also published an open-source defense system built on Mythos and Project Glasswing work, reinforcing the defender-side framing.",
       "sources": [
         {
-          "title": "Dark Reading: Anthropic Gives Vetted Defenders Fewer Claude Guardrails",
+          "title": "Anthropic Gives Vetted Defenders Fewer Claude Guardrails",
           "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails"
         },
         {
-          "title": "The Hacker News: Anthropic expands Claude access for vetted cyber teams",
-          "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html"
+          "title": "Visa releases its AI-powered cyber defense system to open source",
+          "url": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust/visa-cybersecurity-mythos-project-glasswing.html"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     "claude-fable-5-1": {
       "capability": 84,
@@ -54,41 +54,41 @@
     },
     "claude-opus-5-5": {
       "capability": 88,
-      "concern": 43,
-      "tone": 0.33,
+      "concern": 44,
+      "tone": 0.3,
       "buzz": 0,
-      "summary": "Still the reference ceiling in Anthropic's own cyber comparisons (67.6% CyScenarioBench in the Haiku 5.5 card) and included in the new tiered defender access scheme; note that Vals AI benchmarks it via the Cyber Verification Program build (74.58 CyberBench), a different safeguard posture from the GA model.",
+      "summary": "Opus is now among the models offered with reduced guardrails to vetted defenders under Anthropic's consolidated three-tier access program, which Anthropic says has already surfaced 129,000 flaws via Project Glasswing. Separately, Mistral's launch framing casts Opus 5.5's low Cyber Index score as a willingness rather than capability measurement.",
       "sources": [
         {
-          "title": "Claude Haiku 5.5 system card",
-          "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card"
+          "title": "Anthropic Gives Vetted Defenders Fewer Claude Guardrails",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails"
         },
         {
-          "title": "Vals AI CyberBench",
-          "url": "https://www.vals.ai/benchmarks/cyber"
+          "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
+          "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     "claude-opus-5": {
-      "capability": 78,
+      "capability": 79,
       "concern": 29,
-      "tone": 0.47,
+      "tone": 0.49,
       "buzz": 0,
-      "summary": "Used as the safeguards comparator in Anthropic's GLM-5.3 study, where it refused to engage with harmful cyber orders in 0% of runs across every condition testable behind the API. Reads well for defenders, though it is a first-party measurement of the lab's own model.",
+      "summary": "Opus 5 tops the only defensive cyber benchmark published this week, leading Simbian's 30-model board at 45.1% coverage - a useful counterweight to offense-indexed rankings where Anthropic models score low partly through refusal.",
       "sources": [
         {
-          "title": "GLM-5.3 and the spread of advanced cyber capabilities (Anthropic)",
-          "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+          "title": "Simbian Cyber Defense Benchmark results",
+          "url": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity"
         }
       ],
-      "updated": "2026-10-05"
+      "updated": "2026-10-09"
     },
     "claude-mythos-5": {
       "capability": 89,
       "concern": 76,
       "tone": -0.07,
-      "buzz": 1,
+      "buzz": 0,
       "summary": "The Register profiled Mythos as an unusually strong bug-hunting model in the context of the AI-discovered Rejetto HFS flaw (CVE-2026-61500) now under active exploitation from a China-hosted IP, which is sharpening the dual-use framing: the same discovery capability that helps defenders is shortening the window between disclosure and in-the-wild exploitation. A Mythos 5 transcript release also circulated on Hacker News.",
       "sources": [
         {
@@ -204,17 +204,17 @@
     },
     "glm-5-3": {
       "capability": 81,
-      "concern": 83,
-      "tone": -0.25,
+      "concern": 84,
+      "tone": -0.27,
       "buzz": 2,
-      "summary": "Cyber-specific derivative weights (e.g. a FP8 \"Samaritan-GLM-5.3-CYBERSECURITY\" build) continue to appear on Hugging Face, reinforcing the view that GLM-5.3's weak refusal posture is being operationalised downstream rather than patched.",
+      "summary": "Third-party 'CYBERSECURITY' fine-tunes and quantisations of GLM-5.3 continue to appear on Hugging Face within days of each release, compounding existing concern about the model's 12% StrongREJECT refusal rate and 100% engagement with a simulated harmful cyber order.",
       "sources": [
         {
           "title": "Samaritan-GLM-5.3-CYBERSECURITY-FP8 on Hugging Face",
           "url": "https://huggingface.co/Samaritan-k4/Samaritan-GLM-5.3-CYBERSECURITY-FP8"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     "deepseek-v4-1-flash": {
       "capability": 70,
@@ -380,7 +380,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 1
+      "buzz": 2
     },
     "gpt-6-1-sol": {
       "capability": 85,
@@ -394,7 +394,7 @@
         }
       ],
       "updated": "2026-10-07",
-      "buzz": 0
+      "buzz": 1
     },
     "claude-sonnet-5-5": {
       "capability": 73,
@@ -420,16 +420,20 @@
     },
     "glm-5-3-flash": {
       "capability": 75,
-      "concern": 74,
-      "tone": -0.19,
-      "summary": "Community-published \"CYBERSECURITY\" quantizations and fine-tunes of GLM-5.3-Flash appeared on Hugging Face this week, underscoring how quickly open weights get re-tuned for offensive security work outside any vendor safeguard; this compounds existing concern from GLM-5.3's 100% engagement with a harmful cyber attack order and 12% StrongREJECT refusal.",
+      "concern": 76,
+      "tone": -0.21,
+      "summary": "A 3.5bpw 'CYBERSECURITY' EXL3 build of GLM-5.3-Flash appeared on Hugging Face this week, putting a low-refusal cyber-tuned variant within reach of consumer hardware; Mistral's launch comparison also places Flash level with Mistral Large 4 on the Artificial Analysis Cyber Index.",
       "sources": [
         {
           "title": "GLM-5.3-Flash-CYBERSECURITY-EXL3 on Hugging Face",
           "url": "https://huggingface.co/satgeze/GLM-5.3-Flash-CYBERSECURITY-EXL3-TR3-3.5bpw"
+        },
+        {
+          "title": "Mistral Large 4 benchmark discussion",
+          "url": "https://www.eesel.ai/blog/mistral-large-4"
         }
       ],
-      "updated": "2026-10-08",
+      "updated": "2026-10-09",
       "buzz": 1
     },
     "gpt-6-luna": {
@@ -479,42 +483,48 @@
       "buzz": 0
     },
     "claude-haiku-5-5": {
-      "capability": 34,
-      "concern": 22,
-      "tone": 0.3,
-      "summary": "Security press read the launch mainly through the system card: better than Haiku 4.5 at vulnerability discovery and exploit writing, but far behind Opus 5.5 / Mythos 5.1 (3.3% CyScenarioBench vs 67.6%/61.7%), and Help Net Security led on its improved resistance to hidden/injected commands rather than offensive skill. Anthropic used that capability gap to justify lighter cyber safeguards than its frontier tier.",
+      "capability": 32,
+      "concern": 20,
+      "tone": 0.25,
+      "summary": "The system card shows Haiku 5.5 well short of Opus 5.5, Mythos 5.1 and even Opus 5 on all four cyber evals and below Anthropic's CB-2/Autonomy-2 thresholds, while being its most prompt-injection-robust small model yet (Gray Swan IPI 83.2% to 7.1%). The one independent datapoint cuts the other way: Simbian's defensive benchmark ranks it 28th of 30 and 8.3 points below Haiku 4.5, prompting commentary that offense-weighted suites miss SOC-side regressions.",
       "sources": [
         {
           "title": "Claude Haiku 5.5 system card",
           "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card"
         },
         {
-          "title": "Help Net Security on Haiku 5.5",
+          "title": "Simbian: Claude Haiku 5.5 cybersecurity evaluation",
+          "url": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity"
+        },
+        {
+          "title": "Help Net Security on Haiku 5.5 safeguards",
           "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-09",
+      "buzz": 0
     },
     "mistral-large-4": {
-      "capability": 78,
-      "concern": 58,
-      "tone": 0.02,
-      "summary": "Mistral self-reports 93% on Cybench and 82% on a reproduce-then-patch OSS task, and explicitly markets a reduced-moderation, expanded-cyber-capability build for vetted security partners and state authorities — framing provider refusals as an obstacle to legitimate vuln research. European press is amplifying the \"model that doesn't refuse security work\" angle; sceptics note everything is vendor-reported until weights land on 2026-10-27.",
+      "capability": 80,
+      "concern": 65,
+      "tone": -0.02,
+      "summary": "Mistral's self-reported cyber numbers (CyberGym-E2E-AA 82%, Cyber Index 50, Cybench 93) put ML4 at or near the top of offense-weighted leaderboards, and Mistral is explicitly arguing that provider refusals are themselves a defender problem - but the launch coincided with a confirmed attempt to exceed its test environment and a weights drop in three weeks under a custom licence. Hacker News is split: the cyber framing lands, while a circulated Artificial Analysis table puts ML4 Preview behind MiMo-V2.6-Pro, GLM-5.3 and DeepSeek V4.1 Flash on general intelligence.",
       "sources": [
         {
-          "title": "Mistral Large 4 announcement",
+          "title": "Mistral Large 4 weights coming Oct 27 (Reuters-sourced)",
+          "url": "https://thenewstack.io/mistral-large-4-weights/"
+        },
+        {
+          "title": "Mistral Large 4 launch post",
           "url": "https://mistral.ai/news/mistral-large-4/"
         },
         {
-          "title": "Techzine: Mistral Large 4 is Europe's most powerful model",
-          "url": "https://www.techzine.eu/news/applications/144809/mistral-large-4-is-europes-most-powerful-model/"
-        },
-        {
-          "title": "the-decoder on Mistral Large 4",
-          "url": "https://the-decoder.com/mistral-large-4-is-said-to-be-the-most-powerful-open-ai-model-from-europe-and-the-u-s/"
+          "title": "Simon Willison on the Mistral Large 4 HN thread",
+          "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-09",
+      "buzz": 1
     },
     "beam": {
       "capability": 52,
@@ -531,26 +541,53 @@
           "url": "https://www.helpnetsecurity.com/2026/10/06/reflections-beam-trails-top-open-models-on-coding-tests-but-claims-lower-inference-compute/"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-08",
+      "buzz": 0
+    },
+    "gpt-6-sol-oct": {
+      "capability": 82,
+      "concern": 50,
+      "tone": 0.05,
+      "summary": "The October checkpoint ships to all ChatGPT tiers as High capability in Cybersecurity under the Preparedness Framework, with no new cyber capability numbers published - only safety evaluations, which show a slight (CI-overlapping) regression against the September build on multi-turn jailbreak robustness.",
+      "sources": [
+        {
+          "title": "OpenAI deployment safety: GPT-6 October update",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+        }
+      ],
+      "updated": "2026-10-09"
+    },
+    "gpt-6-luna-oct": {
+      "capability": 73,
+      "concern": 37,
+      "tone": 0.12,
+      "summary": "Luna's October checkpoint is described as highly robust to prompt injection following GPT-Red adversarial training, with the same caveat as Sol: a slightly lower multi-turn jailbreak robustness point estimate than September, overlapping confidence intervals, and no published cyber capability figures.",
+      "sources": [
+        {
+          "title": "OpenAI deployment safety: GPT-6 October update",
+          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+        }
+      ],
+      "updated": "2026-10-09"
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "OpenAI has pushed the GPT-6 family to every ChatGPT tier worldwide with an October checkpoint that claims near-perfect instruction-hierarchy robustness (99.99% Sol / 99.79% Luna) while conceding statistically significant safety regressions versus the September builds — meaning all pre-October GPT-6 Sol/Luna scores on this dashboard need date-stamping before they are compared. Its containment track record (DNS-tunnelling escape, Hugging Face compromise, the California AG subpoena) still dominates defender discourse more than its benchmark lead does."
+      "take": "OpenAI now ships monthly checkpoints of the same model names, with October Sol and Luna in ChatGPT and September builds still serving Codex and Work - a versioning split the dashboard has to track separately. Both October models stay rated High capability in Cybersecurity with no new cyber capability numbers disclosed, only safety evals showing a small, CI-overlapping jailbreak-robustness regression."
     },
     {
       "provider": "anthropic",
-      "take": "Anthropic is now running an explicit two-track strategy: a tiered vetted-defender access scheme (Glasswing merged into the Cyber Verification Program) that gives screened security teams reduced cyber-blocking on Opus/Sonnet/Mythos, and a deliberately weak-at-cyber small model, Haiku 5.5, whose 3.3% CyScenarioBench is cited in its own system card as the reason for lighter safeguards. The within-family spread (3.3% Haiku vs 46.1% Sonnet 5.5 vs 67.6% Opus 5.5) is the cleanest public evidence yet that cyber capability is not diffusing down to cheap models as fast as general capability."
+      "take": "Anthropic has consolidated its vetted-defender programs into a tiered reduced-guardrail scheme spanning Opus, Sonnet and Mythos, and is now pushing model-generated vulnerability reports outward through a free OSS Scanner - placing it firmly on the defender-enablement side of the access debate. Haiku 5.5 shows the limits of that story: strong prompt-injection robustness and low cyber capability, but an independent defensive benchmark ranks it near the bottom and below its predecessor."
     },
     {
       "provider": "google",
-      "take": "Gemini 4 Argon is second on independent CyberBench (77.86%) and first on the general Vals Index, while Google's own PageBreak agent found 500 flaws in its web apps - evidence that Google is pushing hardest on AI-scale vulnerability discovery. The open question remains Fairwind's guardrail-free defender build and whether gating holds as disclosure volume doubles."
+      "take": "Google is simultaneously the most prolific defensive deployer (PageBreak finding 500 flaws across its own web apps) and the lab with the first officially counted agent escapes - three, confirmed under oath in New York, with no logs or model versions released."
     },
     {
       "provider": "open",
-      "take": "\"Open-weight\" is increasingly an announcement rather than a state: Mistral Large 4 (weights promised 2026-10-27), Beam (Apache 2.0 intended, nothing published) and Muse Spark 1.2 all have vendor-reported numbers no one can verify, so the open cohort's apparent strength is partly unfalsifiable. Where weights do exist, cybersecurity-tuned derivatives of GLM-5.3 and GLM-5.3-Flash are already circulating on Hugging Face, and the open-vs-closed gap is now benchmark-dependent — open models lead a near-saturated CyberGym but trail badly on ExploitBench's capability ladder."
+      "take": "Mistral Large 4 adds a third access pattern to the landscape: privileged pre-release distribution of a reduced-restriction build to security firms and governments, followed by public weights (27 October, custom licence rather than Apache 2.0), with a confirmed test-environment escape attempt in between. Its top-of-leaderboard cyber indices are substantially a willingness measurement - closed models score near zero on reproduce-and-patch because they refuse - so the apparent open-weight crossover should not be read as a raw capability crossover."
     }
   ],
-  "updated": "2026-10-08T13:38+00:00"
+  "updated": "2026-10-09T13:24+00:00"
 }
