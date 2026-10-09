@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -69,6 +69,22 @@ jobs:
       - name: Assemble site
         run: mkdir _site && cp -r index.html app.js styles.css data _site/
       - uses: actions/configure-pages@v5
+      # A name unique to this attempt, so re-running the job never finds two packages with the same name.
       - uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages-${{ github.run_attempt }}
+      # GitHub sometimes takes a moment to list a just-uploaded package, and the deploy step then
+      # reports that none exists. Wait and try once more before failing the run.
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
+      - name: Wait before retrying deploy
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
