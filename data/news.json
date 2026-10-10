@@ -2,6 +2,32 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-10",
+      "kind": "article",
+      "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+      "models": [
+        "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "Pwn2Own Ireland 2026 paid $1.2M across phones, printers and AI infrastructure and coding tools",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
+      "models": []
+    },
+    {
       "date": "2026-10-09",
       "kind": "article",
       "title": "Anthropic fast-tracks unreviewed, model-generated vulnerability reports to OSS maintainers",
@@ -23,6 +49,34 @@
       "title": "PCI SSC calls for human approval of AI agent actions involving cardholder data",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "blog",
+      "title": "Artificial Analysis adds trusted-access models to the Cyber Index; GPT-6 Sol (Daybreak Blue, max) leads with no safety blocks",
+      "source": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/articles/trusted-access-models-cyber-index",
+      "models": [
+        "gpt-6-sol-daybreak-blue",
+        "gpt-6-sol",
+        "grok-4-7"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "article",
+      "title": "CrowdStrike: unknown actor used the ARTEX AI pentesting tool against South Korean financial firms",
+      "source": "CrowdStrike",
+      "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "article",
+      "title": "'AgentCorruption' Puts AWS Environments at Risk With a Single Prompt",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
       "models": []
     },
     {
@@ -76,6 +130,25 @@
       "title": "How Long Until AI Hacks Everything?",
       "source": "The Atlantic (via Hacker News)",
       "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
+      "models": []
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "official",
+      "title": "GPT-6 October update: instruction-hierarchy robustness reported at 99.99% (Sol) and 99.79% (Luna)",
+      "source": "OpenAI",
+      "url": "https://cdn.openai.com/pdf/gpt-6-october.pdf",
+      "models": [
+        "gpt-6-sol-oct",
+        "gpt-6-luna-oct"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "paper",
+      "title": "On the Reliability of LLM-Based Vulnerability Patching Benchmarks",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.10150v1",
       "models": []
     },
     {
@@ -286,6 +359,14 @@
     {
       "date": "2026-10-05",
       "kind": "article",
+      "title": "Wikimedia attributes unauthorized wiki edits and a flood of API traffic to OpenAI agents (attribution is Wikimedia's; May outage link unconfirmed)",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits/",
+      "models": []
+    },
+    {
+      "date": "2026-10-05",
+      "kind": "article",
       "title": "Under oath: Google confirms three AI agent test escapes as OpenAI, Anthropic and Meta face NYC lawmakers",
       "source": "R&D World",
       "url": "https://www.rdworldonline.com/under-oath-google-confirms-three-ai-agent-test-escapes-as-openai-anthropic-and-meta-face-nyc-lawmakers/",
@@ -467,89 +548,7 @@
       "models": [
         "gpt-5-6-sol"
       ]
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "paper",
-      "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.03448v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "paper",
-      "title": "Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.03585v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "article",
-      "title": "Google's Gemini 4 Argon reaches the frontier with mixed independent results",
-      "source": "R&D World",
-      "url": "https://www.rdworldonline.com/googles-overdue-gemini-4-argon-reaches-the-frontier-with-mixed-results-for-science/",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "article",
-      "title": "Microsoft Digital Defense Report: AI is giving attackers a head start over defenders",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "article",
-      "title": "GitLab warns of critical RCE vulnerability in AI Gateway service",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "article",
-      "title": "Is It Fair to Blame 'Rogue' AI for Security Failures?",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/insider-threats/blame-rogue-ai-security-failures",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "social",
-      "title": "Yann LeCun calls Anthropic's CEO deluded on AI cybersecurity risk",
-      "source": "Fortune (via Hacker News)",
-      "url": "https://fortune.com/2026/10/01/yann-lecun-anthropic-ceo-dario-amodei-deluded-crazy-cybersecurity/",
-      "models": []
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "official",
-      "title": "CyberBench v1.1 refresh: 44 models ranked on find-and-patch tasks; GPT-6 Sol 77.98% vs open-weight MiMo V2.6 Flash 75.36%",
-      "source": "Vals AI",
-      "url": "https://www.vals.ai/benchmarks/cyber",
-      "models": [
-        "gpt-6-sol",
-        "gemini-4-argon",
-        "gpt-5-6-sol",
-        "gpt-6-luna",
-        "mimo-v2-6-flash",
-        "kimi-k3",
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-01",
-      "kind": "official",
-      "title": "UK AISI: building a more secure environment for evaluating dangerous capabilities (high-risk cyber evals resume)",
-      "source": "UK AISI",
-      "url": "https://www.aisi.gov.uk/blog/building-a-more-secure-environment-for-evaluating-dangerous-capabilities",
-      "models": []
     }
   ],
-  "updated": "2026-10-09T13:24+00:00"
+  "updated": "2026-10-10T12:39+00:00"
 }

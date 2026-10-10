@@ -76,6 +76,62 @@
   },
   "models": [
     {
+      "id": "ember-1",
+      "name": "Ember-1 (Fireworks AI)",
+      "provider": "other",
+      "category": "open",
+      "status": "active",
+      "released": null,
+      "access": "Open weights; served via OpenRouter and third-party hosts.",
+      "aliases": [
+        "Ember 1",
+        "Fireworks Ember-1"
+      ],
+      "notes": "Open-weight model from Fireworks AI appearing on third-party leaderboards but absent from the registry. Release date unresolved: OpenRouter lists 2026-09-24, BenchLM lists 2026-09-23, and no primary Fireworks announcement was located. No cyber benchmark score ingested yet.",
+      "sources": [
+        {
+          "title": "OpenRouter: fireworks/ember-1",
+          "url": "https://openrouter.ai/fireworks/ember-1"
+        },
+        {
+          "title": "BenchLM: Ember-1",
+          "url": "https://benchlm.ai/models/ember-1"
+        }
+      ],
+      "auto_added": "2026-10-10",
+      "index": null
+    },
+    {
+      "id": "gpt-6-sol-daybreak-blue",
+      "name": "GPT-6 Sol (Daybreak Blue)",
+      "provider": "openai",
+      "category": "gated",
+      "status": "active",
+      "released": null,
+      "access": "Trusted-access only via OpenAI's Daybreak program (Blue tier: mainline flagship models with cyber-defender-tuned safeguards, default-off). Artificial Analysis evaluated the 'max' reasoning configuration.",
+      "aliases": [
+        "Daybreak Blue",
+        "GPT-6 Sol (Daybreak Blue, max)"
+      ],
+      "notes": "Distinct evaluation target from the publicly available GPT-6 Sol. Artificial Analysis reports it leads the Cyber Index and encounters no safety blocks across the Index, scoring 32 points above public GPT-6 Sol (max); the absolute Index score was not published, so no value is ingested. Caveat: OpenAI's API docs list 'Daybreak Blue' as a deprecated alias for flagship general-purpose models with defensive-cyber safeguards, so the underlying base model for any given leaderboard row should be confirmed before use. The bare 'Daybreak Blue' row on Vals CyberBench (72.98%) is being held for this reason.",
+      "sources": [
+        {
+          "title": "Artificial Analysis: trusted-access models on the Cyber Index",
+          "url": "https://artificialanalysis.ai/articles/trusted-access-models-cyber-index"
+        },
+        {
+          "title": "OpenAI Daybreak trusted access for cyber — overview",
+          "url": "https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview"
+        },
+        {
+          "title": "OpenAI API docs: gpt-daybreak-blue-latest (deprecated alias)",
+          "url": "https://developers.openai.com/api/docs/models/gpt-daybreak-blue-latest"
+        }
+      ],
+      "auto_added": "2026-10-10",
+      "index": null
+    },
+    {
       "id": "gpt-6-luna-oct",
       "name": "GPT-6 Luna (October 2026)",
       "provider": "openai",
@@ -1577,5 +1633,5 @@
       ]
     }
   ],
-  "updated": "2026-10-09T13:24+00:00"
+  "updated": "2026-10-10T12:39+00:00"
 }

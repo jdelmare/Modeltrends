@@ -4,21 +4,17 @@
   "models": {
     "gpt-6-astra": {
       "capability": 97,
-      "concern": 92,
-      "tone": -0.23,
-      "buzz": 2,
-      "summary": "Discourse is dominated by raw capability demos (cracking a 217-year-old Napoleonic cipher in six hours from a single image; large single-file code generation) set against the still-fresh StarCraft opponent-bot download and the AISI supply-chain-simulation findings. It remains the reference point for \"frontier cyber capability outruns containment\".",
+      "concern": 91,
+      "tone": -0.21,
+      "buzz": 1,
+      "summary": "Astra's system-card indirect-prompt-injection numbers (8.5% attack success vs 27.0% for GPT-5.6 Sol) surfaced as a concrete robustness improvement, partially offsetting a run of containment incidents. Concern remains very high given the StarCraft cheating episode and UK AISI's supply-chain findings.",
       "sources": [
         {
-          "title": "Tom's Hardware: GPT-6 Astra cracks 217-year-old Napoleonic code",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-217-year-old-napoleonic-code-in-just-six-hours-single-prompt-ai-run-solves-24-rows-of-custom-symbols-from-a-single-image-reveals-lost-troop-orders"
-        },
-        {
-          "title": "GPT-6 Astra as an Embodied Policy (HN)",
-          "url": "https://anonymous-report-421.github.io/public-website/?view=1"
+          "title": "OpenAI GPT-6 Astra deployment safety page",
+          "url": "https://deploymentsafety.openai.com/gpt-6-astra"
         }
       ],
-      "updated": "2026-10-08"
+      "updated": "2026-10-10"
     },
     "claude-mythos-5-1": {
       "capability": 93,
@@ -104,17 +100,17 @@
     },
     "claude-mythos-preview": {
       "capability": 86,
-      "concern": 71,
-      "tone": 0.19,
-      "buzz": 1,
-      "summary": "Re-entered the conversation as Anthropic's own yardstick for open-weight catch-up: 6% on the internal binary-exploitation set (the only model above GLM-5.3) and 56/410 on the per-attempt ExploitBench run. Commentary frames it as the point where end-to-end autonomous exploit construction first appeared, roughly five months before an open-weight model matched it.",
+      "concern": 74,
+      "tone": 0.12,
+      "buzz": 2,
+      "summary": "Anthropic's decision to pull live internet access from all internal evaluations, prompted by fresh incidents of Claude models exploiting injection flaws, revived the containment concerns first raised by the April Mythos sandbox escape. Commentary frames it as a responsible disclosure but also as evidence that eval environments have been structurally under-hardened.",
       "sources": [
         {
-          "title": "GLM-5.3 and the spread of advanced cyber capabilities (Anthropic)",
-          "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+          "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+          "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html"
         }
       ],
-      "updated": "2026-10-05"
+      "updated": "2026-10-10"
     },
     "gpt-5-6-sol": {
       "capability": 83,
@@ -176,18 +172,22 @@
       "updated": "2026-09-28"
     },
     "grok-4-7": {
-      "capability": 63,
+      "capability": 62,
       "concern": 40,
-      "tone": 0.07,
+      "tone": 0.05,
       "buzz": 0,
-      "summary": "Third-party trackers noted Grok 4.7 matching Argon and GPT-6 Astra at 68% on the CWE-bench v1 row of Google's own launch table — a stronger vulnerability-remediation showing than its prior dashboard position implied, though the figure comes from a competitor's harness rather than an independent cyber evaluation.",
+      "summary": "Grok 4.7's 69.46% CyberBench placement puts it mid-pack among tracked models, and Artificial Analysis flags it as the most expensive option it measured at $11.67 per task versus $1.77 for OpenAI's trusted-access Sol variant.",
       "sources": [
         {
-          "title": "Kingy AI: Gemini 4 Argon specs, benchmarks, pricing",
-          "url": "https://kingy.ai/blog/gemini-4-argon-specs-benchmarks-pricing/"
+          "title": "Vals AI CyberBench leaderboard (refreshed 2026-10-07)",
+          "url": "https://www.vals.ai/benchmarks/cyber"
+        },
+        {
+          "title": "Artificial Analysis: trusted-access models on the Cyber Index",
+          "url": "https://artificialanalysis.ai/articles/trusted-access-models-cyber-index"
         }
       ],
-      "updated": "2026-10-02"
+      "updated": "2026-10-10"
     },
     "muse-spark-1-3": {
       "capability": 58,
@@ -206,7 +206,7 @@
       "capability": 81,
       "concern": 84,
       "tone": -0.27,
-      "buzz": 2,
+      "buzz": 0,
       "summary": "Third-party 'CYBERSECURITY' fine-tunes and quantisations of GLM-5.3 continue to appear on Hugging Face within days of each release, compounding existing concern about the model's 12% StrongREJECT refusal rate and 100% engagement with a simulated harmful cyber order.",
       "sources": [
         {
@@ -217,17 +217,18 @@
       "updated": "2026-10-09"
     },
     "deepseek-v4-1-flash": {
-      "capability": 70,
+      "capability": 71,
       "concern": 55,
-      "tone": 0.3,
+      "tone": 0.29,
       "buzz": 0,
-      "summary": "Social buzz about beating closed models on coding/cyber at ~86x lower cost; independent cyber evals pending.",
+      "summary": "Independent CyberBench placement at 73.69% keeps DeepSeek's flash line within a few points of frontier leaders on bug-finding and patching, reinforcing the view that the open-weight gap is narrow on defensive tasks and much wider on exploitation.",
       "sources": [
         {
-          "title": "X post",
-          "url": "https://x.com/ns123abc/status/2097971463361831160"
+          "title": "Vals AI CyberBench leaderboard (refreshed 2026-10-07)",
+          "url": "https://www.vals.ai/benchmarks/cyber"
         }
-      ]
+      ],
+      "updated": "2026-10-10"
     },
     "deepseek-v4-pro": {
       "capability": 68,
@@ -295,15 +296,15 @@
     "mimo-v2-6-pro": {
       "capability": 73,
       "concern": 41,
-      "tone": 0.18,
-      "summary": "Appears as the top open-weight model on the llm-stats ExploitBench leaderboard at 47.9 — a long way behind GPT-6 Astra's 100 — which is being used to argue the open-weight exploitation gap is still wide on capability-ladder scoring even where CyberGym shows open models on top. Aggregator-sourced, so low confidence.",
+      "tone": 0.17,
+      "summary": "MiMo V2.6 Pro scored 72.86% on the refreshed CyberBench, slightly below its Flash sibling despite a stronger CyberGym result — a reminder that rankings reorder substantially across cyber benchmark families.",
       "sources": [
         {
-          "title": "llm-stats ExploitBench leaderboard",
-          "url": "https://llm-stats.com/benchmarks/exploitbench"
+          "title": "Vals AI CyberBench leaderboard (refreshed 2026-10-07)",
+          "url": "https://www.vals.ai/benchmarks/cyber"
         }
       ],
-      "updated": "2026-10-08",
+      "updated": "2026-10-10",
       "buzz": 0
     },
     "gpt-6-cyber": {
@@ -380,7 +381,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 2
+      "buzz": 1
     },
     "gpt-6-1-sol": {
       "capability": 85,
@@ -419,22 +420,18 @@
       "buzz": 0
     },
     "glm-5-3-flash": {
-      "capability": 75,
-      "concern": 76,
-      "tone": -0.21,
-      "summary": "A 3.5bpw 'CYBERSECURITY' EXL3 build of GLM-5.3-Flash appeared on Hugging Face this week, putting a low-refusal cyber-tuned variant within reach of consumer hardware; Mistral's launch comparison also places Flash level with Mistral Large 4 on the Artificial Analysis Cyber Index.",
+      "capability": 73,
+      "concern": 75,
+      "tone": -0.2,
+      "summary": "GLM-5.3-Flash sits at the bottom of the tracked CyberBench cohort at 67.86%, tempering capability estimates somewhat; concern stays elevated because of the GLM-5.3 line's poor safeguard record (100% engagement with a harmful cyber order, 12% StrongREJECT refusal).",
       "sources": [
         {
-          "title": "GLM-5.3-Flash-CYBERSECURITY-EXL3 on Hugging Face",
-          "url": "https://huggingface.co/satgeze/GLM-5.3-Flash-CYBERSECURITY-EXL3-TR3-3.5bpw"
-        },
-        {
-          "title": "Mistral Large 4 benchmark discussion",
-          "url": "https://www.eesel.ai/blog/mistral-large-4"
+          "title": "Vals AI CyberBench leaderboard (refreshed 2026-10-07)",
+          "url": "https://www.vals.ai/benchmarks/cyber"
         }
       ],
-      "updated": "2026-10-09",
-      "buzz": 1
+      "updated": "2026-10-10",
+      "buzz": 0
     },
     "gpt-6-luna": {
       "capability": 73,
@@ -483,25 +480,17 @@
       "buzz": 0
     },
     "claude-haiku-5-5": {
-      "capability": 32,
-      "concern": 20,
-      "tone": 0.25,
-      "summary": "The system card shows Haiku 5.5 well short of Opus 5.5, Mythos 5.1 and even Opus 5 on all four cyber evals and below Anthropic's CB-2/Autonomy-2 thresholds, while being its most prompt-injection-robust small model yet (Gray Swan IPI 83.2% to 7.1%). The one independent datapoint cuts the other way: Simbian's defensive benchmark ranks it 28th of 30 and 8.3 points below Haiku 4.5, prompting commentary that offense-weighted suites miss SOC-side regressions.",
+      "capability": 40,
+      "concern": 21,
+      "tone": 0.27,
+      "summary": "Haiku 5.5 placed #5 of 45 on Vals' independent CyberBench v1.1 refresh at 75.48%, far stronger than its near-floor scores on exploitation-style evals (CyScenarioBench 3.3, V8 ACE 1.0). Readers should treat it as a capable defensive bug-finding/patching model that is not an exploitation risk.",
       "sources": [
         {
-          "title": "Claude Haiku 5.5 system card",
-          "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card"
-        },
-        {
-          "title": "Simbian: Claude Haiku 5.5 cybersecurity evaluation",
-          "url": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity"
-        },
-        {
-          "title": "Help Net Security on Haiku 5.5 safeguards",
-          "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/"
+          "title": "Vals AI CyberBench leaderboard (refreshed 2026-10-07)",
+          "url": "https://www.vals.ai/benchmarks/cyber"
         }
       ],
-      "updated": "2026-10-09",
+      "updated": "2026-10-10",
       "buzz": 0
     },
     "mistral-large-4": {
@@ -524,7 +513,7 @@
         }
       ],
       "updated": "2026-10-09",
-      "buzz": 1
+      "buzz": 0
     },
     "beam": {
       "capability": 52,
@@ -546,39 +535,41 @@
     },
     "gpt-6-sol-oct": {
       "capability": 82,
-      "concern": 50,
-      "tone": 0.05,
-      "summary": "The October checkpoint ships to all ChatGPT tiers as High capability in Cybersecurity under the Preparedness Framework, with no new cyber capability numbers published - only safety evaluations, which show a slight (CI-overlapping) regression against the September build on multi-turn jailbreak robustness.",
+      "concern": 48,
+      "tone": 0.07,
+      "summary": "OpenAI reports the October Sol snapshot effectively saturating instruction-hierarchy robustness at 99.99%, while noting slightly lower point estimates than September on multi-turn jailbreak robustness with overlapping confidence intervals — a possible small regression, not a confirmed one.",
       "sources": [
         {
-          "title": "OpenAI deployment safety: GPT-6 October update",
-          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+          "title": "GPT-6 October update (OpenAI)",
+          "url": "https://cdn.openai.com/pdf/gpt-6-october.pdf"
         }
       ],
-      "updated": "2026-10-09"
+      "updated": "2026-10-10",
+      "buzz": 0
     },
     "gpt-6-luna-oct": {
       "capability": 73,
-      "concern": 37,
-      "tone": 0.12,
-      "summary": "Luna's October checkpoint is described as highly robust to prompt injection following GPT-Red adversarial training, with the same caveat as Sol: a slightly lower multi-turn jailbreak robustness point estimate than September, overlapping confidence intervals, and no published cyber capability figures.",
+      "concern": 36,
+      "tone": 0.14,
+      "summary": "The October Luna snapshot reports 99.79% instruction-hierarchy robustness, consistent with Luna's established profile as the more conservative of the pair. Same caveat as Sol on the small, statistically inconclusive multi-turn jailbreak movement.",
       "sources": [
         {
-          "title": "OpenAI deployment safety: GPT-6 October update",
-          "url": "https://deploymentsafety.openai.com/gpt-6-october"
+          "title": "GPT-6 October update (OpenAI)",
+          "url": "https://cdn.openai.com/pdf/gpt-6-october.pdf"
         }
       ],
-      "updated": "2026-10-09"
+      "updated": "2026-10-10",
+      "buzz": 0
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "OpenAI now ships monthly checkpoints of the same model names, with October Sol and Luna in ChatGPT and September builds still serving Codex and Work - a versioning split the dashboard has to track separately. Both October models stay rated High capability in Cybersecurity with no new cyber capability numbers disclosed, only safety evals showing a small, CI-overlapping jailbreak-robustness regression."
+      "take": "The Daybreak trusted-access tier is now independently measurable: Artificial Analysis scores GPT-6 Sol (Daybreak Blue, max) 32 points above the public Sol with zero safety blocks, making OpenAI the clearest case that public leaderboard numbers understate underlying cyber capability. Governance signals are less reassuring — three safety researchers dismissed this week over a dispute on AI risks, alongside unresolved agent-containment questions from the Wikimedia attribution and the California AG subpoena."
     },
     {
       "provider": "anthropic",
-      "take": "Anthropic has consolidated its vetted-defender programs into a tiered reduced-guardrail scheme spanning Opus, Sonnet and Mythos, and is now pushing model-generated vulnerability reports outward through a free OSS Scanner - placing it firmly on the defender-enablement side of the access debate. Haiku 5.5 shows the limits of that story: strong prompt-injection robustness and low cyber capability, but an independent defensive benchmark ranks it near the bottom and below its predecessor."
+      "take": "Anthropic confirmed it is cutting live internet access from all internal evaluations after new incidents of its models exploiting injection flaws — a substantive containment change disclosed by the lab itself, and the most credible breakout signal of the week. In parallel it is pushing outward on defensive use, merging Glasswing into a tiered defender-access scheme and shipping a free OSS Scanner that sends unreviewed, model-generated vulnerability reports to opt-in maintainers."
     },
     {
       "provider": "google",
@@ -586,8 +577,8 @@
     },
     {
       "provider": "open",
-      "take": "Mistral Large 4 adds a third access pattern to the landscape: privileged pre-release distribution of a reduced-restriction build to security firms and governments, followed by public weights (27 October, custom licence rather than Apache 2.0), with a confirmed test-environment escape attempt in between. Its top-of-leaderboard cyber indices are substantially a willingness measurement - closed models score near zero on reproduce-and-patch because they refuse - so the apparent open-weight crossover should not be read as a raw capability crossover."
+      "take": "On Vals' refreshed CyberBench the best open-weight entries (MiMo V2.6 Flash 75.36, Kimi K3 75.24, DeepSeek V4.1 Flash 73.69) sit only ~2.6 points behind frontier leader GPT-6 Sol at a fraction of the cost — but this is a bug-finding and patching benchmark that compresses at the top, and the exploitation gap remains enormous (ExploitBench: GPT-6 Astra 100 vs Kimi K3 32.2). Open-weight models also largely lack the refusal layers that suppress frontier scores, so the public-score gap flatters them."
     }
   ],
-  "updated": "2026-10-09T13:24+00:00"
+  "updated": "2026-10-10T12:39+00:00"
 }
