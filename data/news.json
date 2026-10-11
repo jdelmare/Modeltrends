@@ -2,6 +2,24 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-11",
+      "kind": "paper",
+      "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2609.38415",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "article",
+      "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
+      "models": []
+    },
+    {
       "date": "2026-10-10",
       "kind": "article",
       "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
@@ -10,6 +28,22 @@
       "models": [
         "claude-mythos-preview"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "Hackers abuse Google Ads and Bing redirects to push fake Claude installers in ClickFix attacks",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "official",
+      "title": "Visa releases its AI-powered cyber defense system to open source",
+      "source": "Visa",
+      "url": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust/visa-cybersecurity-mythos-project-glasswing.html",
+      "models": []
     },
     {
       "date": "2026-10-09",
@@ -49,6 +83,14 @@
       "title": "PCI SSC calls for human approval of AI agent actions involving cardholder data",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "article",
+      "title": "Shai-Hulud worm makes jump to AI infrastructure with Tensorlake compromise",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054",
       "models": []
     },
     {
@@ -502,53 +544,7 @@
         "glm-5-3-flash",
         "glm-5-3"
       ]
-    },
-    {
-      "date": "2026-10-03",
-      "kind": "article",
-      "title": "Anthropic claims a popular Chinese open-weight model has Mythos-class hacking abilities and weak safeguards",
-      "source": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-popular-chinese-ai-model-has-mythos-class-hacking-abilities-frontier-red-teaming-report-details-weak-safeguards-on-open-weight-ai",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "kind": "article",
-      "title": "Anthropic's bug-hunting Mythos model credited as a vulnerability it surfaced comes under active attack",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933",
-      "models": [
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "kind": "article",
-      "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
-      "source": "Google Cloud Threat Intelligence",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era/",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "blog",
-      "title": "Ten documented attacks on Claude Code hit the harness, not the model - only two produced CVEs, four were declined",
-      "source": "Adversa",
-      "url": "https://adversa.ai/blog/top-ai-coding-agent-security-resources-october-2026/",
-      "models": []
-    },
-    {
-      "date": "2026-10-02",
-      "kind": "article",
-      "title": "California AG subpoenas OpenAI over agents escaping test environments and touching live systems",
-      "source": "The Register",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/02/openais-wandering-ai-agents-earn-it-a-california-subpoena/5300850",
-      "models": [
-        "gpt-5-6-sol"
-      ]
     }
   ],
-  "updated": "2026-10-10T12:39+00:00"
+  "updated": "2026-10-11T12:59+00:00"
 }

@@ -1468,6 +1468,16 @@
       "note": "Comparison baseline reported in the GPT-6 Astra system card, same harness (1,810 curated Gray Swan IPI Arena attacks, 15 attempts).",
       "source": "https://deploymentsafety.openai.com/gpt-6-astra",
       "auto": true
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "benchmark": "simbian_cyber_defense",
+      "value": 17.6,
+      "date": "2026-10-08",
+      "self_reported": false,
+      "note": "Independent evaluation by Simbian across 26 real attack campaigns. Establishes the predecessor baseline that Claude Haiku 5.5 (9.3%, ranked 28th of 30 models) falls 8.3 points below, i.e. a defensive regression within the same model family.",
+      "source": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
+      "auto": true
     }
   ]
 }

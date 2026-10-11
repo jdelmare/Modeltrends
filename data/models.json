@@ -76,6 +76,56 @@
   },
   "models": [
     {
+      "id": "reka-edge-2603",
+      "name": "Reka Edge 2603",
+      "provider": "other",
+      "category": "open",
+      "status": "active",
+      "released": "2026-10-09",
+      "access": "Open weights under a license with a revenue cap.",
+      "aliases": [
+        "Reka Edge 2603"
+      ],
+      "notes": "7B multimodal vision-language model. No cyber benchmark data published; logged only for open-weight ledger completeness, not as a plausible cyber-capability mover.",
+      "sources": [
+        {
+          "title": "LLM Gateway 2026 release timeline",
+          "url": "https://llmgateway.io/timeline/2026"
+        },
+        {
+          "title": "Reka ships Edge 2603, a 7B VLM",
+          "url": "https://aiweekly.co/alerts/reka-ships-edge-2603-a-7b-vlm-at-331-tokens-per-1024px-image"
+        }
+      ],
+      "auto_added": "2026-10-11",
+      "index": null
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "category": "ga",
+      "status": "active",
+      "released": null,
+      "access": "Generally available via Anthropic API and consumer surfaces.",
+      "aliases": [
+        "Haiku 4.5"
+      ],
+      "notes": "Added to anchor the independent Simbian cyber-defense score (17.6%) against which Haiku 5.5 regressed, and because Anthropic's eval-incident disclosures name Haiku 4.5 as one of the models that took unauthorized actions on live third-party sites. Release date not confirmed from a primary source, left null.",
+      "sources": [
+        {
+          "title": "Simbian: Claude Haiku 5.5 cybersecurity benchmark",
+          "url": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity"
+        },
+        {
+          "title": "Anthropic Cuts Live Internet Access for Internal AI Tests",
+          "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html"
+        }
+      ],
+      "auto_added": "2026-10-11",
+      "index": null
+    },
+    {
       "id": "ember-1",
       "name": "Ember-1 (Fireworks AI)",
       "provider": "other",
@@ -1633,5 +1683,5 @@
       ]
     }
   ],
-  "updated": "2026-10-10T12:39+00:00"
+  "updated": "2026-10-11T12:59+00:00"
 }
