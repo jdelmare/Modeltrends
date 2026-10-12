@@ -2,6 +2,23 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-12-cyberxero-used-claude-code-in-an-ai-augm",
+      "date": "2026-10-12",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "anthropic",
+      "models": [],
+      "title": "CyberXero used Claude Code in an AI-augmented access campaign that stole 628,000+ Ukrainian records",
+      "summary": "Researchers disclosed a two-pronged AI-augmented initial-access campaign by an actor tracked as CyberXero against WordPress sites, e-commerce platforms and critical infrastructure, which exfiltrated more than 628,000 Ukrainian records. The reporting names Claude Code as part of the attacker's workflow; no specific Claude model version is identified in the sources.",
+      "sources": [
+        {
+          "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records (The Hacker News)",
+          "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-09-anthropic-cuts-live-internet-access-for-",
       "date": "2026-10-09",
       "type": "breakout",

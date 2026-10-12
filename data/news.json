@@ -2,6 +2,70 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "AI vulnerability patching has a grading problem: patches that stop the crash still fail maintainers' tests",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
+      "models": [
+        "claude-opus-4-7"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "podcast",
+      "title": "Imagine there's no Shiny Hunters – AI could make human hacking crews obsolete (Mythos finds a second exploited bug)",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/12/imagine_theres_no_shiny_hunters_ai_could_make_human_hacking_crews_obsolete/5302430",
+      "models": [
+        "claude-mythos-5-1"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "AWS releases Strands Box, an open-source OS-isolation sandbox for AI agents with action-history-aware policy checks",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/",
+      "models": []
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "Check Point weekly threat report: phishing campaign targets AI email assistants with prompt injections hidden in HTML comments and invisible text",
+      "source": "Check Point Research",
+      "url": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report",
+      "models": []
+    },
+    {
+      "date": "2026-10-11",
+      "kind": "social",
+      "title": "GPT-6 Astra performs unsanctioned supply-chain attacks in simulations (UK AISI writeup resurfaces on HN)",
+      "source": "Hacker News / UK AISI",
+      "url": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "kind": "official",
+      "title": "Community cyber fine-tune of open weights appears: GLM-5.3-CYBERSECURITY-FP8 on Hugging Face",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/robertbschuette/GLM-5.3-CYBERSECURITY-FP8",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
       "date": "2026-10-11",
       "kind": "paper",
       "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
@@ -27,6 +91,19 @@
       "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
       "models": [
         "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "kind": "article",
+      "title": "Anthropic discloses incidents of its AI models misusing government sites",
+      "source": "Washington Post",
+      "url": "https://www.washingtonpost.com/technology/2026/10/09/anthropic-discloses-incidents-its-ai-models-misusing-government-sites/",
+      "models": [
+        "claude-haiku-4-5",
+        "claude-mythos-preview",
+        "claude-mythos-5",
+        "claude-mythos-5-1"
       ]
     },
     {
@@ -83,6 +160,14 @@
       "title": "PCI SSC calls for human approval of AI agent actions involving cardholder data",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
+      "models": []
+    },
+    {
+      "date": "2026-10-08",
+      "kind": "official",
+      "title": "Anthropic launches opt-in AI vulnerability scanning for open-source projects, with reports sent to maintainers unreviewed",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
       "models": []
     },
     {
@@ -173,6 +258,21 @@
       "source": "The Atlantic (via Hacker News)",
       "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
       "models": []
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "official",
+      "title": "Vals AI CyberBench v1.1 refresh: GPT-6 Sol 77.98%, Gemini 4 Argon 77.86%, Daybreak Blue 72.98%",
+      "source": "Vals AI",
+      "url": "https://www.vals.ai/benchmarks/cyber",
+      "models": [
+        "gpt-6-sol",
+        "gemini-4-argon",
+        "gpt-6-sol-daybreak-blue",
+        "gpt-6-astra",
+        "gpt-6-1-sol",
+        "kimi-k3"
+      ]
     },
     {
       "date": "2026-10-07",
@@ -295,6 +395,16 @@
       "source": "The Register",
       "url": "https://www.theregister.com/public-sector/2026/10/07/south_korean_president_calls_for_creation_of_tools_that_stop_all_cyber_attacks/5301533",
       "models": []
+    },
+    {
+      "date": "2026-10-06",
+      "kind": "article",
+      "title": "Mistral Large 4 \"Le Chonk\" ships preview-only; open weights promised in roughly three weeks after safety testing",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "models": [
+        "mistral-large-4"
+      ]
     },
     {
       "date": "2026-10-06",
@@ -447,104 +557,7 @@
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2610.06584v1",
       "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Apple to tighten macOS Full Disk Access controls over AI agent data access",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/apple-to-tighten-full-disk-access-controls-in-macos-amid-ai-risks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Debian ships a kernel update fixing 1,313 issues as AI-assisted bug hunting adds maintainer load",
-      "source": "The Register",
-      "url": "https://www.theregister.com/os-platforms/2026/10/05/debians-latest-kernel-security-update-has-1313-reasons-to-patch/5301124",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Exploitation Hits Rejetto HFS Vulnerability Discovered by AI (CVE-2026-61500)",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/",
-      "models": [
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Google halts open-source bug bounty program amid AI spam surge",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "South Korea probes bank breaches amid suspected AI-powered attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/south-korea-probes-bank-breaches-amid-suspected-ai-powered-attacks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-04",
-      "kind": "social",
-      "title": "GPT-6 Astra downloads opponent bot to cheat at StarCraft after losing",
-      "source": "Kotaku (via Hacker News)",
-      "url": "https://kotaku.com/openais-gpt-6-astra-gets-frustrated-losing-at-starcraft-and-decides-to-cheat-instead-2000739607",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-04",
-      "kind": "article",
-      "title": "Trump Names National Intelligence Director Jay Clayton to Lead a New Federal AI Task Force",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force/",
-      "models": []
-    },
-    {
-      "date": "2026-10-04",
-      "kind": "article",
-      "title": "China-aligned TA419 phishes US AI policy experts with Microsoft AitM campaigns",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-04",
-      "kind": "official",
-      "title": "Cybersecurity-tuned FP8 repackagings of GLM-5.3 continue appearing on Hugging Face",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/ShoshinTesuji/GLM-5.3-CYBERSECURITY-FP8",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-03",
-      "kind": "blog",
-      "title": "Is GLM-5.3-Flash Mythos-Level at Cyber?",
-      "source": "generality.org",
-      "url": "https://generality.org/blog/posts/glm-flash-exploitbench/",
-      "models": [
-        "glm-5-3-flash",
-        "glm-5-3"
-      ]
     }
   ],
-  "updated": "2026-10-11T12:59+00:00"
+  "updated": "2026-10-12T15:36+00:00"
 }

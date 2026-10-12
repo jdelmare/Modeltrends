@@ -1478,6 +1478,86 @@
       "note": "Independent evaluation by Simbian across 26 real attack campaigns. Establishes the predecessor baseline that Claude Haiku 5.5 (9.3%, ranked 28th of 30 models) falls 8.3 points below, i.e. a defensive regression within the same model family.",
       "source": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
       "auto": true
+    },
+    {
+      "model": "grok-4-7",
+      "benchmark": "aa_cyber_index",
+      "value": 56.0,
+      "date": "2026-09-28",
+      "self_reported": false,
+      "note": "Grok 4.7 (xhigh) tied for #1 at Index launch. Independent evaluator. Index = CWE-Bench-AA + DeepsecBench-AA + CyberGym-E2E-AA; it is a capability-plus-refusal composite, so models that decline tasks score lower regardless of underlying skill.",
+      "source": "https://artificialanalysis.ai/articles/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "mimo-v2-6-pro",
+      "benchmark": "aa_cyber_index",
+      "value": 56.0,
+      "date": "2026-09-28",
+      "self_reported": false,
+      "note": "Open-weight MiMo-V2.6-Pro tied for #1 with Grok 4.7 at Index launch. Independent evaluator; capability-plus-refusal composite.",
+      "source": "https://artificialanalysis.ai/articles/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "benchmark": "aa_cyber_index",
+      "value": 53.0,
+      "date": "2026-09-28",
+      "self_reported": false,
+      "note": "GPT-6 Luna (max) at Index launch. Independent evaluator; capability-plus-refusal composite.",
+      "source": "https://artificialanalysis.ai/articles/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3-flash",
+      "benchmark": "aa_cyber_index",
+      "value": 50.0,
+      "date": "2026-09-28",
+      "self_reported": false,
+      "note": "Open-weight GLM-5.3-Flash at Index launch. Independent evaluator; capability-plus-refusal composite.",
+      "source": "https://artificialanalysis.ai/articles/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "muse-spark-1-3",
+      "benchmark": "aa_cyber_index",
+      "value": 44.0,
+      "date": "2026-09-28",
+      "self_reported": false,
+      "note": "Muse Spark 1.3 (xhigh) at Index launch. Independent evaluator; capability-plus-refusal composite.",
+      "source": "https://artificialanalysis.ai/articles/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol-daybreak-blue",
+      "benchmark": "cyberbench",
+      "value": 73.0,
+      "date": "2026-10-07",
+      "self_reported": false,
+      "note": "Trusted-access build, ranked #11 overall on the Vals AI leaderboard as of 2026-10-07. Independent evaluator.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "cyberbench",
+      "value": 41.1,
+      "date": "2026-10-07",
+      "self_reported": false,
+      "note": "Ranked #42 as of 2026-10-07. CAVEAT: far below Astra's ExploitGym/ExploitBench results and almost certainly a refusal or harness artifact rather than a capability regression — treat as a guardrail-posture measurement pending Vals methodology notes.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "benchmark": "cyberbench",
+      "value": 39.3,
+      "date": "2026-10-07",
+      "self_reported": false,
+      "note": "Ranked #43 as of 2026-10-07. Same refusal/harness caveat as GPT-6 Astra; inconsistent with GPT-6.1 Sol's 35.1 ExploitGym result and its sibling GPT-6 Sol's 78.0 CyberBench score.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
     }
   ]
 }

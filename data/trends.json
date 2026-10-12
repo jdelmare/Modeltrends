@@ -35,6 +35,11 @@
           "date": "2026-09-29",
           "value": 4.0,
           "source": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+        },
+        {
+          "date": "2026-10-12",
+          "value": 0.0,
+          "source": "https://benchlm.ai/benchmarks/cybergym"
         }
       ],
       "note": "GLM-5.3, the most cyber-capable open-weight model, trails the US frontier by ~4 months on CAISI's aggregate cyber benchmarks."
