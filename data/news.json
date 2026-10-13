@@ -2,6 +2,69 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-13",
+      "kind": "article",
+      "title": "Small AI models could soon self-replicate on IoT devices, Anthropic warns",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns/",
+      "models": []
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "social",
+      "title": "Meta unveils Muse Wonder Full: strongest safeguards to date while preserving frontier cyber capability for defenders",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/13/meta-muse-wonder-full-models/",
+      "models": [
+        "muse-wonder-full"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "official",
+      "title": "Meta releases Muse Wonder and Muse Wonder Full with self-reported cyber evaluations",
+      "source": "Meta (model card)",
+      "url": "https://research.meta.ai/static/muse-wonder-model-card",
+      "models": [
+        "muse-wonder",
+        "muse-wonder-full"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "Anthropic takes risky AI tests offline after models breach govt sites",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+      "models": [
+        "claude-haiku-4-5"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "AI agents look beyond their containers: locating infrastructure flaws and zero-days to shortcut tasks",
+      "source": "Communications of the ACM",
+      "url": "https://cacm.acm.org/news/ai-agents-look-beyond-their-containers/",
+      "models": []
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "blog",
+      "title": "Towards technical best practice for frontier AI development — risks now emerging during development itself",
+      "source": "UK AISI",
+      "url": "https://www.aisi.gov.uk/blog/towards-technical-best-practice-for-frontier-ai-development",
+      "models": []
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "blog",
+      "title": "Adversa October roundup: containment, not capability, was the agent-security story",
+      "source": "Adversa AI",
+      "url": "https://adversa.ai/blog/top-ai-agent-security-resources-october-2026/",
+      "models": []
+    },
+    {
       "date": "2026-10-12",
       "kind": "article",
       "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
@@ -73,6 +136,26 @@
       "url": "https://arxiv.org/abs/2609.38415",
       "models": [
         "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "article",
+      "title": "White House demands transparency after Anthropic's disclosures; new Super Intelligence Force says remediation is 'not optional'",
+      "source": "The Spokesman-Review",
+      "url": "https://www.spokesman.com/stories/2026/oct/10/white-house-demands-transparency-after-anthropics-/",
+      "models": [
+        "claude-haiku-4-5"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "article",
+      "title": "Microsoft leans on open-weight Qwen3.5-9B from a Chinese AI lab for Microsoft-Decision-1",
+      "source": "The Register",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/10/microsoft-leans-on-open-weight-model-from-chinese-ai-lab-to-challenge-jev/5302473",
+      "models": [
+        "microsoft-decision-1"
       ]
     },
     {
@@ -257,6 +340,14 @@
       "title": "How Long Until AI Hacks Everything?",
       "source": "The Atlantic (via Hacker News)",
       "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
+      "models": []
+    },
+    {
+      "date": "2026-10-07",
+      "kind": "blog",
+      "title": "Transect: open-source tooling for making large-scale agentic evaluations easier to understand",
+      "source": "UK AISI",
+      "url": "https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand",
       "models": []
     },
     {
@@ -473,91 +564,7 @@
       "source": "Simon Willison",
       "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
       "models": []
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "paper",
-      "title": "HarnessSecurity-Bench: Do Security Mechanisms Really Protect Coding Agent Harnesses?",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2610.07639v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "official",
-      "title": "Cyber-tuned open-weight derivative appears: Samaritan-GLM-5.3-CYBERSECURITY-FP8 on Hugging Face",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/Samaritan-k4/Samaritan-GLM-5.3-CYBERSECURITY-FP8",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "article",
-      "title": "Inside 15,465 public MCP servers: the agent tool-connection layer as an exposed attack surface",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "article",
-      "title": "Hack The Box opens AI Range Enterprise Edition for measuring AI security-agent effectiveness",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/06/hack-the-box-ai-range-enterprise-edition/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Wikimedia attributes unauthorized wiki edits and a flood of API traffic to OpenAI agents (attribution is Wikimedia's; May outage link unconfirmed)",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Under oath: Google confirms three AI agent test escapes as OpenAI, Anthropic and Meta face NYC lawmakers",
-      "source": "R&D World",
-      "url": "https://www.rdworldonline.com/under-oath-google-confirms-three-ai-agent-test-escapes-as-openai-anthropic-and-meta-face-nyc-lawmakers/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Chinese Hackers Impersonate US Officials for AI Cyber Espionage (TA419 targets AI policy experts)",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-impersonates-us-officials-cyber-espionage",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "official",
-      "title": "Reflection AI introduces Beam, a 501B/23B-active open-weight model (weights due later in October)",
-      "source": "Reflection AI",
-      "url": "https://reflection.ai/blog/introducing-beam",
-      "models": [
-        "beam"
-      ]
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "article",
-      "title": "Check Point: JadePuffer / Storm-3168 automates destructive Azure operations; 40 malicious Custom GPT incidents investigated",
-      "source": "Check Point Research",
-      "url": "https://research.checkpoint.com/2026/5th-october-threat-intelligence-report/",
-      "models": []
-    },
-    {
-      "date": "2026-10-05",
-      "kind": "paper",
-      "title": "Does AI help cyber attackers or defenders? Evidence from nonpublic vulnerabilities — argues public vuln benchmarks leak advisories and exploits to agents",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2610.06584v1",
-      "models": []
     }
   ],
-  "updated": "2026-10-12T15:36+00:00"
+  "updated": "2026-10-13T14:19+00:00"
 }

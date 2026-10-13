@@ -300,6 +300,16 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-09"
+    },
+    {
+      "id": "cyber_adversarial_refusal_asr",
+      "name": "Cyber adversarial-refusal attack success rate (single turn, Meta internal 'CyberBench')",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-13"
     }
   ],
   "scores": [
@@ -1557,6 +1567,36 @@
       "self_reported": false,
       "note": "Ranked #43 as of 2026-10-07. Same refusal/harness caveat as GPT-6 Astra; inconsistent with GPT-6.1 Sol's 35.1 ExploitGym result and its sibling GPT-6 Sol's 78.0 CyberBench score.",
       "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
+    },
+    {
+      "model": "muse-wonder-full",
+      "benchmark": "cybergym",
+      "value": 88.4,
+      "date": "2026-10-12",
+      "self_reported": true,
+      "note": "Developer self-reported in the Muse Wonder model card. Meta cautions that its runs of competing models were best-effort and may not be optimally tuned, so cross-model deltas are not controlled.",
+      "source": "https://research.meta.ai/static/muse-wonder-model-card",
+      "auto": true
+    },
+    {
+      "model": "muse-wonder-full",
+      "benchmark": "exploitbench",
+      "value": 58.9,
+      "date": "2026-10-12",
+      "self_reported": true,
+      "note": "Developer self-reported in the Muse Wonder model card; most tests run at maximum reasoning effort. ExploitGym is deliberately omitted: Meta reports 92 flags captured (21 via the intended vulnerability), which is a raw count, not the registry's '% instances exploited' unit.",
+      "source": "https://research.meta.ai/static/muse-wonder-model-card",
+      "auto": true
+    },
+    {
+      "model": "muse-wonder-full",
+      "benchmark": "cyber_adversarial_refusal_asr",
+      "value": 0.8,
+      "date": "2026-10-12",
+      "self_reported": true,
+      "note": "Meta's internal CyberBench adversarial-refusal ASR, single turn; lower is better. This is a safeguard metric and is unrelated to the Vals AI CyberBench v1.1 capability score tracked under benchmark id 'cyberbench'.",
+      "source": "https://research.meta.ai/static/muse-wonder-model-card",
       "auto": true
     }
   ]

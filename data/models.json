@@ -76,6 +76,113 @@
   },
   "models": [
     {
+      "id": "microsoft-decision-1",
+      "name": "Microsoft-Decision-1",
+      "provider": "other",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-09",
+      "access": "Microsoft API",
+      "aliases": [
+        "Microsoft Decision 1",
+        "Decision-1"
+      ],
+      "notes": "Classification/routing model returning calibrated probabilities over fixed answer options (32K input), not a generative agent, so low direct offensive-cyber salience. Cyber-policy relevance: the first version is built on Alibaba's open-weight Qwen3.5-9B, a Western-vendor dependency on PRC open weights. Provider recorded as 'other' because Microsoft is not yet a registry provider.",
+      "sources": [
+        {
+          "title": "Microsoft-Decision-1 overview",
+          "url": "https://www.eesel.ai/blog/microsoft-decision-1"
+        },
+        {
+          "title": "Microsoft leans on open-weight model from Chinese AI lab",
+          "url": "https://www.theregister.com/ai-and-ml/2026/10/10/microsoft-leans-on-open-weight-model-from-chinese-ai-lab-to-challenge-jev/5302473"
+        }
+      ],
+      "auto_added": "2026-10-13",
+      "index": null
+    },
+    {
+      "id": "glm-5-3-fast",
+      "name": "GLM 5.3 Fast",
+      "provider": "zai",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-07",
+      "access": "Z.AI API / OpenRouter",
+      "aliases": [
+        "GLM 5.3 Fast",
+        "GLM-5.3-Fast"
+      ],
+      "notes": "Distinct from the registry's GLM-5.3-Flash (released 2026-08-26) despite the near-identical name; no cyber benchmark results published yet and open-weight status not confirmed, so categorized conservatively as API-available pending a weights announcement.",
+      "sources": [
+        {
+          "title": "LLM release timeline 2026",
+          "url": "https://llmgateway.io/timeline/2026"
+        },
+        {
+          "title": "GLM 5.3 Flash (OpenRouter)",
+          "url": "https://openrouter.ai/z-ai/glm-5.3-flash"
+        }
+      ],
+      "auto_added": "2026-10-13",
+      "index": null
+    },
+    {
+      "id": "muse-wonder-full",
+      "name": "Muse Wonder Full",
+      "provider": "meta",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-10-12",
+      "access": "Muse Code subscription only (separate checkpoint, not an API flag)",
+      "aliases": [
+        "Muse Wonder Full",
+        "muse-wonder-full-1.0"
+      ],
+      "notes": "The checkpoint Meta ran its cyber evaluations on. Meta self-reports CyberGym 88.4% and ExploitBench 58.9%, and says its unmitigated evaluations place the model at 'moderate or lower' for Cybersecurity and Loss of Control while not ruling out high risk in Chemical & Biological. Meta promises a fuller safety report.",
+      "sources": [
+        {
+          "title": "Meta Muse Wonder model card",
+          "url": "https://research.meta.ai/static/muse-wonder-model-card"
+        },
+        {
+          "title": "Meta Muse Wonder Full models",
+          "url": "https://www.helpnetsecurity.com/2026/10/13/meta-muse-wonder-full-models/"
+        }
+      ],
+      "auto_added": "2026-10-13",
+      "index": {
+        "index": 63.4,
+        "n": 2
+      }
+    },
+    {
+      "id": "muse-wonder",
+      "name": "Muse Wonder",
+      "provider": "meta",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-12",
+      "access": "Meta Model API and Muse Code",
+      "aliases": [
+        "Muse Wonder",
+        "muse-wonder-1.0"
+      ],
+      "notes": "Meta's new agent-oriented flagship, served on the Meta Model API as muse-wonder-1.0. The cyber benchmark numbers Meta published are for the separate Muse Wonder Full checkpoint, not this API model.",
+      "sources": [
+        {
+          "title": "Meta Muse Wonder model card",
+          "url": "https://research.meta.ai/static/muse-wonder-model-card"
+        },
+        {
+          "title": "Meta releases Muse Wonder AI models built to run personal and professional agents",
+          "url": "https://siliconangle.com/2026/10/12/meta-releases-muse-wonder-ai-models-built-to-run-personal-and-professional-agents/"
+        }
+      ],
+      "auto_added": "2026-10-13",
+      "index": null
+    },
+    {
       "id": "reka-edge-2603",
       "name": "Reka Edge 2603",
       "provider": "other",
@@ -1683,5 +1790,5 @@
       ]
     }
   ],
-  "updated": "2026-10-12T15:36+00:00"
+  "updated": "2026-10-13T14:19+00:00"
 }
