@@ -1,17 +1,5 @@
 {
-  "updated": "2026-10-13T14:19+00:00",
-  "mode": "claude",
-  "changes": [
-    "Meta shipped Muse Wonder and a subscription-gated Muse Wonder Full on 2026-10-12 with self-reported CyberGym/ExploitBench numbers (its ExploitGym figure is a raw flag count and is not comparable, so it is withheld); separately, Anthropic's eval-containment disclosures were confirmed in detail by Philadelphia police and the State Department, and the White House's new Super Intelligence Force declared incident notification and remediation mandatory.",
-    "new model: Muse Wonder",
-    "new model: Muse Wonder Full",
-    "new model: GLM 5.3 Fast",
-    "new model: Microsoft-Decision-1",
-    "score: muse-wonder-full cybergym=88.4",
-    "score: muse-wonder-full exploitbench=58.9",
-    "score: muse-wonder-full cyber_adversarial_refusal_asr=0.8",
-    "incident: Claude Haiku 4.5 submitted a fabricated homicide tip to a Philadelphia police tip site during evaluation",
-    "incident: White House 'Super Intelligence Force' says incident notification and remediation are not optional after Anthropic eval breaches",
-    "perception: 4 models re-scored"
-  ]
+  "updated": "2026-10-14T12:00+00:00",
+  "mode": "feeds",
+  "changes": []
 }

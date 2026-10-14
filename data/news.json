@@ -2,6 +2,50 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-14",
+      "kind": "social",
+      "title": "Five agents running on GPT-6.1 Sol clear WoW's Ragefire Chasm in 24h",
+      "source": "Hacker News",
+      "url": "https://agent-wow.sh/five-agents-running-on-gpt-61-sol-clear-world-of-warcrafts-ragefire-chasm-in-24-hours/",
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-astra"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "Chainguard Harness uses frontier AI to test running applications for vulnerabilities",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/",
+      "models": [
+        "claude-mythos-5-1",
+        "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+      "models": [
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "social",
+      "title": "Claude Haiku 5.5 vs. GPT-6 Luna: 256 jobs in Ask Buoy",
+      "source": "Hacker News",
+      "url": "https://buoy.gg/blog/claude-haiku-5-5-vs-gpt-6-luna",
+      "models": [
+        "claude-haiku-5-5",
+        "gpt-6-luna",
+        "gpt-6-astra"
+      ]
+    },
+    {
       "date": "2026-10-13",
       "kind": "article",
       "title": "Small AI models could soon self-replicate on IoT devices, Anthropic warns",
@@ -17,6 +61,26 @@
       "url": "https://www.helpnetsecurity.com/2026/10/13/meta-muse-wonder-full-models/",
       "models": [
         "muse-wonder-full"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "social",
+      "title": "I turned my unused Kindle into a photo frame with GPT-6 Astra",
+      "source": "Hacker News",
+      "url": "https://nirajrajgor.com/blog/kindle-photo-frame-with-ai",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "social",
+      "title": "Floor 404 – Backrooms Puzzle Game (Made with GPT 6 Astra)",
+      "source": "Hacker News",
+      "url": "https://www.pendo.io/floor404/",
+      "models": [
+        "gpt-6-astra"
       ]
     },
     {
@@ -507,64 +571,7 @@
         "mistral-large-4",
         "gpt-6-1-astra"
       ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "official",
-      "title": "Mistral Large 4 ships with a vetted reduced-moderation cyber build for security partners and state authorities",
-      "source": "Mistral AI",
-      "url": "https://mistral.ai/news/mistral-large-4/",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "article",
-      "title": "Reflection's Beam trails top open models on coding tests but claims lower inference compute — and the weights aren't out",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/06/reflections-beam-trails-top-open-models-on-coding-tests-but-claims-lower-inference-compute/",
-      "models": [
-        "beam"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "official",
-      "title": "Cybersecurity-tuned derivatives of GLM-5.3 and GLM-5.3-Flash appear on Hugging Face",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/satgeze/GLM-5.3-Flash-CYBERSECURITY-EXL3-TR3-3.5bpw",
-      "models": [
-        "glm-5-3",
-        "glm-5-3-flash"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "article",
-      "title": "Mistral launches Large 4 \"Le Chonk\" with a cyber-expert and government preview tier; open weights promised 2026-10-27",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/06/mistral-ai-model-le-chonk.html",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "article",
-      "title": "Google's PageBreak AI Agent Finds 500 Flaws in Its Web Apps",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
-      "models": []
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "blog",
-      "title": "Quoting Victoria Kim: OpenAI added monitoring for \"immediate intervention\" to stop training if models reach the internet unsupervised",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
-      "models": []
     }
   ],
-  "updated": "2026-10-13T14:19+00:00"
+  "updated": "2026-10-14T12:00+00:00"
 }
