@@ -4616,6 +4616,12 @@
     {
       "date": "2026-10-15",
       "models": {
+        "nemotron-3-5-bolt": {
+          "buzz": 0
+        },
+        "nemotron-3-5-super-vl": {
+          "buzz": 0
+        },
         "microsoft-decision-1": {
           "buzz": 0
         },
@@ -4624,15 +4630,15 @@
         },
         "muse-wonder-full": {
           "index": 63.4,
-          "capability": 76,
-          "concern": 48,
-          "tone": 0.08,
+          "capability": 77,
+          "concern": 49,
+          "tone": 0.06,
           "buzz": 0
         },
         "muse-wonder": {
-          "capability": 68,
-          "concern": 40,
-          "tone": 0.1,
+          "capability": 74,
+          "concern": 42,
+          "tone": 0.15,
           "buzz": 0
         },
         "reka-edge-2603": {
@@ -4649,8 +4655,8 @@
         },
         "gpt-6-sol-daybreak-blue": {
           "capability": 90,
-          "concern": 62,
-          "tone": 0.0,
+          "concern": 61,
+          "tone": 0.03,
           "buzz": 0
         },
         "gpt-6-luna-oct": {
@@ -4711,9 +4717,9 @@
         },
         "gpt-6-1-sol": {
           "index": 63.1,
-          "capability": 84,
-          "concern": 66,
-          "tone": -0.03,
+          "capability": 85,
+          "concern": 65,
+          "tone": 0.0,
           "buzz": 2
         },
         "gemini-4-argon": {
@@ -4796,9 +4802,9 @@
         },
         "claude-mythos-5-1": {
           "index": 66.3,
-          "capability": 94,
-          "concern": 69,
-          "tone": 0.12,
+          "capability": 95,
+          "concern": 70,
+          "tone": 0.17,
           "buzz": 0
         },
         "claude-fable-5-1": {
@@ -4849,15 +4855,15 @@
         "gpt-6-astra": {
           "index": 81.7,
           "capability": 96,
-          "concern": 91,
-          "tone": -0.24,
-          "buzz": 4
+          "concern": 90,
+          "tone": -0.22,
+          "buzz": 3
         },
         "gpt-5-6-sol": {
           "index": 68.0,
-          "capability": 83,
-          "concern": 85,
-          "tone": -0.37,
+          "capability": 85,
+          "concern": 86,
+          "tone": -0.35,
           "buzz": 1
         },
         "gpt-5-5-cyber": {

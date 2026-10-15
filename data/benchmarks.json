@@ -1598,6 +1598,16 @@
       "note": "Meta's internal CyberBench adversarial-refusal ASR, single turn; lower is better. This is a safeguard metric and is unrelated to the Vals AI CyberBench v1.1 capability score tracked under benchmark id 'cyberbench'.",
       "source": "https://research.meta.ai/static/muse-wonder-model-card",
       "auto": true
+    },
+    {
+      "model": "muse-wonder",
+      "benchmark": "cyberbench",
+      "value": 80.4,
+      "date": "2026-10-12",
+      "self_reported": false,
+      "note": "Independent evaluation. Leaderboard refresh of 2026-10-12 ranks Muse Wonder 1st of 47 models, ahead of GPT-6 Sol (77.98) and Gemini 4 Argon (77.86); note this is the generally-available Wonder, not the gated Wonder Full. Top three are within ~2.5 points.",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
     }
   ]
 }

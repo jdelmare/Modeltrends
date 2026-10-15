@@ -2,6 +2,85 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-15",
+      "kind": "article",
+      "title": "AI slop isn't just for social media; it's ruining cyberattacks too — counterpoint arguing serious threat actors are barely using AI",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
+      "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "official",
+      "title": "NVIDIA releases Nemotron 3.5 Super VL and Bolt open weights — no accompanying cyber evaluation",
+      "source": "NVIDIA",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "models": [
+        "nemotron-3-5-super-vl",
+        "nemotron-3-5-bolt"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "article",
+      "title": "UK keeps AI safeguards in the \"maybe\" pile for the Cyber Security and Resilience Bill",
+      "source": "The Register",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/15/uk-keeps-ai-safeguards-in-the-maybe-pile-for-cyber-security-bill/5303026",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "social",
+      "title": "Bank of America hired 1,000 contractors to patch software flaws exposed by Mythos",
+      "source": "CNBC (via Hacker News)",
+      "url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html",
+      "models": [
+        "claude-mythos-5-1"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "social",
+      "title": "An Open Letter on AI and Cybersecurity from the Scientific Community (~400 signatories incl. Hinton, Bengio) calls for default air-gapping of cyber-capable models and an international containment-failure registry",
+      "source": "ai-security-letter.org (via Hacker News)",
+      "url": "https://ai-security-letter.org/",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "AI-found Linux kernel vhost flaw gives local users root and can break a guest out to the host",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "social",
+      "title": "Chainguard publishes the first vulnerability disclosure produced by its Claude Mythos harness",
+      "source": "Chainguard",
+      "url": "https://www.chainguard.dev/unchained/the-first-disclosure-from-our-mythos-harness",
+      "models": [
+        "claude-mythos-5-1"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "paper",
+      "title": "From Training to Escalation: forensic analysis and local recreation of RL/RLHF-induced privilege escalation in AI agents (CVE-2026-65616)",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.20437v1",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "The blind spots of agentic pentesting and how to close them",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+      "models": []
+    },
+    {
       "date": "2026-10-14",
       "kind": "official",
       "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
@@ -47,6 +126,30 @@
     },
     {
       "date": "2026-10-13",
+      "kind": "article",
+      "title": "UK AISI warns models can pose risk during training and internal testing, and that some may recognise they are being evaluated",
+      "source": "Bitdefender HotForSecurity",
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/uk-ai-security-risks-unreleased-models",
+      "models": []
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "paper",
+      "title": "CyberArena: benchmarking AI agents in live symmetric attack-and-defense combat",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.19005v1",
+      "models": []
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "paper",
+      "title": "ProtoArena: can AI agents discover and exploit real-world cross-component protocol vulnerabilities?",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.17837v1",
+      "models": []
+    },
+    {
+      "date": "2026-10-13",
       "kind": "social",
       "title": "Claude Haiku 5.5 vs. GPT-6 Luna: 256 jobs in Ask Buoy",
       "source": "Hacker News",
@@ -74,6 +177,14 @@
       "models": [
         "muse-wonder-full"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "British government warns it is preparing for serious incidents involving autonomous AI agents",
+      "source": "BankInfoSecurity",
+      "url": "https://www.bankinfosecurity.com/british-government-warns-serious-incidents-involving-ai-a-33074",
+      "models": []
     },
     {
       "date": "2026-10-12",
@@ -440,139 +551,7 @@
         "gpt-6-1-sol",
         "kimi-k3"
       ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "official",
-      "title": "GPT-6 October update: instruction-hierarchy robustness reported at 99.99% (Sol) and 99.79% (Luna)",
-      "source": "OpenAI",
-      "url": "https://cdn.openai.com/pdf/gpt-6-october.pdf",
-      "models": [
-        "gpt-6-sol-oct",
-        "gpt-6-luna-oct"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "paper",
-      "title": "On the Reliability of LLM-Based Vulnerability Patching Benchmarks",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.10150v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "article",
-      "title": "Mistral confirms Large 4 tried to go beyond its testing environment; weights due 27 October under a custom licence",
-      "source": "The New Stack (Reuters-sourced)",
-      "url": "https://thenewstack.io/mistral-large-4-weights/",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "official",
-      "title": "Claude Haiku 5.5 system card: small-model cyber capability far behind frontier tier (3.3% CyScenarioBench)",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/document/claude-haiku-5-5-system-card",
-      "models": [
-        "claude-haiku-5-5",
-        "claude-opus-5-5",
-        "claude-mythos-5-1",
-        "claude-sonnet-5-5",
-        "claude-sonnet-5"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "official",
-      "title": "GPT-6 October 2026 update: Sol and Luna go global across free and paid tiers, with documented safety regressions vs September builds",
-      "source": "OpenAI Deployment Safety",
-      "url": "https://deploymentsafety.openai.com/gpt-6-october",
-      "models": [
-        "gpt-6-sol",
-        "gpt-6-luna",
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "official",
-      "title": "GPT-6 and Intelligent UI for everyone",
-      "source": "OpenAI (688 points on Hacker News)",
-      "url": "https://openai.com/index/gpt-6-for-everyone/",
-      "models": [
-        "gpt-6-sol",
-        "gpt-6-luna"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "article",
-      "title": "Anthropic Gives Vetted Defenders Fewer Claude Guardrails",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails",
-      "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "social",
-      "title": "Ask HN: Which frontier model can do code security reviews",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=49996594",
-      "models": []
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "article",
-      "title": "Anthropic Introduces 3-Tier Cyber Verification Program for AI Access",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/anthropic-introduces-3-tier-cyber-verification-program-for-ai-access/",
-      "models": [
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "article",
-      "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
-      "models": [
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "article",
-      "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "article",
-      "title": "South Korean president calls for creation of tools that stop all cyber-attacks, urging a \"complete security paradigm refresh\" for the AI era",
-      "source": "The Register",
-      "url": "https://www.theregister.com/public-sector/2026/10/07/south_korean_president_calls_for_creation_of_tools_that_stop_all_cyber_attacks/5301533",
-      "models": []
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "article",
-      "title": "Mistral Large 4 \"Le Chonk\" ships preview-only; open weights promised in roughly three weeks after safety testing",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-      "models": [
-        "mistral-large-4"
-      ]
     }
   ],
-  "updated": "2026-10-15T11:37+00:00"
+  "updated": "2026-10-15T22:13+00:00"
 }
