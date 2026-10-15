@@ -3,6 +3,18 @@
   "items": [
     {
       "date": "2026-10-14",
+      "kind": "official",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/third-moment-research",
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-astra",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-14",
       "kind": "social",
       "title": "Five agents running on GPT-6.1 Sol clear WoW's Ragefire Chasm in 24h",
       "source": "Hacker News",
@@ -560,18 +572,7 @@
       "models": [
         "mistral-large-4"
       ]
-    },
-    {
-      "date": "2026-10-06",
-      "kind": "blog",
-      "title": "Simon Willison on the Mistral Large 4 Hacker News thread",
-      "source": "simonwillison.net",
-      "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
-      "models": [
-        "mistral-large-4",
-        "gpt-6-1-astra"
-      ]
     }
   ],
-  "updated": "2026-10-14T12:00+00:00"
+  "updated": "2026-10-15T11:37+00:00"
 }
