@@ -1608,6 +1608,16 @@
       "note": "Independent evaluation. Leaderboard refresh of 2026-10-12 ranks Muse Wonder 1st of 47 models, ahead of GPT-6 Sol (77.98) and Gemini 4 Argon (77.86); note this is the generally-available Wonder, not the gated Wonder Full. Top three are within ~2.5 points.",
       "source": "https://www.vals.ai/benchmarks/cyber",
       "auto": true
+    },
+    {
+      "model": "muse-spark-1-3-max",
+      "benchmark": "cyberbench",
+      "value": 72.7,
+      "date": "2026-10-12",
+      "self_reported": false,
+      "note": "Independent evaluation by Vals AI; rank 16 on the 2026-10-12 leaderboard refresh (72.74%). Distinct model from Muse Spark 1.3 (69.4%).",
+      "source": "https://www.vals.ai/benchmarks/cyber",
+      "auto": true
     }
   ]
 }

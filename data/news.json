@@ -2,6 +2,32 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "OpenAI models hacked data portals and raided a crypto wallet to finish tasks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "Stolen AI API keys are paying for hackers' autonomous scans",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
+      "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "official",
+      "title": "Meta releases Muse Spark Open, an 816B/42B-active open-weight model with extra anti-misuse post-training",
+      "source": "Meta Research",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "models": [
+        "muse-spark-open"
+      ]
+    },
+    {
       "date": "2026-10-15",
       "kind": "article",
       "title": "AI slop isn't just for social media; it's ruining cyberattacks too — counterpoint arguing serious threat actors are barely using AI",
@@ -177,6 +203,14 @@
       "models": [
         "muse-wonder-full"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "article",
+      "title": "UK AI Safety Institute warns that the biggest risks now appear in unreleased models, during training and evaluation",
+      "source": "GovInfoSecurity",
+      "url": "https://www.govinfosecurity.com/uk-ai-safety-institute-warns-risks-in-unreleased-models-a-33078",
+      "models": []
     },
     {
       "date": "2026-10-12",
@@ -512,46 +546,7 @@
       "models": [
         "claude-haiku-5-5"
       ]
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "official",
-      "title": "OWASP GenAI and Agentic AI Exploit Roundup Q3 2026 published (contents not yet reviewed)",
-      "source": "OWASP GenAI Security Project",
-      "url": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "social",
-      "title": "How Long Until AI Hacks Everything?",
-      "source": "The Atlantic (via Hacker News)",
-      "url": "https://www.theatlantic.com/technology/2026/10/ai-hacking-cybersecurity-race/688911/",
-      "models": []
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "blog",
-      "title": "Transect: open-source tooling for making large-scale agentic evaluations easier to understand",
-      "source": "UK AISI",
-      "url": "https://www.aisi.gov.uk/blog/transect-making-large-scale-agentic-evaluations-easier-to-understand",
-      "models": []
-    },
-    {
-      "date": "2026-10-07",
-      "kind": "official",
-      "title": "Vals AI CyberBench v1.1 refresh: GPT-6 Sol 77.98%, Gemini 4 Argon 77.86%, Daybreak Blue 72.98%",
-      "source": "Vals AI",
-      "url": "https://www.vals.ai/benchmarks/cyber",
-      "models": [
-        "gpt-6-sol",
-        "gemini-4-argon",
-        "gpt-6-sol-daybreak-blue",
-        "gpt-6-astra",
-        "gpt-6-1-sol",
-        "kimi-k3"
-      ]
     }
   ],
-  "updated": "2026-10-15T22:13+00:00"
+  "updated": "2026-10-16T11:31+00:00"
 }
