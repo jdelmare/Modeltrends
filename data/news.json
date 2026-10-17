@@ -4,6 +4,51 @@
     {
       "date": "2026-10-16",
       "kind": "article",
+      "title": "CERT-In warns AI agents accessed sensitive data at Indian organizations during testing",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/",
+      "models": []
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "official",
+      "title": "Epoch AI: open-weight models trail closed frontier on cyber capability by 6-7 months, GLM-5.3 on top",
+      "source": "Epoch AI",
+      "url": "https://epoch.ai/topics/open-models",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "China unveils draft export controls on AI, open-weight models, and chips",
+      "source": "Financial Times",
+      "url": "https://www.ft.com/content/e0a1295c-4492-4fdd-aaf5-55678a9ef9bf",
+      "models": []
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "When AI agents commit breaches, humans may not be held liable",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+      "models": []
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "official",
+      "title": "NVIDIA ships open-weight Nemotron 3.5 Super VL and Bolt with cybersecurity triage as a named use case - no cyber benchmarks published",
+      "source": "NVIDIA developer blog",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "models": [
+        "nemotron-3-5-super-vl",
+        "nemotron-3-5-bolt"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
       "title": "OpenAI models hacked data portals and raided a crypto wallet to finish tasks",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
@@ -16,6 +61,28 @@
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
       "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "official",
+      "title": "Meta publishes open weights for Muse Spark Open 816B-A42B, with safeguard but no offensive-cyber benchmarks",
+      "source": "Hugging Face / Meta",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "models": [
+        "muse-spark-open"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "official",
+      "title": "Anthropic documents three-tier Cyber Verification Program (Defense, Red Team, Specialized) covering Opus 5.5, Sonnet 5.5 and Mythos 5.1",
+      "source": "Anthropic support",
+      "url": "https://support.claude.com/en/articles/14604842-cyber-verification-program",
+      "models": [
+        "claude-opus-5-5",
+        "claude-sonnet-5-5",
+        "claude-mythos-5-1"
+      ]
     },
     {
       "date": "2026-10-15",
@@ -52,6 +119,22 @@
       "title": "UK keeps AI safeguards in the \"maybe\" pile for the Cyber Security and Resilience Bill",
       "source": "The Register",
       "url": "https://www.theregister.com/ai-and-ml/2026/10/15/uk-keeps-ai-safeguards-in-the-maybe-pile-for-cyber-security-bill/5303026",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "An AI agent found a critical OTP bypass in production - the attack was the easy part",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "paper",
+      "title": "Thinking in Graphs: Neo4j-backed exploit-chain reasoning for LLM penetration-testing agents",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.20902v1",
       "models": []
     },
     {
@@ -203,6 +286,14 @@
       "models": [
         "muse-wonder-full"
       ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "blog",
+      "title": "Offensive AI Con 2026 write-up: agent sandboxing, LLM fuzzing, and a Copilot CLI secret-exfiltration demo",
+      "source": "pwnhackers",
+      "url": "https://pwnhackers.substack.com/p/offensive-ai-con-2026-ai-exploitation",
+      "models": []
     },
     {
       "date": "2026-10-12",
@@ -457,96 +548,7 @@
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/",
       "models": []
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "PCI SSC calls for human approval of AI agent actions involving cardholder data",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/09/pci-ssc-payment-environments-ai-security-guidance/",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "official",
-      "title": "Anthropic launches opt-in AI vulnerability scanning for open-source projects, with reports sent to maintainers unreviewed",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "article",
-      "title": "Shai-Hulud worm makes jump to AI infrastructure with Tensorlake compromise",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "blog",
-      "title": "Artificial Analysis adds trusted-access models to the Cyber Index; GPT-6 Sol (Daybreak Blue, max) leads with no safety blocks",
-      "source": "Artificial Analysis",
-      "url": "https://artificialanalysis.ai/articles/trusted-access-models-cyber-index",
-      "models": [
-        "gpt-6-sol-daybreak-blue",
-        "gpt-6-sol",
-        "grok-4-7"
-      ]
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "article",
-      "title": "CrowdStrike: unknown actor used the ARTEX AI pentesting tool against South Korean financial firms",
-      "source": "CrowdStrike",
-      "url": "https://www.crowdstrike.com/en-us/blog/unknown-threat-actor-uses-artex-to-target-south-korean-finance/",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "article",
-      "title": "'AgentCorruption' Puts AWS Environments at Risk With a Single Prompt",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "article",
-      "title": "ARTEX AI pentesting tool used in data theft attacks on South Korean financial firms",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "blog",
-      "title": "Simbian: Haiku 5.5 ranks 28th of 30 on a defensive cyber benchmark, below its predecessor",
-      "source": "Simbian",
-      "url": "https://simbian.ai/blog/claude-haiku-5-5-cybersecurity",
-      "models": [
-        "claude-haiku-5-5",
-        "claude-opus-5"
-      ]
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "paper",
-      "title": "Where Do the Tokens Go? Understanding and Reducing Costs in LLM Agents for Vulnerability Discovery",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.11602v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-08",
-      "kind": "article",
-      "title": "Anthropic's new budget model gets much better at ignoring hidden commands",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
-      "models": [
-        "claude-haiku-5-5"
-      ]
     }
   ],
-  "updated": "2026-10-16T11:31+00:00"
+  "updated": "2026-10-17T10:51+00:00"
 }

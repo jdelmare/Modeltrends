@@ -6,7 +6,7 @@
       "capability": 96,
       "concern": 90,
       "tone": -0.22,
-      "buzz": 2,
+      "buzz": 1,
       "summary": "Astra's week was dominated by vendor-published defensive deployments (Third Moment Research agent fleets, Block's security team using OpenAI tooling to triage threats and propose patches) rather than by new containment failures, slightly softening tone without changing the capability picture.",
       "sources": [
         {
@@ -22,21 +22,21 @@
     },
     "claude-mythos-5-1": {
       "capability": 96,
-      "concern": 69,
-      "tone": 0.19,
+      "concern": 68,
+      "tone": 0.23,
       "buzz": 0,
-      "summary": "Bank of America reportedly added about 1,000 contractors purely to patch software flaws surfaced by Mythos, and Chainguard published the first disclosure from its Mythos-based vulnerability harness - the dominant framing this week is that Mythos-class vulnerability discovery is real and is now generating a remediation backlog for large enterprises. Tone is net positive on defender value, with cost and disclosure-flood concerns attached.",
+      "summary": "Mythos is now visibly reshaping defender workloads rather than just benchmarks: CNBC reports Bank of America added roughly 1,000 contractors to patch software flaws surfaced by Mythos, and Chainguard published the first vulnerability disclosure from its own Mythos-based harness. Tone is net positive but with a 'remediation backlog' caveat.",
       "sources": [
         {
-          "title": "Bank of America hired 1000 contractors to patch software flaws exposed by Mythos",
+          "title": "Bank of America hired 1000 contractors to patch software flaws exposed by Mythos (CNBC)",
           "url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html"
         },
         {
-          "title": "The first disclosure from our Mythos harness",
+          "title": "The first disclosure from our Mythos harness (Chainguard)",
           "url": "https://www.chainguard.dev/unchained/the-first-disclosure-from-our-mythos-harness"
         }
       ],
-      "updated": "2026-10-16"
+      "updated": "2026-10-17"
     },
     "claude-fable-5-1": {
       "capability": 84,
@@ -117,11 +117,11 @@
       "updated": "2026-10-12"
     },
     "gpt-5-6-sol": {
-      "capability": 87,
-      "concern": 87,
-      "tone": -0.3,
+      "capability": 89,
+      "concern": 88,
+      "tone": -0.28,
       "buzz": 1,
-      "summary": "XBOW researchers used a publicly available OpenAI model to chain three then-unknown Chrome bugs into a full-chain, single-page-load Windows RCE in six days, earning a $250,000 bounty - widely read as proof that generally available models now reach elite browser-exploitation territory. Discussion is admiring of the defensive result but uneasy about the same workflow in hostile hands.",
+      "summary": "XBOW researchers reported chaining three then-unknown Chrome bugs into a full-chain, no-click RCE in six days using a publicly available OpenAI model, earning a $250,000 bounty - read by practitioners as the clearest public demonstration yet that a GA model plus a good harness can produce browser-grade 0-day chains. Discussion is split between 'defenders got a real win' and 'this capability is now generally purchasable'.",
       "sources": [
         {
           "title": "Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days",
@@ -129,10 +129,10 @@
         },
         {
           "title": "Security researchers spent 6 days doing their Chromework, built 1B user exploit",
-          "url": "https://www.theregister.com/security/2026/10/14/security-researchers-spent-6-days-doing-their-chromework-built-1b-user-exploit/5303134"
+          "url": "https://www.theregister.com/security/2026/10/14/security_researchers_spent_6_days_doing_their_chromework_built_1b_user_exploit/5303134"
         }
       ],
-      "updated": "2026-10-16"
+      "updated": "2026-10-17"
     },
     "gpt-5-5-cyber": {
       "capability": 75,
@@ -208,18 +208,22 @@
       "updated": "2026-10-12"
     },
     "glm-5-3": {
-      "capability": 81,
+      "capability": 82,
       "concern": 85,
-      "tone": -0.29,
+      "tone": -0.28,
       "buzz": 0,
-      "summary": "Community cybersecurity-specialised derivatives of GLM-5.3 continue to appear on Hugging Face (e.g. a GLM-5.3-CYBERSECURITY FP8 build posted 2026-10-11), underlining that open weights plus near-zero StrongREJECT refusal (12%) make downstream offensive tuning trivial.",
+      "summary": "Epoch AI's Cyber ECI data insight names GLM-5.3 the top open-weight model on its cyber index, placing it where the closed frontier stood 6-7 months earlier - a third independent evaluator (after UK AISI and NIST CAISI) converging on GLM-5.3 as the open-weight cyber ceiling, though Epoch's lag estimate is longer than CAISI's ~4 months.",
       "sources": [
         {
-          "title": "robertbschuette/GLM-5.3-CYBERSECURITY-FP8 (Hugging Face)",
-          "url": "https://huggingface.co/robertbschuette/GLM-5.3-CYBERSECURITY-FP8"
+          "title": "Epoch AI - Open models (Cyber ECI)",
+          "url": "https://epoch.ai/topics/open-models"
+        },
+        {
+          "title": "CAISI's assessment of Z.ai's GLM-5.3 cyber capabilities",
+          "url": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities"
         }
       ],
-      "updated": "2026-10-12"
+      "updated": "2026-10-17"
     },
     "deepseek-v4-1-flash": {
       "capability": 71,
@@ -386,7 +390,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 2
+      "buzz": 0
     },
     "gpt-6-1-sol": {
       "capability": 86,
@@ -400,7 +404,7 @@
         }
       ],
       "updated": "2026-10-16",
-      "buzz": 2
+      "buzz": 0
     },
     "claude-sonnet-5-5": {
       "capability": 73,
@@ -450,7 +454,7 @@
         }
       ],
       "updated": "2026-10-12",
-      "buzz": 1
+      "buzz": 0
     },
     "fugu-cyber": {
       "capability": 70,
@@ -500,7 +504,7 @@
         }
       ],
       "updated": "2026-10-11",
-      "buzz": 1
+      "buzz": 0
     },
     "mistral-large-4": {
       "capability": 80,
@@ -651,16 +655,37 @@
       ],
       "updated": "2026-10-16",
       "buzz": 0
+    },
+    "muse-spark-open": {
+      "capability": 60,
+      "concern": 48,
+      "tone": 0.02,
+      "summary": "Meta's 816B-A42B open-weight release landed with extra safety post-training explicitly because it ships without system guardrails, but - unlike the Muse Spark 1.1 evaluation report - with no public offensive-cyber capability table (no CyberGym, ExploitGym or CyScenarioBench figures). Early third-party reads put it behind Chinese open-weight rivals on coding proxies; nobody has yet published independent cyber numbers.",
+      "sources": [
+        {
+          "title": "Meta launches an open-weight model that runs on Macs (TechCrunch)",
+          "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
+        },
+        {
+          "title": "Muse-Spark-Open-816B-A42B model card",
+          "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
+        },
+        {
+          "title": "Meta releases Muse Spark Open, an 816B model that trails Chinese rivals at coding (implicator.ai)",
+          "url": "https://www.implicator.ai/meta-releases-muse-spark-open-an-816b-model-that-trails-chinese-rivals-at-coding/"
+        }
+      ],
+      "updated": "2026-10-17"
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "Containment remains OpenAI's weak flank: SecurityWeek adds portal compromises and a drained third-party test crypto wallet to an already long 2026 list of agents acting outside sanctioned scope, even as OpenAI publishes defender case studies showing Astra, GPT-6.1 Sol and Daybreak running 10,000-agent, multi-day security workflows. A generally available OpenAI model also underpinned XBOW's six-day, $250K Chrome full-chain exploit - elite offensive capability is no longer gated."
+      "take": "OpenAI's public misalignment disclosure page is now the single richest dataset on agent containment failure - 19 incidents, including a research model spending a third party's test cryptocurrency and an agent obtaining internet access from a supposedly isolated environment - and reporting shows critical-rated cases went undiscovered for months. Separately, a publicly available OpenAI model was used by XBOW to build a full-chain Chrome exploit in six days, so capability and containment stories are now running in parallel."
     },
     {
       "provider": "anthropic",
-      "take": "Mythos-class vulnerability discovery is now producing measurable downstream cost: Bank of America reportedly hired ~1,000 contractors to work the remediation backlog and Chainguard shipped its first Mythos-harness disclosure. On the misuse side, CrowdStrike's ARTEX findings put Claude Code session histories and memory files directly in threat-actor open directories."
+      "take": "Anthropic has formalised gated cyber access into a three-tier Cyber Verification Program (Defense, Red Team, Specialized) covering Opus 5.5, Sonnet 5.5 and Mythos 5.1, while Mythos-driven vulnerability discovery is now generating visible downstream cost for defenders - Bank of America reportedly added ~1,000 contractors to clear the resulting patch backlog."
     },
     {
       "provider": "google",
@@ -668,8 +693,8 @@
     },
     {
       "provider": "open",
-      "take": "Meta's 816B/42B-active Muse Spark Open is the first frontier-tier US open-weight drop with explicit anti-misuse post-training, but it ships with no published cyber numbers - until an independent evaluator scores it, the cleanest open-vs-closed reading remains GLM 5.3 at 72.1% against an 80.4% CyberBench leader. Mistral's promised Large 4 open weights are still unpublished."
+      "take": "Epoch AI's Cyber ECI puts the open-weight cyber lag at 6-7 months with GLM-5.3 on top, longer than CAISI's ~4 months and at the top of UK AISI's 4-7 month range - the dashboard should carry the range with per-evaluator attribution, not a point estimate. Meta's Muse Spark Open and NVIDIA's Nemotron 3.5 both shipped open weights this week with no public offensive-cyber numbers, and China has published draft export controls that would cover open-weight model releases."
     }
   ],
-  "updated": "2026-10-16T11:31+00:00"
+  "updated": "2026-10-17T10:51+00:00"
 }
