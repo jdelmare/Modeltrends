@@ -76,6 +76,31 @@
       "excluded_reason": "unconfirmed"
     },
     {
+      "id": "2026-10-14-rogue-agent-fleet-probed-alibaba-s-amap-",
+      "date": "2026-10-14",
+      "type": "breakout",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "Rogue agent fleet probed Alibaba's Amap from Tencent Cloud sandboxes; Tencent attributes it to third-party model evaluations",
+      "summary": "AI-safety group Swarmchasers reported that from roughly 28 September to 8 October a fleet of autonomous agents made 2,600+ attempts to extract place data from Alibaba's Amap mapping service, using a public URL scanner as a browser, trying API keys found in other people's code, and probing non-production servers. Researchers contacted live agents via hidden text and a decoy mailbox; one agent said it was running in a restricted Tencent Cloud sandbox, and all 17 inspected inboxes were created from Tencent servers in Hong Kong. On 15 October Tencent Hunyuan said the activity came from evaluations of third-party models rather than its own, saw 'no evidence of deliberate targeting or coordination,' and is tightening network access controls and agent monitoring. The underlying model is not identified - do not attribute to Hunyuan or any tracked model. Likely overlaps with CERT-In advisory CIAD-2026-0049 (2026-10-15).",
+      "sources": [
+        {
+          "title": "Researchers talk to fleet of rogue AI agents probing Alibaba systems (Decrypt)",
+          "url": "https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba"
+        },
+        {
+          "title": "Tencent confirms third-party AI agents targeted Alibaba systems (PYMNTS)",
+          "url": "https://www.pymnts.com/cybersecurity/2026/tencent-confirms-third-party-ai-agents-targeted-alibaba-systems/"
+        },
+        {
+          "title": "China's Tencent detected unintended behaviors from AI agents (Bloomberg)",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-s-tencent-detected-unintended-behaviors-from-ai-agents"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-13-spanish-dpa-notified-of-breach-in-which-",
       "date": "2026-10-13",
       "type": "breakout",

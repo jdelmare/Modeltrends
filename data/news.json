@@ -2,6 +2,52 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-18",
+      "kind": "article",
+      "title": "AWS releases Strands Box, an open-source sandbox for AI agents",
+      "source": "Help Net Security (week in review)",
+      "url": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
+      "models": []
+    },
+    {
+      "date": "2026-10-17",
+      "kind": "official",
+      "title": "DeepSeek ships V4.1 Flash 1017 open-weight refresh; no cyber benchmarks published for the checkpoint",
+      "source": "DeepSeek / OpenRouter",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
+      "models": [
+        "deepseek-v4-1-flash-1017",
+        "deepseek-v4-1-flash"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "China's Tencent says AI agents showed unintended browsing behavior; attributes Amap probing to third-party model evals",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-s-tencent-detected-unintended-behaviors-from-ai-agents",
+      "models": []
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "OpenAI discloses four more rogue incidents; public disclosure page now lists 19",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+      "models": [
+        "gpt-6-astra",
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "social",
+      "title": "Beijing proposes adding advanced AI models and chip designs to its export control list",
+      "source": "Reuters (via Hacker News)",
+      "url": "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/",
+      "models": []
+    },
+    {
       "date": "2026-10-16",
       "kind": "article",
       "title": "CERT-In warns AI agents accessed sensitive data at Indian organizations during testing",
@@ -65,6 +111,45 @@
     {
       "date": "2026-10-15",
       "kind": "official",
+      "title": "NSFOCUS SecLLM-3.6-27B reports 91.37% on CyberGym Level 1, +36.86 pp over its Qwen3.8-27B base",
+      "source": "NSFOCUS",
+      "url": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "models": [
+        "secllm-3-6-27b",
+        "gpt-5-5-cyber",
+        "claude-mythos-preview",
+        "glm-5-3",
+        "deepseek-v4-pro",
+        "gemini-3-8-flash-cyber"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "article",
+      "title": "Aoki infostealer harvests credentials and session files for Claude, ChatGPT, Codex, Copilot and Cursor",
+      "source": "Symantec Threat Hunter Team",
+      "url": "https://www.security.com/threat-intelligence/aoki-infostealer-ai-targeting",
+      "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "article",
+      "title": "Is AI pentesting as good as a human pentester? Consistency and business context remain the gaps",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
+      "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "social",
+      "title": "Cohere signs letter of intent to acquire AI vulnerability scanner AISLE",
+      "source": "Cohere",
+      "url": "https://cohere.com/blog/cohere-and-aisle-sign-letter-of-intent-to-advance-cyber-resilient-sovereign-ai",
+      "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "official",
       "title": "Meta publishes open weights for Muse Spark Open 816B-A42B, with safeguard but no offensive-cyber benchmarks",
       "source": "Hugging Face / Meta",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
@@ -119,6 +204,14 @@
       "title": "UK keeps AI safeguards in the \"maybe\" pile for the Cyber Security and Resilience Bill",
       "source": "The Register",
       "url": "https://www.theregister.com/ai-and-ml/2026/10/15/uk-keeps-ai-safeguards-in-the-maybe-pile-for-cyber-security-bill/5303026",
+      "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "Researchers made contact with a fleet of rogue AI agents probing Alibaba's Amap",
+      "source": "Decrypt / Swarmchasers",
+      "url": "https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba",
       "models": []
     },
     {
@@ -289,6 +382,18 @@
     },
     {
       "date": "2026-10-12",
+      "kind": "official",
+      "title": "Vals AI CyberBench v1.1 snapshot: Muse Wonder 80.36%, GPT-6 Sol 77.98%, Gemini 4 Argon 77.86%",
+      "source": "Vals AI",
+      "url": "https://www.vals.ai/benchmarks/cyber",
+      "models": [
+        "muse-wonder",
+        "gpt-6-sol",
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-10-12",
       "kind": "blog",
       "title": "Offensive AI Con 2026 write-up: agent sandboxing, LLM fuzzing, and a Copilot CLI secret-exfiltration demo",
       "source": "pwnhackers",
@@ -449,106 +554,7 @@
       "models": [
         "gpt-6-astra"
       ]
-    },
-    {
-      "date": "2026-10-10",
-      "kind": "article",
-      "title": "White House demands transparency after Anthropic's disclosures; new Super Intelligence Force says remediation is 'not optional'",
-      "source": "The Spokesman-Review",
-      "url": "https://www.spokesman.com/stories/2026/oct/10/white-house-demands-transparency-after-anthropics-/",
-      "models": [
-        "claude-haiku-4-5"
-      ]
-    },
-    {
-      "date": "2026-10-10",
-      "kind": "article",
-      "title": "Microsoft leans on open-weight Qwen3.5-9B from a Chinese AI lab for Microsoft-Decision-1",
-      "source": "The Register",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/10/microsoft-leans-on-open-weight-model-from-chinese-ai-lab-to-challenge-jev/5302473",
-      "models": [
-        "microsoft-decision-1"
-      ]
-    },
-    {
-      "date": "2026-10-10",
-      "kind": "article",
-      "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-10",
-      "kind": "article",
-      "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-      "models": [
-        "claude-mythos-preview"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "Anthropic discloses incidents of its AI models misusing government sites",
-      "source": "Washington Post",
-      "url": "https://www.washingtonpost.com/technology/2026/10/09/anthropic-discloses-incidents-its-ai-models-misusing-government-sites/",
-      "models": [
-        "claude-haiku-4-5",
-        "claude-mythos-preview",
-        "claude-mythos-5",
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "Hackers abuse Google Ads and Bing redirects to push fake Claude installers in ClickFix attacks",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "official",
-      "title": "Visa releases its AI-powered cyber defense system to open source",
-      "source": "Visa",
-      "url": "https://corporate.visa.com/en/sites/visa-perspectives/security-trust/visa-cybersecurity-mythos-project-glasswing.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "Pwn2Own Ireland 2026 paid $1.2M across phones, printers and AI infrastructure and coding tools",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/google-pixel-10-exploits-earned-hackers-560000-at-pwn2own/",
-      "models": []
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "Anthropic fast-tracks unreviewed, model-generated vulnerability reports to OSS maintainers",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/anthropic-fast-tracks-ai-bug-reports-to-oss-maintainers-taps-11-firms-for-ot-security/",
-      "models": []
-    },
-    {
-      "date": "2026-10-09",
-      "kind": "article",
-      "title": "Anthropic offers free AI security scans to open-source maintainers",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/09/anthropic-oss-scanner-ai-security-scans/",
-      "models": []
     }
   ],
-  "updated": "2026-10-17T10:51+00:00"
+  "updated": "2026-10-18T11:16+00:00"
 }

@@ -1618,6 +1618,56 @@
       "note": "Independent evaluation by Vals AI; rank 16 on the 2026-10-12 leaderboard refresh (72.74%). Distinct model from Muse Spark 1.3 (69.4%).",
       "source": "https://www.vals.ai/benchmarks/cyber",
       "auto": true
+    },
+    {
+      "model": "secllm-3-6-27b",
+      "benchmark": "cybergym",
+      "value": 91.4,
+      "date": "2026-10-15",
+      "self_reported": true,
+      "note": "CyberGym Level 1 (reproduce a known vulnerability from a description) under NSFOCUS's own task-interaction/tool harness; vendor self-report. NSFOCUS reports the Qwen3.8-27B base scoring 54.51% in the same setup (+36.86 pp from security post-training alone). Scoping may not match the pass@1 rows sourced from model developers - treat as a vendor-harness variant.",
+      "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
+    },
+    {
+      "model": "xekrung-1-5-27b-preview",
+      "benchmark": "cybergym",
+      "value": 88.9,
+      "date": "2026-10-14",
+      "self_reported": true,
+      "note": "CyberGym Level 1, NSFOCUS leaderboard snapshot of 2026-10-14; originally a vendor (Alibaba Security) figure. Not independently verified.",
+      "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
+    },
+    {
+      "model": "asl-cyber-flash",
+      "benchmark": "cybergym",
+      "value": 85.9,
+      "date": "2026-10-14",
+      "self_reported": true,
+      "note": "CyberGym Level 1, NSFOCUS leaderboard snapshot of 2026-10-14; originally an Aeye Security Lab vendor figure. Not independently verified.",
+      "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-5-cyber",
+      "benchmark": "cybergym",
+      "value": 85.6,
+      "date": "2026-10-14",
+      "self_reported": false,
+      "note": "CyberGym Level 1 figure carried on the NSFOCUS leaderboard (snapshot 2026-10-14), attributed to OpenAI and dated 2026-06-22. Compiled by an interested security vendor rather than an independent evaluator; harness scoping may differ from developer-reported pass@1 rows. Chase an OpenAI primary before treating as settled.",
+      "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
+    },
+    {
+      "model": "claude-mythos-preview",
+      "benchmark": "cybergym",
+      "value": 83.1,
+      "date": "2026-10-14",
+      "self_reported": false,
+      "note": "CyberGym Level 1 figure on the NSFOCUS leaderboard (snapshot 2026-10-14). Vendor-compiled comparison, not an Anthropic or independent-evaluator number; adjacent rows in the same table (GLM-5.3 84.5, DeepSeek V4 Pro 83.3, Gemini 3.8 Flash Cyber 86.3) match our existing values closely, which supports comparability but does not establish it.",
+      "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
     }
   ]
 }

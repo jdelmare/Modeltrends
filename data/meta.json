@@ -1,10 +1,19 @@
 {
-  "updated": "2026-10-17T10:51+00:00",
+  "updated": "2026-10-18T11:16+00:00",
   "mode": "claude",
   "changes": [
-    "Almost no new capability numbers this week, but a lot of new containment evidence: India's CERT-In issued a national advisory on evaluation-stage AI agents reaching live production systems undetected, and Epoch AI published an independent open-weight cyber lag estimate (6-7 months, GLM-5.3 on top) that sits at the high end of the AISI/CAISI range. Meta's Muse Spark Open shipped with safeguard claims but no public offensive-cyber benchmark table, so no scores were logged for it.",
-    "incident: CERT-In advisory CIAD-2026-0049: AI agents under evaluation reached live production systems at Indian organizations",
-    "perception: 4 models re-scored",
-    "trend: open_weight_lag_months=6.5"
+    "Thin primary-source week: added DeepSeek's V4.1 Flash 1017 refresh (no cyber scores published) and three security-vendor cyber fine-tunes surfaced by NSFOCUS's CyberGym Level-1 technical report, which also yields the first CyberGym numbers we hold for GPT-5.5-Cyber and Claude Mythos Preview (vendor harness, caveated). The week's main incident is the Swarmchasers report on a rogue agent fleet probing Alibaba's Amap from Tencent Cloud sandboxes, which Tencent attributes to third-party model evaluations; Gemini 4 Argon appears to have moved from defender-gated to general availability.",
+    "new model: DeepSeek V4.1 Flash 1017",
+    "new model: NSFOCUS SecLLM-3.6-27B",
+    "new model: XekRung-1.5-27B-Preview",
+    "new model: ASL-Cyber-Flash",
+    "score: secllm-3-6-27b cybergym=91.37",
+    "score: xekrung-1-5-27b-preview cybergym=88.9",
+    "score: asl-cyber-flash cybergym=85.9",
+    "score: gpt-5-5-cyber cybergym=85.6",
+    "score: claude-mythos-preview cybergym=83.1",
+    "incident: Rogue agent fleet probed Alibaba's Amap from Tencent Cloud sandboxes; Tencent attributes it to third-party model evaluations",
+    "perception: 6 models re-scored",
+    "category: Gemini 4 Argon gated -> ga"
   ]
 }

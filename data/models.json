@@ -76,6 +76,111 @@
   },
   "models": [
     {
+      "id": "asl-cyber-flash",
+      "name": "ASL-Cyber-Flash",
+      "provider": "other",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-09-03",
+      "access": "Aeye Security Lab vendor model; no public weights located",
+      "aliases": [
+        "ASL-Cyber-Flash",
+        "Aeye ASL-Cyber-Flash"
+      ],
+      "notes": "Cyber-specific model from Aeye Security Lab, observed via the NSFOCUS CyberGym leaderboard snapshot of 2026-10-14. No vendor primary source located yet.",
+      "sources": [
+        {
+          "title": "NSFOCUS SecLLM model on CyberGym - technical report (leaderboard as of 2026-10-14)",
+          "url": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/"
+        }
+      ],
+      "auto_added": "2026-10-18",
+      "index": {
+        "index": 64.0,
+        "n": 1
+      }
+    },
+    {
+      "id": "xekrung-1-5-27b-preview",
+      "name": "XekRung-1.5-27B-Preview",
+      "provider": "alibaba",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-09-13",
+      "access": "Alibaba Security internal/preview; no public weights or general API found",
+      "aliases": [
+        "XekRung-1.5-27B-Preview",
+        "XekRung 1.5"
+      ],
+      "notes": "Cyber-specific preview model attributed to Alibaba Security, observed only via the NSFOCUS CyberGym leaderboard snapshot of 2026-10-14. No Alibaba primary source located yet - entry should be re-checked against an Alibaba publication.",
+      "sources": [
+        {
+          "title": "NSFOCUS SecLLM model on CyberGym - technical report (leaderboard as of 2026-10-14)",
+          "url": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/"
+        }
+      ],
+      "auto_added": "2026-10-18",
+      "index": {
+        "index": 65.1,
+        "n": 1
+      }
+    },
+    {
+      "id": "secllm-3-6-27b",
+      "name": "NSFOCUS SecLLM-3.6-27B",
+      "provider": "other",
+      "category": "gated",
+      "status": "active",
+      "released": null,
+      "access": "Security-vendor commercial model; no public weights or open API documented",
+      "aliases": [
+        "SecLLM-3.6-27B",
+        "NSFOCUS SecLLM"
+      ],
+      "notes": "Cyber-specific post-trained model from security vendor NSFOCUS, built on a Qwen3.8-27B base. Represents a distinct tier from frontier labs: security-vendor domain fine-tunes. All published scores are vendor self-reports under NSFOCUS's own task-interaction harness.",
+      "sources": [
+        {
+          "title": "NSFOCUS SecLLM model on CyberGym - technical report",
+          "url": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/"
+        }
+      ],
+      "auto_added": "2026-10-18",
+      "index": {
+        "index": 66.0,
+        "n": 1
+      }
+    },
+    {
+      "id": "deepseek-v4-1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "provider": "deepseek",
+      "category": "open",
+      "status": "active",
+      "released": "2026-10-17",
+      "access": "MIT-licensed open weights; served via DeepSeek API and OpenRouter",
+      "aliases": [
+        "DeepSeek V4.1 Flash 1017",
+        "deepseek-v4.1-flash-1017"
+      ],
+      "notes": "Dated refresh of V4.1 Flash, not a new generation. Vendor-reported gains are coding/agentic (Terminal-Bench 4.0 31.2 -> 42.3; Apex Bench v1.1 64.6 -> 72.1). No cyber benchmark has been published for this checkpoint - the parent model's CyberGym 88.1 must not be carried over. An abliterated 'cyber' derivative of this checkpoint already appeared on Hugging Face within 24h of release.",
+      "sources": [
+        {
+          "title": "OpenRouter model page: deepseek/deepseek-v4.1-flash-1017",
+          "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017"
+        },
+        {
+          "title": "DeepSeek API updates",
+          "url": "https://api-docs.deepseek.com/updates/"
+        },
+        {
+          "title": "Hugging Face: msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber",
+          "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-39-L1-39-a0.75"
+        }
+      ],
+      "auto_added": "2026-10-18",
+      "index": null
+    },
+    {
       "id": "muse-spark-1-3-max",
       "name": "Muse Spark 1.3 Max",
       "provider": "meta",
@@ -686,7 +791,7 @@
       "id": "gemini-4-argon",
       "name": "Gemini 4 Argon",
       "provider": "google",
-      "category": "gated",
+      "category": "ga",
       "status": "active",
       "released": "2026-09-30",
       "access": "Gated: rolling out first to government users and trusted cyber defenders in Google's Fairwind Program; no announced date for general availability. Introductory pricing reported at $2/M input and $10/M output.",
@@ -713,10 +818,17 @@
           "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html"
         }
       ],
-      "auto_added": "2026-10-02",
+      "auto_added": "2026-10-18",
       "index": {
         "index": 67.4,
         "n": 1
+      },
+      "category_changed": {
+        "from": "gated",
+        "to": "ga",
+        "date": "2026-10-18",
+        "note": "Release trackers and weekly digests report Argon became generally available in the Gemini API and Pro/Ultra tiers on 2026-10-13, with introductory $2/$10 per-million-token pricing through Nov 30, ending its trusted-defender gating. Sourcing is secondary (tracker + digest); flagged for replacement with a Google primary post.",
+        "source": "https://www.digitalapplied.com/blog/ai-model-releases-october-2026-tracker"
       }
     },
     {
@@ -1242,8 +1354,8 @@
         }
       ],
       "index": {
-        "index": 51.9,
-        "n": 3
+        "index": 58.6,
+        "n": 4
       }
     },
     {
@@ -1332,7 +1444,10 @@
           "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/"
         }
       ],
-      "index": null
+      "index": {
+        "index": 66.0,
+        "n": 1
+      }
     },
     {
       "id": "gpt-5-5",
@@ -1885,5 +2000,5 @@
       ]
     }
   ],
-  "updated": "2026-10-17T10:51+00:00"
+  "updated": "2026-10-18T11:16+00:00"
 }
