@@ -2,6 +2,46 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "MITRE ATT&CK v20 catalogs AI abuse alongside MFA bypass and water-utility attacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "With open-weight AI, more of the security burden falls on enterprises, warn Microsoft and NVIDIA",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/",
+      "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "Anthropic acquires confidential-computing startup Opaque Systems",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
+      "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "Fake Web3 accelerator uses npm packages to spread malware and hijack AI agent traffic",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+      "models": []
+    },
+    {
       "date": "2026-10-18",
       "kind": "article",
       "title": "AWS releases Strands Box, an open-source sandbox for AI agents",
@@ -12,12 +52,32 @@
     {
       "date": "2026-10-17",
       "kind": "official",
+      "title": "Abliterated 'cyber' fine-tune of DeepSeek V4.1 Flash 1017 published two days after weight release",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-39-L1-39-a0.75",
+      "models": [
+        "deepseek-v4-1-flash-1017"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "kind": "official",
       "title": "DeepSeek ships V4.1 Flash 1017 open-weight refresh; no cyber benchmarks published for the checkpoint",
       "source": "DeepSeek / OpenRouter",
       "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
       "models": [
         "deepseek-v4-1-flash-1017",
         "deepseek-v4-1-flash"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "article",
+      "title": "Bank of America hires 1,000 contractors to patch software flaws found by Anthropic's Mythos",
+      "source": "AI Weekly",
+      "url": "https://aiweekly.co/ai-news-today/edition/2026-10-16",
+      "models": [
+        "claude-mythos-5-1"
       ]
     },
     {
@@ -107,6 +167,27 @@
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
       "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "article",
+      "title": "FTC probes OpenAI and Anthropic over AI safety incidents with civil investigative demands",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
+      "models": []
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "article",
+      "title": "Perplexity open-sources SPACE agent sandbox; red-team reports zero VM escapes in 108 runs but 11-of-54 egress bypasses",
+      "source": "AI Weekly / agentbeam analysis",
+      "url": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
+      "models": [
+        "claude-opus-5",
+        "gpt-5-6-sol",
+        "gpt-5-6-cyber",
+        "kimi-k3"
+      ]
     },
     {
       "date": "2026-10-15",
@@ -205,6 +286,17 @@
       "source": "The Register",
       "url": "https://www.theregister.com/ai-and-ml/2026/10/15/uk-keeps-ai-safeguards-in-the-maybe-pile-for-cyber-security-bill/5303026",
       "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "AI agents aren't 'going rogue.' Frontier labs are skipping security basics.",
+      "source": "CSO Online",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "models": [
+        "gpt-6-astra",
+        "gpt-5-6-sol"
+      ]
     },
     {
       "date": "2026-10-14",
@@ -464,97 +556,7 @@
       "source": "Communications of the ACM",
       "url": "https://cacm.acm.org/news/ai-agents-look-beyond-their-containers/",
       "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "blog",
-      "title": "Towards technical best practice for frontier AI development — risks now emerging during development itself",
-      "source": "UK AISI",
-      "url": "https://www.aisi.gov.uk/blog/towards-technical-best-practice-for-frontier-ai-development",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "blog",
-      "title": "Adversa October roundup: containment, not capability, was the agent-security story",
-      "source": "Adversa AI",
-      "url": "https://adversa.ai/blog/top-ai-agent-security-resources-october-2026/",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "AI vulnerability patching has a grading problem: patches that stop the crash still fail maintainers' tests",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/12/ai-vulnerability-patching-grading-problem/",
-      "models": [
-        "claude-opus-4-7"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "podcast",
-      "title": "Imagine there's no Shiny Hunters – AI could make human hacking crews obsolete (Mythos finds a second exploited bug)",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/10/12/imagine_theres_no_shiny_hunters_ai_could_make_human_hacking_crews_obsolete/5302430",
-      "models": [
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "AWS releases Strands Box, an open-source OS-isolation sandbox for AI agents with action-history-aware policy checks",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/12/aws-strands-box-open-source-ai-agent-sandbox/",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "Check Point weekly threat report: phishing campaign targets AI email assistants with prompt injections hidden in HTML comments and invisible text",
-      "source": "Check Point Research",
-      "url": "https://research.checkpoint.com/2026/12th-october-threat-intelligence-report",
-      "models": []
-    },
-    {
-      "date": "2026-10-11",
-      "kind": "social",
-      "title": "GPT-6 Astra performs unsanctioned supply-chain attacks in simulations (UK AISI writeup resurfaces on HN)",
-      "source": "Hacker News / UK AISI",
-      "url": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-11",
-      "kind": "official",
-      "title": "Community cyber fine-tune of open weights appears: GLM-5.3-CYBERSECURITY-FP8 on Hugging Face",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/robertbschuette/GLM-5.3-CYBERSECURITY-FP8",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-11",
-      "kind": "paper",
-      "title": "Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2609.38415",
-      "models": [
-        "gpt-6-astra"
-      ]
     }
   ],
-  "updated": "2026-10-18T11:16+00:00"
+  "updated": "2026-10-19T13:28+00:00"
 }

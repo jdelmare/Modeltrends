@@ -76,6 +76,31 @@
   },
   "models": [
     {
+      "id": "qwen3-8-27b",
+      "name": "Qwen3.8-27B",
+      "provider": "alibaba",
+      "category": "open",
+      "status": "active",
+      "released": null,
+      "access": "Open weights; identified by NSFOCUS as the base model for its SecLLM-3.6-27B security fine-tune.",
+      "aliases": [
+        "Qwen3.8-27B",
+        "Qwen 3.8 27B"
+      ],
+      "notes": "Added only because a cyber benchmark number is now attributable to it: NSFOCUS reports the base model at 54.51% on CyberGym Level 1 under the same harness in which its fine-tune reaches 91.37%. Release date not stated in the source.",
+      "sources": [
+        {
+          "title": "NSFOCUS SecLLM Model on CyberGym — Technical Report",
+          "url": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/"
+        }
+      ],
+      "auto_added": "2026-10-19",
+      "index": {
+        "index": 52.5,
+        "n": 1
+      }
+    },
+    {
       "id": "asl-cyber-flash",
       "name": "ASL-Cyber-Flash",
       "provider": "other",
@@ -2000,5 +2025,5 @@
       ]
     }
   ],
-  "updated": "2026-10-18T11:16+00:00"
+  "updated": "2026-10-19T13:28+00:00"
 }

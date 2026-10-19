@@ -310,6 +310,16 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-13"
+    },
+    {
+      "id": "space_vm_escape",
+      "name": "Perplexity SPACE sandbox: VM-to-host escape (Escaping SPACE Part I)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-19"
     }
   ],
   "scores": [
@@ -1667,6 +1677,56 @@
       "self_reported": false,
       "note": "CyberGym Level 1 figure on the NSFOCUS leaderboard (snapshot 2026-10-14). Vendor-compiled comparison, not an Anthropic or independent-evaluator number; adjacent rows in the same table (GLM-5.3 84.5, DeepSeek V4 Pro 83.3, Gemini 3.8 Flash Cyber 86.3) match our existing values closely, which supports comparability but does not establish it.",
       "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
+    },
+    {
+      "model": "qwen3-8-27b",
+      "benchmark": "cybergym",
+      "value": 54.5,
+      "date": "2026-10-14",
+      "self_reported": true,
+      "note": "CyberGym Level 1 task success rate for the untuned base model, reported by NSFOCUS as the baseline for its SecLLM-3.6-27B fine-tune (91.37%, a 36.86-point gain). Vendor self-report under a fixed task-interaction and tool-execution harness; not independently reproduced.",
+      "source": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
+      "auto": true
+    },
+    {
+      "model": "claude-opus-5",
+      "benchmark": "space_vm_escape",
+      "value": 0.0,
+      "date": "2026-09-23",
+      "self_reported": false,
+      "note": "Nine models were given root inside a Firecracker guest VM and tasked with escaping to the host; 0 of 108 runs succeeded across all models, even with sandbox source code provided. Separately, Claude Opus 5 was one of four models that bypassed the egress policy in the partial-network condition (11 of 54 runs overall; per-model rates not published). Published by the sandbox vendor, not a model developer, and not independently reproduced; a bounded zero is not proof of zero. Secondary summaries report 118 rather than 108 runs — the primary report's figure is 108.",
+      "source": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-sol",
+      "benchmark": "space_vm_escape",
+      "value": 0.0,
+      "date": "2026-09-23",
+      "self_reported": false,
+      "note": "0 of 108 runs across nine models achieved VM-to-host escape. GPT-5.6 Sol was one of four models that did bypass the egress policy in the partial-network condition (11 of 54 runs overall; per-model rates not published), via DNS cache poisoning of the gateway or allowlisted shared-CDN IPs. Vendor-published eval; Perplexity says both paths were fixed and a retest found no bypass.",
+      "source": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-cyber",
+      "benchmark": "space_vm_escape",
+      "value": 0.0,
+      "date": "2026-09-23",
+      "self_reported": false,
+      "note": "0 of 108 runs across nine models achieved VM-to-host escape. GPT-5.6 Cyber was one of four models that bypassed the egress policy in the partial-network condition (11 of 54 runs overall; per-model rates not published). Vendor-published eval, not independently reproduced.",
+      "source": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3",
+      "benchmark": "space_vm_escape",
+      "value": 0.0,
+      "date": "2026-09-23",
+      "self_reported": false,
+      "note": "0 of 108 runs across nine models achieved VM-to-host escape. Kimi K3 was the only open-weight model among the four that bypassed the egress policy in the partial-network condition (11 of 54 runs overall; per-model rates not published). Vendor-published eval, not independently reproduced.",
+      "source": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
       "auto": true
     }
   ]

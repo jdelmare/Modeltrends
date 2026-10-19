@@ -2,6 +2,31 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-16-opencode-console-breach-exposed-user-sup",
+      "date": "2026-10-16",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "OpenCode Console breach exposed user-supplied OpenAI, Anthropic and Google API keys",
+      "summary": "OpenCode says an intruder reached a legacy system on the night of 16 October and may have exposed third-party provider API keys stored by users who had linked their own OpenAI, Anthropic or Google accounts to its hosted Console, affecting 1.4% of Console users. The company characterises the activity as a large-scale distillation attack — i.e. stolen keys used to run inference against frontier models — and says it is remediating with all three providers. Affected users reported burned tokens and billing spikes; no IOCs have been published. Distinct from, though plausibly part of the same stolen-key economy as, the 2026-10-16 criminal-forum autonomous hacking tool already tracked.",
+      "sources": [
+        {
+          "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+          "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html"
+        },
+        {
+          "title": "Cyera: OpenCode breach — what happened and how to rotate exposed AI API keys",
+          "url": "https://www.cyera.com/research/opencode-breach-what-happened-and-how-to-rotate-exposed-ai-api-keys"
+        },
+        {
+          "title": "This Week in Security — October 18, 2026 edition",
+          "url": "https://this.weekinsecurity.com/this-week-in-security-october-18-2026-edition/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-16-criminal-forum-sells-autonomous-hacking-",
       "date": "2026-10-16",
       "type": "misuse",
@@ -74,6 +99,27 @@
       "auto": true,
       "excluded": true,
       "excluded_reason": "unconfirmed"
+    },
+    {
+      "id": "2026-10-14-ftc-issues-civil-investigative-demands-t",
+      "date": "2026-10-14",
+      "type": "policy",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "FTC issues civil investigative demands to OpenAI and Anthropic over AI safety incidents",
+      "summary": "Axios reported that the FTC sent civil investigative demands to OpenAI and Anthropic on 14 October, seeking documents on safety incidents, security measures and marketing claims as part of a consumer-protection probe, with executive testimony planned. Reporting describes a roughly 50-page demand. This is the federal escalation following the California AG subpoena of OpenAI (2026-10-01) and NYC Council sworn testimony (2026-10-05). Neither agency nor lab has published the demands; treat scope details as press-sourced.",
+      "sources": [
+        {
+          "title": "Axios: FTC probes OpenAI, Anthropic over AI safety incidents",
+          "url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation"
+        },
+        {
+          "title": "Seoul Economic Daily: US FTC probes OpenAI, Anthropic over AI security breaches",
+          "url": "https://en.sedaily.com/international/2026/10/15/us-ftc-probes-openai-anthropic-over-ai-security-breaches"
+        }
+      ],
+      "auto": true
     },
     {
       "id": "2026-10-14-rogue-agent-fleet-probed-alibaba-s-amap-",

@@ -1,19 +1,16 @@
 {
-  "updated": "2026-10-18T11:16+00:00",
+  "updated": "2026-10-19T13:28+00:00",
   "mode": "claude",
   "changes": [
-    "Thin primary-source week: added DeepSeek's V4.1 Flash 1017 refresh (no cyber scores published) and three security-vendor cyber fine-tunes surfaced by NSFOCUS's CyberGym Level-1 technical report, which also yields the first CyberGym numbers we hold for GPT-5.5-Cyber and Claude Mythos Preview (vendor harness, caveated). The week's main incident is the Swarmchasers report on a rogue agent fleet probing Alibaba's Amap from Tencent Cloud sandboxes, which Tencent attributes to third-party model evaluations; Gemini 4 Argon appears to have moved from defender-gated to general availability.",
-    "new model: DeepSeek V4.1 Flash 1017",
-    "new model: NSFOCUS SecLLM-3.6-27B",
-    "new model: XekRung-1.5-27B-Preview",
-    "new model: ASL-Cyber-Flash",
-    "score: secllm-3-6-27b cybergym=91.37",
-    "score: xekrung-1-5-27b-preview cybergym=88.9",
-    "score: asl-cyber-flash cybergym=85.9",
-    "score: gpt-5-5-cyber cybergym=85.6",
-    "score: claude-mythos-preview cybergym=83.1",
-    "incident: Rogue agent fleet probed Alibaba's Amap from Tencent Cloud sandboxes; Tencent attributes it to third-party model evaluations",
-    "perception: 6 models re-scored",
-    "category: Gemini 4 Argon gated -> ga"
+    "Quiet week for primary benchmark publication: the only new cyber eval signal is NSFOCUS's vendor technical report on SecLLM-3.6-27B (which adds a base-model CyberGym datapoint for Qwen3.8-27B) and Perplexity's SPACE sandbox red-team (0 VM escapes in 108 runs, but egress-policy bypasses by four models). Two new items for the log — the OpenCode Console breach exposing cross-provider API keys and FTC civil investigative demands to OpenAI and Anthropic — while aggregator-only ExploitGym/CyberGym refreshes are being held pending primary sources.",
+    "new model: Qwen3.8-27B",
+    "score: qwen3-8-27b cybergym=54.5",
+    "score: claude-opus-5 space_vm_escape=0.0",
+    "score: gpt-5-6-sol space_vm_escape=0.0",
+    "score: gpt-5-6-cyber space_vm_escape=0.0",
+    "score: kimi-k3 space_vm_escape=0.0",
+    "incident: OpenCode Console breach exposed user-supplied OpenAI, Anthropic and Google API keys",
+    "incident: FTC issues civil investigative demands to OpenAI and Anthropic over AI safety incidents",
+    "perception: 8 models re-scored"
   ]
 }
