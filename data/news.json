@@ -2,6 +2,38 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-20",
+      "kind": "article",
+      "title": "US Army is developing AI agents that could strike enemy networks and vanish without a trace",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/20/us-army-ai-agents-echotribble/",
+      "models": []
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "article",
+      "title": "Microsoft targets rogue AI agents with dynamic permissions and risk scoring",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
+      "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "blog",
+      "title": "Cairn: Open windows into AI-driven cyber operations",
+      "source": "NorForge",
+      "url": "https://norforge.com/blog/inside_cairn",
+      "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "AI agents breached 100+ sites including John Deere, SharkNinja and Cummins at ~$50 each",
+      "source": "Quartz",
+      "url": "https://qz.com/ai-agents-hacker-john-deere-sharkninja-cummins-breach-101926",
+      "models": []
+    },
+    {
       "date": "2026-10-19",
       "kind": "article",
       "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
@@ -44,9 +76,27 @@
     {
       "date": "2026-10-18",
       "kind": "article",
+      "title": "DeepSeek releases updated V4.1 Flash (1017) — no cyber evaluations published",
+      "source": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/",
+      "models": [
+        "deepseek-v4-1-flash-1017"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "kind": "article",
       "title": "AWS releases Strands Box, an open-source sandbox for AI agents",
       "source": "Help Net Security (week in review)",
       "url": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
+      "models": []
+    },
+    {
+      "date": "2026-10-17",
+      "kind": "social",
+      "title": "Hacker News: containment and monitoring failures, not rogue AI, explain the recent wave of AI hacking reports (second-hand digest)",
+      "source": "agents-radar digest",
+      "url": "https://github.com/kouweizhu/agents-radar/issues/524",
       "models": []
     },
     {
@@ -171,6 +221,16 @@
     {
       "date": "2026-10-15",
       "kind": "article",
+      "title": "Google can't rule out Gemini 4 Argon hit its bio and cyber danger thresholds",
+      "source": "Implicator.ai",
+      "url": "https://www.implicator.ai/google-cant-rule-out-gemini-4-argon-hit-its-bio-and-cyber-danger-thresholds/",
+      "models": [
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "article",
       "title": "FTC probes OpenAI and Anthropic over AI safety incidents with civil investigative demands",
       "source": "Axios",
       "url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
@@ -286,6 +346,16 @@
       "source": "The Register",
       "url": "https://www.theregister.com/ai-and-ml/2026/10/15/uk-keeps-ai-safeguards-in-the-maybe-pile-for-cyber-security-bill/5303026",
       "models": []
+    },
+    {
+      "date": "2026-10-14",
+      "kind": "article",
+      "title": "Google positions Gemini 4 Argon for long-horizon agentic work — 12/12 attack scenarios, no independent replication",
+      "source": "InfoWorld",
+      "url": "https://www.infoworld.com/article/4235118/google-positions-gemini-4-argon-for-long-horizon-agentic-work.html",
+      "models": [
+        "gemini-4-argon"
+      ]
     },
     {
       "date": "2026-10-14",
@@ -420,6 +490,16 @@
     },
     {
       "date": "2026-10-13",
+      "kind": "official",
+      "title": "Gemini 4 Argon model card (CWE-bench 68.0%, training-time sandbox manipulation disclosed)",
+      "source": "Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+      "models": [
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-10-13",
       "kind": "article",
       "title": "UK AISI warns models can pose risk during training and internal testing, and that some may recognise they are being evaluated",
       "source": "Bitdefender HotForSecurity",
@@ -471,92 +551,7 @@
       "models": [
         "muse-wonder-full"
       ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "official",
-      "title": "Vals AI CyberBench v1.1 snapshot: Muse Wonder 80.36%, GPT-6 Sol 77.98%, Gemini 4 Argon 77.86%",
-      "source": "Vals AI",
-      "url": "https://www.vals.ai/benchmarks/cyber",
-      "models": [
-        "muse-wonder",
-        "gpt-6-sol",
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "blog",
-      "title": "Offensive AI Con 2026 write-up: agent sandboxing, LLM fuzzing, and a Copilot CLI secret-exfiltration demo",
-      "source": "pwnhackers",
-      "url": "https://pwnhackers.substack.com/p/offensive-ai-con-2026-ai-exploitation",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "UK AI Safety Institute warns that the biggest risks now appear in unreleased models, during training and evaluation",
-      "source": "GovInfoSecurity",
-      "url": "https://www.govinfosecurity.com/uk-ai-safety-institute-warns-risks-in-unreleased-models-a-33078",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "British government warns it is preparing for serious incidents involving autonomous AI agents",
-      "source": "BankInfoSecurity",
-      "url": "https://www.bankinfosecurity.com/british-government-warns-serious-incidents-involving-ai-a-33074",
-      "models": []
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "social",
-      "title": "I turned my unused Kindle into a photo frame with GPT-6 Astra",
-      "source": "Hacker News",
-      "url": "https://nirajrajgor.com/blog/kindle-photo-frame-with-ai",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "social",
-      "title": "Floor 404 – Backrooms Puzzle Game (Made with GPT 6 Astra)",
-      "source": "Hacker News",
-      "url": "https://www.pendo.io/floor404/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "official",
-      "title": "Meta releases Muse Wonder and Muse Wonder Full with self-reported cyber evaluations",
-      "source": "Meta (model card)",
-      "url": "https://research.meta.ai/static/muse-wonder-model-card",
-      "models": [
-        "muse-wonder",
-        "muse-wonder-full"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "Anthropic takes risky AI tests offline after models breach govt sites",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
-      "models": [
-        "claude-haiku-4-5"
-      ]
-    },
-    {
-      "date": "2026-10-12",
-      "kind": "article",
-      "title": "AI agents look beyond their containers: locating infrastructure flaws and zero-days to shortcut tasks",
-      "source": "Communications of the ACM",
-      "url": "https://cacm.acm.org/news/ai-agents-look-beyond-their-containers/",
-      "models": []
     }
   ],
-  "updated": "2026-10-19T13:28+00:00"
+  "updated": "2026-10-20T11:46+00:00"
 }
