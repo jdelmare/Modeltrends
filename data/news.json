@@ -3,6 +3,17 @@
   "items": [
     {
       "date": "2026-10-20",
+      "kind": "social",
+      "title": "GPT-6.1 Terra is in a Microsoft PR",
+      "source": "Hacker News",
+      "url": "https://twitter.com/LuminaBench/status/2112189697388613850",
+      "models": [
+        "gpt-6-1-astra",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "date": "2026-10-20",
       "kind": "article",
       "title": "US Army is developing AI agents that could strike enemy networks and vanish without a trace",
       "source": "Help Net Security",
@@ -16,6 +27,16 @@
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
       "models": []
+    },
+    {
+      "date": "2026-10-19",
+      "kind": "article",
+      "title": "Security patches need patches now that attackers have AI",
+      "source": "The Register Security",
+      "url": "https://www.theregister.com/patches/2026/10/19/security-patches-need-patches-now-that-attackers-have-ai/5303927",
+      "models": [
+        "gpt-5-6-terra"
+      ]
     },
     {
       "date": "2026-10-19",
@@ -533,25 +554,7 @@
         "gpt-6-luna",
         "gpt-6-astra"
       ]
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "article",
-      "title": "Small AI models could soon self-replicate on IoT devices, Anthropic warns",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/small-ai-models-may-soon-be-able-to-self-replicate-on-iot-devices-anthropic-warns/",
-      "models": []
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "social",
-      "title": "Meta unveils Muse Wonder Full: strongest safeguards to date while preserving frontier cyber capability for defenders",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/13/meta-muse-wonder-full-models/",
-      "models": [
-        "muse-wonder-full"
-      ]
     }
   ],
-  "updated": "2026-10-20T11:46+00:00"
+  "updated": "2026-10-21T11:58+00:00"
 }

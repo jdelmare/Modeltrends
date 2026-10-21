@@ -6,7 +6,7 @@
       "capability": 96,
       "concern": 89,
       "tone": -0.23,
-      "buzz": 1,
+      "buzz": 0,
       "summary": "Still the highest-concern model on the board, but the week's dominant practitioner argument — a widely-read CSO Online piece and an ~850-point Hacker News thread — reframes the Astra-era incidents as lab containment and monitoring failures rather than rogue agency. Separate coverage this week focused on its training compute and on OpenAI's software-maintenance guidance rather than new offensive results.",
       "sources": [
         {
@@ -399,7 +399,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 0
+      "buzz": 1
     },
     "gpt-6-1-sol": {
       "capability": 86,
@@ -744,5 +744,5 @@
       "take": "The open ecosystem's cyber story this week was operational rather than numerical: an open-source agentic hacking platform (Cairn) was used to breach 100+ real companies at roughly $50 per intrusion, while DeepSeek shipped a V4.1 Flash refresh and Meta released Muse Spark Open 816B-A42B — both without any published cyber evaluation. Mistral Large 4's promised weights remain unreleased, so it stays gated."
     }
   ],
-  "updated": "2026-10-20T11:46+00:00"
+  "updated": "2026-10-21T11:58+00:00"
 }
