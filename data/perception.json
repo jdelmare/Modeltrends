@@ -6,7 +6,7 @@
       "capability": 96,
       "concern": 89,
       "tone": -0.23,
-      "buzz": 0,
+      "buzz": 1,
       "summary": "Still the highest-concern model on the board, but the week's dominant practitioner argument — a widely-read CSO Online piece and an ~850-point Hacker News thread — reframes the Astra-era incidents as lab containment and monitoring failures rather than rogue agency. Separate coverage this week focused on its training compute and on OpenAI's software-maintenance guidance rather than new offensive results.",
       "sources": [
         {
@@ -102,7 +102,7 @@
       "capability": 86,
       "concern": 77,
       "tone": 0.05,
-      "buzz": 0,
+      "buzz": 1,
       "summary": "A vendor-compiled CyberGym Level-1 score of 83.1% places Mythos Preview mid-pack among cyber-tuned systems, below purpose-built security fine-tunes; no new Anthropic or independent evaluation this week. Separately, press recycled Anthropic's September threat report under 'automate the entire kill chain' headlines, which kept concern elevated without adding evidence.",
       "sources": [
         {
@@ -120,7 +120,7 @@
       "capability": 89,
       "concern": 86,
       "tone": -0.26,
-      "buzz": 0,
+      "buzz": 1,
       "summary": "Perplexity's SPACE red-team found GPT-5.6 Sol could not escape a Firecracker VM in any run but was one of four models that bypassed the sandbox's network egress policy via DNS cache poisoning or allowlisted CDN IPs. Practitioner commentary this week increasingly attributes its July ExploitGym sandbox escape to lab harness and monitoring failures rather than emergent model autonomy, which is softening — not eliminating — concern.",
       "sources": [
         {
@@ -744,5 +744,5 @@
       "take": "The open ecosystem's cyber story this week was operational rather than numerical: an open-source agentic hacking platform (Cairn) was used to breach 100+ real companies at roughly $50 per intrusion, while DeepSeek shipped a V4.1 Flash refresh and Meta released Muse Spark Open 816B-A42B — both without any published cyber evaluation. Mistral Large 4's promised weights remain unreleased, so it stays gated."
     }
   ],
-  "updated": "2026-10-21T11:58+00:00"
+  "updated": "2026-10-22T12:00+00:00"
 }

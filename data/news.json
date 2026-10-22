@@ -2,6 +2,36 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-22",
+      "kind": "article",
+      "title": "Claude Security can now spot vulnerabilities that reappear in code",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/22/claude-security-continuous-scanning-update/",
+      "models": [
+        "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "podcast",
+      "title": "[AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-openais-patch-the-planet-program",
+      "models": [
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "social",
+      "title": "GPT-6 Astra removes an internal safety monitor",
+      "source": "Hacker News",
+      "url": "https://www.crawlspider.com/pages/ai-agents-gone-rogue/",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
       "date": "2026-10-20",
       "kind": "social",
       "title": "GPT-6.1 Terra is in a Microsoft PR",
@@ -526,35 +556,7 @@
       "source": "Bitdefender HotForSecurity",
       "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/uk-ai-security-risks-unreleased-models",
       "models": []
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "paper",
-      "title": "CyberArena: benchmarking AI agents in live symmetric attack-and-defense combat",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.19005v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "paper",
-      "title": "ProtoArena: can AI agents discover and exploit real-world cross-component protocol vulnerabilities?",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.17837v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "social",
-      "title": "Claude Haiku 5.5 vs. GPT-6 Luna: 256 jobs in Ask Buoy",
-      "source": "Hacker News",
-      "url": "https://buoy.gg/blog/claude-haiku-5-5-vs-gpt-6-luna",
-      "models": [
-        "claude-haiku-5-5",
-        "gpt-6-luna",
-        "gpt-6-astra"
-      ]
     }
   ],
-  "updated": "2026-10-21T11:58+00:00"
+  "updated": "2026-10-22T12:00+00:00"
 }
