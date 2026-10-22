@@ -4,6 +4,46 @@
     {
       "date": "2026-10-22",
       "kind": "article",
+      "title": "Microsoft says ConnectWise breach let Chinese spies loose on 2,250 cloud tenants — AI agents did the dirty work, privileged access in under three hours",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/22/microsoft-says-connectwise-breach-let-chinese-spies-loose-on-2250-cloud-tenants/5304687",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "article",
+      "title": "China-linked Storm-0940 used ARTEX AI agents in ConnectWise supply chain attack",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "article",
+      "title": "LiteLLM hit by second supply chain attack this year; malicious PyPI/Docker release harvested AI provider API keys",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "social",
+      "title": "Amazon warns new cyber flaws detected using AI are being 'broadly exploited'",
+      "source": "Financial Times (via Hacker News)",
+      "url": "https://www.ft.com/content/245778d9-597b-492d-b5b6-a2967c77e853",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "blog",
+      "title": "AI #191: The Hackening Begins",
+      "source": "Don't Worry About the Vase",
+      "url": "https://thezvi.wordpress.com/2026/10/22/ai-191-the-hackening-begins/",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "article",
       "title": "Claude Security can now spot vulnerabilities that reappear in code",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/22/claude-security-continuous-scanning-update/",
@@ -23,6 +63,52 @@
     },
     {
       "date": "2026-10-21",
+      "kind": "article",
+      "title": "U.S. orders DeepSeek removed from federal civilian systems, bans new purchases",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+      "models": [
+        "deepseek-v4-pro",
+        "deepseek-v4-1-flash",
+        "deepseek-v4-1-flash-1017"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "official",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "models": []
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "article",
+      "title": "Unit 42: low-skill actor used jailbroken AI assistants for credential theft, VoIP fraud and database exfiltration",
+      "source": "Palo Alto Networks Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
+      "models": []
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "article",
+      "title": "Anthropic launches Claude Duet, a proactive Opus 5.5-based agent with its own cloud VM and browser",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/21/anthropic-claude-duet/",
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "paper",
+      "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2610.19005",
+      "models": []
+    },
+    {
+      "date": "2026-10-21",
       "kind": "social",
       "title": "GPT-6 Astra removes an internal safety monitor",
       "source": "Hacker News",
@@ -30,6 +116,40 @@
       "models": [
         "gpt-6-astra"
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "article",
+      "title": "Hackers use autonomous AI agents (Cairn) to breach company websites, now 1,200+ sites — operators left their console exposed",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "blog",
+      "title": "Flare: abliteration mentions on cybercrime forums up 745% since January; GLM is the model nearly every vendor advertises",
+      "source": "Flare",
+      "url": "https://flare.io/learn/resources/blog/ai-models-cybercrime-quantitative-analysis",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "article",
+      "title": "Microsoft unveils Guardian Agents and dynamic permissions, treating AI agents as insider threats",
+      "source": "TechRadar Pro",
+      "url": "https://www.techradar.com/pro/security/microsoft-admits-frontier-models-cant-be-trusted-unveils-new-security-tools-to-treat-ai-agents-as-insider-threats",
+      "models": []
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "social",
+      "title": "Fleet of AI agents used httpbin to get past their sandbox",
+      "source": "Hacker News / kennethreitz.org",
+      "url": "https://kennethreitz.org/essays/2026-10-20-i_built_the_escape_hatch",
+      "models": []
     },
     {
       "date": "2026-10-20",
@@ -426,137 +546,7 @@
       "source": "Decrypt / Swarmchasers",
       "url": "https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba",
       "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "An AI agent found a critical OTP bypass in production - the attack was the easy part",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "paper",
-      "title": "Thinking in Graphs: Neo4j-backed exploit-chain reasoning for LLM penetration-testing agents",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.20902v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "social",
-      "title": "Bank of America hired 1,000 contractors to patch software flaws exposed by Mythos",
-      "source": "CNBC (via Hacker News)",
-      "url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html",
-      "models": [
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "social",
-      "title": "An Open Letter on AI and Cybersecurity from the Scientific Community (~400 signatories incl. Hinton, Bengio) calls for default air-gapping of cyber-capable models and an international containment-failure registry",
-      "source": "ai-security-letter.org (via Hacker News)",
-      "url": "https://ai-security-letter.org/",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "AI-found Linux kernel vhost flaw gives local users root and can break a guest out to the host",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "social",
-      "title": "Chainguard publishes the first vulnerability disclosure produced by its Claude Mythos harness",
-      "source": "Chainguard",
-      "url": "https://www.chainguard.dev/unchained/the-first-disclosure-from-our-mythos-harness",
-      "models": [
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "paper",
-      "title": "From Training to Escalation: forensic analysis and local recreation of RL/RLHF-induced privilege escalation in AI agents (CVE-2026-65616)",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.20437v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "The blind spots of agentic pentesting and how to close them",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "official",
-      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-      "source": "OpenAI News",
-      "url": "https://openai.com/index/third-moment-research",
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-astra",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "social",
-      "title": "Five agents running on GPT-6.1 Sol clear WoW's Ragefire Chasm in 24h",
-      "source": "Hacker News",
-      "url": "https://agent-wow.sh/five-agents-running-on-gpt-61-sol-clear-world-of-warcrafts-ragefire-chasm-in-24-hours/",
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-astra"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "Chainguard Harness uses frontier AI to test running applications for vulnerabilities",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/14/chainguard-harness/",
-      "models": [
-        "claude-mythos-5-1",
-        "claude-mythos-preview"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
-      "models": [
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "official",
-      "title": "Gemini 4 Argon model card (CWE-bench 68.0%, training-time sandbox manipulation disclosed)",
-      "source": "Google DeepMind",
-      "url": "https://deepmind.google/models/model-cards/gemini-4-argon/",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-13",
-      "kind": "article",
-      "title": "UK AISI warns models can pose risk during training and internal testing, and that some may recognise they are being evaluated",
-      "source": "Bitdefender HotForSecurity",
-      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/uk-ai-security-risks-unreleased-models",
-      "models": []
     }
   ],
-  "updated": "2026-10-22T12:00+00:00"
+  "updated": "2026-10-22T15:18+00:00"
 }
