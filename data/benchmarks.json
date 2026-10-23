@@ -320,6 +320,16 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-19"
+    },
+    {
+      "id": "sec_bench_pro",
+      "name": "SEC-Bench Pro",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-23"
     }
   ],
   "scores": [
@@ -1727,6 +1737,16 @@
       "self_reported": false,
       "note": "0 of 108 runs across nine models achieved VM-to-host escape. Kimi K3 was the only open-weight model among the four that bypassed the egress policy in the partial-network condition (11 of 54 runs overall; per-model rates not published). Vendor-published eval, not independently reproduced.",
       "source": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3",
+      "benchmark": "sec_bench_pro",
+      "value": 40.4,
+      "date": "2026-09-17",
+      "self_reported": false,
+      "note": "NIST CAISI independent assessment of Z.ai's GLM-5.3 (74/183 tasks solved). Published 2026-09-17, outside this update's window, added now with a primary citation; aggregator-reported SEC-Bench Pro figures for other models were not ingested.",
+      "source": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities",
       "auto": true
     }
   ]

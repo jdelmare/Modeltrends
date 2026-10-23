@@ -76,6 +76,32 @@
   },
   "models": [
     {
+      "id": "mercury-3",
+      "name": "Mercury 3",
+      "provider": "other",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-19",
+      "access": "Generally available via Inception; speed-positioned diffusion LLM pitched against Claude Haiku and GPT-6 Luna.",
+      "aliases": [
+        "Mercury 3",
+        "Inception Mercury 3"
+      ],
+      "notes": "No cyber benchmark data published at release; added as a tracked row with no scores.",
+      "sources": [
+        {
+          "title": "Inception releases Mercury 3, its flagship diffusion LLM",
+          "url": "https://www.unite.ai/inception-releases-mercury-3-its-flagship-diffusion-llm/"
+        },
+        {
+          "title": "Inception's Mercury 3 undercuts rivals on speed",
+          "url": "https://finance.yahoo.com/technology/ai/articles/inception-mercury-3-undercuts-speed-122004054.html"
+        }
+      ],
+      "auto_added": "2026-10-23",
+      "index": null
+    },
+    {
       "id": "minimax-m3-1-flash",
       "name": "MiniMax M3.1 Flash",
       "provider": "other",
@@ -2052,5 +2078,5 @@
       ]
     }
   ],
-  "updated": "2026-10-22T15:18+00:00"
+  "updated": "2026-10-23T11:46+00:00"
 }

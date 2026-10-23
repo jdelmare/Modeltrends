@@ -2,6 +2,32 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-23",
+      "kind": "article",
+      "title": "Hackers hijack exposed AI models to launch cyberattacks at victims' expense",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "podcast",
+      "title": "OpenAI's Patch the Planet program used GPT-5.6 Sol to find PHP2Shell vulnerabilities in core PHP affecting ~70% of the web",
+      "source": "Latent Space / AINews",
+      "url": "https://latent.space/p/ainews-openais-patch-the-planet-program/",
+      "models": [
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "official",
+      "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
+      "source": "Google Cloud Threat Intelligence",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era",
+      "models": []
+    },
+    {
       "date": "2026-10-22",
       "kind": "article",
       "title": "Microsoft says ConnectWise breach let Chinese spies loose on 2,250 cloud tenants — AI agents did the dirty work, privileged access in under three hours",
@@ -64,6 +90,34 @@
     {
       "date": "2026-10-21",
       "kind": "article",
+      "title": "AI Just Found a Bug That Puts Up to 70% of the World's Websites at Risk",
+      "source": "Wall Street Journal",
+      "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea",
+      "models": [
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "article",
+      "title": "The Harness Is the Hard Part of Agentic Pentesting",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "article",
+      "title": "Anthropic unveils Claude Duet, a proactive agent app running on Claude Opus 5.5 with its own VM and browser",
+      "source": "Reuters / The Star",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/22/anthropic-unveils-claude-duet-ai-agent-app",
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "article",
       "title": "U.S. orders DeepSeek removed from federal civilian systems, bans new purchases",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
@@ -116,6 +170,30 @@
       "models": [
         "gpt-6-astra"
       ]
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "article",
+      "title": "When AI models refuse to fight hackers: guardrails locked OpenCode's defenders out mid-incident",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/10/21/when-ai-models-refuse-to-fight-hackers",
+      "models": []
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "article",
+      "title": "Hackers abuse AI pen-test tool Cairn to automate a massive attack spree across 1,200+ sites",
+      "source": "Dark Reading / The Hacker News",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+      "models": []
+    },
+    {
+      "date": "2026-10-20",
+      "kind": "paper",
+      "title": "How Much Does the Harness Matter, and for Whom? A Multi-Model Study of Context in LLM-Driven Vulnerability Discovery",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.28802v1",
+      "models": []
     },
     {
       "date": "2026-10-20",
@@ -293,6 +371,16 @@
     },
     {
       "date": "2026-10-16",
+      "kind": "official",
+      "title": "Epoch AI Cyber ECI: GLM-5.3 tops open-weight models; open weights trail the closed frontier by 6-7 months",
+      "source": "Epoch AI",
+      "url": "https://epoch.ai/data-insights",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-16",
       "kind": "article",
       "title": "Bank of America hires 1,000 contractors to patch software flaws found by Anthropic's Mythos",
       "source": "AI Weekly",
@@ -450,103 +538,7 @@
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
       "models": []
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "social",
-      "title": "Cohere signs letter of intent to acquire AI vulnerability scanner AISLE",
-      "source": "Cohere",
-      "url": "https://cohere.com/blog/cohere-and-aisle-sign-letter-of-intent-to-advance-cyber-resilient-sovereign-ai",
-      "models": []
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "official",
-      "title": "Meta publishes open weights for Muse Spark Open 816B-A42B, with safeguard but no offensive-cyber benchmarks",
-      "source": "Hugging Face / Meta",
-      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "models": [
-        "muse-spark-open"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "official",
-      "title": "Anthropic documents three-tier Cyber Verification Program (Defense, Red Team, Specialized) covering Opus 5.5, Sonnet 5.5 and Mythos 5.1",
-      "source": "Anthropic support",
-      "url": "https://support.claude.com/en/articles/14604842-cyber-verification-program",
-      "models": [
-        "claude-opus-5-5",
-        "claude-sonnet-5-5",
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "official",
-      "title": "Meta releases Muse Spark Open, an 816B/42B-active open-weight model with extra anti-misuse post-training",
-      "source": "Meta Research",
-      "url": "https://research.meta.ai/blog/muse-spark-open",
-      "models": [
-        "muse-spark-open"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "AI slop isn't just for social media; it's ruining cyberattacks too — counterpoint arguing serious threat actors are barely using AI",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
-      "models": []
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "official",
-      "title": "NVIDIA releases Nemotron 3.5 Super VL and Bolt open weights — no accompanying cyber evaluation",
-      "source": "NVIDIA",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "models": [
-        "nemotron-3-5-super-vl",
-        "nemotron-3-5-bolt"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "UK keeps AI safeguards in the \"maybe\" pile for the Cyber Security and Resilience Bill",
-      "source": "The Register",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/15/uk-keeps-ai-safeguards-in-the-maybe-pile-for-cyber-security-bill/5303026",
-      "models": []
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "Google positions Gemini 4 Argon for long-horizon agentic work — 12/12 attack scenarios, no independent replication",
-      "source": "InfoWorld",
-      "url": "https://www.infoworld.com/article/4235118/google-positions-gemini-4-argon-for-long-horizon-agentic-work.html",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "AI agents aren't 'going rogue.' Frontier labs are skipping security basics.",
-      "source": "CSO Online",
-      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-      "models": [
-        "gpt-6-astra",
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "kind": "article",
-      "title": "Researchers made contact with a fleet of rogue AI agents probing Alibaba's Amap",
-      "source": "Decrypt / Swarmchasers",
-      "url": "https://decrypt.co/381109/researchers-fleet-rouge-ai-agents-talk-alibaba",
-      "models": []
     }
   ],
-  "updated": "2026-10-22T15:18+00:00"
+  "updated": "2026-10-23T11:46+00:00"
 }
