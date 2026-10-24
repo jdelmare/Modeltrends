@@ -1748,6 +1748,106 @@
       "note": "NIST CAISI independent assessment of Z.ai's GLM-5.3 (74/183 tasks solved). Published 2026-09-17, outside this update's window, added now with a primary citation; aggregator-reported SEC-Bench Pro figures for other models were not ingested.",
       "source": "https://www.nist.gov/news-events/news/2026/09/caisis-assessment-zais-glm-53-cyber-capabilities",
       "auto": true
+    },
+    {
+      "model": "minimax-m3-1-flash",
+      "benchmark": "cybergym",
+      "value": 82.2,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row from benchlm.ai snapshot verified 2026-10-20; benchlm states it mixes benchmark-owner runs, provider self-reports and secondary reports, and the llm-stats mirror marks all CyberGym rows 'self-reported'. Not a benchmark-owner or independent-evaluator run; verify before citing.",
+      "source": "https://benchlm.ai/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "gemini-3-5-flash-cyber",
+      "benchmark": "cybergym",
+      "value": 83.2,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20), provenance mixed and marked self-reported on the llm-stats mirror. Not confirmed against a Google model card.",
+      "source": "https://benchlm.ai/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-terra",
+      "benchmark": "cybergym",
+      "value": 81.8,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20). The same leaderboard lists GPT-5.6 Sol at 84.5%, conflicting with our stored 83.6 - that row was not ingested pending primary-source resolution.",
+      "source": "https://benchlm.ai/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-5",
+      "benchmark": "cybergym",
+      "value": 81.8,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20); not a benchmark-owner run.",
+      "source": "https://benchlm.ai/benchmarks/cybergym",
+      "auto": true
+    },
+    {
+      "model": "mimo-v2-6-pro",
+      "benchmark": "exploitgym",
+      "value": 17.8,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20). Large gap vs. this model's 94.0% CyberGym score - read as evidence of CyberGym saturation, not as a verified harness result.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "deepseek-v4-1-flash-1017",
+      "benchmark": "exploitgym",
+      "value": 15.3,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20); no primary DeepSeek publication located.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3",
+      "benchmark": "exploitgym",
+      "value": 15.0,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20); not a benchmark-owner run.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-luna",
+      "benchmark": "exploitgym",
+      "value": 11.6,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20); not confirmed against an OpenAI system card.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "mimo-v2-6-flash",
+      "benchmark": "exploitgym",
+      "value": 6.0,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20). The CyberGym leader (95.1%) ranks near the bottom here - the clearest illustration this cycle that the two benchmarks measure different steps.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "muse-spark-1-1",
+      "benchmark": "exploitgym",
+      "value": 0.8,
+      "date": "2026-10-20",
+      "self_reported": true,
+      "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20); not a benchmark-owner run.",
+      "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
     }
   ]
 }

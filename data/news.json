@@ -3,10 +3,66 @@
   "items": [
     {
       "date": "2026-10-23",
+      "kind": "official",
+      "title": "Securing our frontier model training environment",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "models": []
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "article",
+      "title": "Exposed infrastructure reveals how ransomware affiliates used AI agents to execute intrusions",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "article",
+      "title": "AI tools are generating massive attacks for little cost: 105 sites targeted with open-weight models, full domain control for $12",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
+      "models": []
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "article",
+      "title": "AI-discovered bugs may soon trigger fresh disruptions, cyber experts say",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/ai-discovered-bugs-may-soon-trigger-fresh-disruptions-cyber-experts-say-2026-10-23/",
+      "models": []
+    },
+    {
+      "date": "2026-10-23",
       "kind": "article",
       "title": "Hackers hijack exposed AI models to launch cyberattacks at victims' expense",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "official",
+      "title": "Red-teaming OpenAI's misalignment monitoring: METR and Redwood find monitoring gaps and bypass paths",
+      "source": "METR",
+      "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "article",
+      "title": "Independent auditors find gaps in OpenAI agent monitoring",
+      "source": "BankInfoSecurity",
+      "url": "https://www.bankinfosecurity.com/independent-auditors-find-gaps-in-openai-agent-monitoring-a-33183",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "article",
+      "title": "Microsoft says ConnectWise breach let Chinese spies loose on 2,250 cloud tenants, with AI agents doing the work",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/22/microsoft_says_connectwise_breach_let_chinese_spies_loose_on_2250_cloud_tenants/5304687",
       "models": []
     },
     {
@@ -86,6 +142,14 @@
       "models": [
         "gpt-5-6-sol"
       ]
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "official",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/empowering-cyber-defenders/",
+      "models": []
     },
     {
       "date": "2026-10-21",
@@ -460,85 +524,7 @@
         "nemotron-3-5-super-vl",
         "nemotron-3-5-bolt"
       ]
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "OpenAI models hacked data portals and raided a crypto wallet to finish tasks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "Stolen AI API keys are paying for hackers' autonomous scans",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/16/stolen-ai-api-keys-autonomous-scans/",
-      "models": []
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "Google can't rule out Gemini 4 Argon hit its bio and cyber danger thresholds",
-      "source": "Implicator.ai",
-      "url": "https://www.implicator.ai/google-cant-rule-out-gemini-4-argon-hit-its-bio-and-cyber-danger-thresholds/",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "FTC probes OpenAI and Anthropic over AI safety incidents with civil investigative demands",
-      "source": "Axios",
-      "url": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
-      "models": []
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "Perplexity open-sources SPACE agent sandbox; red-team reports zero VM escapes in 108 runs but 11-of-54 egress bypasses",
-      "source": "AI Weekly / agentbeam analysis",
-      "url": "https://www.agentbeam.com/blog/perplexity-space-sandbox-escape-red-team",
-      "models": [
-        "claude-opus-5",
-        "gpt-5-6-sol",
-        "gpt-5-6-cyber",
-        "kimi-k3"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "official",
-      "title": "NSFOCUS SecLLM-3.6-27B reports 91.37% on CyberGym Level 1, +36.86 pp over its Qwen3.8-27B base",
-      "source": "NSFOCUS",
-      "url": "https://nsfocusglobal.com/nsfocus-secllm-model-on-cybergym-technical-report/",
-      "models": [
-        "secllm-3-6-27b",
-        "gpt-5-5-cyber",
-        "claude-mythos-preview",
-        "glm-5-3",
-        "deepseek-v4-pro",
-        "gemini-3-8-flash-cyber"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "Aoki infostealer harvests credentials and session files for Claude, ChatGPT, Codex, Copilot and Cursor",
-      "source": "Symantec Threat Hunter Team",
-      "url": "https://www.security.com/threat-intelligence/aoki-infostealer-ai-targeting",
-      "models": []
-    },
-    {
-      "date": "2026-10-15",
-      "kind": "article",
-      "title": "Is AI pentesting as good as a human pentester? Consistency and business context remain the gaps",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
-      "models": []
     }
   ],
-  "updated": "2026-10-23T11:46+00:00"
+  "updated": "2026-10-24T11:11+00:00"
 }

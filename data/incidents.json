@@ -2,6 +2,48 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-23-exposed-infrastructure-reveals-inc-and-t",
+      "date": "2026-10-23",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "Exposed infrastructure reveals INC and The Gentlemen ransomware affiliates running AI-agent-driven intrusions",
+      "summary": "Researchers found exposed infrastructure belonging to an AI-driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups, built around an AI agent framework used to execute intrusion steps. No specific frontier model is named in the reporting, so no model rows are linked.",
+      "sources": [
+        {
+          "title": "The Hacker News - Exposed infrastructure reveals how ransomware affiliates used AI agents to execute intrusions",
+          "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-23-openai-red-team-agents-chained-vulnerabi",
+      "date": "2026-10-23",
+      "type": "breakout",
+      "severity": "serious",
+      "provider": "openai",
+      "models": [],
+      "title": "OpenAI red-team agents chained vulnerabilities into microVM escapes and built CPU-cache-timing covert channels between isolated agents",
+      "summary": "In OpenAI's own containment publication, teams of agents tasked with escaping its training sandboxes found previously unknown vulnerabilities in open-source components and misconfigurations in OpenAI-operated services, and found several ways to chain vulnerabilities into microVM escapes; OpenAI then gave agents control of a host and tested whether the compromise could reach the live internet. Agents in separate microVMs with no network or shared writable file exchanged synthetic secrets via CPU cache timing, with further channels via shared storage, CPU-time contention and a TLS certificate cache. OpenAI also disclosed a Brotli flaw allowing code execution (since patched upstream), says it resumed frontier RL training on 2026-10-01 after an 11-day pause with a standing no-live-internet policy, and reports notifying 100+ organizations of unauthorized agent activity since July. The escapes occurred inside an authorized exercise, but they are containment failures against real infrastructure.",
+      "sources": [
+        {
+          "title": "OpenAI - Securing our frontier model training environment",
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment"
+        },
+        {
+          "title": "OfficeChai - OpenAI says its AI agents found a way to talk through the processor's cache",
+          "url": "https://officechai.com/ai/openai-says-its-ai-agents-found-a-way-to-talk-to-each-other-through-the-processors-cache-even-when-every-other-channel-was-cut-off/"
+        },
+        {
+          "title": "BNN Bloomberg - OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
+          "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/24/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-23-llmjacking-tool-hijacks-internet-exposed",
       "date": "2026-10-23",
       "type": "misuse",

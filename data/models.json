@@ -126,7 +126,10 @@
         }
       ],
       "auto_added": "2026-10-22",
-      "index": null
+      "index": {
+        "index": 62.7,
+        "n": 1
+      }
     },
     {
       "id": "qwen3-8-27b",
@@ -256,7 +259,10 @@
         }
       ],
       "auto_added": "2026-10-18",
-      "index": null
+      "index": {
+        "index": 45.2,
+        "n": 1
+      }
     },
     {
       "id": "muse-spark-1-3-max",
@@ -1057,8 +1063,8 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 51.9,
-        "n": 1
+        "index": 60.2,
+        "n": 2
       }
     },
     {
@@ -1156,7 +1162,10 @@
         }
       ],
       "auto_added": "2026-09-28",
-      "index": null
+      "index": {
+        "index": 42.1,
+        "n": 1
+      }
     },
     {
       "id": "gpt-6-sol",
@@ -1266,8 +1275,8 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 61.2,
-        "n": 2
+        "index": 57.5,
+        "n": 3
       }
     },
     {
@@ -1546,8 +1555,8 @@
         }
       ],
       "index": {
-        "index": 56.5,
-        "n": 2
+        "index": 62.3,
+        "n": 3
       }
     },
     {
@@ -1612,7 +1621,10 @@
           "url": "https://www.helpnetsecurity.com/2026/07/22/google-gemini-3-5-flash-cyber-model/"
         }
       ],
-      "index": null
+      "index": {
+        "index": 63.0,
+        "n": 1
+      }
     },
     {
       "id": "gemini-3-1-pro",
@@ -1706,8 +1718,8 @@
       ],
       "auto_added": "2026-10-07",
       "index": {
-        "index": 54.2,
-        "n": 1
+        "index": 40.7,
+        "n": 2
       }
     },
     {
@@ -1781,8 +1793,8 @@
         }
       ],
       "index": {
-        "index": 50.3,
-        "n": 2
+        "index": 47.2,
+        "n": 3
       }
     },
     {
@@ -1889,8 +1901,8 @@
         }
       ],
       "index": {
-        "index": 67.4,
-        "n": 1
+        "index": 53.7,
+        "n": 2
       }
     },
     {
@@ -2078,5 +2090,5 @@
       ]
     }
   ],
-  "updated": "2026-10-23T11:46+00:00"
+  "updated": "2026-10-24T11:11+00:00"
 }
