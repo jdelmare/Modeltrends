@@ -45,6 +45,11 @@
           "date": "2026-10-16",
           "value": 6.5,
           "source": "https://epoch.ai/topics/open-models"
+        },
+        {
+          "date": "2026-10-24",
+          "value": 1.0,
+          "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index"
         }
       ],
       "note": "GLM-5.3, the most cyber-capable open-weight model, trails the US frontier by ~4 months on CAISI's aggregate cyber benchmarks."

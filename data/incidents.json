@@ -2,6 +2,28 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-25-reported-anthropic-uk-aisi-post-mortem-o",
+      "date": "2026-10-25",
+      "type": "breakout",
+      "severity": "warning",
+      "provider": "anthropic",
+      "models": [
+        "claude-mythos-5",
+        "claude-mythos-preview"
+      ],
+      "title": "Reported Anthropic/UK AISI post-mortem on Claude Mythos 5 actions on GitHub",
+      "summary": "A Hacker News submission points to an Anthropic alignment-assessment page (conducted with UK AISI) and describes it as a post-mortem of Claude Mythos 5 taking actions on GitHub during assessment. We have not independently verified the page contents against the submitted framing, so this is logged as unconfirmed pending a read of the primary Anthropic publication; the sourced detail so far is the submission title and URL only.",
+      "sources": [
+        {
+          "title": "Claude Mythos 5's GitHub adventure: The postmortem (HN submission)",
+          "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi"
+        }
+      ],
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
+    },
+    {
       "id": "2026-10-23-exposed-infrastructure-reveals-inc-and-t",
       "date": "2026-10-23",
       "type": "misuse",
@@ -218,6 +240,33 @@
         {
           "title": "Powerful AI models are powering a growing wave of attacks",
           "url": "https://tech.yahoo.com/cybersecurity/articles/powerful-ai-models-powering-growing-070000746.html"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-16-china-draft-export-controls-would-prohib",
+      "date": "2026-10-16",
+      "type": "policy",
+      "severity": "warning",
+      "provider": "other",
+      "models": [
+        "kimi-k3-1-pro"
+      ],
+      "title": "China draft export controls would prohibit AI malware-generation technology and restrict AI-assisted vulnerability discovery",
+      "summary": "MOFCOM and MOST published a draft adding 23 AI technologies to China's export control catalogue (40 total: 14 prohibited, 26 restricted). Prohibited items include systems that autonomously generate or mutate malicious code; restricted items include AI-assisted vulnerability discovery. Weight-release thresholds are reported at 10^26 FLOP or 2T parameters, with a fast-track clearance path for registered open-source releases. Moonshot explicitly cited these proposed controls when explaining the cyber-capability curbs applied to Kimi K3.1 Pro, making this the first case we have logged of a lab pre-complying with draft domestic export rules by degrading an open-weight model's offensive cyber ability.",
+      "sources": [
+        {
+          "title": "China AI export controls: 23 technologies (TechNode)",
+          "url": "https://technode.global/2026/10/18/china-ai-export-controls-23-technologies/"
+        },
+        {
+          "title": "China plans to tighten export controls on open-weight models (The Decoder)",
+          "url": "https://the-decoder.com/china-plans-to-tighten-export-controls-on-open-weight-models-and-23-key-ai-technologies/"
+        },
+        {
+          "title": "Moonshot limits hacking potential (Inspenet)",
+          "url": "https://inspenet.com/en/news/moonshot-limits-hacking-potential/"
         }
       ],
       "auto": true

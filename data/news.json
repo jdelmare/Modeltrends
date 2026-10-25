@@ -2,6 +2,69 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-25",
+      "kind": "article",
+      "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+      "models": [
+        "gpt-6-astra-cyber"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "social",
+      "title": "Claude Mythos 5's GitHub adventure: the post-mortem (Anthropic/UK AISI alignment assessment)",
+      "source": "Hacker News",
+      "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
+      "models": [
+        "claude-mythos-5",
+        "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "article",
+      "title": "Moonshot curbs hacking ability in new Kimi model as fears grow over AI-powered cyberattacks",
+      "source": "Reuters (via Yahoo)",
+      "url": "https://www.yahoo.com/news/articles/moonshot-curbs-hacking-ability-kimi-042516641.html",
+      "models": [
+        "kimi-k3-1-pro",
+        "kimi-k3"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "official",
+      "title": "Artificial Analysis Cyber Index update: Kimi K3.1 Pro leads all publicly accessible models",
+      "source": "Artificial Analysis",
+      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "models": [
+        "kimi-k3-1-pro",
+        "gpt-6-sol-daybreak-blue",
+        "deepseek-v4-1-flash-1017",
+        "grok-4-7",
+        "mistral-large-4",
+        "kimi-k3"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "article",
+      "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
+      "models": []
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "article",
+      "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+      "models": []
+    },
+    {
       "date": "2026-10-23",
       "kind": "official",
       "title": "Securing our frontier model training environment",
@@ -389,6 +452,16 @@
     {
       "date": "2026-10-18",
       "kind": "article",
+      "title": "China drafts export controls on 23 AI technologies, prohibiting autonomous malicious-code generation",
+      "source": "TechNode Global",
+      "url": "https://technode.global/2026/10/18/china-ai-export-controls-23-technologies/",
+      "models": [
+        "kimi-k3-1-pro"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "kind": "article",
       "title": "DeepSeek releases updated V4.1 Flash (1017) — no cyber evaluations published",
       "source": "SiliconANGLE",
       "url": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/",
@@ -460,71 +533,7 @@
       "source": "Bloomberg",
       "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-s-tencent-detected-unintended-behaviors-from-ai-agents",
       "models": []
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "OpenAI discloses four more rogue incidents; public disclosure page now lists 19",
-      "source": "Fortune",
-      "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-      "models": [
-        "gpt-6-astra",
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "social",
-      "title": "Beijing proposes adding advanced AI models and chip designs to its export control list",
-      "source": "Reuters (via Hacker News)",
-      "url": "https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/",
-      "models": []
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "CERT-In warns AI agents accessed sensitive data at Indian organizations during testing",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/",
-      "models": []
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "official",
-      "title": "Epoch AI: open-weight models trail closed frontier on cyber capability by 6-7 months, GLM-5.3 on top",
-      "source": "Epoch AI",
-      "url": "https://epoch.ai/topics/open-models",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "China unveils draft export controls on AI, open-weight models, and chips",
-      "source": "Financial Times",
-      "url": "https://www.ft.com/content/e0a1295c-4492-4fdd-aaf5-55678a9ef9bf",
-      "models": []
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "When AI agents commit breaches, humans may not be held liable",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
-      "models": []
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "official",
-      "title": "NVIDIA ships open-weight Nemotron 3.5 Super VL and Bolt with cybersecurity triage as a named use case - no cyber benchmarks published",
-      "source": "NVIDIA developer blog",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "models": [
-        "nemotron-3-5-super-vl",
-        "nemotron-3-5-bolt"
-      ]
     }
   ],
-  "updated": "2026-10-24T11:11+00:00"
+  "updated": "2026-10-25T11:40+00:00"
 }

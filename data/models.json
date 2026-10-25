@@ -76,6 +76,79 @@
   },
   "models": [
     {
+      "id": "gpt-6-astra-cyber",
+      "name": "GPT-6 Astra Cyber",
+      "provider": "openai",
+      "category": "gated",
+      "status": "active",
+      "released": null,
+      "access": "Not released. Referenced by OpenAI as an upcoming model used internally in its high-compute red-team campaign.",
+      "aliases": [
+        "GPT-6 Astra Cyber"
+      ],
+      "notes": "Existence-only entry. No system card, availability terms, or benchmark numbers published; no scores should be attributed to this model until primary documentation exists.",
+      "sources": [
+        {
+          "title": "Securing our frontier model training environment (OpenAI)",
+          "url": "https://openai.com/index/securing-our-frontier-model-training-environment"
+        }
+      ],
+      "auto_added": "2026-10-25",
+      "index": null
+    },
+    {
+      "id": "kimi-k3-1-pro-highspeed",
+      "name": "Kimi K3.1 Pro Highspeed",
+      "provider": "moonshot",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-23",
+      "access": "API / kimi.ai variant of K3.1 Pro.",
+      "aliases": [
+        "Kimi K3.1 Pro Highspeed",
+        "K3.1 Pro Highspeed"
+      ],
+      "notes": "Reported to run 2-3x faster than standard K3.1 Pro. No separate cyber benchmark numbers published; do not assume parity with K3.1 Pro scores.",
+      "sources": [
+        {
+          "title": "Moonshot curbs hacking ability in new Kimi model (Tribune/Reuters)",
+          "url": "https://tribune.com.pk/story/2636692/moonshot-curbs-hacking-ability-in-new-kimi-model-as-fears-grow-over-ai-powered-cyberattacks"
+        }
+      ],
+      "auto_added": "2026-10-25",
+      "index": null
+    },
+    {
+      "id": "kimi-k3-1-pro",
+      "name": "Kimi K3.1 Pro",
+      "provider": "moonshot",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-23",
+      "access": "API and kimi.ai today; Moonshot states full open weights will be published on 2026-11-04.",
+      "aliases": [
+        "Kimi K3.1 Pro",
+        "K3.1 Pro"
+      ],
+      "notes": "First tracked case of a lab shipping a deliberately cyber-capability-reduced model and publishing the ablation delta: Moonshot removed cyber data from mid-training and cyber tasks from the RL environment mix, self-reporting 81.0% on its internal exploit benchmark versus 90.5% for an unreleased unablated build. Moonshot cited China's draft AI export controls and says it intends to progressively raise the cyber capability available in open weights. WATCH: reclassify to 'open' once weights are actually published (promised 2026-11-04).",
+      "sources": [
+        {
+          "title": "Moonshot curbs hacking ability in new Kimi model (Reuters via Yahoo)",
+          "url": "https://www.yahoo.com/news/articles/moonshot-curbs-hacking-ability-kimi-042516641.html"
+        },
+        {
+          "title": "Moonshot to raise open-weight cyber capability; Kimi scores 81",
+          "url": "https://www.cryptopolitan.com/moonshot-raise-open-weight-cyber-kimi-81/"
+        },
+        {
+          "title": "Moonshot's Kimi K3.1 Pro flirts with open-weights leadership",
+          "url": "https://venturebeat.com/technology/moonshots-kimi-k3-1-pro-flirts-with-open-weights-leadership-amid-paid-influencer-scandal-allegations"
+        }
+      ],
+      "auto_added": "2026-10-25",
+      "index": null
+    },
+    {
       "id": "mercury-3",
       "name": "Mercury 3",
       "provider": "other",
@@ -2090,5 +2163,5 @@
       ]
     }
   ],
-  "updated": "2026-10-24T11:11+00:00"
+  "updated": "2026-10-25T11:40+00:00"
 }

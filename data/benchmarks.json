@@ -330,6 +330,36 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-23"
+    },
+    {
+      "id": "cwe_bench_aa",
+      "name": "CWE-Bench-AA (Artificial Analysis implementation of Collinear AI CWE-bench)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-25"
+    },
+    {
+      "id": "deepsecbench_aa",
+      "name": "DeepsecBench-AA (Artificial Analysis implementation of Vercel DeepsecBench)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-25"
+    },
+    {
+      "id": "moonshot_internal_exploit",
+      "name": "Moonshot internal exploit benchmark (xdev-bench-hard, developer-reported)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-25"
     }
   ],
   "scores": [
@@ -1847,6 +1877,146 @@
       "self_reported": true,
       "note": "LOW CONFIDENCE: aggregator-compiled row (benchlm.ai snapshot 2026-10-20); not a benchmark-owner run.",
       "source": "https://benchlm.ai/benchmarks/exploitgym",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3-1-pro",
+      "benchmark": "aa_cyber_index",
+      "value": 64.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Highest-scoring publicly accessible model; behind only trusted-access GPT-6 Sol (Daybreak Blue). AA notes models are evaluated through public APIs and that the index is refusal-sensitive, so deltas conflate capability with refusal posture; AA reports K3.1 Pro encountered no safety refusals.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol-daybreak-blue",
+      "benchmark": "aa_cyber_index",
+      "value": 69.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Trusted-access 'max' configuration; AA reports it scores 32 points above its publicly available counterpart, a gap AA attributes partly to safety refusals on the public model.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "deepseek-v4-1-flash-1017",
+      "benchmark": "aa_cyber_index",
+      "value": 57.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Max reasoning configuration.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3",
+      "benchmark": "aa_cyber_index",
+      "value": 41.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Predecessor baseline for Kimi K3.1 Pro.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3-1-pro",
+      "benchmark": "cybergym_e2e_aa",
+      "value": 95.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Highest CyberGym-E2E-AA score Artificial Analysis reports having measured; defensive find-reproduce-patch task.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol-daybreak-blue",
+      "benchmark": "cybergym_e2e_aa",
+      "value": 93.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Trusted-access max configuration.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3",
+      "benchmark": "cybergym_e2e_aa",
+      "value": 58.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Predecessor baseline; 37-point gap to K3.1 Pro.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3-1-pro",
+      "benchmark": "cwe_bench_aa",
+      "value": 61.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Distinct from the CWE-Bench series reported in vendor system cards; do not merge the two.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol-daybreak-blue",
+      "benchmark": "cwe_bench_aa",
+      "value": 65.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Trusted-access max configuration.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "deepseek-v4-1-flash-1017",
+      "benchmark": "cwe_bench_aa",
+      "value": 69.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Leads this component of the AA Cyber Index despite a lower overall index score.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3-1-pro",
+      "benchmark": "deepsecbench_aa",
+      "value": 37.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Component of the AA Cyber Index.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-sol-daybreak-blue",
+      "benchmark": "deepsecbench_aa",
+      "value": 48.0,
+      "date": "2026-10-24",
+      "self_reported": false,
+      "note": "Trusted-access max configuration; widest component gap to the next model.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3-1-pro",
+      "benchmark": "moonshot_internal_exploit",
+      "value": 81.0,
+      "date": "2026-10-24",
+      "self_reported": true,
+      "note": "Shipped, cyber-data-filtered build. Moonshot reports an unreleased ablation without the cyber-data cuts scored 90.5%. Harness-isolated developer series: Moonshot's own chart also lists other vendors' models but states they were run on a different harness, so cross-model comparison is not valid. Launch coverage is additionally subject to paid-influencer allegations, so weight these self-reported figures cautiously.",
+      "source": "https://www.cryptopolitan.com/moonshot-raise-open-weight-cyber-kimi-81/",
+      "auto": true
+    },
+    {
+      "model": "kimi-k3",
+      "benchmark": "moonshot_internal_exploit",
+      "value": 33.3,
+      "date": "2026-10-24",
+      "self_reported": true,
+      "note": "Predecessor baseline on the same developer harness; the suppressed K3.1 Pro build is still roughly 2.4x this score.",
+      "source": "https://tribune.com.pk/story/2636692/moonshot-curbs-hacking-ability-in-new-kimi-model-as-fears-grow-over-ai-powered-cyberattacks",
       "auto": true
     }
   ]
