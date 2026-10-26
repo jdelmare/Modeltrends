@@ -143,7 +143,7 @@ def research(client: anthropic.Anthropic, today: str, digest: str) -> str:
     prompt = f"""Today is {today}. Here is what the dashboard already tracks:
 <registry>{digest}</registry>
 
-Search the web for developments from roughly the last 7 days (emphasize the last 48 hours) on:
+Search the web for developments from roughly the last 7 days (emphasize the last 72 hours, since the previous run) on:
 1. New frontier or notable open-weight model releases (any lab: Anthropic, OpenAI, Google, xAI, Meta, \
 Mistral, IBM (Granite), DeepSeek, Qwen, Z.ai, Moonshot, Xiaomi, Baidu (ERNIE), ByteDance (Seed), Tencent (Hunyuan), Qihoo 360, Shanghai AI Lab, StepFun, Ant Group (Ling), etc.) and new gated cyber-specific variants or access programs.
 2. Newly published cyber benchmark results (ExploitGym, ExploitBench, CyberGym, Cybench, CyScenarioBench, \

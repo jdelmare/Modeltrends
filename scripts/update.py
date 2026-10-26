@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Daily refresh for the AI Cyber Capability dashboard.
+"""Refresh (Monday, Wednesday, Friday) for the AI Cyber Capability dashboard.
 
     python scripts/update.py              # full run (Claude analysis if ANTHROPIC_API_KEY is set)
     python scripts/update.py --offline    # skip network; just recompute the snapshot
@@ -218,7 +218,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--offline", action="store_true", help="no network; recompute snapshot only")
     ap.add_argument("--no-llm", action="store_true", help="skip Claude analysis")
-    ap.add_argument("--days", type=int, default=3, help="lookback window for feeds")
+    # Runs are Monday, Wednesday and Friday, so the Friday-to-Monday gap is three days; four overlaps it.
+    ap.add_argument("--days", type=int, default=4, help="lookback window for feeds")
     args = ap.parse_args()
 
     now = dt.datetime.now(dt.timezone.utc)

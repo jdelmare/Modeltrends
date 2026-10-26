@@ -1,6 +1,6 @@
 # AI Cyber Watch
 
-A daily-updated dashboard comparing the cyber capabilities of frontier AI models: generally available models, gated cyber-specific models (Mythos, GPT-5.5-Cyber, Gemini Flash Cyber…), and open-weight models (GLM, DeepSeek, Kimi, MiMo…).
+A dashboard, updated every Monday, Wednesday and Friday, comparing the cyber capabilities of frontier AI models: generally available models, gated cyber-specific models (Mythos, GPT-5.5-Cyber, Gemini Flash Cyber…), and open-weight models (GLM, DeepSeek, Kimi, MiMo…).
 
 **What it shows**
 
@@ -16,7 +16,7 @@ A daily-updated dashboard comparing the cyber capabilities of frontier AI models
 
 ## How it updates
 
-`.github/workflows/daily-update.yml` runs every day at 06:17 UTC and does three things:
+`.github/workflows/daily-update.yml` runs at 06:17 UTC every Monday, Wednesday and Friday and does three things:
 
 1. **Collects** recent items from the security press, lab blogs, podcasts, arXiv, Hacker News, Reddit, Bluesky and Hugging Face. The source list is in `scripts/sources.json`. It counts how often each tracked model is mentioned, which gives the **buzz** figure.
 2. **Analyzes** the items with Claude (`scripts/analyze.py`), which runs in two passes:

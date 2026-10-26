@@ -205,7 +205,7 @@
   }
   const COLS = [
     { key: "name", label: "Model", get: (m) => m.name.toLowerCase(),
-      tip: "Model and the lab that makes it. \u201cauto\u201d marks entries the daily update added that haven't been reviewed yet; \u201csuperseded\u201d means a newer version exists." },
+      tip: "Model and the lab that makes it. \u201cauto\u201d marks entries the automatic refresh added that haven't been reviewed yet; \u201csuperseded\u201d means a newer version exists." },
     { key: "category", label: "Type", get: (m) => m.category,
       tip: "GA: generally available to anyone. Gated: restricted to vetted users, usually a cyber-specific variant. Open: weights anyone can download and run." },
     { key: "released", label: "Released", get: (m) => m.released || "", opt: true,
@@ -213,13 +213,13 @@
     { key: "index", label: "Benchmark index", get: (m) => (m.index ? m.index.index : -1),
       tip: "0\u2013100. The model's cyber capability benchmark scores, each scaled so the best tracked model scores 100, then averaged and pulled toward 50 when there are few results. Dots show how many benchmarks it has. Developer-reported scores count 0.8\u00d7." },
     { key: "capability", label: "Perceived", get: (m) => perc(m).capability ?? -1,
-      tip: "0\u2013100. How capable at cyber the model is seen to be in articles, podcasts, blogs and social posts, re-scored by Claude in the daily update when there is new discussion. The arrow is the change over 7 days." },
+      tip: "0\u2013100. How capable at cyber the model is seen to be in articles, podcasts, blogs and social posts, re-scored by Claude at each refresh when there is new discussion. The arrow is the change over 7 days." },
     { key: "concern", label: "Concern", get: (m) => perc(m).concern ?? -1,
       tip: "0\u2013100. How much worry about risk or misuse the coverage expresses. The arrow is the change over 7 days; red means concern is rising." },
     { key: "trend", label: "Perceived, trend", get: (m) => delta(m.id, "capability") ?? 0, opt: true,
-      tip: "Perceived capability across the daily snapshots; the dot is today. Shows \u201ctracking\u201d until there are two days of data." },
+      tip: "Perceived capability across the refresh snapshots; the dot is the latest. Shows \u201ctracking\u201d until there are two snapshots." },
     { key: "buzz", label: "Buzz", get: (m) => perc(m).buzz ?? -1, opt: true,
-      tip: "How many items in the latest daily collection mention the model: security news, lab blogs, podcasts, papers, Hacker News and Bluesky." },
+      tip: "How many items in the latest collection mention the model: security news, lab blogs, podcasts, papers, Hacker News and Bluesky." },
     { key: "incidents", label: "Incidents", get: (m) => (D.incBy[m.id] || []).length * 1000 + labIncs(m).length,
       tip: "Incidents involving this model, with the icon showing the worst severity. \u201c+N at lab\u201d counts other incidents at the same lab: its other models, or reports that name no specific model." },
   ];
@@ -609,7 +609,7 @@
     $("updated").textContent = when ? `Updated ${new Date(when).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}${modeText ? " · " + modeText : ""}` : "";
     const days = D.history.snapshots.length;
     $("changes").textContent = (m.changes && m.changes.length ? "Latest run: " + m.changes.slice(0, 6).join(" · ") + ". " : "") +
-      `${days} daily snapshot${days === 1 ? "" : "s"} recorded — trend lines fill in as the history grows.`;
+      `${days} snapshot${days === 1 ? "" : "s"} recorded — trend lines fill in as the history grows.`;
   }
 
   function renderAll() {
