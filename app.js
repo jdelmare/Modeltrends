@@ -18,7 +18,10 @@
   const KIND_ICON = { official: "🏛", article: "📰", blog: "✍️", podcast: "🎙", social: "💬", paper: "📄" };
   const DAY = 86400000;
 
-  const state = { cat: "all", prov: "", showOld: false, sort: { key: "index", dir: -1 }, open: new Set(), bench: "exploitgym" };
+  const state = { cat: "all", prov: "", showOld: false, sort: { key: "index", dir: -1 }, open: new Set(), bench: "exploitgym", showAll: false };
+  // The leaderboard shows the top TOP_N rows; "Show all" opens the full list in a scrolling window
+  // so the sections below stay close.
+  const TOP_N = 12;
   let D = null;
 
   // ---------- helpers ----------
@@ -248,7 +251,8 @@
     })));
     const tbody = h("tbody");
     if (!ms.length) tbody.append(h("tr", {}, h("td", { colspan: COLS.length, class: "muted", text: "No models match these filters." })));
-    for (const m of ms) {
+    const shown = state.showAll ? ms : ms.slice(0, TOP_N);
+    for (const m of shown) {
       const p = perc(m), incs = D.incBy[m.id] || [], lab = labIncs(m);
       const cat = CATS[m.category];
       const n = m.index ? m.index.n : 0;
@@ -275,6 +279,14 @@
       if (open) tbody.append(detailRow(m));
     }
     $("board").replaceChildren(thead, tbody);
+    const wrap = $("board").parentElement;
+    wrap.classList.toggle("scroll-window", state.showAll && ms.length > TOP_N);
+    let more = $("board-more");
+    if (ms.length > TOP_N) {
+      if (!more) wrap.after(more = h("button", { id: "board-more", class: "board-more", type: "button", onclick: () => { state.showAll = !state.showAll; renderBoard(); if (!state.showAll) $("leaderboard").scrollIntoView({ block: "start" }); } }));
+      more.textContent = state.showAll ? `Show top ${TOP_N} only` : `Show all ${ms.length} models`;
+      more.setAttribute("aria-expanded", String(state.showAll));
+    } else if (more) more.remove();
   }
   function sortBy(key) {
     hideTip(); // the header is re-rendered, so drop the tooltip of the old one
