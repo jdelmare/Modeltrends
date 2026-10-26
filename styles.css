@@ -133,6 +133,11 @@ select { font: inherit; color: var(--ink); background: var(--surface); border: 1
 
 /* Leaderboard */
 .table-wrap { overflow-x: auto; margin: 0 -4px; }
+/* Leaderboard "Show all": the full list scrolls inside the card, under a sticky header. */
+.table-wrap.scroll-window { max-height: min(560px, 70vh); overflow-y: auto; border: 1px solid var(--grid); border-radius: 8px; overscroll-behavior: contain; }
+.table-wrap.scroll-window thead th { position: sticky; top: 0; z-index: 1; background: var(--surface); }
+.board-more { display: block; width: 100%; margin: 8px 0 4px; padding: 8px; font: inherit; font-size: 13px; color: var(--ink-2); background: var(--wash); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; }
+.board-more:hover { color: var(--ink); }
 .board { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .board th { text-align: left; font-weight: 500; color: var(--muted); font-size: 12px; padding: 6px 8px; border-bottom: 1px solid var(--axis); white-space: nowrap; cursor: pointer; user-select: none; }
 .board th .th-label { text-decoration: underline dotted var(--axis); text-underline-offset: 3px; }
