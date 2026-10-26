@@ -1,8 +1,8 @@
-name: Daily data refresh & deploy
+name: Data refresh & deploy
 
 on:
   schedule:
-    - cron: "17 6 * * *"   # 06:17 UTC daily
+    - cron: "17 6 * * 1,3,5"   # 06:17 UTC Monday, Wednesday and Friday
   workflow_dispatch:
   push:
     branches: [master]
@@ -50,7 +50,7 @@ jobs:
           git config user.email "cyber-watch-bot@users.noreply.github.com"
           git add data
           if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
-          git commit -m "data: daily refresh $(date -u +%F)"
+          git commit -m "data: refresh $(date -u +%F)"
           # If something landed on the branch meanwhile, replay this commit on top (keeping ours).
           git pull --rebase -X theirs origin "${{ github.ref_name }}"
           git push origin "HEAD:${{ github.ref_name }}"

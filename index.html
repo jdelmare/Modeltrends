@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Cyber Watch</title>
-<meta name="description" content="Daily comparison of frontier AI models' cyber capabilities: benchmarks, perception, trends and incidents.">
+<meta name="description" content="Comparison, updated three times a week, of frontier AI models' cyber capabilities: benchmarks, perception, trends and incidents.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -45,12 +45,12 @@
   <section class="card" id="leaderboard">
     <div class="card-head">
       <h2>Leaderboard</h2>
-      <p class="muted small">Click a row for scores, sources and commentary. Trend lines use daily snapshots.</p>
+      <p class="muted small">Click a row for scores, sources and commentary. Trend lines use the snapshot from each refresh.</p>
     </div>
     <div class="table-wrap"><table id="board" class="board"></table></div>
     <p class="muted small legend-note">
       <b>Benchmark index</b>: mean of scores normalized to the best tracked model on each capability benchmark, shrunk toward 50 when coverage is thin (dots = number of benchmarks).
-      <b>Perceived</b> and <b>Concern</b>: 0–100, synthesized daily from articles, podcasts, blogs and social posts.
+      <b>Perceived</b> and <b>Concern</b>: 0–100, synthesized at each refresh from articles, podcasts, blogs and social posts.
       <b>Incidents</b>: ones involving the model, plus others at the same lab (its other models, or where no specific model was named), matching the Breakouts &amp; misuse list.
     </p>
   </section>
@@ -94,7 +94,7 @@
 
   <footer class="foot muted small">
     <p id="changes"></p>
-    <p>Data refreshes daily via GitHub Actions: feeds (security press, lab blogs, podcasts, arXiv, Hacker News, Reddit, Bluesky, Hugging Face) plus a Claude web-research pass. New models, scores and incidents added automatically are marked <span class="auto">auto</span> until reviewed. Self-reported numbers come from the model's developer and are weighted 0.8× in the index.</p>
+    <p>Data refreshes every Monday, Wednesday and Friday via GitHub Actions: feeds (security press, lab blogs, podcasts, arXiv, Hacker News, Reddit, Bluesky, Hugging Face) plus a Claude web-research pass. New models, scores and incidents added automatically are marked <span class="auto">auto</span> until reviewed. Self-reported numbers come from the model's developer and are weighted 0.8× in the index.</p>
   </footer>
   </main>
   </div>
