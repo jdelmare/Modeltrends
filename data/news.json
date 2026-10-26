@@ -2,6 +2,36 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-26",
+      "kind": "article",
+      "title": "Mythos 5 Ignored Real-World Harm in July Attack",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/",
+      "models": [
+        "claude-mythos-5"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "blog",
+      "title": "Gemini 4 Argon: The Model and Safety Cards",
+      "source": "Don't Worry About the Vase (Zvi)",
+      "url": "https://thezvi.wordpress.com/2026/10/26/gemini-4-argon-the-model-and-safety-cards/",
+      "models": [
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "kind": "blog",
+      "title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+      "source": "Interconnects",
+      "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+      "models": [
+        "kimi-k3-1-pro"
+      ]
+    },
+    {
       "date": "2026-10-25",
       "kind": "article",
       "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
@@ -20,6 +50,16 @@
       "models": [
         "claude-mythos-5",
         "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "kind": "official",
+      "title": "New on Hugging Face: zugquants/GLM-5.3-CYBERSECURITY-FP8",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/zugquants/GLM-5.3-CYBERSECURITY-FP8",
+      "models": [
+        "glm-5-3"
       ]
     },
     {
@@ -46,6 +86,16 @@
         "grok-4-7",
         "mistral-large-4",
         "kimi-k3"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "kind": "social",
+      "title": "Unstructured's New Models Outparse GPT-6, Claude and Gemini",
+      "source": "Hacker News",
+      "url": "https://unstructured.io/blog/unstructured-transform-faster-more-accurate-for-your-hardest-documents",
+      "models": [
+        "gpt-6-astra"
       ]
     },
     {
@@ -484,56 +534,7 @@
       "source": "agents-radar digest",
       "url": "https://github.com/kouweizhu/agents-radar/issues/524",
       "models": []
-    },
-    {
-      "date": "2026-10-17",
-      "kind": "official",
-      "title": "Abliterated 'cyber' fine-tune of DeepSeek V4.1 Flash 1017 published two days after weight release",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/msuiche/DeepSeek-V4.1-Flash-1017-abliterated-cyber-GLP-39-L1-39-a0.75",
-      "models": [
-        "deepseek-v4-1-flash-1017"
-      ]
-    },
-    {
-      "date": "2026-10-17",
-      "kind": "official",
-      "title": "DeepSeek ships V4.1 Flash 1017 open-weight refresh; no cyber benchmarks published for the checkpoint",
-      "source": "DeepSeek / OpenRouter",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-      "models": [
-        "deepseek-v4-1-flash-1017",
-        "deepseek-v4-1-flash"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "official",
-      "title": "Epoch AI Cyber ECI: GLM-5.3 tops open-weight models; open weights trail the closed frontier by 6-7 months",
-      "source": "Epoch AI",
-      "url": "https://epoch.ai/data-insights",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "Bank of America hires 1,000 contractors to patch software flaws found by Anthropic's Mythos",
-      "source": "AI Weekly",
-      "url": "https://aiweekly.co/ai-news-today/edition/2026-10-16",
-      "models": [
-        "claude-mythos-5-1"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "kind": "article",
-      "title": "China's Tencent says AI agents showed unintended browsing behavior; attributes Amap probing to third-party model evals",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-16/china-s-tencent-detected-unintended-behaviors-from-ai-agents",
-      "models": []
     }
   ],
-  "updated": "2026-10-25T11:40+00:00"
+  "updated": "2026-10-26T13:12+00:00"
 }
