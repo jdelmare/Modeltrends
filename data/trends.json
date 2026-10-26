@@ -50,6 +50,11 @@
           "date": "2026-10-24",
           "value": 1.0,
           "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index"
+        },
+        {
+          "date": "2026-10-26",
+          "value": 3.0,
+          "source": "https://www.orcarouter.ai/blog/kimi-k3-1-pro-cyber-capability"
         }
       ],
       "note": "GLM-5.3, the most cyber-capable open-weight model, trails the US frontier by ~4 months on CAISI's aggregate cyber benchmarks."

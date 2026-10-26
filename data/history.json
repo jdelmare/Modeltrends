@@ -9018,9 +9018,9 @@
           "buzz": 0
         },
         "kimi-k3-1-pro": {
-          "capability": 85,
-          "concern": 63,
-          "tone": 0.02,
+          "capability": 86,
+          "concern": 62,
+          "tone": 0.07,
           "buzz": 1
         },
         "mercury-3": {
@@ -9174,8 +9174,8 @@
         "gemini-4-argon": {
           "index": 67.4,
           "capability": 92,
-          "concern": 76,
-          "tone": -0.09,
+          "concern": 75,
+          "tone": -0.05,
           "buzz": 1
         },
         "glm-5-2": {
@@ -9284,8 +9284,8 @@
         "claude-mythos-5": {
           "index": 63.3,
           "capability": 89,
-          "concern": 79,
-          "tone": -0.16,
+          "concern": 83,
+          "tone": -0.26,
           "buzz": 2
         },
         "claude-fable-5": {
@@ -9310,7 +9310,7 @@
           "capability": 96,
           "concern": 92,
           "tone": -0.31,
-          "buzz": 1
+          "buzz": 2
         },
         "gpt-5-6-sol": {
           "index": 68.0,

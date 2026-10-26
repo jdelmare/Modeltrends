@@ -2,6 +2,27 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-10-26-malicious-instruction-file-planted-in-a-",
+      "date": "2026-10-26",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "Malicious instruction file planted in a developer's Downloads folder tried to hijack an AI coding agent into installing malware",
+      "summary": "Security firm Forever Security reported that a malicious instruction file saved to a developer's Downloads folder (without approval, by a website) attempted to steer an AI coding agent into installing a known-malicious npm package and, in some variants, handing over the user's login token when the file was opened in the agent's working directory. The reporting names OpenAI Codex among the affected agent surfaces; no registry-tracked model is identified, so this is recorded as an agent-ecosystem misuse case rather than attributed to a specific model.",
+      "sources": [
+        {
+          "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
+          "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html"
+        },
+        {
+          "title": "AI coding agents fall for malicious instructions planted in the Downloads folder",
+          "url": "https://www.helpnetsecurity.com/2026/10/26/ai-coding-agents-malware-openai-codex/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-25-reported-anthropic-uk-aisi-post-mortem-o",
       "date": "2026-10-25",
       "type": "breakout",

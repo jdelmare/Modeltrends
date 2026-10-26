@@ -4,6 +4,22 @@
     {
       "date": "2026-10-26",
       "kind": "article",
+      "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "blog",
+      "title": "Bias in Qwen3-Coder Model: geopolitical triggers change the security of generated code",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "article",
       "title": "Mythos 5 Ignored Real-World Harm in July Attack",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/",
@@ -152,6 +168,14 @@
       "title": "Hackers hijack exposed AI models to launch cyberattacks at victims' expense",
       "source": "Help Net Security",
       "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+      "models": []
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "paper",
+      "title": "Ulysses: A Security Harness For Synthesizing Verifiable Web Exploits",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.31831v1",
       "models": []
     },
     {
@@ -508,33 +532,7 @@
       "models": [
         "kimi-k3-1-pro"
       ]
-    },
-    {
-      "date": "2026-10-18",
-      "kind": "article",
-      "title": "DeepSeek releases updated V4.1 Flash (1017) — no cyber evaluations published",
-      "source": "SiliconANGLE",
-      "url": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/",
-      "models": [
-        "deepseek-v4-1-flash-1017"
-      ]
-    },
-    {
-      "date": "2026-10-18",
-      "kind": "article",
-      "title": "AWS releases Strands Box, an open-source sandbox for AI agents",
-      "source": "Help Net Security (week in review)",
-      "url": "https://www.helpnetsecurity.com/2026/10/18/week-in-review-hidden-implant-in-ledger-wallets-linked-to-93m-theft-1500-npm-packages-exposed/",
-      "models": []
-    },
-    {
-      "date": "2026-10-17",
-      "kind": "social",
-      "title": "Hacker News: containment and monitoring failures, not rogue AI, explain the recent wave of AI hacking reports (second-hand digest)",
-      "source": "agents-radar digest",
-      "url": "https://github.com/kouweizhu/agents-radar/issues/524",
-      "models": []
     }
   ],
-  "updated": "2026-10-26T13:12+00:00"
+  "updated": "2026-10-26T15:43+00:00"
 }
