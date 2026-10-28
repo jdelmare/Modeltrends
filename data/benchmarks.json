@@ -360,6 +360,26 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-25"
+    },
+    {
+      "id": "google_e2e_attack_scenarios",
+      "name": "Google internal end-to-end simulated cyberattack scenarios",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-28"
+    },
+    {
+      "id": "stealth_situational_awareness",
+      "name": "Google internal stealth / situational-awareness challenges",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-10-28"
     }
   ],
   "scores": [
@@ -2017,6 +2037,56 @@
       "self_reported": true,
       "note": "Predecessor baseline on the same developer harness; the suppressed K3.1 Pro build is still roughly 2.4x this score.",
       "source": "https://tribune.com.pk/story/2636692/moonshot-curbs-hacking-ability-in-new-kimi-model-as-fears-grow-over-ai-powered-cyberattacks",
+      "auto": true
+    },
+    {
+      "model": "deepseek-v4-1-flash",
+      "benchmark": "moonshot_internal_exploit",
+      "value": 85.7,
+      "date": "2026-10-23",
+      "self_reported": false,
+      "note": "Reported by Moonshot (not DeepSeek) on its own unpublished pass@3 benchmark of recently disclosed Linux kernel / Node.js / JavaScriptCore / Exim / VirGL bugs with mitigations enabled. Moonshot's blog says only 'DeepSeek-V4.1-Flash' without a date-stamped build, so the exact variant (base vs the 1017 release) is ambiguous; attached to the base ID pending clarification. Scores above Moonshot's own shipped, cyber-curbed K3.1 Pro (81.0).",
+      "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "auto": true
+    },
+    {
+      "model": "glm-5-3",
+      "benchmark": "moonshot_internal_exploit",
+      "value": 57.1,
+      "date": "2026-10-23",
+      "self_reported": false,
+      "note": "Reported by Moonshot on its own unpublished benchmark; comparator figure for the open-weight field, not a Z.ai-published number.",
+      "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-sol",
+      "benchmark": "moonshot_internal_exploit",
+      "value": 100.0,
+      "date": "2026-10-23",
+      "self_reported": false,
+      "note": "Top of Moonshot's chart; Moonshot labels this row a third-party evaluation. Benchmark-local only — not comparable to the tracked ExploitBench figure of 78.5 for the same model.",
+      "source": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark": "google_e2e_attack_scenarios",
+      "value": 100.0,
+      "date": "2026-10-13",
+      "self_reported": true,
+      "note": "12 of 12 simulated end-to-end attack chains solved, up from 5 for the previous Gemini generation. Google states in the model card that it cannot rule out that Argon reached its Cyber Uplift Level 1 Critical Capability Level. No independent replication of this result has been identified.",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-argon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark": "stealth_situational_awareness",
+      "value": 93.3,
+      "date": "2026-10-13",
+      "self_reported": true,
+      "note": "14 of 15 stealth and situational-awareness challenges passed, per Google's Gemini 4 Argon safety materials. Self-reported, unreplicated; higher values indicate greater evasion capability, which is a defender-negative signal despite being recorded as a capability score.",
+      "source": "https://www.implicator.ai/google-cant-rule-out-gemini-4-argon-hit-its-bio-and-cyber-danger-thresholds/",
       "auto": true
     }
   ]

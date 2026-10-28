@@ -2,6 +2,88 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-28",
+      "kind": "article",
+      "title": "Anthropic's unreleased AI model chains flaws into working Chrome, Safari, Windows and Linux exploits",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "article",
+      "title": "123 Reg discloses 'AI cyberattack' on customer data, suspects China nexus",
+      "source": "The Register",
+      "url": "https://www.theregister.com/cyber-crime/2026/10/28/123-reg-discloses-ai-cyberattack-on-customer-data-suspects-china-nexus/5305936",
+      "models": []
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "article",
+      "title": "Cisco open sources Project Quarry for detecting AI agents on hacking sprees",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/28/cisco_open_sources_tool_for_detecting_ai_agents_on_hacking_sprees/5305867",
+      "models": []
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "podcast",
+      "title": "Risky Business #857 — AI FUD intensifies (with Alex Stamos)",
+      "source": "Risky Business",
+      "url": "https://risky.biz/RB857/",
+      "models": []
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "article",
+      "title": "CyberStrikeAI uses 44 AI agents to automate hacking operations against Japan targets",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "article",
+      "title": "AI 'hacker' finds four severe EPICS industrial control bugs in under four hours",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811",
+      "models": []
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "article",
+      "title": "So many AI security benchmarks, but none tell the whole story",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+      "models": []
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "article",
+      "title": "OpenAI compaction flaw let researchers bypass hidden reasoning protections",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+      "models": []
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "official",
+      "title": "Introducing GPT-6.1 Terra",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "models": [
+        "gpt-6-1-terra"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "article",
+      "title": "In-the-wild attack abuses AI agents' trust in Markdown instruction files",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
+      "models": []
+    },
+    {
       "date": "2026-10-26",
       "kind": "article",
       "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
@@ -283,6 +365,14 @@
     {
       "date": "2026-10-21",
       "kind": "official",
+      "title": "CrowdStrike uncovers four agentic-AI attack campaigns, including domain-controller credential theft in ~20 minutes",
+      "source": "CrowdStrike",
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/",
+      "models": []
+    },
+    {
+      "date": "2026-10-21",
+      "kind": "official",
       "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
       "source": "OpenAI",
       "url": "https://openai.com/index/empowering-cyber-defenders/",
@@ -440,99 +530,7 @@
         "gpt-6-1-astra",
         "gpt-5-6-terra"
       ]
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "article",
-      "title": "US Army is developing AI agents that could strike enemy networks and vanish without a trace",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/20/us-army-ai-agents-echotribble/",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "article",
-      "title": "Microsoft targets rogue AI agents with dynamic permissions and risk scoring",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/microsoft-targets-rogue-ai-agents-with-dynamic-permissions-risk-scoring/",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "Security patches need patches now that attackers have AI",
-      "source": "The Register Security",
-      "url": "https://www.theregister.com/patches/2026/10/19/security-patches-need-patches-now-that-attackers-have-ai/5303927",
-      "models": [
-        "gpt-5-6-terra"
-      ]
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "blog",
-      "title": "Cairn: Open windows into AI-driven cyber operations",
-      "source": "NorForge",
-      "url": "https://norforge.com/blog/inside_cairn",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "AI agents breached 100+ sites including John Deere, SharkNinja and Cummins at ~$50 each",
-      "source": "Quartz",
-      "url": "https://qz.com/ai-agents-hacker-john-deere-sharkninja-cummins-breach-101926",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "MITRE ATT&CK v20 catalogs AI abuse alongside MFA bypass and water-utility attacks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "With open-weight AI, more of the security burden falls on enterprises, warn Microsoft and NVIDIA",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/19/open-weight-ai-model-risks-microsoft-nvidia/",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "Anthropic acquires confidential-computing startup Opaque Systems",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
-      "models": []
-    },
-    {
-      "date": "2026-10-19",
-      "kind": "article",
-      "title": "Fake Web3 accelerator uses npm packages to spread malware and hijack AI agent traffic",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-18",
-      "kind": "article",
-      "title": "China drafts export controls on 23 AI technologies, prohibiting autonomous malicious-code generation",
-      "source": "TechNode Global",
-      "url": "https://technode.global/2026/10/18/china-ai-export-controls-23-technologies/",
-      "models": [
-        "kimi-k3-1-pro"
-      ]
     }
   ],
-  "updated": "2026-10-26T15:43+00:00"
+  "updated": "2026-10-28T13:05+00:00"
 }

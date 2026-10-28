@@ -76,6 +76,37 @@
   },
   "models": [
     {
+      "id": "gpt-6-1-terra",
+      "name": "GPT-6.1 Terra",
+      "provider": "openai",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-10-26",
+      "access": "Generally available via the OpenAI API and Microsoft Foundry; a 'Max' reasoning configuration is listed on Artificial Analysis.",
+      "aliases": [
+        "GPT-6.1 Terra",
+        "GPT-6.1 Terra (Max)",
+        "gpt-6.1-terra"
+      ],
+      "notes": "Successor to GPT-5.6 Terra, positioned for visual reasoning and computer use at roughly half the price of GPT-5.6 Terra / GPT-6.1 Sol. No cyber-specific benchmark figures, Preparedness Framework cyber classification, or gated cyber variant have been located for this model yet — do not infer cyber capability from the tracked Terra line until a system card is read.",
+      "sources": [
+        {
+          "title": "Introducing GPT-6.1 Terra (OpenAI)",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
+        },
+        {
+          "title": "GPT-6.1 Terra model docs (OpenAI developers)",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+        },
+        {
+          "title": "GPT-6.1 Terra now generally available in Microsoft Foundry",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/gpt-6-1-terra-now-generally-available-in-microsoft-foundry-build-agents-that-see/4567769"
+        }
+      ],
+      "auto_added": "2026-10-28",
+      "index": null
+    },
+    {
       "id": "gpt-6-astra-cyber",
       "name": "GPT-6 Astra Cyber",
       "provider": "openai",
@@ -2163,5 +2194,5 @@
       ]
     }
   ],
-  "updated": "2026-10-26T15:43+00:00"
+  "updated": "2026-10-28T13:05+00:00"
 }
