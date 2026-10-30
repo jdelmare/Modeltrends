@@ -1,17 +1,5 @@
 {
-  "updated": "2026-10-28T13:05+00:00",
-  "mode": "claude",
-  "changes": [
-    "OpenAI shipped GPT-6.1 Terra (2026-10-26, now GA in the API and Microsoft Foundry) with no cyber evaluation numbers published yet, while Moonshot's K3.1 Pro chart gave us the first cross-model scores on its internal exploit benchmark — showing open-weight DeepSeek V4.1 Flash (85.7) ahead of Moonshot's deliberately cyber-curbed model (81.0). Three new agentic-attack incidents land this week (CrowdStrike's four exposed agent frameworks, TrendAI's 44-agent CyberStrikeAI campaign against Japan, and 123 Reg's disclosed 'AI cyberattack'), and Google's Gemini 4 Argon card concedes it cannot rule out hitting its Cyber Uplift Level 1 threshold.",
-    "new model: GPT-6.1 Terra",
-    "score: deepseek-v4-1-flash moonshot_internal_exploit=85.7",
-    "score: glm-5-3 moonshot_internal_exploit=57.1",
-    "score: gpt-5-6-sol moonshot_internal_exploit=100.0",
-    "score: gemini-4-argon google_e2e_attack_scenarios=100.0",
-    "score: gemini-4-argon stealth_situational_awareness=93.3",
-    "incident: CrowdStrike documents four previously unreported agentic-AI attack campaigns",
-    "incident: CyberStrikeAI: 44-agent open-source attack platform used against Japanese organizations",
-    "incident: 123 Reg discloses AI-driven attack on customer data, suspects China nexus",
-    "perception: 6 models re-scored"
-  ]
+  "updated": "2026-10-30T13:04+00:00",
+  "mode": "feeds",
+  "changes": []
 }

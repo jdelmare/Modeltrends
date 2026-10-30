@@ -2,6 +2,37 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-10-30",
+      "kind": "article",
+      "title": "Open-weight AI model GLM-5.3 cheated its way to correct answers",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "social",
+      "title": "DeepSeek, Moonshot used OpenAI's GPT-6 Astra to train latest models",
+      "source": "Hacker News",
+      "url": "https://www.reuters.com/technology/deepseek-moonshot-used-openais-gpt-6-astra-train-latest-models-information-2026-10-29/",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "social",
+      "title": "GPT-6.1 Sol Beats Final Fantasy VII",
+      "source": "Hacker News",
+      "url": "https://www.twitch.tv/videos/2912639349",
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-astra"
+      ]
+    },
+    {
       "date": "2026-10-28",
       "kind": "article",
       "title": "Anthropic's unreleased AI model chains flaws into working Chrome, Safari, Windows and Linux exploits",
@@ -35,6 +66,30 @@
     },
     {
       "date": "2026-10-27",
+      "kind": "social",
+      "title": "GPT-6.1 Terra's price cut, recomputed for a cache-heavy agent session",
+      "source": "Hacker News",
+      "url": "https://theainewsreport.com/2026-10-27-gpt-6-1-terra-pricing-agent-cost-explained.html",
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-1-astra",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "kind": "social",
+      "title": "GPT-6.1 Terra now available in Microsoft Foundry",
+      "source": "Hacker News",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/gpt-6-1-terra-now-generally-available-in-microsoft-foundry-build-agents-that-see/4567769",
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-1-astra",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "date": "2026-10-27",
       "kind": "article",
       "title": "CyberStrikeAI uses 44 AI agents to automate hacking operations against Japan targets",
       "source": "The Hacker News",
@@ -64,6 +119,49 @@
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
       "models": []
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "social",
+      "title": "GPT 6.1 Terra",
+      "source": "Hacker News",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "models": [
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "social",
+      "title": "GPT-6.1 Terra (Max) Scores 48 on Artificial Analysis",
+      "source": "Hacker News",
+      "url": "https://artificialanalysis.ai/models/gpt-6-1-terra",
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-1-astra",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "official",
+      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/greptile-code-review-codex-astra",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "kind": "official",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "models": [
+        "gpt-6-1-sol",
+        "gpt-6-1-astra"
+      ]
     },
     {
       "date": "2026-10-26",
@@ -451,86 +549,7 @@
       "source": "arXiv",
       "url": "https://arxiv.org/abs/2610.19005",
       "models": []
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "social",
-      "title": "GPT-6 Astra removes an internal safety monitor",
-      "source": "Hacker News",
-      "url": "https://www.crawlspider.com/pages/ai-agents-gone-rogue/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "article",
-      "title": "When AI models refuse to fight hackers: guardrails locked OpenCode's defenders out mid-incident",
-      "source": "Axios",
-      "url": "https://www.axios.com/2026/10/21/when-ai-models-refuse-to-fight-hackers",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "article",
-      "title": "Hackers abuse AI pen-test tool Cairn to automate a massive attack spree across 1,200+ sites",
-      "source": "Dark Reading / The Hacker News",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "paper",
-      "title": "How Much Does the Harness Matter, and for Whom? A Multi-Model Study of Context in LLM-Driven Vulnerability Discovery",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.28802v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "article",
-      "title": "Hackers use autonomous AI agents (Cairn) to breach company websites, now 1,200+ sites — operators left their console exposed",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "blog",
-      "title": "Flare: abliteration mentions on cybercrime forums up 745% since January; GLM is the model nearly every vendor advertises",
-      "source": "Flare",
-      "url": "https://flare.io/learn/resources/blog/ai-models-cybercrime-quantitative-analysis",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "article",
-      "title": "Microsoft unveils Guardian Agents and dynamic permissions, treating AI agents as insider threats",
-      "source": "TechRadar Pro",
-      "url": "https://www.techradar.com/pro/security/microsoft-admits-frontier-models-cant-be-trusted-unveils-new-security-tools-to-treat-ai-agents-as-insider-threats",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "social",
-      "title": "Fleet of AI agents used httpbin to get past their sandbox",
-      "source": "Hacker News / kennethreitz.org",
-      "url": "https://kennethreitz.org/essays/2026-10-20-i_built_the_escape_hatch",
-      "models": []
-    },
-    {
-      "date": "2026-10-20",
-      "kind": "social",
-      "title": "GPT-6.1 Terra is in a Microsoft PR",
-      "source": "Hacker News",
-      "url": "https://twitter.com/LuminaBench/status/2112189697388613850",
-      "models": [
-        "gpt-6-1-astra",
-        "gpt-5-6-terra"
-      ]
     }
   ],
-  "updated": "2026-10-28T13:05+00:00"
+  "updated": "2026-10-30T13:04+00:00"
 }
