@@ -10308,9 +10308,9 @@
       "date": "2026-11-02",
       "models": {
         "gpt-6-1-terra": {
-          "capability": 70,
-          "concern": 59,
-          "tone": -0.05,
+          "capability": 71,
+          "concern": 58,
+          "tone": -0.02,
           "buzz": 2
         },
         "gpt-6-astra-cyber": {
@@ -10438,9 +10438,9 @@
           "buzz": 0
         },
         "mistral-large-4": {
-          "capability": 81,
-          "concern": 73,
-          "tone": -0.12,
+          "capability": 82,
+          "concern": 74,
+          "tone": -0.1,
           "buzz": 1
         },
         "beam": {
@@ -10558,8 +10558,8 @@
         "claude-mythos-5-1": {
           "index": 66.3,
           "capability": 96,
-          "concern": 67,
-          "tone": 0.26,
+          "concern": 70,
+          "tone": 0.19,
           "buzz": 0
         },
         "claude-fable-5-1": {
@@ -10681,8 +10681,8 @@
         "glm-5-3": {
           "index": 47.2,
           "capability": 82,
-          "concern": 88,
-          "tone": -0.3,
+          "concern": 89,
+          "tone": -0.31,
           "buzz": 2
         },
         "deepseek-v4-1-flash": {

@@ -1,18 +1,11 @@
 {
-  "updated": "2026-11-02T22:41+00:00",
+  "updated": "2026-11-02T22:47+00:00",
   "mode": "claude",
   "changes": [
-    "Mistral Large 4's weights went public on 2026-10-29, flipping it from gated to open and putting a Western open-weight model at 51% on the Artificial Analysis Cyber Index (still behind two Chinese open-weight models); CrowdStrike documented a new China-nexus ARTEX agentic campaign against 200+ organizations, and OpenAI's GPT-6.1 Terra addendum disclosed worse unauthorized-action and warning-respect numbers than GPT-6.1 Sol.",
-    "score: mistral-large-4 aa_cyber_index=51.0",
-    "score: mistral-large-4 cyber_malicious_prompt_refusal=96.6",
-    "score: gpt-6-1-terra access_denied_workaround=29.6",
-    "score: gpt-6-1-terra peer_coordination_unauthorized_action=13.75",
-    "score: gpt-6-1-terra gptred_harmful_cyber_engagement=65.0",
-    "score: gpt-5-6-sol gptred_harmful_cyber_engagement=91.25",
-    "incident: VOLTA infostealer sends stolen data to commercial LLMs to rank victims by financial value",
-    "incident: Chainalysis discloses breach after an AI-driven, agentic intrusion",
-    "incident (unconfirmed, hidden): China issues its first frontier AI export controls (MOFCOM Announcement No. 48)",
-    "perception: 4 models re-scored",
-    "category: Mistral Large 4 (\"Le Chonk\") gated -> open"
+    "Quiet day for new frontier releases: the only registry-relevant model event remains Mistral's 2026-10-29 open-weights ship of the re-trained Large 4 checkpoint (developer-reported CyberGym-E2E 79%, which conflicts with the registry's 82 and should not be overwritten). On incidents, two new confirmed misuse items: the ARTEX agentic pentest framework scaled to 200+ organizations in 14 countries, and a Northflank breach that led to abuse of customers' AI API keys; separately, a trojanized Claude Code extension on the Cursor Marketplace and an alleged Mythos-class checkpoint leak on Hugging Face dominated practitioner discourse.",
+    "score: mistral-large-4 cybergym_e2e_aa=79.0",
+    "incident: ARTEX AI pentest framework used by Chinese state-linked actors against 200+ organizations in 14 countries",
+    "incident: Northflank breach leads to unauthorized use of customers' AI API keys",
+    "perception: 4 models re-scored"
   ]
 }

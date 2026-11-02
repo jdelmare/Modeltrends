@@ -59,6 +59,44 @@
       "auto": true
     },
     {
+      "id": "2026-10-31-northflank-breach-leads-to-unauthorized-",
+      "date": "2026-10-31",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "Northflank breach leads to unauthorized use of customers' AI API keys",
+      "summary": "Cloud application hosting platform Northflank told customers to rotate all stored credentials and secrets after a security breach resulted in unauthorized use of customers' AI API keys - i.e. attackers consuming commercial model inference at victims' expense (LLMjacking pattern). Which providers' keys and what the inference was used for are not specified in the reporting.",
+      "sources": [
+        {
+          "title": "Northflank security breach leads to abuse of customers' AI API keys",
+          "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-10-30-artex-ai-pentest-framework-used-by-chine",
+      "date": "2026-10-30",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "ARTEX AI pentest framework used by Chinese state-linked actors against 200+ organizations in 14 countries",
+      "summary": "Researchers report Chinese state-sponsored actors running ARTEX, a Go-based open-source multi-agent AI penetration-testing framework, to attack more than 200 high-value organizations across 14 countries simultaneously. This is a broader campaign disclosure than the previously tracked ARTEX items (South Korean financial firms on 2026-10-08 and the Storm-0940 ConnectWise supply-chain compromise on 2026-10-22). The underlying LLMs driving the agents are not identified in the reporting, so no tracked model is linked.",
+      "sources": [
+        {
+          "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+          "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html"
+        },
+        {
+          "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+          "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-28-123-reg-discloses-ai-driven-attack-on-cu",
       "date": "2026-10-28",
       "type": "misuse",

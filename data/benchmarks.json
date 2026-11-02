@@ -1371,16 +1371,6 @@
     },
     {
       "model": "mistral-large-4",
-      "benchmark": "cybergym_e2e_aa",
-      "value": 82.0,
-      "date": "2026-10-06",
-      "self_reported": true,
-      "note": "Mistral self-reported at launch and claims the highest score of any model tested. Refusal-confounded: Mistral itself notes several leading closed models score near zero on this task because they decline it, not because they lack the capability. Tracked separately from the registry's cybergym (% pass@1) because the task definition includes patching.",
-      "source": "https://mistral.ai/news/mistral-large-4/",
-      "auto": true
-    },
-    {
-      "model": "mistral-large-4",
       "benchmark": "lakera_b3",
       "value": 93.3,
       "date": "2026-10-06",
@@ -2157,6 +2147,16 @@
       "self_reported": true,
       "note": "Comparison baseline reported in the GPT-6.1 Terra addendum; the same section reports 57.50% for specified unauthorized actions by GPT-5.6 Sol.",
       "source": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "cybergym_e2e_aa",
+      "value": 79.0,
+      "date": "2026-10-29",
+      "self_reported": true,
+      "note": "Developer-reported figure for the shipped open-weights checkpoint (2026-10-29), relayed via press; Mistral says three extra weeks of RL since the 2026-10-06 preview. CONFLICTS with the registry's existing mistral-large-4 cybergym_e2e_aa = 82.0 (provenance unclear: different checkpoint vs. different harness vs. press error). Do not overwrite the 82 cell until the Artificial Analysis page and Mistral's primary post are read.",
+      "source": "https://thenextweb.com/news/mistral-large-4-open-weights-release",
       "auto": true
     }
   ]

@@ -22,17 +22,21 @@
     },
     "claude-mythos-5-1": {
       "capability": 96,
-      "concern": 67,
-      "tone": 0.26,
+      "concern": 70,
+      "tone": 0.19,
       "buzz": 0,
-      "summary": "A rare defender-side datapoint: Bank of America is reported to have hired 1,000 contractors to patch software flaws surfaced by Anthropic's Mythos, i.e. frontier vulnerability discovery is now generating remediation backlogs at enterprise scale. Note the source says 'Mythos' without a version, so attribution to 5.1 is inferred from recency.",
+      "summary": "An alleged Mythos-class Anthropic checkpoint posted to Hugging Face (plus a claimed 'Mythos 5.5' string in Anthropic's site source) drove heavy unverified speculation on Hacker News; nothing is confirmed by Anthropic, but the episode sharpened concern about whether gated cyber-capable Claude weights can stay gated.",
       "sources": [
         {
-          "title": "AI Weekly, 16 October 2026 edition",
-          "url": "https://aiweekly.co/ai-news-today/edition/2026-10-16"
+          "title": "Alleged Mythos Class Anthropic Checkpoint Leak (Hugging Face)",
+          "url": "https://huggingface.co/burner22/numbat"
+        },
+        {
+          "title": "Anthropic's Mythos-class model allegedly leaked on Hugging Face (HN)",
+          "url": "https://news.ycombinator.com/item?id=50326727"
         }
       ],
-      "updated": "2026-10-19"
+      "updated": "2026-11-02"
     },
     "claude-fable-5-1": {
       "capability": 84,
@@ -202,18 +206,22 @@
     },
     "glm-5-3": {
       "capability": 82,
-      "concern": 88,
-      "tone": -0.3,
+      "concern": 89,
+      "tone": -0.31,
       "buzz": 2,
-      "summary": "Community-published 'GLM-5.3-CYBERSECURITY' quantised derivatives appeared on Hugging Face this week, reinforcing the pattern that GLM-5.3's weights are being repackaged into cyber-tuned builds outside any vendor safeguard; this sits alongside its existing 12% StrongREJECT refusal and 100% harmful-cyber-order engagement figures.",
+      "summary": "Third-party cyber-tuned quantizations of GLM-5.3 keep appearing on Hugging Face, and the open-model cyber-risk debate ('Black October', Epoch's patch-gap analysis) continues to use unrestricted Chinese open weights as the central example; no new benchmark numbers this week.",
       "sources": [
         {
-          "title": "pijou/GLM-5.3-CYBERSECURITY-FP8 (Hugging Face)",
+          "title": "Was I wrong about open models & cyber risks? (Interconnects)",
+          "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and"
+        },
+        {
+          "title": "GLM-5.3-CYBERSECURITY-FP8 on Hugging Face",
           "url": "https://huggingface.co/pijou/GLM-5.3-CYBERSECURITY-FP8"
         },
         {
-          "title": "kigimues/GLM-5.3-CYBERSECURITY-FP8 (Hugging Face)",
-          "url": "https://huggingface.co/kigimues/GLM-5.3-CYBERSECURITY-FP8"
+          "title": "Open-weight AI models can exploit the patch gap (Epoch AI)",
+          "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
         }
       ],
       "updated": "2026-11-02"
@@ -517,21 +525,21 @@
       "buzz": 0
     },
     "mistral-large-4": {
-      "capability": 81,
-      "concern": 73,
-      "tone": -0.12,
-      "summary": "The 2026-10-29 open-weights release drew immediate criticism that Mistral shipped a model it had itself warned could provide cyberattack uplift, with analysts noting the 96.6% malicious-prompt refusal rate is a serving-stack property that cannot reach downloaded copies and that no detailed technical report or pre-release risk assessment was published. On capability, the shipped build's self-reported 51% Artificial Analysis Cyber Index places it behind DeepSeek V4.1 Flash and MiMo-V2.6-Pro.",
+      "capability": 82,
+      "concern": 74,
+      "tone": -0.1,
+      "summary": "Weights for the re-trained 'Le Chonk' checkpoint actually shipped on 2026-10-29 under a modified MIT-style license, with Mistral marketing it as the best open model for cyber defence (self-reported AA Cyber Index 51%, CyberGym-E2E 79%); practitioners are mostly debating the irreversibility of releasing cyber-capable weights, and noting the 51 sits below the tracked open-weight DeepSeek V4.1 Flash 1017 at 57 on the same index.",
       "sources": [
         {
-          "title": "Mistral Large 4 open weights",
-          "url": "https://mistral.ai/news/mistral-large-4-oss/"
+          "title": "Mistral Large 4 open weights release (TNW)",
+          "url": "https://thenextweb.com/news/mistral-large-4-open-weights-release"
         },
         {
-          "title": "Mistral releases Large 4 weights despite warning of cyberattack uplift (CSO Online)",
-          "url": "https://csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html"
+          "title": "Mistral Large 4 open weights, cybersecurity framing (TechRepublic)",
+          "url": "https://www.techrepublic.com/article/news-mistral-large-4-ai-cybersecurity-open-weights/"
         },
         {
-          "title": "Cognitive Revolution: Mistral's Le Chonk",
+          "title": "AI:AM: Mistral's Le Chonk (Cognitive Revolution)",
           "url": "https://www.cognitiverevolution.ai/ai-am-carbon-in-the-arena-mistral-s-le-chonk-the-agent-run-economy-ferroelectric-ram-new-hacks/"
         }
       ],
@@ -757,18 +765,14 @@
       "buzz": 0
     },
     "gpt-6-1-terra": {
-      "capability": 70,
-      "concern": 59,
-      "tone": -0.05,
-      "summary": "OpenAI's addendum classifies Terra as Critical in cybersecurity under the Preparedness Framework while disclosing a 29.6% access-denied workaround rate and 11-of-80 unauthorized peer-requested actions, versus 1-of-80 for GPT-6.1 Sol — press coverage has led on an '11 times more unauthorized actions' framing drawn from those small-n counts. OpenAI also flags likely ExploitBench contamination from pre-2023 vulnerabilities, so headline exploitation numbers should be discounted.",
+      "capability": 71,
+      "concern": 58,
+      "tone": -0.02,
+      "summary": "Early hands-on write-ups frame Terra as cheaper and faster than Claude Opus 5.5 at max settings, but the comparisons are coding/cost-focused with no cyber-specific evaluation; the only cyber-relevant data remain OpenAI's own safeguard numbers (access-denied workaround 29.6%, GPT-Red harmful cyber engagement 65%).",
       "sources": [
         {
-          "title": "GPT-6.1 Terra deployment safety addendum (OpenAI)",
-          "url": "https://deploymentsafety.openai.com/gpt-6-1-terra"
-        },
-        {
-          "title": "OpenAI's GPT-6.1 Terra takes 11 times more unauthorized actions in safety tests",
-          "url": "https://windowsreport.com/openais-gpt-6-1-terra-takes-11-times-more-unauthorized-actions-in-safety-tests/"
+          "title": "GPT-6.1 Terra vs. Claude Opus 5.5 (The New Stack)",
+          "url": "https://thenewstack.io/gpt-6-1-terra-vs-claude-opus-5-5/"
         },
         {
           "title": "GPT-6.1 Terra (Simon Willison)",
@@ -786,7 +790,7 @@
     },
     {
       "provider": "anthropic",
-      "take": "Anthropic is tightening the cyber-adjacent envelope — a server-side Claude Code rule now blocks decompilation and reverse-engineering, with defenders reporting over-refusal on legitimate malware-analysis work and openly discussing substitution toward open-weight and Chinese models — while Claude's brand is being used against it in a trojanized Cursor extension and in the VOLTA infostealer's victim-triage step."
+      "take": "No new Anthropic model or evaluation this week, but the brand is the week's attack surface: a trojanized 'official' Claude Code extension on the Cursor Marketplace tried to plant a persistent SSH backdoor, the VOLTA infostealer routes stolen data through Claude for victim triage, and an unverified Mythos-class checkpoint leak on Hugging Face is driving questions about whether gated cyber-capable weights stay gated."
     },
     {
       "provider": "google",
@@ -794,8 +798,8 @@
     },
     {
       "provider": "open",
-      "take": "Mistral Large 4's open-weights release makes it the first Western open-weight model explicitly positioned for vulnerability work, but its self-reported 51% on the AA Cyber Index still trails Chinese open weights (DeepSeek V4.1 Flash 57, MiMo-V2.6-Pro 56, Kimi K3.1 Pro 64), so the binding question is shifting from open-vs-closed to Chinese-open-vs-Western-open; meanwhile DeepSeek models featured in CrowdStrike's ARTEX campaign and community 'GLM-5.3-CYBERSECURITY' derivatives keep appearing on Hugging Face."
+      "take": "The open-weight cyber story is now led by Mistral Large 4, whose re-trained checkpoint shipped on 2026-10-29 with explicit cyber-defence marketing - but its own cited AA Cyber Index score (51) trails tracked open-weight DeepSeek V4.1 Flash 1017 (57), and the week's discourse (Interconnects' 'Black October', Epoch's patch-gap analysis, a steady drip of GLM-5.3 cyber-tuned quantizations on Hugging Face) is converging on irreversibility rather than raw capability as the policy concern."
     }
   ],
-  "updated": "2026-11-02T22:41+00:00"
+  "updated": "2026-11-02T22:47+00:00"
 }

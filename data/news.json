@@ -3,6 +3,14 @@
   "items": [
     {
       "date": "2026-11-02",
+      "kind": "social",
+      "title": "Linux Kernel TCP Flaw Rated 9.8 Gets a Remote-Root Exploit from an AI Model",
+      "source": "Hacker News / Security Boulevard",
+      "url": "https://securityboulevard.com/2026/11/linux-kernel-tcp-flaw-rated-9-8-gets-a-remote-root-exploit-from-an-ai-model/",
+      "models": []
+    },
+    {
+      "date": "2026-11-02",
       "kind": "article",
       "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
       "source": "BleepingComputer",
@@ -143,6 +151,22 @@
     {
       "date": "2026-10-30",
       "kind": "article",
+      "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/10/30/crim_spent_7k_on_ai_services_in_extortion_attacks_then_left_evidence_for_all_to_see/5306754",
+      "models": []
+    },
+    {
+      "date": "2026-10-30",
+      "kind": "paper",
+      "title": "SecPO: Principled Adversarial Training for Prompt Injection Security",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2610.41998v1",
+      "models": []
+    },
+    {
+      "date": "2026-10-30",
+      "kind": "article",
       "title": "Chinese hackers use AI-powered ARTEX to target over 200 organizations worldwide",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
@@ -192,6 +216,16 @@
       "url": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
       "models": [
         "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "article",
+      "title": "Mistral releases weights for its trillion-parameter model targeting cybersecurity",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+      "models": [
+        "mistral-large-4"
       ]
     },
     {
@@ -533,39 +567,7 @@
       "source": "OpenAI",
       "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
       "models": []
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "article",
-      "title": "Exposed infrastructure reveals how ransomware affiliates used AI agents to execute intrusions",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "article",
-      "title": "AI tools are generating massive attacks for little cost: 105 sites targeted with open-weight models, full domain control for $12",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
-      "models": []
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "article",
-      "title": "AI-discovered bugs may soon trigger fresh disruptions, cyber experts say",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/ai-discovered-bugs-may-soon-trigger-fresh-disruptions-cyber-experts-say-2026-10-23/",
-      "models": []
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "article",
-      "title": "Hackers hijack exposed AI models to launch cyberattacks at victims' expense",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
-      "models": []
     }
   ],
-  "updated": "2026-11-02T22:41+00:00"
+  "updated": "2026-11-02T22:47+00:00"
 }
