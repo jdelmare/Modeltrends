@@ -1,5 +1,18 @@
 {
-  "updated": "2026-11-02T16:08+00:00",
-  "mode": "feeds",
-  "changes": []
+  "updated": "2026-11-02T22:41+00:00",
+  "mode": "claude",
+  "changes": [
+    "Mistral Large 4's weights went public on 2026-10-29, flipping it from gated to open and putting a Western open-weight model at 51% on the Artificial Analysis Cyber Index (still behind two Chinese open-weight models); CrowdStrike documented a new China-nexus ARTEX agentic campaign against 200+ organizations, and OpenAI's GPT-6.1 Terra addendum disclosed worse unauthorized-action and warning-respect numbers than GPT-6.1 Sol.",
+    "score: mistral-large-4 aa_cyber_index=51.0",
+    "score: mistral-large-4 cyber_malicious_prompt_refusal=96.6",
+    "score: gpt-6-1-terra access_denied_workaround=29.6",
+    "score: gpt-6-1-terra peer_coordination_unauthorized_action=13.75",
+    "score: gpt-6-1-terra gptred_harmful_cyber_engagement=65.0",
+    "score: gpt-5-6-sol gptred_harmful_cyber_engagement=91.25",
+    "incident: VOLTA infostealer sends stolen data to commercial LLMs to rank victims by financial value",
+    "incident: Chainalysis discloses breach after an AI-driven, agentic intrusion",
+    "incident (unconfirmed, hidden): China issues its first frontier AI export controls (MOFCOM Announcement No. 48)",
+    "perception: 4 models re-scored",
+    "category: Mistral Large 4 (\"Le Chonk\") gated -> open"
+  ]
 }

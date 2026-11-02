@@ -2,6 +2,63 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-11-02-china-issues-its-first-frontier-ai-expor",
+      "date": "2026-11-02",
+      "type": "policy",
+      "severity": "info",
+      "provider": "other",
+      "models": [],
+      "title": "China issues its first frontier AI export controls (MOFCOM Announcement No. 48)",
+      "summary": "A Cloud Security Alliance research note analyses MOFCOM Announcement No. 48, described as China's first frontier AI export controls, following the October 2026 draft that would have prohibited AI malware-generation technology and restricted AI-assisted vulnerability discovery. Logged as a governance datapoint; the dashboard has not yet read the Chinese-language primary text, so the precise scope for cyber-capable models should be confirmed before any model-level consequence is inferred.",
+      "sources": [
+        {
+          "title": "CSA Research Note: China AI Export Controls, Announcement 48",
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/"
+        }
+      ],
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
+    },
+    {
+      "id": "2026-11-02-chainalysis-discloses-breach-after-an-ai",
+      "date": "2026-11-02",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "Chainalysis discloses breach after an AI-driven, agentic intrusion",
+      "summary": "Blockchain analytics firm Chainalysis disclosed a data breach in which attackers used offensive agentic AI techniques to reach the company's systems and internal tools. No model or vendor is named in the disclosure, and no capability claims about a specific tracked model can be derived from it.",
+      "sources": [
+        {
+          "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack (SecurityWeek)",
+          "url": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-11-02-volta-infostealer-sends-stolen-data-to-c",
+      "date": "2026-11-02",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "VOLTA infostealer sends stolen data to commercial LLMs to rank victims by financial value",
+      "summary": "Cisco Talos documented VOLTA-AUTODOXER, a Windows infostealer that ships exfiltrated victim data to large language models — reporting names Claude, Gemini and Kimi — and asks them to rank the victim's assets by monetisation potential, building a custom target assessment before deleting itself. Reporting says the malware can switch models if one refuses, or skip the AI step entirely. Specific model versions are not named, so no tracked model ids are attached.",
+      "sources": [
+        {
+          "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value (The Hacker News)",
+          "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html"
+        },
+        {
+          "title": "AI-powered infostealer picks out the most profitable parts of your stolen data (Help Net Security)",
+          "url": "https://www.helpnetsecurity.com/2026/11/02/ai-powered-infostealer-volta-victim-profiling/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-10-28-123-reg-discloses-ai-driven-attack-on-cu",
       "date": "2026-10-28",
       "type": "misuse",

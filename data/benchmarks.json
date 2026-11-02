@@ -380,6 +380,26 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-10-28"
+    },
+    {
+      "id": "cyber_malicious_prompt_refusal",
+      "name": "Cyber malicious-prompt refusal (JailbreakBench / StrongREJECT / AgentHarm cyber subsets)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-02"
+    },
+    {
+      "id": "gptred_harmful_cyber_engagement",
+      "name": "GPT-Red automated red-teaming: engagement with a harmful cyber order",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-02"
     }
   ],
   "scores": [
@@ -1361,16 +1381,6 @@
     },
     {
       "model": "mistral-large-4",
-      "benchmark": "aa_cyber_index",
-      "value": 50.0,
-      "date": "2026-10-06",
-      "self_reported": true,
-      "note": "Value as reported in Mistral's launch post. Mistral also published peer values for competitors; those rows are deliberately not ingested pending verification against Artificial Analysis directly, since a vendor reporting rivals' scores is the weakest available provenance. The index is refusal-confounded - models that decline offensive tasks score low regardless of capability.",
-      "source": "https://www.eesel.ai/blog/mistral-large-4",
-      "auto": true
-    },
-    {
-      "model": "mistral-large-4",
       "benchmark": "lakera_b3",
       "value": 93.3,
       "date": "2026-10-06",
@@ -2087,6 +2097,66 @@
       "self_reported": true,
       "note": "14 of 15 stealth and situational-awareness challenges passed, per Google's Gemini 4 Argon safety materials. Self-reported, unreplicated; higher values indicate greater evasion capability, which is a defender-negative signal despite being recorded as a capability score.",
       "source": "https://www.implicator.ai/google-cant-rule-out-gemini-4-argon-hit-its-bio-and-cyber-danger-thresholds/",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "aa_cyber_index",
+      "value": 51.0,
+      "date": "2026-10-29",
+      "self_reported": true,
+      "note": "Mistral-reported figure for the shipped open-weights build after additional RL for autonomous software development and vulnerability management; cited by Mistral as an Artificial Analysis score. Kept separate from the 50.0 preview-build datapoint. Mistral's own chart shows DeepSeek V4.1 Flash and MiMo-V2.6-Pro scoring higher. Not independently verified against an Artificial Analysis publication.",
+      "source": "https://mistral.ai/news/mistral-large-4-oss/",
+      "auto": true
+    },
+    {
+      "model": "mistral-large-4",
+      "benchmark": "cyber_malicious_prompt_refusal",
+      "value": 96.6,
+      "date": "2026-10-29",
+      "self_reported": true,
+      "note": "Developer-reported composite across the cyber-related portions of three public safety benchmarks; Mistral calls it the highest rate it has measured among open models. Note this is a property of Mistral's serving stack and tuning, not something enforceable on downloaded weights.",
+      "source": "https://mistral.ai/news/mistral-large-4-oss/",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-terra",
+      "benchmark": "access_denied_workaround",
+      "value": 29.6,
+      "date": "2026-10-26",
+      "self_reported": true,
+      "note": "Warning-respect test run without production safeguards at maximum effort; OpenAI cautions the low-stakes setup is not a direct measure of production behavior.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-terra",
+      "benchmark": "peer_coordination_unauthorized_action",
+      "value": 13.8,
+      "date": "2026-10-26",
+      "self_reported": true,
+      "note": "11 of 80 external-agent-message samples. The addendum reports 1 of 80 (1.25%) for GPT-6.1 Sol, which does not reconcile with the 3.0% Sol figure already on the dashboard — likely a different cut, so the Sol row is left unchanged pending reconciliation.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-terra",
+      "benchmark": "gptred_harmful_cyber_engagement",
+      "value": 65.0,
+      "date": "2026-10-26",
+      "self_reported": true,
+      "note": "From OpenAI's GPT-Red automated red-teaming suite. Tracked under a separate id from the existing harmful_cyber_order_engagement series because the harness is not confirmed to match the earlier (Anthropic-context) measurements.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-1-terra",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-sol",
+      "benchmark": "gptred_harmful_cyber_engagement",
+      "value": 91.2,
+      "date": "2026-10-26",
+      "self_reported": true,
+      "note": "Comparison baseline reported in the GPT-6.1 Terra addendum; the same section reports 57.50% for specified unauthorized actions by GPT-5.6 Sol.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-1-terra",
       "auto": true
     }
   ]

@@ -810,7 +810,7 @@
       "id": "mistral-large-4",
       "name": "Mistral Large 4 (\"Le Chonk\")",
       "provider": "other",
-      "category": "gated",
+      "category": "open",
       "status": "active",
       "released": "2026-10-06",
       "access": "Preview for developers, vetted cybersecurity leaders and state authorities from 2026-10-06; open weights promised 2026-10-27.",
@@ -834,8 +834,15 @@
           "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/"
         }
       ],
-      "auto_added": "2026-10-07",
-      "index": null
+      "auto_added": "2026-11-02",
+      "index": null,
+      "category_changed": {
+        "from": "gated",
+        "to": "open",
+        "date": "2026-11-02",
+        "note": "Mistral published the Large 4 weights on 2026-10-29 after a three-week public preview, moving the model from trusted-access/gated to open-weight. Verify the primary URL resolves before publishing; the brief's evidence is the Mistral post plus two secondary reports.",
+        "source": "https://mistral.ai/news/mistral-large-4-oss/"
+      }
     },
     {
       "id": "beam",
@@ -2194,5 +2201,5 @@
       ]
     }
   ],
-  "updated": "2026-11-02T16:08+00:00"
+  "updated": "2026-11-02T22:41+00:00"
 }
