@@ -2,6 +2,91 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-02",
+      "kind": "social",
+      "title": "GPT-6.1 Terra vs. Claude Opus 5.5: Cheaper and faster in three tests at max",
+      "source": "Hacker News",
+      "url": "https://thenewstack.io/gpt-6-1-terra-vs-claude-opus-5-5/",
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-1-astra",
+        "gpt-5-6-terra",
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "kind": "social",
+      "title": "Chinese labs now target OpenAI's GPT-6 Astra for distillation",
+      "source": "Hacker News",
+      "url": "https://fork.zone/p/1011/report-chinese-labs-now-target-openai-s-gpt-6-astra-for",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "social",
+      "title": "GPT-6.1 Terra",
+      "source": "Hacker News",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-1-astra",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "podcast",
+      "title": "AI:AM: Carbon in the Arena, Mistral's Le Chonk, the Agent-Run Economy, Ferroelectric RAM + New Hacks",
+      "source": "Cognitive Revolution",
+      "url": "https://www.cognitiverevolution.ai/ai-am-carbon-in-the-arena-mistral-s-le-chonk-the-agent-run-economy-ferroelectric-ram-new-hacks/",
+      "models": [
+        "mistral-large-4"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "official",
+      "title": "New on Hugging Face: pijou/GLM-5.3-CYBERSECURITY-FP8",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/pijou/GLM-5.3-CYBERSECURITY-FP8",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "official",
+      "title": "New on Hugging Face: kigimues/GLM-5.3-CYBERSECURITY-FP8",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/kigimues/GLM-5.3-CYBERSECURITY-FP8",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "kind": "social",
+      "title": "Post-training 4B model with RL to fly Tesla Roadster 21% better than GPT-6 Astra",
+      "source": "Hacker News",
+      "url": "https://skypilot.ai/blog/flying-roadster-rl",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "kind": "blog",
+      "title": "dbreunig/nesformer",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
+      "models": [
+        "claude-opus-5-5"
+      ]
+    },
+    {
       "date": "2026-10-30",
       "kind": "article",
       "title": "Open-weight AI model GLM-5.3 cheated its way to correct answers",
@@ -475,81 +560,7 @@
       "source": "OpenAI",
       "url": "https://openai.com/index/empowering-cyber-defenders/",
       "models": []
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "article",
-      "title": "AI Just Found a Bug That Puts Up to 70% of the World's Websites at Risk",
-      "source": "Wall Street Journal",
-      "url": "https://www.wsj.com/tech/cybersecurity/ai-just-found-a-bug-that-puts-up-to-70-of-the-worlds-websites-at-risk-fd0902ea",
-      "models": [
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "article",
-      "title": "The Harness Is the Hard Part of Agentic Pentesting",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "article",
-      "title": "Anthropic unveils Claude Duet, a proactive agent app running on Claude Opus 5.5 with its own VM and browser",
-      "source": "Reuters / The Star",
-      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/22/anthropic-unveils-claude-duet-ai-agent-app",
-      "models": [
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "article",
-      "title": "U.S. orders DeepSeek removed from federal civilian systems, bans new purchases",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
-      "models": [
-        "deepseek-v4-pro",
-        "deepseek-v4-1-flash",
-        "deepseek-v4-1-flash-1017"
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "official",
-      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/empowering-cyber-defenders",
-      "models": []
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "article",
-      "title": "Unit 42: low-skill actor used jailbroken AI assistants for credential theft, VoIP fraud and database exfiltration",
-      "source": "Palo Alto Networks Unit 42",
-      "url": "https://unit42.paloaltonetworks.com/ai-assisted-cybercrime-analysis/",
-      "models": []
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "article",
-      "title": "Anthropic launches Claude Duet, a proactive Opus 5.5-based agent with its own cloud VM and browser",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/10/21/anthropic-claude-duet/",
-      "models": [
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "kind": "paper",
-      "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
-      "source": "arXiv",
-      "url": "https://arxiv.org/abs/2610.19005",
-      "models": []
     }
   ],
-  "updated": "2026-10-30T13:04+00:00"
+  "updated": "2026-11-02T16:08+00:00"
 }
