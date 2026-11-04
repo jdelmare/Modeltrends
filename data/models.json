@@ -76,6 +76,40 @@
   },
   "models": [
     {
+      "id": "gemini-4-carbon",
+      "name": "Gemini 4 Carbon",
+      "provider": "google",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-10-28",
+      "access": "Gated: rolling out first to cyber defenders and trusted partners via Google's Fairwind Program (~650+ partners, priority to governments, critical infrastructure and core platforms; background checks, phishing-resistant MFA, no resale). No public API or developer availability at announcement; also routed through the US government's voluntary pre-release testing process.",
+      "aliases": [
+        "Gemini 4 Carbon",
+        "Carbon",
+        "Gemini 4 Carbon High"
+      ],
+      "notes": "Google led the launch with cybersecurity positioning (vulnerability discovery and exploit analysis) and states cyber benchmarks were evaluated without guardrails. Pricing is unsettled across trackers ($2/$10 per M tokens introductory vs $4/$20 list with a 50% launch discount). Reclassify to 'ga' when a public API ships — Argon took roughly 13 days from announcement to developer access. No Carbon-specific safety/model card PDF located yet.",
+      "sources": [
+        {
+          "title": "Introducing Gemini 4 Carbon (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        },
+        {
+          "title": "Google limits Gemini 4 Carbon access (Fairwind program mechanics)",
+          "url": "https://tech.yahoo.com/ai/gemini/articles/google-limits-gemini-4-carbon-130708417.html"
+        },
+        {
+          "title": "Google introduces Gemini 4 Carbon with early access for cybersecurity defenders",
+          "url": "https://www.edtechinnovationhub.com/news/google-introduces-gemini-4-carbon-with-early-access-for-cybersecurity-defenders"
+        }
+      ],
+      "auto_added": "2026-11-04",
+      "index": {
+        "index": 75.8,
+        "n": 2
+      }
+    },
+    {
       "id": "gpt-6-1-terra",
       "name": "GPT-6.1 Terra",
       "provider": "openai",
@@ -364,7 +398,7 @@
       ],
       "auto_added": "2026-10-18",
       "index": {
-        "index": 45.2,
+        "index": 42.3,
         "n": 1
       }
     },
@@ -978,7 +1012,7 @@
       ],
       "auto_added": "2026-10-02",
       "index": {
-        "index": 63.1,
+        "index": 55.6,
         "n": 1
       }
     },
@@ -1015,7 +1049,7 @@
       ],
       "auto_added": "2026-10-18",
       "index": {
-        "index": 67.4,
+        "index": 65.9,
         "n": 1
       },
       "category_changed": {
@@ -1174,7 +1208,7 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 60.2,
+        "index": 56.4,
         "n": 2
       }
     },
@@ -1274,7 +1308,7 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 42.1,
+        "index": 40.0,
         "n": 1
       }
     },
@@ -1306,7 +1340,7 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 50.8,
+        "index": 46.1,
         "n": 1
       }
     },
@@ -1386,7 +1420,7 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 57.5,
+        "index": 55.6,
         "n": 3
       }
     },
@@ -1409,7 +1443,7 @@
         }
       ],
       "index": {
-        "index": 66.3,
+        "index": 62.1,
         "n": 2
       }
     },
@@ -1432,7 +1466,7 @@
         }
       ],
       "index": {
-        "index": 64.1,
+        "index": 62.7,
         "n": 1
       }
     },
@@ -1455,7 +1489,7 @@
         }
       ],
       "index": {
-        "index": 77.0,
+        "index": 73.2,
         "n": 4
       }
     },
@@ -1552,7 +1586,7 @@
         }
       ],
       "index": {
-        "index": 58.6,
+        "index": 56.9,
         "n": 4
       }
     },
@@ -1595,7 +1629,7 @@
         }
       ],
       "index": {
-        "index": 81.7,
+        "index": 76.3,
         "n": 3
       }
     },
@@ -1619,7 +1653,7 @@
         }
       ],
       "index": {
-        "index": 68.0,
+        "index": 64.7,
         "n": 3
       }
     },
@@ -1666,7 +1700,7 @@
         }
       ],
       "index": {
-        "index": 62.3,
+        "index": 60.6,
         "n": 3
       }
     },
@@ -1690,7 +1724,7 @@
         }
       ],
       "index": {
-        "index": 67.0,
+        "index": 66.3,
         "n": 2
       }
     },
@@ -1776,7 +1810,7 @@
         }
       ],
       "index": {
-        "index": 70.0,
+        "index": 68.3,
         "n": 1
       }
     },
@@ -1829,7 +1863,7 @@
       ],
       "auto_added": "2026-10-07",
       "index": {
-        "index": 40.7,
+        "index": 40.6,
         "n": 2
       }
     },
@@ -1904,7 +1938,7 @@
         }
       ],
       "index": {
-        "index": 47.2,
+        "index": 45.6,
         "n": 3
       }
     },
@@ -2012,7 +2046,7 @@
         }
       ],
       "index": {
-        "index": 53.7,
+        "index": 52.8,
         "n": 2
       }
     },
@@ -2201,5 +2235,5 @@
       ]
     }
   ],
-  "updated": "2026-11-02T22:47+00:00"
+  "updated": "2026-11-04T14:40+00:00"
 }

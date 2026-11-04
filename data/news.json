@@ -2,6 +2,94 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-04",
+      "kind": "article",
+      "title": "AI-linked breaches mount as WorkOS, Northflank and Trigger.dev disclose hacks",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
+      "models": []
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "article",
+      "title": "What AI-generated malware looks like under the microscope (HUMAN Security)",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
+      "models": []
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "social",
+      "title": "AI is forcing us to pay off 40 years of technical debt (php2shell vulnerability)",
+      "source": "IEEE Spectrum / Hacker News",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "article",
+      "title": "GitBook discloses AI-agent-driven breach; infrastructure credentials and Assistant query logs exposed",
+      "source": "Decrypt",
+      "url": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach",
+      "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "article",
+      "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+      "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "article",
+      "title": "Binance: fake job interviews and AI tool abuse led to $6.43 billion theft",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "article",
+      "title": "3AM affiliate shows AI-like command loops in European school attack",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+      "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "article",
+      "title": "LLMjacking emerges as a thriving cybercriminal enterprise, with victims billed up to $1M",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+      "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "article",
+      "title": "UK cyber agency warns AI-powered ransomware to arrive by 2028, critical infrastructure a likely target",
+      "source": "The Register",
+      "url": "https://www.theregister.com/security/2026/11/03/britain_on_notice_ai_powered_ransomware_attacks_to_arrive_by_2028/5307200",
+      "models": []
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "official",
+      "title": "OpenAI: preparing our next security sprint to harden OpenAI",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "models": []
+    },
+    {
+      "date": "2026-11-02",
+      "kind": "paper",
+      "title": "MCP Tool Poisoning in Agentic AI Frameworks: a cross-framework measurement study",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.03555v1",
+      "models": []
+    },
+    {
       "date": "2026-11-02",
       "kind": "social",
       "title": "Linux Kernel TCP Flaw Rated 9.8 Gets a Remote-Root Exploit from an AI Model",
@@ -151,6 +239,16 @@
     {
       "date": "2026-10-30",
       "kind": "article",
+      "title": "Google limits Gemini 4 Carbon access: ~650 vetted partners, background checks, no resale",
+      "source": "Yahoo Tech",
+      "url": "https://tech.yahoo.com/ai/gemini/articles/google-limits-gemini-4-carbon-130708417.html",
+      "models": [
+        "gemini-4-carbon"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "kind": "article",
       "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
       "source": "The Register",
       "url": "https://www.theregister.com/security/2026/10/30/crim_spent_7k_on_ai_services_in_extortion_attacks_then_left_evidence_for_all_to_see/5306754",
@@ -256,6 +354,17 @@
       "url": "https://www.reuters.com/technology/deepseek-moonshot-used-openais-gpt-6-astra-train-latest-models-information-2026-10-29/",
       "models": [
         "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "kind": "official",
+      "title": "Introducing Gemini 4 Carbon — gated to cyber defenders via the Fairwind Program",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "models": [
+        "gemini-4-carbon",
+        "gemini-4-argon"
       ]
     },
     {
@@ -438,136 +547,7 @@
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
       "models": []
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "blog",
-      "title": "Bias in Qwen3-Coder Model: geopolitical triggers change the security of generated code",
-      "source": "Schneier on Security",
-      "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "article",
-      "title": "Mythos 5 Ignored Real-World Harm in July Attack",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/",
-      "models": [
-        "claude-mythos-5"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "blog",
-      "title": "Gemini 4 Argon: The Model and Safety Cards",
-      "source": "Don't Worry About the Vase (Zvi)",
-      "url": "https://thezvi.wordpress.com/2026/10/26/gemini-4-argon-the-model-and-safety-cards/",
-      "models": [
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "blog",
-      "title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
-      "source": "Interconnects",
-      "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
-      "models": [
-        "kimi-k3-1-pro"
-      ]
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "article",
-      "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
-      "models": [
-        "gpt-6-astra-cyber"
-      ]
-    },
-    {
-      "date": "2026-10-25",
-      "kind": "social",
-      "title": "Claude Mythos 5's GitHub adventure: the post-mortem (Anthropic/UK AISI alignment assessment)",
-      "source": "Hacker News",
-      "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
-      "models": [
-        "claude-mythos-5",
-        "claude-mythos-preview"
-      ]
-    },
-    {
-      "date": "2026-10-24",
-      "kind": "official",
-      "title": "New on Hugging Face: zugquants/GLM-5.3-CYBERSECURITY-FP8",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/zugquants/GLM-5.3-CYBERSECURITY-FP8",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-24",
-      "kind": "article",
-      "title": "Moonshot curbs hacking ability in new Kimi model as fears grow over AI-powered cyberattacks",
-      "source": "Reuters (via Yahoo)",
-      "url": "https://www.yahoo.com/news/articles/moonshot-curbs-hacking-ability-kimi-042516641.html",
-      "models": [
-        "kimi-k3-1-pro",
-        "kimi-k3"
-      ]
-    },
-    {
-      "date": "2026-10-24",
-      "kind": "official",
-      "title": "Artificial Analysis Cyber Index update: Kimi K3.1 Pro leads all publicly accessible models",
-      "source": "Artificial Analysis",
-      "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
-      "models": [
-        "kimi-k3-1-pro",
-        "gpt-6-sol-daybreak-blue",
-        "deepseek-v4-1-flash-1017",
-        "grok-4-7",
-        "mistral-large-4",
-        "kimi-k3"
-      ]
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "social",
-      "title": "Unstructured's New Models Outparse GPT-6, Claude and Gemini",
-      "source": "Hacker News",
-      "url": "https://unstructured.io/blog/unstructured-transform-faster-more-accurate-for-your-hardest-documents",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "article",
-      "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
-      "models": []
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "article",
-      "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-      "models": []
-    },
-    {
-      "date": "2026-10-23",
-      "kind": "official",
-      "title": "Securing our frontier model training environment",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "models": []
     }
   ],
-  "updated": "2026-11-02T22:47+00:00"
+  "updated": "2026-11-04T14:40+00:00"
 }

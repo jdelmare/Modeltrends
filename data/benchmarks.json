@@ -2158,6 +2158,66 @@
       "note": "Developer-reported figure for the shipped open-weights checkpoint (2026-10-29), relayed via press; Mistral says three extra weeks of RL since the 2026-10-06 preview. CONFLICTS with the registry's existing mistral-large-4 cybergym_e2e_aa = 82.0 (provenance unclear: different checkpoint vs. different harness vs. press error). Do not overwrite the 82 cell until the Artificial Analysis page and Mistral's primary post are read.",
       "source": "https://thenextweb.com/news/mistral-large-4-open-weights-release",
       "auto": true
+    },
+    {
+      "model": "gemini-4-carbon",
+      "benchmark": "exploitgym",
+      "value": 54.8,
+      "date": "2026-10-28",
+      "self_reported": true,
+      "note": "Google self-reported at launch; Google states cyber benchmarks were evaluated WITHOUT guardrails, so this measures raw capability rather than deployed behaviour. No independent replication exists and the model has no public API. Exceeds the previous registry high (GPT-6 Astra, 42.4).",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-carbon",
+      "benchmark": "cwe_bench",
+      "value": 71.0,
+      "date": "2026-10-28",
+      "self_reported": true,
+      "note": "Google self-reported, no-guardrails evaluation condition. The same comparison table reproduces Argon and GPT-6 Astra at 68.0, which matches existing registry values — a provenance cross-check in its favour. Unreplicated.",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-carbon",
+      "benchmark": "sec_bench_pro",
+      "value": 88.2,
+      "date": "2026-10-28",
+      "self_reported": true,
+      "note": "Google self-reported, no-guardrails condition. Not directly comparable to the existing registry value for GLM-5.3 (40.4), which came from a different harness; render with a footnote rather than on a single axis.",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-argon",
+      "benchmark": "sec_bench_pro",
+      "value": 83.4,
+      "date": "2026-10-28",
+      "self_reported": true,
+      "note": "Reported by Google in the Gemini 4 Carbon launch comparison table (developer self-reported, no-guardrails condition).",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "sec_bench_pro",
+      "value": 85.4,
+      "date": "2026-10-28",
+      "self_reported": false,
+      "note": "Third-party (Google) comparison figure published in the Gemini 4 Carbon launch materials, not an OpenAI-reported number; harness and guardrail conditions for the competitor run are not documented. Treat as low-to-medium confidence.",
+      "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-carbon",
+      "benchmark": "gray_swan_ipi",
+      "value": 0.0,
+      "date": "2026-10-29",
+      "self_reported": true,
+      "note": "Reported via launch coverage of Google's figures (Argon listed at 0.7, matching the registry). Lower is better. One reviewer explicitly could not obtain a Carbon-specific Gray Swan replication because there is no public API.",
+      "source": "https://neuraltrust.ai/blog/gemini-4-carbon",
+      "auto": true
     }
   ]
 }

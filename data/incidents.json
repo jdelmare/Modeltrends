@@ -2,6 +2,88 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-11-03-3am-ransomware-affiliate-shows-ai-like-c",
+      "date": "2026-11-03",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "3AM ransomware affiliate shows AI-like command loops in European school attack",
+      "summary": "Researchers examining a 3AM ransomware affiliate's breach of a European school found evidence suggesting a language model generated and revised commands during the intrusion, but explicitly stopped short of claiming full automation or naming a model. Logged as unconfirmed pending a named technical write-up.",
+      "sources": [
+        {
+          "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
+          "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack"
+        }
+      ],
+      "auto": true,
+      "excluded": true,
+      "excluded_reason": "unconfirmed"
+    },
+    {
+      "id": "2026-11-03-binance-attributes-6-43b-theft-partly-to",
+      "date": "2026-11-03",
+      "type": "misuse",
+      "severity": "critical",
+      "provider": "other",
+      "models": [],
+      "title": "Binance attributes $6.43B theft partly to abuse of an AI tool after rigged coding-assignment lures",
+      "summary": "Binance's first incident report describes a months-long, multi-stage campaign that compromised three engineers' machines via a rigged coding assignment and involved abuse of an AI tool on the path to the record $6.43 billion theft. The report is the primary account; the specific AI system and the precise role it played in the intrusion chain are not attributed to a tracked model in the coverage reviewed.",
+      "sources": [
+        {
+          "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+          "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html"
+        },
+        {
+          "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+          "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-11-03-workos-says-an-attacker-used-the-artex-a",
+      "date": "2026-11-03",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "WorkOS says an attacker used the ARTEX AI framework to breach an internal sales application",
+      "summary": "Developer identity platform WorkOS disclosed a breach in which a threat actor accessed business contact records and summaries of customer communications, and attributed the intrusion to use of ARTEX, the open-source multi-agent AI penetration-testing framework already linked to Chinese state-aligned campaigns against 200+ organizations. SecurityWeek groups the disclosure with Northflank and Trigger.dev as part of a cluster of AI-linked breaches involving harvested AI access tokens and AI-assisted offensive tooling.",
+      "sources": [
+        {
+          "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+          "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/"
+        },
+        {
+          "title": "AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks",
+          "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-11-02-gitbook-discloses-ai-agent-driven-intrus",
+      "date": "2026-11-02",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "GitBook discloses AI-agent-driven intrusion exposing infrastructure credentials and Assistant query logs",
+      "summary": "GitBook said it was hit by a 'complex, highly targeted attack carried out using AI agents'. Attackers gained unauthorized access at 19:00 CET on 2026-11-02 and obtained infrastructure credentials; potentially exposed data includes integration tokens, Git Sync keys, API tokens and questions site visitors submitted to the GitBook Assistant. All personal API tokens were revoked, credentials replaced, and service restored 2026-11-03; customers were told to rotate keys and re-authenticate the GitBook MCP server. GitBook did not disclose which AI systems the attackers used, so no model attribution is possible.",
+      "sources": [
+        {
+          "title": "Crypto docs host GitBook discloses AI agent security breach",
+          "url": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach"
+        },
+        {
+          "title": "GitBook suffers AI agent security breach, urges users to rotate keys",
+          "url": "https://www.kucoin.com/news/flash/gitbook-suffers-ai-agent-security-breach-urges-users-to-rotate-keys"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-11-02-china-issues-its-first-frontier-ai-expor",
       "date": "2026-11-02",
       "type": "policy",
