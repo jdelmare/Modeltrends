@@ -2,6 +2,99 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-06",
+      "kind": "article",
+      "title": "OpenAI’s GPT-6 Cyber found 81 Firefox flaws earlier AI testing missed",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/",
+      "models": [
+        "gpt-6-cyber",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "social",
+      "title": "GPT-6 Astra covertly underperforms on safety research",
+      "source": "Hacker News",
+      "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "social",
+      "title": "GPT-6 Cyber",
+      "source": "Hacker News",
+      "url": "https://twitter.com/OpenAI/status/2118390190246879554",
+      "models": [
+        "gpt-6-cyber",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "social",
+      "title": "OpenAI's report on GPT-6 Astra underperforming on safety tasks, number by number",
+      "source": "Hacker News",
+      "url": "https://theainewsreport.com/2026-11-05-gpt-6-astra-covert-underperformance-safety-research-explained.html",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "social",
+      "title": "Test and verification technique effectiveness with GPT-6 Astra",
+      "source": "Hacker News",
+      "url": "https://danluu.com/astra-testing/",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "social",
+      "title": "MIT researchers edit Qwen weights with GPT-6 Astra to boost math",
+      "source": "Hacker News",
+      "url": "https://venturebeat.com/technology/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "social",
+      "title": "Why GPT-6 Astra is suddenly so good at robotics",
+      "source": "Hacker News",
+      "url": "https://twitter.com/josefchen/status/2117749992420946241",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "social",
+      "title": "Giving the PS Vita camera new life with GPT-6 Astra",
+      "source": "Hacker News",
+      "url": "https://i8o.eu/journal/giving-new-life-to-ps-vita/",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "kind": "official",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "source": "OpenAI News",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+      "models": [
+        "gpt-5-6-cyber",
+        "gpt-5-6-sol"
+      ]
+    },
+    {
       "date": "2026-11-04",
       "kind": "article",
       "title": "AI-linked breaches mount as WorkOS, Northflank and Trigger.dev disclose hacks",
@@ -24,6 +117,16 @@
       "source": "IEEE Spectrum / Hacker News",
       "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
       "models": []
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "social",
+      "title": "I asked two models the same question: \"Which is better, GPT 6.1 or Fable 5.1?\"",
+      "source": "Hacker News",
+      "url": "https://twitter.com/aanthonymax/status/2117667519012229338",
+      "models": [
+        "claude-fable-5-1"
+      ]
     },
     {
       "date": "2026-11-03",
@@ -449,105 +552,7 @@
       "source": "The Register",
       "url": "https://www.theregister.com/security/2026/10/27/ai-hacker-finds-4-severe-bugs-in-popular-industrial-control-software-in-under-4-hours/5305811",
       "models": []
-    },
-    {
-      "date": "2026-10-27",
-      "kind": "article",
-      "title": "So many AI security benchmarks, but none tell the whole story",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
-      "models": []
-    },
-    {
-      "date": "2026-10-27",
-      "kind": "article",
-      "title": "OpenAI compaction flaw let researchers bypass hidden reasoning protections",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "official",
-      "title": "GPT-6.1 Terra deployment safety addendum: Critical cyber classification, 29.6% access-denied workaround, 11/80 unauthorized peer actions",
-      "source": "OpenAI",
-      "url": "https://deploymentsafety.openai.com/gpt-6-1-terra",
-      "models": [
-        "gpt-6-1-terra",
-        "gpt-6-1-sol",
-        "gpt-6-astra",
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "social",
-      "title": "GPT 6.1 Terra",
-      "source": "Hacker News",
-      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
-      "models": [
-        "gpt-5-6-terra"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "social",
-      "title": "GPT-6.1 Terra (Max) Scores 48 on Artificial Analysis",
-      "source": "Hacker News",
-      "url": "https://artificialanalysis.ai/models/gpt-6-1-terra",
-      "models": [
-        "gpt-6-1-terra",
-        "gpt-6-1-astra",
-        "gpt-5-6-terra"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "official",
-      "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
-      "source": "OpenAI News",
-      "url": "https://openai.com/index/greptile-code-review-codex-astra",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "official",
-      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-      "source": "OpenAI News",
-      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-astra"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "official",
-      "title": "Introducing GPT-6.1 Terra",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
-      "models": [
-        "gpt-6-1-terra"
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "article",
-      "title": "In-the-wild attack abuses AI agents' trust in Markdown instruction files",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
-      "models": []
-    },
-    {
-      "date": "2026-10-26",
-      "kind": "article",
-      "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
-      "models": []
     }
   ],
-  "updated": "2026-11-04T14:40+00:00"
+  "updated": "2026-11-06T14:22+00:00"
 }

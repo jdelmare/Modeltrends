@@ -6,7 +6,7 @@
       "capability": 95,
       "concern": 91,
       "tone": -0.26,
-      "buzz": 5,
+      "buzz": 10,
       "summary": "Astra is now a reference point rather than the frontier: Google's launch table puts it at 85.4 on SEC-bench Pro behind Carbon's 88.2, and it has been displaced at the top of ExploitGym. Community discussion this week is mostly about non-cyber uses (robotics, test-technique effectiveness, weight editing of Qwen) plus reporting that Chinese labs are targeting it for distillation.",
       "sources": [
         {
@@ -60,7 +60,7 @@
       "capability": 88,
       "concern": 47,
       "tone": 0.19,
-      "buzz": 1,
+      "buzz": 0,
       "summary": "Opus 5.5 holds second place on Artificial Analysis Intelligence Index v5.0 (58 vs Carbon's 59) and commenters note Claude Code with Opus 5.5 still leads the coding-agent index, so practitioners treat Carbon's margin as a tie rather than a displacement.",
       "sources": [
         {
@@ -128,7 +128,7 @@
       "capability": 93,
       "concern": 79,
       "tone": 0.01,
-      "buzz": 0,
+      "buzz": 2,
       "summary": "Moonshot's chart puts GPT-5.6 Sol at 100 on its internal exploit-reproduction benchmark, the ceiling of that evaluation and the reference point Moonshot uses to argue open models still trail frontier proprietary ones. Treat as benchmark-local: it is not comparable to the model's 78.5 ExploitBench figure.",
       "sources": [
         {
@@ -350,7 +350,7 @@
         }
       ],
       "updated": "2026-09-29",
-      "buzz": 0
+      "buzz": 4
     },
     "gpt-6-sol": {
       "capability": 82,
@@ -408,7 +408,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 2
+      "buzz": 0
     },
     "gpt-6-1-sol": {
       "capability": 86,
@@ -544,7 +544,7 @@
         }
       ],
       "updated": "2026-11-04",
-      "buzz": 1
+      "buzz": 0
     },
     "beam": {
       "capability": 52,
@@ -708,7 +708,7 @@
         }
       ],
       "updated": "2026-10-19",
-      "buzz": 0
+      "buzz": 2
     },
     "secllm-3-6-27b": {
       "capability": 70,
@@ -762,7 +762,7 @@
         }
       ],
       "updated": "2026-10-28",
-      "buzz": 0
+      "buzz": 1
     },
     "gpt-6-1-terra": {
       "capability": 72,
@@ -780,7 +780,7 @@
         }
       ],
       "updated": "2026-11-04",
-      "buzz": 2
+      "buzz": 0
     },
     "gemini-4-carbon": {
       "capability": 95,
@@ -801,7 +801,8 @@
           "url": "https://www.dsebastien.net/gemini-4-carbon/"
         }
       ],
-      "updated": "2026-11-04"
+      "updated": "2026-11-04",
+      "buzz": 0
     }
   },
   "provider_takes": [
@@ -822,5 +823,5 @@
       "take": "Open-weight momentum is practitioner-driven rather than benchmark-driven right now: Mistral Large 4's weights release outdrew the Carbon frontier launch on Hacker News, while the frontier end of the open-weight lag metric has become harder to measure because the leading cyber scores come from a gated model nobody outside Fairwind can test."
     }
   ],
-  "updated": "2026-11-04T14:40+00:00"
+  "updated": "2026-11-06T14:22+00:00"
 }

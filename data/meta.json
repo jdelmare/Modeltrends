@@ -1,19 +1,5 @@
 {
-  "updated": "2026-11-04T14:40+00:00",
-  "mode": "claude",
-  "changes": [
-    "Google's Gemini 4 Carbon (announced 2026-10-28) is added as a gated, defender-first frontier model with self-reported, guardrails-off cyber scores that set new highs on ExploitGym (54.8%), SEC-bench Pro (88.2%) and CWE-bench (71.0%) — none independently replicated, and no public API exists to replicate them. On the incident side, three new AI-involved intrusions landed in 72 hours: GitBook (AI-agent-driven), WorkOS (ARTEX AI framework) and Binance's $6.43B heist (abused AI tool), plus a lower-confidence 3AM ransomware case.",
-    "new model: Gemini 4 Carbon",
-    "score: gemini-4-carbon exploitgym=54.8",
-    "score: gemini-4-carbon cwe_bench=71.0",
-    "score: gemini-4-carbon sec_bench_pro=88.2",
-    "score: gemini-4-argon sec_bench_pro=83.4",
-    "score: gpt-6-astra sec_bench_pro=85.4",
-    "score: gemini-4-carbon gray_swan_ipi=0.0",
-    "incident: GitBook discloses AI-agent-driven intrusion exposing infrastructure credentials and Assistant query logs",
-    "incident: WorkOS says an attacker used the ARTEX AI framework to breach an internal sales application",
-    "incident: Binance attributes $6.43B theft partly to abuse of an AI tool after rigged coding-assignment lures",
-    "incident (unconfirmed, hidden): 3AM ransomware affiliate shows AI-like command loops in European school attack",
-    "perception: 7 models re-scored"
-  ]
+  "updated": "2026-11-06T14:22+00:00",
+  "mode": "feeds",
+  "changes": []
 }
