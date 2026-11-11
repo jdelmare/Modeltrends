@@ -76,10 +76,73 @@
   },
   "models": [
     {
+      "id": "claude-mythos-5-2",
+      "name": "Claude Mythos 5.2",
+      "provider": "anthropic",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-11-09",
+      "access": "Vetted organizations only via Anthropic's Cyber Verification Program (and Life Sciences Verification Program); also being embedded in Cisco and IBM security products without handing customers the model.",
+      "aliases": [
+        "Mythos 5.2",
+        "Claude Mythos 5.2"
+      ],
+      "notes": "Reduced-safeguard twin of Fable 5.2. Self-reported CyScenarioBench 76.3% and CVE Rediscovery 89.6%; both developer-run, no independent replication yet.",
+      "sources": [
+        {
+          "title": "Claude Fable 5.2 and Mythos 5.2 (Anthropic)",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "title": "Anthropic's super bug-finding Mythos model is going into Cisco and IBM products (The Register)",
+          "url": "https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616"
+        },
+        {
+          "title": "IBM plans to bring Anthropic's Claude Mythos cyber reasoning into IBM Concert",
+          "url": "https://www.ibm.com/new/announcements/ibm-plans-to-bring-anthropic-s-claude-mythos-cyber-reasoning-into-ibm-concert"
+        }
+      ],
+      "auto_added": "2026-11-11",
+      "index": {
+        "index": 67.4,
+        "n": 1
+      }
+    },
+    {
+      "id": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "provider": "anthropic",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-09",
+      "access": "Generally available via Claude apps and API; cyber/bio safeguards enabled; reported ~20% API price cut.",
+      "aliases": [
+        "Fable 5.2",
+        "Claude Fable 5.2"
+      ],
+      "notes": "Shares underlying weights with Claude Mythos 5.2; Mythos is the reduced-safeguard twin. Anthropic published cyber benchmark figures mainly for the Mythos variant; some press attributes the multi-stage cyberattack benchmark result to Fable 5.2.",
+      "sources": [
+        {
+          "title": "Claude Fable 5.2 and Mythos 5.2 (Anthropic)",
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+          "title": "System Card: Claude Fable 5.2 and Claude Mythos 5.2 (PDF)",
+          "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf"
+        },
+        {
+          "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
+          "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html"
+        }
+      ],
+      "auto_added": "2026-11-11",
+      "index": null
+    },
+    {
       "id": "gemini-4-carbon",
       "name": "Gemini 4 Carbon",
       "provider": "google",
-      "category": "gated",
+      "category": "ga",
       "status": "active",
       "released": "2026-10-28",
       "access": "Gated: rolling out first to cyber defenders and trusted partners via Google's Fairwind Program (~650+ partners, priority to governments, critical infrastructure and core platforms; background checks, phishing-resistant MFA, no resale). No public API or developer availability at announcement; also routed through the US government's voluntary pre-release testing process.",
@@ -103,10 +166,17 @@
           "url": "https://www.edtechinnovationhub.com/news/google-introduces-gemini-4-carbon-with-early-access-for-cybersecurity-defenders"
         }
       ],
-      "auto_added": "2026-11-04",
+      "auto_added": "2026-11-11",
       "index": {
         "index": 75.8,
         "n": 2
+      },
+      "category_changed": {
+        "from": "gated",
+        "to": "ga",
+        "date": "2026-11-11",
+        "note": "Announced 2026-10-28 for 'a subset of cyber defenders'; as of 2026-11-10 Google made it available to everyone at $2/million input tokens, per Simon Willison's llm-gemini 0.36 release notes. Reclassified gated -> ga.",
+        "source": "https://simonwillison.net/2026/Nov/10/llm-gemini/"
       }
     },
     {
@@ -787,7 +857,7 @@
       ],
       "auto_added": "2026-10-08",
       "index": {
-        "index": 34.3,
+        "index": 34.1,
         "n": 1
       }
     },
@@ -955,7 +1025,7 @@
       ],
       "auto_added": "2026-10-03",
       "index": {
-        "index": 24.5,
+        "index": 24.4,
         "n": 2
       }
     },
@@ -979,7 +1049,7 @@
       ],
       "auto_added": "2026-10-02",
       "index": {
-        "index": 53.0,
+        "index": 51.0,
         "n": 2
       }
     },
@@ -1231,7 +1301,10 @@
         }
       ],
       "auto_added": "2026-09-28",
-      "index": null
+      "index": {
+        "index": 53.0,
+        "n": 1
+      }
     },
     {
       "id": "gpt-5-4-cyber",
@@ -1281,7 +1354,10 @@
         }
       ],
       "auto_added": "2026-09-28",
-      "index": null
+      "index": {
+        "index": 72.8,
+        "n": 2
+      }
     },
     {
       "id": "gpt-6-luna",
@@ -1443,7 +1519,7 @@
         }
       ],
       "index": {
-        "index": 62.1,
+        "index": 59.4,
         "n": 2
       }
     },
@@ -1489,7 +1565,7 @@
         }
       ],
       "index": {
-        "index": 73.2,
+        "index": 71.3,
         "n": 4
       }
     },
@@ -1512,7 +1588,7 @@
         }
       ],
       "index": {
-        "index": 62.9,
+        "index": 60.8,
         "n": 2
       }
     },
@@ -2235,5 +2311,5 @@
       ]
     }
   ],
-  "updated": "2026-11-09T16:31+00:00"
+  "updated": "2026-11-11T14:30+00:00"
 }

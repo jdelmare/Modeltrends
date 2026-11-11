@@ -2,6 +2,101 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-11",
+      "kind": "article",
+      "title": "Fortinet patches nearly 100 vulnerabilities after integrating frontier AI models into product security testing",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
+      "models": []
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "article",
+      "title": "Anthropic's super bug-finding Mythos model is going into Cisco and IBM products",
+      "source": "The Register",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616",
+      "models": [
+        "claude-mythos-5-2"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "blog",
+      "title": "Gemini 4 Carbon, previously limited to a subset of cyber defenders, is now available to everyone",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "models": [
+        "gemini-4-carbon",
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "article",
+      "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+      "models": []
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "article",
+      "title": "Fireworks AI gets burned twice as customer data exposure widens (model weights, LLMjacking)",
+      "source": "The Register",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks_ai_gets_burned_twice_as_customer_data_exposure_widens/5308722",
+      "models": [
+        "ember-1"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "paper",
+      "title": "BypassGym: A Benchmark for Evaluating AI Agents' Endpoint Defense Evasion Capabilities",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.13684v1",
+      "models": []
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "official",
+      "title": "Claude Fable 5.2 and Claude Mythos 5.2",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "models": [
+        "claude-fable-5-2",
+        "claude-mythos-5-2"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "official",
+      "title": "System Card: Claude Fable 5.2 and Claude Mythos 5.2 (PDF)",
+      "source": "Anthropic",
+      "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
+      "models": [
+        "claude-fable-5-2",
+        "claude-mythos-5-2",
+        "claude-mythos-5-1",
+        "claude-opus-5-5"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "official",
+      "title": "Control Room: a central system to track and stop model workloads across OpenAI research infrastructure",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/control-room",
+      "models": []
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "paper",
+      "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.12386v1",
+      "models": []
+    },
+    {
       "date": "2026-11-09",
       "kind": "social",
       "title": "Claude Opus 5.5 Beats GPT-6 Astra in the Newest EDA Benchmark Leaderboard",
@@ -11,6 +106,14 @@
         "claude-opus-5-5",
         "gpt-6-astra"
       ]
+    },
+    {
+      "date": "2026-11-08",
+      "kind": "article",
+      "title": "AI agents stole 190k gaming credentials for under $400 in model costs",
+      "source": "Check Point Research",
+      "url": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+      "models": []
     },
     {
       "date": "2026-11-08",
@@ -27,12 +130,30 @@
     },
     {
       "date": "2026-11-07",
+      "kind": "article",
+      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox",
+      "models": []
+    },
+    {
+      "date": "2026-11-07",
       "kind": "social",
       "title": "GPT-6 Astra Covertly Underperforms on Safety Research Tasks",
       "source": "Hacker News",
       "url": "https://thezvi.substack.com/p/gpt-6-astra-covertly-underperforms",
       "models": [
         "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "kind": "article",
+      "title": "OpenAI says new GPT-6 Cyber model hunts flaws without crossing the line",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
+      "models": [
+        "gpt-6-cyber"
       ]
     },
     {
@@ -78,6 +199,26 @@
         "gpt-6-cyber",
         "gpt-6-astra"
       ]
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "official",
+      "title": "GPT-6 Cyber system card: first OpenAI model rated Critical for cybersecurity",
+      "source": "OpenAI Deployment Safety",
+      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "models": [
+        "gpt-6-cyber",
+        "gpt-5-6-cyber",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "kind": "official",
+      "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+      "source": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+      "models": []
     },
     {
       "date": "2026-11-05",
@@ -426,147 +567,7 @@
       "models": [
         "gemini-4-carbon"
       ]
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "article",
-      "title": "Crim spent $7K+ on AI services in extortion attacks, then left evidence for all to see",
-      "source": "The Register",
-      "url": "https://www.theregister.com/security/2026/10/30/crim_spent_7k_on_ai_services_in_extortion_attacks_then_left_evidence_for_all_to_see/5306754",
-      "models": []
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "paper",
-      "title": "SecPO: Principled Adversarial Training for Prompt Injection Security",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2610.41998v1",
-      "models": []
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "article",
-      "title": "Chinese hackers use AI-powered ARTEX to target over 200 organizations worldwide",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "article",
-      "title": "Official Claude Code extension on Cursor Marketplace trojanized with persistent SSH backdoor",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
-      "models": []
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "blog",
-      "title": "Was I wrong about open models & cyber risks?",
-      "source": "Interconnects",
-      "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
-      "models": []
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "social",
-      "title": "Post-training 4B model with RL to fly Tesla Roadster 21% better than GPT-6 Astra",
-      "source": "Hacker News",
-      "url": "https://skypilot.ai/blog/flying-roadster-rl",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "blog",
-      "title": "dbreunig/nesformer",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
-      "models": [
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "article",
-      "title": "Open-weight AI model GLM-5.3 cheated its way to correct answers",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/10/30/irregular-glm-5-3-cyber-capabilities-evaluation/",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "kind": "article",
-      "title": "Mistral releases weights for its trillion-parameter model targeting cybersecurity",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "kind": "official",
-      "title": "Mistral releases Large 4 open weights, claiming 96.6% refusal on cyber malicious prompts and 51% on the AA Cyber Index",
-      "source": "Mistral AI",
-      "url": "https://mistral.ai/news/mistral-large-4-oss/",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "kind": "article",
-      "title": "Mistral releases Large 4 weights despite warning of cyberattack uplift",
-      "source": "CSO Online",
-      "url": "https://csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "kind": "social",
-      "title": "DeepSeek, Moonshot used OpenAI's GPT-6 Astra to train latest models",
-      "source": "Hacker News",
-      "url": "https://www.reuters.com/technology/deepseek-moonshot-used-openais-gpt-6-astra-train-latest-models-information-2026-10-29/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "kind": "official",
-      "title": "Introducing Gemini 4 Carbon — gated to cyber defenders via the Fairwind Program",
-      "source": "Google",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "models": [
-        "gemini-4-carbon",
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "kind": "social",
-      "title": "GPT-6.1 Sol Beats Final Fantasy VII",
-      "source": "Hacker News",
-      "url": "https://www.twitch.tv/videos/2912639349",
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-astra"
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "kind": "article",
-      "title": "Anthropic's unreleased AI model chains flaws into working Chrome, Safari, Windows and Linux exploits",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-      "models": []
     }
   ],
-  "updated": "2026-11-09T16:31+00:00"
+  "updated": "2026-11-11T14:30+00:00"
 }

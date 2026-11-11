@@ -400,6 +400,56 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-11-02"
+    },
+    {
+      "id": "exploitbench_internal_port",
+      "name": "ExploitBench Internal Port (Jun-Aug 2026 V8/Chrome disclosures)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-11"
+    },
+    {
+      "id": "remote_exploit_bench",
+      "name": "RemoteExploitBench (GitLab / PostgreSQL / Jenkins)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-11"
+    },
+    {
+      "id": "web_pentest_recall",
+      "name": "Web penetration-test vulnerability recall",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-11"
+    },
+    {
+      "id": "exploitgym_honeypot_scope",
+      "name": "ExploitGym Honeypot: stayed in authorized scope",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-11"
+    },
+    {
+      "id": "cve_rediscovery",
+      "name": "CVE Rediscovery (Anthropic internal)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-11"
     }
   ],
   "scores": [
@@ -2217,6 +2267,136 @@
       "self_reported": true,
       "note": "Reported via launch coverage of Google's figures (Argon listed at 0.7, matching the registry). Lower is better. One reviewer explicitly could not obtain a Carbon-specific Gray Swan replication because there is no public API.",
       "source": "https://neuraltrust.ai/blog/gemini-4-carbon",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-cyber",
+      "benchmark": "exploitgym",
+      "value": 48.5,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "OpenAI system card headline configuration; card also reports 36.94% on a hardened ExploitGym variant. GPT-6 Astra is 42.4% in the same series.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-cyber",
+      "benchmark": "exploitgym",
+      "value": 32.1,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "Baseline reported in the GPT-6 Cyber system card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-cyber",
+      "benchmark": "exploitbench",
+      "value": 100.0,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "Historical task set, ACE-normalized. CONTAMINATION FLAG: OpenAI's own card warns of training-contamination risk, and the held-out June-August 2026 port of the same benchmark scores only 42%.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-cyber",
+      "benchmark": "exploitbench_internal_port",
+      "value": 42.0,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "Mean arbitrary-code-execution rate on a held-out port built from June-August 2026 disclosures; ~3 points above GPT-6 Astra. Best available contamination control for ExploitBench-style evals.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-cyber",
+      "benchmark": "remote_exploit_bench",
+      "value": 95.0,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "New OpenAI-built remote-service exploitation benchmark; card notes GPT-6 Astra under the Daybreak Blue configuration refused every task (0%).",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-cyber",
+      "benchmark": "web_pentest_recall",
+      "value": 40.3,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "OpenAI internal web pentest eval; recall of known vulnerabilities.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "web_pentest_recall",
+      "value": 32.0,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "Comparison baseline in the GPT-6 Cyber system card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-cyber",
+      "benchmark": "exploitgym_honeypot_scope",
+      "value": 99.9,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "Share of runs where the model stayed within the authorized target scope, measured without a deployment safety prompt; 100% with the safety prompt. Distinct from the existing honeypot_ctf capability metric.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "gpt-5-6-cyber",
+      "benchmark": "exploitgym_honeypot_scope",
+      "value": 94.5,
+      "date": "2026-11-05",
+      "self_reported": true,
+      "note": "Baseline reported in the GPT-6 Cyber system card (no deployment safety prompt).",
+      "source": "https://deploymentsafety.openai.com/gpt-6-cyber",
+      "auto": true
+    },
+    {
+      "model": "claude-mythos-5-2",
+      "benchmark": "cyscenariobench",
+      "value": 76.3,
+      "date": "2026-11-09",
+      "self_reported": true,
+      "note": "Anthropic-run task set; comparable within the Anthropic series (Mythos 5.1 61.7%, Opus 5.5 no-safeguards 67.6%, both matching existing dashboard values). Anthropic's table also lists GPT-6 Cyber at 61% but states labs run different CyScenarioBench task sets, so that figure is not ingested. Some coverage attributes this multi-stage-attack result to the Fable 5.2 twin.",
+      "source": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
+      "auto": true
+    },
+    {
+      "model": "claude-mythos-5-2",
+      "benchmark": "cve_rediscovery",
+      "value": 89.6,
+      "date": "2026-11-09",
+      "self_reported": true,
+      "note": "Measured against documented historical CVEs, so subject to the same contamination caveat as historical exploit benchmarks.",
+      "source": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
+      "auto": true
+    },
+    {
+      "model": "claude-mythos-5-1",
+      "benchmark": "cve_rediscovery",
+      "value": 78.3,
+      "date": "2026-11-09",
+      "self_reported": true,
+      "note": "Baseline in the Fable/Mythos 5.2 system card.",
+      "source": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
+      "auto": true
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark": "cve_rediscovery",
+      "value": 81.3,
+      "date": "2026-11-09",
+      "self_reported": true,
+      "note": "Reported as a no-safeguards configuration baseline in the Fable/Mythos 5.2 system card.",
+      "source": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
       "auto": true
     }
   ]
