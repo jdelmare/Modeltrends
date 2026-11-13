@@ -2,6 +2,82 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-11-12-dark-reading-chinese-state-ai-big-data-p",
+      "date": "2026-11-12",
+      "type": "misuse",
+      "severity": "warning",
+      "provider": "other",
+      "models": [],
+      "title": "Dark Reading: Chinese state AI/big-data project used to scout recruitment targets in Taiwan's chip industry",
+      "summary": "Dark Reading reports that a CCP-linked project built a big-data/AI system to scrape and analyse large volumes of information on individuals abroad, in order to identify and potentially target or exploit people in Taiwan's semiconductor sector. Intelligence-targeting rather than network intrusion; no frontier model is named.",
+      "sources": [
+        {
+          "title": "Dark Reading: Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+          "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-11-12-symantec-ai-generated-scripts-revived-a-",
+      "date": "2026-11-12",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "Symantec: AI-generated scripts revived a blocked hands-on-keyboard intrusion at a US retailer",
+      "summary": "Symantec disclosed (attack occurred in September) that an attacker whose hand-typed commands were repeatedly blocked at a US retailer switched to apparently AI-generated commands, producing error-free scripts and achieving lateral movement in minutes. Symantec's Dick O'Brien told Dark Reading this is one of several recent incidents where AI revived an otherwise-failing attack. Note this is assistive AI use by a human operator, a different threat class from the autonomous ARTEX-style agent campaigns already tracked; no specific model is named.",
+      "sources": [
+        {
+          "title": "Dark Reading: Inside an AI Attack Against a US Retailer",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-11-11-antifox-agentic-pentest-platform-used-in",
+      "date": "2026-11-11",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "AntiFox agentic pentest platform used in campaign that accessed AWS production secrets",
+      "summary": "Researchers disclosed a campaign in which an emerging agentic penetration-testing platform called AntiFox was used to steal AWS credentials and reach production secrets. This is a second agentic-pentest-framework abuse cluster alongside the ARTEX activity already tracked; the underlying model(s) driving the agents are not named in the reporting.",
+      "sources": [
+        {
+          "title": "The Hacker News: AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+          "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
+        }
+      ],
+      "auto": true
+    },
+    {
+      "id": "2026-11-10-fireworks-ai-breach-widens-company-attri",
+      "date": "2026-11-10",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "Fireworks AI breach widens; company attributes activity partly to LLMjacking actors",
+      "summary": "Fireworks AI disclosed that its investigation into an incident first reported in early October uncovered further malicious activity affecting account and billing information, customer datasets, model weights and Notion AI chat transcripts. The Register reports Fireworks pins the latest breach on its cloud provider and on LLMjacking actors hijacking inference capacity — continuing the stolen-AI-credential abuse pattern already seen with Northflank and Railway.",
+      "sources": [
+        {
+          "title": "The Hacker News: Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+          "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
+        },
+        {
+          "title": "The Register: Fireworks AI gets burned twice as customer data exposure widens",
+          "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks-ai-gets-burned-twice-as-customer-data-exposure-widens/5308722"
+        },
+        {
+          "title": "TechCrunch via HN: Cyberattack on Fireworks AI allowed hackers to access Notion customers' chat transcripts",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-11-10-claude-code-agents-committed-thousands-o",
       "date": "2026-11-10",
       "type": "breakout",

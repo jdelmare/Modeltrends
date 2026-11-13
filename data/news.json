@@ -2,11 +2,111 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-13",
+      "kind": "article",
+      "title": "OpenAI's Daybreak brings AI agents to security testing and vulnerability fixes",
+      "source": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/",
+      "models": [
+        "gpt-6-cyber"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "article",
+      "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+      "models": [
+        "gpt-6-cyber",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "kind": "blog",
+      "title": "AI Doesn't Have to Go Rogue to Break the World (DEF CON 34 keynote, adapted)",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html",
+      "models": []
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "article",
+      "title": "Inside an AI Attack Against a US Retailer",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+      "models": []
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "blog",
+      "title": "Fable and Mythos 5.2: The System Card (notes prompt-injection regression in Fable 5.2)",
+      "source": "Zvi Mowshowitz",
+      "url": "https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card",
+      "models": [
+        "claude-fable-5-2",
+        "claude-mythos-5-2"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "article",
+      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+      "models": []
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "social",
+      "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+      "source": "TechCrunch / Hacker News",
+      "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+      "models": []
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "article",
+      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "models": []
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "article",
+      "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+      "models": []
+    },
+    {
       "date": "2026-11-11",
       "kind": "article",
       "title": "Fortinet patches nearly 100 vulnerabilities after integrating frontier AI models into product security testing",
       "source": "SecurityWeek",
       "url": "https://www.securityweek.com/fortinet-patches-nearly-100-vulnerabilities/",
+      "models": []
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "article",
+      "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark (caveat: non-comparable task sets)",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
+      "models": [
+        "claude-fable-5-2",
+        "claude-mythos-5-2",
+        "gpt-6-cyber"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "article",
+      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
       "models": []
     },
     {
@@ -458,116 +558,7 @@
       "source": "Cloud Security Alliance / Hacker News",
       "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
       "models": []
-    },
-    {
-      "date": "2026-11-02",
-      "kind": "blog",
-      "title": "AI vulnerability finding: 3% of all recorded 'critical' software bugs were found in the last month",
-      "source": "Schneier on Security",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
-      "models": []
-    },
-    {
-      "date": "2026-11-02",
-      "kind": "social",
-      "title": "GPT-6.1 Terra vs. Claude Opus 5.5: Cheaper and faster in three tests at max",
-      "source": "Hacker News",
-      "url": "https://thenewstack.io/gpt-6-1-terra-vs-claude-opus-5-5/",
-      "models": [
-        "gpt-6-1-terra",
-        "gpt-6-1-astra",
-        "gpt-5-6-terra",
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-11-01",
-      "kind": "social",
-      "title": "Chinese labs now target OpenAI's GPT-6 Astra for distillation",
-      "source": "Hacker News",
-      "url": "https://fork.zone/p/1011/report-chinese-labs-now-target-openai-s-gpt-6-astra-for",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "article",
-      "title": "Anthropic's Claude Code starts blocking decompilation and reverse-engineering requests; defenders report over-refusal",
-      "source": "Tom's Hardware",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
-      "models": [
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "article",
-      "title": "Open-weight AI models can exploit the patch gap",
-      "source": "Epoch AI",
-      "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
-      "models": []
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "article",
-      "title": "Northflank breach leads to abuse of customers' AI API keys",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
-      "models": []
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "social",
-      "title": "GPT-6.1 Terra",
-      "source": "Hacker News",
-      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-      "models": [
-        "gpt-6-1-terra",
-        "gpt-6-1-astra",
-        "gpt-5-6-terra"
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "podcast",
-      "title": "AI:AM: Carbon in the Arena, Mistral's Le Chonk, the Agent-Run Economy, Ferroelectric RAM + New Hacks",
-      "source": "Cognitive Revolution",
-      "url": "https://www.cognitiverevolution.ai/ai-am-carbon-in-the-arena-mistral-s-le-chonk-the-agent-run-economy-ferroelectric-ram-new-hacks/",
-      "models": [
-        "mistral-large-4"
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "official",
-      "title": "New on Hugging Face: pijou/GLM-5.3-CYBERSECURITY-FP8",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/pijou/GLM-5.3-CYBERSECURITY-FP8",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "kind": "official",
-      "title": "New on Hugging Face: kigimues/GLM-5.3-CYBERSECURITY-FP8",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/kigimues/GLM-5.3-CYBERSECURITY-FP8",
-      "models": [
-        "glm-5-3"
-      ]
-    },
-    {
-      "date": "2026-10-30",
-      "kind": "article",
-      "title": "Google limits Gemini 4 Carbon access: ~650 vetted partners, background checks, no resale",
-      "source": "Yahoo Tech",
-      "url": "https://tech.yahoo.com/ai/gemini/articles/google-limits-gemini-4-carbon-130708417.html",
-      "models": [
-        "gemini-4-carbon"
-      ]
     }
   ],
-  "updated": "2026-11-11T14:30+00:00"
+  "updated": "2026-11-13T14:40+00:00"
 }

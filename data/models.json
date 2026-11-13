@@ -76,6 +76,32 @@
   },
   "models": [
     {
+      "id": "ernie-5-5-flash-preview",
+      "name": "ERNIE 5.5 Flash Preview",
+      "provider": "baidu",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-11",
+      "access": "API on Baidu Qianfan; Baidu states Apache-2.0 weights will be published by 2026-11-25.",
+      "aliases": [
+        "ERNIE 5.5 Flash Preview",
+        "ERNIE 5.5 Flash"
+      ],
+      "notes": "280B total / 14B active, 1M-token context. No cyber evaluation of any kind has been published — Baidu's cited benchmarks are Terminal-Bench and AutomationBench. Watch: reclassify to open once weights are actually downloadable (promised by 2026-11-25).",
+      "sources": [
+        {
+          "title": "Baidu announcement (X)",
+          "url": "https://x.com/Baidu_Inc/status/2120391732248637734"
+        },
+        {
+          "title": "TechNode: Baidu opens API access to ERNIE 5.5 Flash Preview",
+          "url": "https://technode.com/2026/11/12/baidu-opens-api-access-to-ernie-5-5-flash-preview"
+        }
+      ],
+      "auto_added": "2026-11-13",
+      "index": null
+    },
+    {
       "id": "claude-mythos-5-2",
       "name": "Claude Mythos 5.2",
       "provider": "anthropic",
@@ -1355,8 +1381,8 @@
       ],
       "auto_added": "2026-09-28",
       "index": {
-        "index": 72.8,
-        "n": 2
+        "index": 74.6,
+        "n": 3
       }
     },
     {
@@ -2311,5 +2337,5 @@
       ]
     }
   ],
-  "updated": "2026-11-11T14:30+00:00"
+  "updated": "2026-11-13T14:40+00:00"
 }

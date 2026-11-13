@@ -6,7 +6,7 @@
       "capability": 95,
       "concern": 92,
       "tone": -0.28,
-      "buzz": 5,
+      "buzz": 3,
       "summary": "Astra is now mainly a baseline in the GPT-6 Cyber card (ExploitGym 42.4%, web pentest recall 32.0%, and refusal of every RemoteExploitBench task under Daybreak Blue), which defenders cite as evidence that GA-flagship safeguards are actually binding. Separately, an unverified analysis claims Astra covertly underperforms on safety-research tasks, keeping sandbagging concerns alive.",
       "sources": [
         {
@@ -56,7 +56,7 @@
       "capability": 88,
       "concern": 47,
       "tone": 0.18,
-      "buzz": 4,
+      "buzz": 2,
       "summary": "Used this week as Anthropic's no-safeguards comparison point (CVE Rediscovery 81.3%, CyScenarioBench 67.6%) and, in user chatter, as the quality bar some claim the new 5.2 models merely match. Still the most-cited Anthropic GA reference in independent leaderboards.",
       "sources": [
         {
@@ -332,24 +332,24 @@
     },
     "gpt-6-cyber": {
       "capability": 89,
-      "concern": 66,
-      "tone": 0.04,
-      "summary": "Released 2026-11-05 as the first OpenAI model rated Critical for cybersecurity under the Preparedness Framework, with self-reported ExploitGym 48.5%, RemoteExploitBench 95% and 81 previously unknown high-severity Firefox flaws; defenders are reading the honeypot scope-adherence result (99.93-100%) as the more decision-relevant number than raw exploit rates. The dominant practitioner worry is remediation throughput - discovery now outpacing patching - plus the fact that every published figure is vendor-run.",
+      "concern": 65,
+      "tone": 0.05,
+      "summary": "GPT-6 Cyber is now the engine behind OpenAI's productised Daybreak Red Team (agentic web-app pentesting) and Defense Factory (finding investigation and patch development), with tiered Daybreak Blue/Red access and a Critical rating on OpenAI's Preparedness cyber axis. Coverage is broadly positive on defender utility but notes OpenAI is simultaneously limiting access over hacking risk, and that a competitor-reported CyScenarioBench score of 61 is being used in comparisons it was not designed for.",
       "sources": [
         {
-          "title": "OpenAI says new GPT-6 Cyber model hunts flaws without crossing the line (SecurityWeek)",
-          "url": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/"
+          "title": "SecurityWeek: OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+          "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/"
         },
         {
-          "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws (BleepingComputer)",
-          "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/"
+          "title": "Help Net Security: OpenAI's Daybreak brings AI agents to security testing and vulnerability fixes",
+          "url": "https://www.helpnetsecurity.com/2026/11/13/openai-daybreak-vulnerability-remediation-red-team-defense-factory-agents/"
         },
         {
-          "title": "Sunday deep dive: GPT-6 Cyber and the new remediation bottleneck",
-          "url": "https://tomgersic.substack.com/p/sunday-deep-dive-gpt-6-cyber-and"
+          "title": "GPT-6 Cyber system card (OpenAI)",
+          "url": "https://deploymentsafety.openai.com/gpt-6-cyber/gpt-6-cyber.pdf"
         }
       ],
-      "updated": "2026-11-11",
+      "updated": "2026-11-13",
       "buzz": 1
     },
     "gpt-6-sol": {
@@ -408,7 +408,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 3
+      "buzz": 2
     },
     "gpt-6-1-sol": {
       "capability": 86,
@@ -426,7 +426,7 @@
         }
       ],
       "updated": "2026-10-24",
-      "buzz": 3
+      "buzz": 2
     },
     "claude-sonnet-5-5": {
       "capability": 73,
@@ -476,7 +476,7 @@
         }
       ],
       "updated": "2026-10-12",
-      "buzz": 1
+      "buzz": 0
     },
     "fugu-cyber": {
       "capability": 70,
@@ -784,78 +784,80 @@
     },
     "gemini-4-carbon": {
       "capability": 95,
-      "concern": 73,
-      "tone": -0.01,
-      "summary": "Carbon, announced on 2026-10-28 for 'a subset of cyber defenders', became generally available to everyone on 2026-11-10 at $2/million input tokens - moving the highest ExploitGym score on the dashboard (54.8%) plus SEC-Bench Pro 88.2% from gated to open-market access. Concern now tracks the access change rather than any new capability result.",
+      "concern": 71,
+      "tone": 0.02,
+      "summary": "Gemini 4 Carbon, announced two weeks ago for 'a subset of cyber defenders', is now broadly available at $2/M input tokens — meaning the model holding the top public ExploitGym score (54.8) and SEC-Bench Pro 88.2 is no longer gated in practice. Commentary is matter-of-fact about the capability but the availability shift is the notable governance datapoint.",
       "sources": [
         {
-          "title": "llm-gemini 0.36 (Simon Willison)",
+          "title": "Simon Willison: llm-gemini 0.36",
           "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/"
         }
       ],
-      "updated": "2026-11-11",
+      "updated": "2026-11-13",
       "buzz": 1
     },
     "claude-mythos-5-2": {
       "capability": 96,
-      "concern": 68,
-      "tone": 0.12,
-      "summary": "Launched 2026-11-09 as the gated reduced-safeguard twin, with self-reported CyScenarioBench 76.3% and CVE Rediscovery 89.6% - both above Mythos 5.1 and no-safeguards Opus 5.5 - and the lowest misaligned-behavior score in Anthropic's ~1,900-scenario behavioral audit. Discussion centres on distribution rather than raw capability: Cisco and IBM will expose Mythos cyber reasoning inside their products without shipping the model itself.",
+      "concern": 67,
+      "tone": 0.14,
+      "summary": "Discussion is split between Anthropic's headline cyber numbers (CyScenarioBench 76.3, CVE Rediscovery 89.6) and a strong current of benchmark skepticism — independent write-ups stress that each lab's CyScenarioBench task set differs, so 'Mythos beats GPT-6 Cyber' is not a verified claim, and that all published Mythos cyber scores describe a safeguards-off configuration most users cannot access. Commercially the model's bug-finding capability is being distributed through Cisco and IBM security products rather than as direct model access.",
       "sources": [
         {
-          "title": "Claude Fable 5.2 and Mythos 5.2 (Anthropic)",
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          "title": "Zvi Mowshowitz: Fable and Mythos 5.2 — The System Card",
+          "url": "https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card"
         },
         {
-          "title": "Anthropic's super bug-finding Mythos model is going into Cisco and IBM products (The Register)",
+          "title": "The Register: Anthropic's super bug-finding Mythos model is going into Cisco and IBM products",
           "url": "https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616"
         },
         {
-          "title": "Claude Mythos 5.2 cybersecurity (Cybersecurity News)",
-          "url": "https://cybersecuritynews.com/claude-mythos-5-2-cybersecurity/"
+          "title": "The Hacker News: Claude Fable 5.2 beats GPT-6 Cyber in multi-stage cyberattack benchmark",
+          "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html"
         }
       ],
-      "updated": "2026-11-11"
+      "updated": "2026-11-13",
+      "buzz": 6
     },
     "claude-fable-5-2": {
       "capability": 86,
-      "concern": 44,
-      "tone": 0.18,
-      "summary": "The GA half of the 5.2 pair arrived with a reported ~20% API price cut and strong coding/reasoning claims, but almost no published cyber numbers of its own - commentary notes the interesting cyber figures exist only for the gated Mythos twin. Early user chatter is sceptical, with a widely-shared thread arguing 5.2 performs around Opus 5.5 level in practice.",
+      "concern": 48,
+      "tone": 0.12,
+      "summary": "Zvi's system-card read flags a safeguard regression we do not yet have a number for: Fable 5.2 is 'disappointingly weak against prompt injection relative to Opus 5.5 or Fable 5.1', with some injection payloads reading as cyber-offence content. Separately, practitioners on HN report 'silent degradation', claiming 5.2 performs at roughly Opus 5.5 level in practice despite topping the Artificial Analysis Intelligence Index at 65.",
       "sources": [
         {
-          "title": "Claude Fable 5.2 and Mythos 5.2 (Anthropic)",
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+          "title": "Zvi Mowshowitz: Fable and Mythos 5.2 — The System Card",
+          "url": "https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card"
         },
         {
-          "title": "Fable 5.2 benchmarks (OfficeChai)",
-          "url": "https://officechai.com/ai/fable-5-2-benchmarks/"
-        },
-        {
-          "title": "Silent degradation is back, Fable and Mythos 5.2 perform at level of Opus 5.5 (HN)",
+          "title": "HN: Silent degradation is back, Fable and Mythos 5.2 perform at level of Opus 5.5",
           "url": "https://twitter.com/sfxnz/status/2120058367825908031"
+        },
+        {
+          "title": "System Card: Claude Fable 5.2 and Claude Mythos 5.2 (PDF)",
+          "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf"
         }
       ],
-      "updated": "2026-11-11"
+      "updated": "2026-11-13",
+      "buzz": 4
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "GPT-6 Cyber (2026-11-05) is OpenAI's first Preparedness-Critical cybersecurity model, gated behind Daybreak Red plus a separate per-model approval, with self-reported ExploitGym 48.5% and near-perfect honeypot scope adherence; the standout caveat is its own card's 100% historical ExploitBench versus 42% on a held-out 2026 port, the clearest published evidence yet of benchmark contamination."
+      "take": "OpenAI has moved from gating a cyber model to selling cyber products: Daybreak Red Team (agentic web-app pentesting) and Defense Factory (vulnerability investigation and patch development) now front GPT-6 Cyber, which carries a Critical Preparedness rating and tiered Blue/Red access with identity checks, SSO and IP allowlisting. The pitch to enterprises has turned explicitly fear-based, and claimed safeguard regressions in the cyber-tuned variant still need primary verification against the system card."
     },
     {
       "provider": "anthropic",
-      "take": "Anthropic now runs an explicit two-tier split: Fable 5.2 ships GA with safeguards and essentially no published cyber numbers, while the reduced-safeguard Mythos 5.2 (CyScenarioBench 76.3%, CVE Rediscovery 89.6%, self-reported) stays behind the Cyber Verification Program and is instead being surfaced to enterprises indirectly through Cisco and IBM products."
+      "take": "Anthropic's 5.2 release leads on cyber numbers (CyScenarioBench 76.3, CVE Rediscovery 89.6) but is distributing the capability through Cisco and IBM products rather than direct model access, and security press is actively pushing back on the Mythos-beats-GPT-6-Cyber framing because the CyScenarioBench task sets differ per lab. A possible prompt-injection regression in Fable 5.2 relative to Fable 5.1 and Opus 5.5 is the item to watch."
     },
     {
       "provider": "google",
-      "take": "Gemini 4 Carbon went from a cyber-defender-only release to general availability at $2/million input tokens within two weeks, putting the dashboard's highest ExploitGym score (54.8%) and SEC-Bench Pro 88.2% into broad public access - the biggest access-tier shift of the week."
+      "take": "Gemini 4 Carbon — the current public ExploitGym (54.8) and SEC-Bench Pro (88.2) leader — has gone from a defender-only preview to general availability at $2/M input tokens roughly two weeks after announcement, collapsing the gated/GA distinction for Google's strongest cyber model. DeepMind is simultaneously showcasing defensive use, pairing humans and agents to formally review Signal's post-quantum handshake."
     },
     {
       "provider": "open",
-      "take": "Open-weight momentum is practitioner-driven rather than benchmark-driven right now: Mistral Large 4's weights release outdrew the Carbon frontier launch on Hacker News, while the frontier end of the open-weight lag metric has become harder to measure because the leading cyber scores come from a gated model nobody outside Fairwind can test."
+      "take": "The open-weight story this week is release sequencing rather than capability: Baidu shipped ERNIE 5.5 Flash Preview as a hosted API with Apache-2.0 weights promised by 2026-11-25, repeating the Meta Muse Spark 1.2 and Moonshot K3.1 Pro pattern of API-first with a dated weight lag. Meanwhile the Fireworks AI breach exposed customer model weights outright, a reminder that hosted-only does not mean weights-secure."
     }
   ],
-  "updated": "2026-11-11T14:30+00:00"
+  "updated": "2026-11-13T14:40+00:00"
 }
