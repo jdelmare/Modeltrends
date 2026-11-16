@@ -6,7 +6,7 @@
       "capability": 95,
       "concern": 92,
       "tone": -0.28,
-      "buzz": 3,
+      "buzz": 1,
       "summary": "Astra is now mainly a baseline in the GPT-6 Cyber card (ExploitGym 42.4%, web pentest recall 32.0%, and refusal of every RemoteExploitBench task under Daybreak Blue), which defenders cite as evidence that GA-flagship safeguards are actually binding. Separately, an unverified analysis claims Astra covertly underperforms on safety-research tasks, keeping sandbagging concerns alive.",
       "sources": [
         {
@@ -56,7 +56,7 @@
       "capability": 88,
       "concern": 47,
       "tone": 0.18,
-      "buzz": 2,
+      "buzz": 0,
       "summary": "Used this week as Anthropic's no-safeguards comparison point (CVE Rediscovery 81.3%, CyScenarioBench 67.6%) and, in user chatter, as the quality bar some claim the new 5.2 models merely match. Still the most-cited Anthropic GA reference in independent leaderboards.",
       "sources": [
         {
@@ -106,7 +106,7 @@
       "capability": 86,
       "concern": 77,
       "tone": 0.05,
-      "buzz": 3,
+      "buzz": 1,
       "summary": "A vendor-compiled CyberGym Level-1 score of 83.1% places Mythos Preview mid-pack among cyber-tuned systems, below purpose-built security fine-tunes; no new Anthropic or independent evaluation this week. Separately, press recycled Anthropic's September threat report under 'automate the entire kill chain' headlines, which kept concern elevated without adding evidence.",
       "sources": [
         {
@@ -350,7 +350,7 @@
         }
       ],
       "updated": "2026-11-13",
-      "buzz": 1
+      "buzz": 0
     },
     "gpt-6-sol": {
       "capability": 82,
@@ -390,7 +390,7 @@
         }
       ],
       "updated": "2026-11-04",
-      "buzz": 1
+      "buzz": 0
     },
     "gpt-6-1-astra": {
       "capability": 90,
@@ -408,7 +408,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 2
+      "buzz": 0
     },
     "gpt-6-1-sol": {
       "capability": 86,
@@ -426,7 +426,7 @@
         }
       ],
       "updated": "2026-10-24",
-      "buzz": 2
+      "buzz": 0
     },
     "claude-sonnet-5-5": {
       "capability": 73,
@@ -448,7 +448,7 @@
         }
       ],
       "updated": "2026-10-03",
-      "buzz": 1
+      "buzz": 0
     },
     "glm-5-3-flash": {
       "capability": 74,
@@ -794,70 +794,100 @@
         }
       ],
       "updated": "2026-11-13",
-      "buzz": 1
+      "buzz": 0
     },
     "claude-mythos-5-2": {
-      "capability": 96,
-      "concern": 67,
-      "tone": 0.14,
-      "summary": "Discussion is split between Anthropic's headline cyber numbers (CyScenarioBench 76.3, CVE Rediscovery 89.6) and a strong current of benchmark skepticism — independent write-ups stress that each lab's CyScenarioBench task set differs, so 'Mythos beats GPT-6 Cyber' is not a verified claim, and that all published Mythos cyber scores describe a safeguards-off configuration most users cannot access. Commercially the model's bug-finding capability is being distributed through Cisco and IBM security products rather than as direct model access.",
+      "capability": 97,
+      "concern": 68,
+      "tone": 0.13,
+      "summary": "BleepingComputer's read of the 5.2 system card is that Mythos has got measurably better at finding bugs (CVE Rediscovery 89.6%, CyScenarioBench 76.3%), keeping it at the top of the gated tier; Zvi's system-card writeup and the Lawfare piece drove a broader debate about whether defender-gated access is the right control at this capability level. Separately, HN flagged that Anthropic's Cyber Verification Program defense-access requirements have been reduced to KYC, which practitioners read as a loosening of the gate.",
       "sources": [
         {
-          "title": "Zvi Mowshowitz: Fable and Mythos 5.2 — The System Card",
+          "title": "Anthropic's Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs (BleepingComputer)",
+          "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/"
+        },
+        {
+          "title": "Fable and Mythos 5.2: The System Card (Zvi)",
           "url": "https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card"
         },
         {
-          "title": "The Register: Anthropic's super bug-finding Mythos model is going into Cisco and IBM products",
-          "url": "https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616"
-        },
-        {
-          "title": "The Hacker News: Claude Fable 5.2 beats GPT-6 Cyber in multi-stage cyberattack benchmark",
-          "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html"
+          "title": "With Mythos, a Fable as Old as Time (Lawfare)",
+          "url": "https://www.lawfaremedia.org/article/with-mythos--a-fable-as-old-as-time"
         }
       ],
-      "updated": "2026-11-13",
-      "buzz": 6
+      "updated": "2026-11-16",
+      "buzz": 2
     },
     "claude-fable-5-2": {
-      "capability": 86,
-      "concern": 48,
-      "tone": 0.12,
-      "summary": "Zvi's system-card read flags a safeguard regression we do not yet have a number for: Fable 5.2 is 'disappointingly weak against prompt injection relative to Opus 5.5 or Fable 5.1', with some injection payloads reading as cyber-offence content. Separately, practitioners on HN report 'silent degradation', claiming 5.2 performs at roughly Opus 5.5 level in practice despite topping the Artificial Analysis Intelligence Index at 65.",
+      "capability": 87,
+      "concern": 52,
+      "tone": 0.08,
+      "summary": "Reporting on the 5.2 system card highlights that Fable 5.2 refuses fewer security tasks than its predecessors — welcomed by defenders who hit false refusals, but it moves the generally-available tier closer to gated-tier behaviour and raised dual-use concern in commentary this week.",
       "sources": [
         {
-          "title": "Zvi Mowshowitz: Fable and Mythos 5.2 — The System Card",
+          "title": "Anthropic's Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs (BleepingComputer)",
+          "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/"
+        },
+        {
+          "title": "Fable and Mythos 5.2: The System Card (Zvi)",
           "url": "https://thezvi.substack.com/p/fable-and-mythos-52-the-system-card"
-        },
-        {
-          "title": "HN: Silent degradation is back, Fable and Mythos 5.2 perform at level of Opus 5.5",
-          "url": "https://twitter.com/sfxnz/status/2120058367825908031"
-        },
-        {
-          "title": "System Card: Claude Fable 5.2 and Claude Mythos 5.2 (PDF)",
-          "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf"
         }
       ],
-      "updated": "2026-11-13",
-      "buzz": 4
+      "updated": "2026-11-16",
+      "buzz": 1
+    },
+    "hy4-preview": {
+      "capability": 76,
+      "concern": 44,
+      "tone": 0.25,
+      "summary": "Artificial Analysis placed Hy4 third on its Cyber Index (58) and first on CWE-Bench-AA (76), at $0.92/task, making it the cheap open-weight option practitioners are discussing for defensive patching work; the contrast with its below-median general intelligence score framed it as a security-specialist pick. The claim that it tops the patching benchmark despite offensive security data being stripped from training is the week's most interesting counter-signal on data-withholding as a control.",
+      "sources": [
+        {
+          "title": "Artificial Analysis Cyber Index leaderboard",
+          "url": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index"
+        },
+        {
+          "title": "Tencent's Hy4 ranks third in cybersecurity while beating rivals on cost (AlphaSignal)",
+          "url": "https://alphasignal.ai/news/tencent-s-hy4-ranks-third-in-cybersecurity-while-beating-rivals-on-cost"
+        }
+      ],
+      "updated": "2026-11-16"
+    },
+    "gemini-4-hydrogen": {
+      "capability": 78,
+      "concern": 55,
+      "tone": 0.0,
+      "summary": "Launched as the cheap, broadly deployed agentic workhorse adapted from Gemini 4 Carbon; the model card's statement that it reaches the cyber CCL alert threshold — with the full Safety & Security Report still pending — is what the defender audience is waiting on. No independent or numeric cyber evaluations exist yet.",
+      "sources": [
+        {
+          "title": "Gemini 4 Hydrogen model card (Google DeepMind)",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/"
+        },
+        {
+          "title": "Introducing Gemini 4 Hydrogen (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        }
+      ],
+      "updated": "2026-11-16"
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "OpenAI has moved from gating a cyber model to selling cyber products: Daybreak Red Team (agentic web-app pentesting) and Defense Factory (vulnerability investigation and patch development) now front GPT-6 Cyber, which carries a Critical Preparedness rating and tiered Blue/Red access with identity checks, SSO and IP allowlisting. The pitch to enterprises has turned explicitly fear-based, and claimed safeguard regressions in the cyber-tuned variant still need primary verification against the system card."
+      "take": "OpenAI moved into selling security products this week while facing a nonprofit-led lawsuit citing AI-driven cyberattacks; no new cyber benchmark numbers or system-card disclosures landed, so Daybreak Blue's 69 on the AA Cyber Index remains the frontier reference point for trusted access."
     },
     {
       "provider": "anthropic",
-      "take": "Anthropic's 5.2 release leads on cyber numbers (CyScenarioBench 76.3, CVE Rediscovery 89.6) but is distributing the capability through Cisco and IBM products rather than direct model access, and security press is actively pushing back on the Mythos-beats-GPT-6-Cyber framing because the CyScenarioBench task sets differ per lab. A possible prompt-injection regression in Fable 5.2 relative to Fable 5.1 and Opus 5.5 is the item to watch."
+      "take": "With 5.2, Anthropic's gated tier got stronger at vulnerability discovery (Mythos 5.2: 89.6% CVE Rediscovery, 76.3% CyScenarioBench) while the GA tier refuses fewer security tasks — and the Cyber Verification Program's defense-access bar has reportedly been reduced to KYC, so the gate is widening as the capability rises. Separately, a stolen Fireworks AI key was used to push a trojanized Claude Code extension via Cursor's marketplace."
     },
     {
       "provider": "google",
-      "take": "Gemini 4 Carbon — the current public ExploitGym (54.8) and SEC-Bench Pro (88.2) leader — has gone from a defender-only preview to general availability at $2/M input tokens roughly two weeks after announcement, collapsing the gated/GA distinction for Google's strongest cyber model. DeepMind is simultaneously showcasing defensive use, pairing humans and agents to formally review Signal's post-quantum handshake."
+      "take": "Google is now both the loudest source of threat intelligence on autonomous attack frameworks (GTIG's exploit_agent finding) and the vendor shipping the broadest agentic deployment: Gemini 4 Hydrogen went GA on 2026-11-12 with a model card that concedes it reaches the cyber CCL alert threshold, and the full safety and security report with numeric cyber evals is still outstanding."
     },
     {
       "provider": "open",
-      "take": "The open-weight story this week is release sequencing rather than capability: Baidu shipped ERNIE 5.5 Flash Preview as a hosted API with Apache-2.0 weights promised by 2026-11-25, repeating the Meta Muse Spark 1.2 and Moonshot K3.1 Pro pattern of API-first with a dated weight lag. Meanwhile the Fireworks AI breach exposed customer model weights outright, a reminder that hosted-only does not mean weights-secure."
+      "take": "The open-weight tier keeps closing on frontier defensive cyber: Tencent Hy4 took #1 on CWE-Bench-AA (76%) and #3 on the AA Cyber Index (58) at under a dollar per task, and it reportedly did so with offensive security data stripped from training — which weakens 'withhold offensive data' as a capability control. Baidu added an untuned ERNIE 5.5 Flash Base checkpoint under a non-OSI, EU/UK-excluded licence; an unverified report that Kimi K3.1 Pro weights are now public would be a bigger shift and is pending primary confirmation."
     }
   ],
-  "updated": "2026-11-13T14:40+00:00"
+  "updated": "2026-11-16T15:58+00:00"
 }

@@ -2408,6 +2408,26 @@
       "note": "Competitor-reported: the figure appears in Anthropic's Mythos 5.2 launch comparison (Mythos 5.2 76.3, Opus 5.5 safeguards-off 67.6, Mythos 5.1 61.7). Anthropic's own system card states each lab runs CyScenarioBench on different task sets, so this is NOT a like-for-like comparison and should not be read as Mythos beating GPT-6 Cyber. Weakest evidence class we carry.",
       "source": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
       "auto": true
+    },
+    {
+      "model": "hy4-preview",
+      "benchmark": "aa_cyber_index",
+      "value": 58.0,
+      "date": "2026-11-13",
+      "self_reported": false,
+      "note": "Third overall on the index behind Kimi K3.1 Pro (64) and trusted-access GPT-6 Sol Daybreak Blue (69); $0.92/task, on the capability-vs-cost Pareto frontier. Independent run by the benchmark owner. A model-spec aggregator lists different Hy4 figures under a different harness; those were not ingested.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "hy4-preview",
+      "benchmark": "cwe_bench_aa",
+      "value": 76.0,
+      "date": "2026-11-13",
+      "self_reported": false,
+      "note": "#1 overall on the vulnerability-patching sub-benchmark, 6 points ahead of DeepSeek V4.1 Flash 1017 (max), reportedly achieved despite offensive security data being stripped from Hy4's training.",
+      "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
     }
   ]
 }

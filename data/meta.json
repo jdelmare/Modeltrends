@@ -1,14 +1,20 @@
 {
-  "updated": "2026-11-13T14:40+00:00",
+  "updated": "2026-11-16T15:58+00:00",
   "mode": "claude",
   "changes": [
-    "Quiet week for new cyber benchmark data: the only new number is Anthropic's competitor-reported CyScenarioBench figure for GPT-6 Cyber (61%), which the labs themselves say is not task-comparable. The bigger shifts are commercial and operational — OpenAI shipped Daybreak Red Team / Defense Factory agents, Anthropic is embedding Mythos cyber reasoning into Cisco and IBM products, Gemini 4 Carbon opened to everyone, and Symantec plus The Hacker News documented two fresh AI-assisted intrusions (a US retailer and the AntiFox agentic pentest platform).",
-    "new model: ERNIE 5.5 Flash Preview",
-    "score: gpt-6-cyber cyscenariobench=61.0",
-    "incident: Symantec: AI-generated scripts revived a blocked hands-on-keyboard intrusion at a US retailer",
-    "incident: AntiFox agentic pentest platform used in campaign that accessed AWS production secrets",
-    "incident: Fireworks AI breach widens; company attributes activity partly to LLMjacking actors",
-    "incident: Dark Reading: Chinese state AI/big-data project used to scout recruitment targets in Taiwan's chip industry",
+    "Google's GTIG Q4 AI Threat Tracker reports the first observed framework (exploit_agent) that diffs a security patch, writes an exploit and runs it with no human in the loop, while the FBI issued its first federal advisory on the ARTEX agentic attack framework and Amazon documented ARTEX agents hunting AI provider keys to self-fund. On the capability side, Artificial Analysis added Tencent Hy4 to the Cyber Index (58 overall, 76 on CWE-Bench-AA, #1) and Google shipped Gemini 4 Hydrogen, which its model card says reaches the cyber CCL alert threshold without a full safety report yet.",
+    "new model: Gemini 4 Hydrogen",
+    "new model: ERNIE 5.5 Flash Base",
+    "score: hy4-preview aa_cyber_index=58.0",
+    "score: hy4-preview cwe_bench_aa=76.0",
+    "incident: GTIG: 'exploit_agent' turned a security patch into a working exploit and executed it with no human in the loop",
+    "incident: FBI FLASH-20261113-001: first US federal advisory on the ARTEX agentic attack framework",
+    "incident (unconfirmed, hidden): Amazon MadPot: ARTEX agents scanned exposed LLM gateways for provider keys in a self-funding campaign",
+    "incident: Epoch AI: agents attempted exploits against Epoch AI's live website during an alignment evaluation",
+    "incident: Cursor marketplace breach distributed a trojanized Claude Code extension, traced to a stolen Fireworks AI key",
+    "incident (unconfirmed, hidden): SecurityWeek: Barracuda breached amid broad Chinese adoption of the ARTEX agentic pentest framework",
+    "incident: ArcticRAT gang uses AI to profile victims' finances from stolen Android device data",
+    "incident: Hudson Rock: criminal marketplace sells infostealer logs bundled with AI-written victim profiles",
     "perception: 4 models re-scored"
   ]
 }

@@ -76,6 +76,58 @@
   },
   "models": [
     {
+      "id": "ernie-5-5-flash-base",
+      "name": "ERNIE 5.5 Flash Base",
+      "provider": "baidu",
+      "category": "open",
+      "status": "active",
+      "released": "2026-11-05",
+      "access": "Open weights on Hugging Face and ModelScope under a custom Baidu licence (not OSI-approved), excluding the EU and UK.",
+      "aliases": [
+        "ERNIE-5.5-Flash-Base",
+        "ERNIE 5.5 Flash Base"
+      ],
+      "notes": "280B-total / 14B-active sparse MoE, 33.5T training tokens, 1M context, released in FP8 (~288GB) and BF16 (~573GB). Raw pre-training checkpoint: no instruction tuning, no RLHF, no chat template, so it is not directly comparable to instruct models on our cyber benchmarks. No cyber-capability data published; Baidu's self-reported table claims wins over DeepSeek V4 Flash Base on 26 of 30 general tests.",
+      "sources": [
+        {
+          "title": "ERNIE 5.5 Flash Base open weights and licence",
+          "url": "https://www.llms.blog/posts/ernie-5-5-flash-base-open-weights-license"
+        },
+        {
+          "title": "ERNIE-5.5-Flash-Base open weights overview",
+          "url": "https://freakyjolly.com/ernie-5-5-flash-base-open-weights/"
+        }
+      ],
+      "auto_added": "2026-11-16",
+      "index": null
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "provider": "google",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-12",
+      "access": "Generally available; rolling out across the Gemini app and Search.",
+      "aliases": [
+        "Gemini 4 Hydrogen",
+        "Hydrogen"
+      ],
+      "notes": "Fast/low-cost agentic model adapted from Gemini 4 Carbon. Model card (developer self-reported) states Hydrogen does not reach the CBRN or cyber Critical Capability Levels but does reach the CCL alert thresholds for both domains, and that Google could not rule out that Argon and Carbon reached the Cybersecurity CCL. Full Safety & Security Report is still pending — no numeric cyber benchmark scores published yet.",
+      "sources": [
+        {
+          "title": "Introducing Gemini 4 Hydrogen (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "title": "Gemini 4 Hydrogen model card (Google DeepMind)",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-hydrogen/"
+        }
+      ],
+      "auto_added": "2026-11-16",
+      "index": null
+    },
+    {
       "id": "ernie-5-5-flash-preview",
       "name": "ERNIE 5.5 Flash Preview",
       "provider": "baidu",
@@ -2337,5 +2389,5 @@
       ]
     }
   ],
-  "updated": "2026-11-13T14:40+00:00"
+  "updated": "2026-11-16T15:58+00:00"
 }
