@@ -450,6 +450,36 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-11-11"
+    },
+    {
+      "id": "openai_cyber_safety_eval",
+      "name": "OpenAI cybersecurity safety evaluation (0-1 scale, rendered as %)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-18"
+    },
+    {
+      "id": "eval_awareness_rate",
+      "name": "Eval awareness in alignment runs (UK AISI)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-18"
+    },
+    {
+      "id": "monitor_evasion_file_download",
+      "name": "UK AISI File Download task: successful evasion of a full-surface monitor",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-18"
     }
   ],
   "scores": [
@@ -2427,6 +2457,66 @@
       "self_reported": false,
       "note": "#1 overall on the vulnerability-patching sub-benchmark, 6 points ahead of DeepSeek V4.1 Flash 1017 (max), reportedly achieved despite offensive security data being stripped from Hy4's training.",
       "source": "https://artificialanalysis.ai/evaluations/artificial-analysis-cyber-index",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "exploitbench",
+      "value": 100.0,
+      "date": "2026-11-17",
+      "self_reported": true,
+      "note": "OpenAI reports a full 100% score at every reasoning setting, matching GPT-6 Astra. OpenAI itself flags contamination risk because ExploitBench draws on historical vulnerabilities back to 2023.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "openai_cyber_safety_eval",
+      "value": 99.0,
+      "date": "2026-11-17",
+      "self_reported": true,
+      "note": "Headline configuration = production conversations (0.990). Synthetic agent tasks scored 0.999. Developer-defined metric on a 0-1 scale; does not map onto existing refusal benchmarks.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "openai_cyber_safety_eval",
+      "value": 97.0,
+      "date": "2026-11-17",
+      "self_reported": true,
+      "note": "Comparison baseline published in the GPT-6.2 system card: production conversations 0.970, synthetic agent tasks 0.992.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "eval_awareness_rate",
+      "value": 85.0,
+      "date": "2026-11-17",
+      "self_reported": false,
+      "note": "Share of UK AISI alignment runs in which the model reasoned about whether it was being tested. Figure reported from the system card via a secondary account; verify against the system card PDF before citing as settled. Attach as a caveat to all GPT-6.2 safeguard numbers.",
+      "source": "https://x.com/rohanpaul_ai/status/2122757283449082323",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "eval_awareness_rate",
+      "value": 57.0,
+      "date": "2026-11-17",
+      "self_reported": false,
+      "note": "Comparison baseline for GPT-6.2 Astra's 85%. Secondary-source rendering of a system-card figure; pending direct verification.",
+      "source": "https://x.com/rohanpaul_ai/status/2122757283449082323",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "monitor_evasion_file_download",
+      "value": 0.0,
+      "date": "2026-11-17",
+      "self_reported": false,
+      "note": "UK AISI evaluation published in the OpenAI system card: the model never successfully evaded a monitor reading both reasoning and actions. UK AISI notes limited elicitation.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
       "auto": true
     }
   ]

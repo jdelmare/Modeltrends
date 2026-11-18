@@ -2,6 +2,120 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-18",
+      "kind": "article",
+      "title": "Attackers compromise Microsoft's Agent Framework PyPI package to steal cloud credentials",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
+      "models": []
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "official",
+      "title": "GPT-6.2 Astra and Sol system card: both models meet the Critical cybersecurity threshold",
+      "source": "OpenAI",
+      "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "models": [
+        "gpt-6-2-astra",
+        "gpt-6-2-sol",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "official",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "models": []
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "paper",
+      "title": "Stopping Is Not the Limit: Understanding and Eliciting Agent Capability in Long-Horizon Vulnerability Exploitation",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.22888v1",
+      "models": []
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "social",
+      "title": "Anthropic says Claude Mythos cut AMD GPU onboarding from up to 12 months to around three days",
+      "source": "Tom's Hardware (via Hacker News)",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat",
+      "models": [
+        "claude-mythos-preview"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "article",
+      "title": "California sues OpenAI over AI models' cyberattacks on Hugging Face and other companies",
+      "source": "Reuters (via Hacker News)",
+      "url": "https://www.reuters.com/business/california-sues-openai-over-ai-models-cyberattacks-hugging-face-other-companies-2026-11-16/",
+      "models": [
+        "gpt-5-6-sol"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "article",
+      "title": "Google finds hackers using AI agents to build and run exploits from software patches",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "models": []
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "article",
+      "title": "China-nexus actors breach 10 organizations in AI-driven attacks using Cairn",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
+      "models": []
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "article",
+      "title": "Attackers are using AI agents to automate cybercrime at 'industrial scale', FBI and AWS warn",
+      "source": "The Register",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/16/attackers-are-using-ai-agents-to-automate-cybercrime-at-industrial-scale-fbi-and-aws-warn/5310223",
+      "models": []
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "article",
+      "title": "Ubuntu gets AI-generated security fixes for Pro subscribers willing to test them pre-review",
+      "source": "The Register",
+      "url": "https://www.theregister.com/os-platforms/2026/11/16/ubuntu-gets-ai-generated-security-fixes-for-those-feeling-brave/5310139",
+      "models": []
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "article",
+      "title": "'Sleeper agent' tactic hides payloads in open-weight AI models",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
+      "models": []
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "paper",
+      "title": "Eight in Ten LLMs Leak System-Prompt Secrets: an agentic CTF audit of 363 OpenRouter models",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.21956v1",
+      "models": []
+    },
+    {
+      "date": "2026-11-16",
+      "kind": "social",
+      "title": "Alibaba says new flagship Qwen4 Max cuts task costs 60% while tightening cyber guardrails",
+      "source": "SCMP (via Hacker News)",
+      "url": "https://www.scmp.com/tech/big-tech/article/3374540/alibaba-says-new-flagship-ai-model-cuts-task-costs-60-while-tightening-cyber-guardrails",
+      "models": [
+        "qwen4-max"
+      ]
+    },
+    {
       "date": "2026-11-16",
       "kind": "article",
       "title": "Google: AI agent turned a security patch into a working exploit with no human help",
@@ -449,131 +563,7 @@
         "gpt-6-cyber",
         "gpt-6-astra"
       ]
-    },
-    {
-      "date": "2026-11-05",
-      "kind": "social",
-      "title": "GPT-6 Astra covertly underperforms on safety research",
-      "source": "Hacker News",
-      "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-05",
-      "kind": "social",
-      "title": "GPT-6 Cyber",
-      "source": "Hacker News",
-      "url": "https://twitter.com/OpenAI/status/2118390190246879554",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-05",
-      "kind": "social",
-      "title": "OpenAI's report on GPT-6 Astra underperforming on safety tasks, number by number",
-      "source": "Hacker News",
-      "url": "https://theainewsreport.com/2026-11-05-gpt-6-astra-covert-underperformance-safety-research-explained.html",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "social",
-      "title": "Test and verification technique effectiveness with GPT-6 Astra",
-      "source": "Hacker News",
-      "url": "https://danluu.com/astra-testing/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "social",
-      "title": "MIT researchers edit Qwen weights with GPT-6 Astra to boost math",
-      "source": "Hacker News",
-      "url": "https://venturebeat.com/technology/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "social",
-      "title": "Why GPT-6 Astra is suddenly so good at robotics",
-      "source": "Hacker News",
-      "url": "https://twitter.com/josefchen/status/2117749992420946241",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "social",
-      "title": "Giving the PS Vita camera new life with GPT-6 Astra",
-      "source": "Hacker News",
-      "url": "https://i8o.eu/journal/giving-new-life-to-ps-vita/",
-      "models": [
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "official",
-      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-      "source": "OpenAI News",
-      "url": "https://openai.com/index/daybreak-red-aws-govcloud",
-      "models": [
-        "gpt-5-6-cyber",
-        "gpt-5-6-sol"
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "article",
-      "title": "AI-linked breaches mount as WorkOS, Northflank and Trigger.dev disclose hacks",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
-      "models": []
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "article",
-      "title": "What AI-generated malware looks like under the microscope (HUMAN Security)",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/11/04/lindsay-kaye-human-security-ai-generated-malware/",
-      "models": []
-    },
-    {
-      "date": "2026-11-04",
-      "kind": "social",
-      "title": "AI is forcing us to pay off 40 years of technical debt (php2shell vulnerability)",
-      "source": "IEEE Spectrum / Hacker News",
-      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-      "models": []
-    },
-    {
-      "date": "2026-11-03",
-      "kind": "social",
-      "title": "I asked two models the same question: \"Which is better, GPT 6.1 or Fable 5.1?\"",
-      "source": "Hacker News",
-      "url": "https://twitter.com/aanthonymax/status/2117667519012229338",
-      "models": [
-        "claude-fable-5-1"
-      ]
-    },
-    {
-      "date": "2026-11-03",
-      "kind": "article",
-      "title": "GitBook discloses AI-agent-driven breach; infrastructure credentials and Assistant query logs exposed",
-      "source": "Decrypt",
-      "url": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach",
-      "models": []
     }
   ],
-  "updated": "2026-11-16T15:58+00:00"
+  "updated": "2026-11-18T15:46+00:00"
 }

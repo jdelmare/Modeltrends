@@ -76,6 +76,121 @@
   },
   "models": [
     {
+      "id": "gpt-6-rosalind",
+      "name": "GPT-6 Rosalind",
+      "provider": "openai",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-10-30",
+      "access": "Trusted-access tier, not general availability.",
+      "aliases": [
+        "GPT-6 Rosalind",
+        "Rosalind"
+      ],
+      "notes": "Life-sciences model, not a cyber variant. Tracked only as an access-program data point: OpenAI now operates at least three tiers (GA, cyber-gated, trusted access). Sourcing is secondary; confirm against an OpenAI page before leaning on it.",
+      "sources": [
+        {
+          "title": "OpenAI LLM models guide (secondary)",
+          "url": "https://nhimg.org/openai-llm-models-guide"
+        },
+        {
+          "title": "GPT-6 Rosalind trusted access (secondary)",
+          "url": "https://www.i-scoop.eu/gpt-6-rosalind-trusted-access/"
+        }
+      ],
+      "auto_added": "2026-11-18",
+      "index": null
+    },
+    {
+      "id": "qwen4-max",
+      "name": "Qwen4 Max",
+      "provider": "alibaba",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-16",
+      "access": "API availability confirmed; open-weight status unconfirmed — do not treat as open-weight until a weights repo or license is verified.",
+      "aliases": [
+        "Qwen4 Max",
+        "Qwen4-Max"
+      ],
+      "notes": "Alibaba says the new flagship cuts per-task cost by ~60% while tightening cyber guardrails. No independent cyber benchmark score confirmed yet; a Vals AI model page exists but no CyberBench v1.1 figure was confirmed.",
+      "sources": [
+        {
+          "title": "SCMP: Alibaba says new AI model cuts task costs by 60% and tightens cyber safeguards",
+          "url": "https://www.scmp.com/tech/big-tech/article/3374540/alibaba-says-new-flagship-ai-model-cuts-task-costs-60-while-tightening-cyber-guardrails"
+        },
+        {
+          "title": "Vals AI: Qwen4-Max model page",
+          "url": "https://www.vals.ai/models/alibaba_qwen4-max"
+        },
+        {
+          "title": "heise: Alibaba launches Qwen4-Max",
+          "url": "https://www.heise.de/en/news/Alibaba-launches-Qwen4-Max-more-efficient-and-cheaper-than-its-predecessor-11526236.html"
+        }
+      ],
+      "auto_added": "2026-11-18",
+      "index": null
+    },
+    {
+      "id": "gpt-6-2-sol",
+      "name": "GPT-6.2 Sol",
+      "provider": "openai",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-17",
+      "access": "Generally available via ChatGPT and API.",
+      "aliases": [
+        "GPT-6.2 Sol",
+        "gpt-6.2-sol"
+      ],
+      "notes": "Shipped alongside GPT-6.2 Astra; OpenAI's system card states both models meet the Critical cybersecurity threshold. Artificial Analysis lists it as moving the score-vs-cost Pareto frontier.",
+      "sources": [
+        {
+          "title": "GPT-6.2 Astra and Sol system card",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
+        },
+        {
+          "title": "Artificial Analysis: GPT-6.2 Sol",
+          "url": "https://artificialanalysis.ai/models/gpt-6-2-sol"
+        }
+      ],
+      "auto_added": "2026-11-18",
+      "index": null
+    },
+    {
+      "id": "gpt-6-2-astra",
+      "name": "GPT-6.2 Astra",
+      "provider": "openai",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-17",
+      "access": "Generally available via ChatGPT and API ($8/$40 per 1M input/output tokens on OpenRouter listing).",
+      "aliases": [
+        "GPT-6.2 Astra",
+        "gpt-6.2-astra"
+      ],
+      "notes": "OpenAI's system card states GPT-6.2 Astra meets the Critical cybersecurity threshold and is OpenAI's most capable released model for cyber tasks, better than GPT-6 Astra and GPT-6.1 Sol at developing working exploits from known vulnerabilities. Secondary reporting says it is also OpenAI's first externally released model rated High for AI self-improvement.",
+      "sources": [
+        {
+          "title": "GPT-6.2 Astra and Sol system card",
+          "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
+        },
+        {
+          "title": "Introducing GPT-6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+        },
+        {
+          "title": "GPT-6.2 Astra pricing listing",
+          "url": "https://openrouter.ai/openai/gpt-6.2-astra"
+        }
+      ],
+      "auto_added": "2026-11-18",
+      "index": {
+        "index": 67.4,
+        "n": 1
+      }
+    },
+    {
       "id": "ernie-5-5-flash-base",
       "name": "ERNIE 5.5 Flash Base",
       "provider": "baidu",
@@ -2389,5 +2504,5 @@
       ]
     }
   ],
-  "updated": "2026-11-16T15:58+00:00"
+  "updated": "2026-11-18T15:46+00:00"
 }
