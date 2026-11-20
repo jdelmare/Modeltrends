@@ -2,12 +2,87 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-20",
+      "kind": "article",
+      "title": "European Commission confirms AI-assisted cyberattack disrupted services",
+      "source": "SecurityWeek",
+      "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+      "models": []
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "article",
+      "title": "UK government testers found pre-release GPT-6.2 Astra easier to jailbreak than its predecessor",
+      "source": "VentureBeat Security",
+      "url": "https://venturebeat.com/security/openais-pre-release-gpt-6-2-astra-was-easier-to-jailbreak-than-its-predecessor-uk-government-testers-found",
+      "models": [
+        "gpt-6-2-astra",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "paper",
+      "title": "On the reliability of CyberGym evaluation: task material consistency and reference-target identity",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.25790v1",
+      "models": []
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "paper",
+      "title": "SoK: Assessing the evolution of LLM capability in software vulnerability research",
+      "source": "arXiv cs.CR",
+      "url": "https://arxiv.org/abs/2611.26601v1",
+      "models": []
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "official",
+      "title": "Google introduces Gemini 4 Neon, with a cyber-tuned build gated behind the Fairwind defender program",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "models": [
+        "gemini-4-neon",
+        "gemini-4-neon-cyber",
+        "gemini-4-carbon",
+        "gemini-4-argon"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "article",
+      "title": "Java4Shell: AI-discovered OpenJDK memory-corruption flaw threatens the global Java ecosystem",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
+      "models": []
+    },
+    {
+      "date": "2026-11-18",
+      "kind": "official",
+      "title": "Managing frontier AI risk: from training to deployment",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/managing-frontier-ai-risk",
+      "models": []
+    },
+    {
       "date": "2026-11-18",
       "kind": "article",
       "title": "Attackers compromise Microsoft's Agent Framework PyPI package to steal cloud credentials",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
       "models": []
+    },
+    {
+      "date": "2026-11-17",
+      "kind": "article",
+      "title": "California sues OpenAI, alleging 80-plus agent escapes were hidden from the public",
+      "source": "CSO Online",
+      "url": "https://www.csoonline.com/article/4249653/california-sues-openai-alleges-80-plus-agent-escapes-hidden-from-public-2.html",
+      "models": [
+        "gpt-6-astra",
+        "gpt-5-6-sol"
+      ]
     },
     {
       "date": "2026-11-17",
@@ -478,92 +553,7 @@
       "models": [
         "gpt-6-astra"
       ]
-    },
-    {
-      "date": "2026-11-06",
-      "kind": "article",
-      "title": "OpenAI says new GPT-6 Cyber model hunts flaws without crossing the line",
-      "source": "SecurityWeek",
-      "url": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
-      "models": [
-        "gpt-6-cyber"
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "kind": "social",
-      "title": "OpenAI Releases GPT-6 Cyber for Vetted Security Teams",
-      "source": "Hacker News",
-      "url": "https://harava.news/en/articles/2026/11/06/openai-gpt-6-cyber",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "kind": "article",
-      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "kind": "article",
-      "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "kind": "article",
-      "title": "OpenAI’s GPT-6 Cyber found 81 Firefox flaws earlier AI testing missed",
-      "source": "Help Net Security",
-      "url": "https://www.helpnetsecurity.com/2026/11/06/openai-gpt-6-cyber-released/",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-05",
-      "kind": "official",
-      "title": "GPT-6 Cyber system card: first OpenAI model rated Critical for cybersecurity",
-      "source": "OpenAI Deployment Safety",
-      "url": "https://deploymentsafety.openai.com/gpt-6-cyber",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-5-6-cyber",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-05",
-      "kind": "official",
-      "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-      "source": "Microsoft Security Blog",
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-      "models": []
-    },
-    {
-      "date": "2026-11-05",
-      "kind": "article",
-      "title": "OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'",
-      "source": "The Register Security",
-      "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
-      "models": [
-        "gpt-6-cyber",
-        "gpt-6-astra"
-      ]
     }
   ],
-  "updated": "2026-11-18T15:46+00:00"
+  "updated": "2026-11-20T15:33+00:00"
 }

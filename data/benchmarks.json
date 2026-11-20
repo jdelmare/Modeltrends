@@ -480,6 +480,56 @@
       "description": "Added automatically; not counted in the index until reviewed.",
       "url": "",
       "auto_added": "2026-11-18"
+    },
+    {
+      "id": "exploitgym_honeypot_out_of_scope",
+      "name": "ExploitGym Honeypot: out-of-scope exploitation",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-20"
+    },
+    {
+      "id": "blocker_deception",
+      "name": "Blocker Deception (omitted a known obstacle)",
+      "kind": "safeguard",
+      "unit": "%",
+      "higher_is_better": false,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-20"
+    },
+    {
+      "id": "cwe_bench_v2",
+      "name": "CWE-Bench v2 (Collinear AI)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-20"
+    },
+    {
+      "id": "webexploitbench",
+      "name": "WebExploitBench v1.2 (penetration testing)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-20"
+    },
+    {
+      "id": "autobaxbench",
+      "name": "AutoBaxBench (secure code generation, hardest tier)",
+      "kind": "capability",
+      "unit": "%",
+      "higher_is_better": true,
+      "description": "Added automatically; not counted in the index until reviewed.",
+      "url": "",
+      "auto_added": "2026-11-20"
     }
   ],
   "scores": [
@@ -2517,6 +2567,196 @@
       "self_reported": false,
       "note": "UK AISI evaluation published in the OpenAI system card: the model never successfully evaded a monitor reading both reasoning and actions. UK AISI notes limited elicitation.",
       "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "exploitbench_internal_port",
+      "value": 53.5,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Safeguards off, maximum reasoning effort. Developer self-reported in the GPT-6.2 system card; figure surfaced via secondary coverage of the card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-sol",
+      "benchmark": "exploitbench_internal_port",
+      "value": 50.5,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Safeguards off, maximum reasoning effort. Developer self-reported in the GPT-6.2 system card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "exploitbench_internal_port",
+      "value": 31.5,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Comparator figure published alongside GPT-6.2 in the same system card run (safeguards off, max reasoning). Not directly comparable to the gpt-6-cyber 42.0 figure from the earlier GPT-6 Cyber card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/gpt-6-2-astra-sol.pdf",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-sol",
+      "benchmark": "exploitbench",
+      "value": 100.0,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Developer self-reported; saturated alongside GPT-6.2 Astra.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/cybersecurity-capabilities",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "benchmark": "exploitbench",
+      "value": 99.7,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Comparator row in the GPT-6.2 system card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/cybersecurity-capabilities",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-1-terra",
+      "benchmark": "exploitbench",
+      "value": 97.1,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Comparator row in the GPT-6.2 system card.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol/cybersecurity-capabilities",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "cyscenariobench",
+      "value": 63.0,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "9 of 11 challenges solved at least once; 63% success rate. GPT-6 Astra comparator: 9/11, 61%.",
+      "source": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "sec_bench_pro",
+      "value": 86.8,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Developer self-reported; OpenAI harness. Not directly comparable to Google's own SEC-bench Pro harness run.",
+      "source": "https://benchlm.ai/models/gpt-6-2-astra",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-sol",
+      "benchmark": "sec_bench_pro",
+      "value": 88.3,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Developer self-reported; OpenAI harness. Sol scores above Astra on this row.",
+      "source": "https://benchlm.ai/models/gpt-6-2-astra",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "exploitgym_honeypot_out_of_scope",
+      "value": 0.0,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Share of runs exploiting hosts outside authorized scope. Inverse framing of the existing 'stayed in authorized scope' metric; reported as 0.00% for both GPT-6.2 Astra and GPT-6 Astra.",
+      "source": "https://benchlm.ai/models/gpt-6-2-astra",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "exploitgym_honeypot_out_of_scope",
+      "value": 0.0,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Comparator row in the GPT-6.2 system card.",
+      "source": "https://benchlm.ai/models/gpt-6-2-astra",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "benchmark": "blocker_deception",
+      "value": 22.3,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Rate at which the model omitted a known obstacle when reporting on a task; roughly double GPT-6 Astra's 11.09%. Via secondary reporting of the system card.",
+      "source": "https://www.implicator.ai/openai-gpt-6-2-astra-sol-cost-per-task/",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-astra",
+      "benchmark": "blocker_deception",
+      "value": 11.1,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Comparator figure reported alongside GPT-6.2 Astra.",
+      "source": "https://www.implicator.ai/openai-gpt-6-2-astra-sol-cost-per-task/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-neon-cyber",
+      "benchmark": "cwe_bench_v2",
+      "value": 70.7,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Developer self-reported, safety filters off; attributed to the gated cyber build per Google's launch materials and secondary reporting. CWE-Bench v2 is a distinct row from the v1 cwe_bench numbers already tracked.",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "auto": true
+    },
+    {
+      "model": "claude-opus-5-5",
+      "benchmark": "cwe_bench_v2",
+      "value": 67.1,
+      "date": "2026-11-18",
+      "self_reported": false,
+      "note": "Comparator run published by Google (third-party harness, not Anthropic-reported).",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "auto": true
+    },
+    {
+      "model": "gpt-6-2-sol",
+      "benchmark": "cwe_bench_v2",
+      "value": 66.0,
+      "date": "2026-11-18",
+      "self_reported": false,
+      "note": "Comparator run published by Google (third-party harness, not OpenAI-reported).",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-neon-cyber",
+      "benchmark": "sec_bench_pro",
+      "value": 90.5,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Google's own harness run with safety filters off; not directly comparable to OpenAI's self-reported SEC-Bench Pro numbers.",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-neon-cyber",
+      "benchmark": "webexploitbench",
+      "value": 51.3,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Developer self-reported, safety filters off.",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
+      "auto": true
+    },
+    {
+      "model": "gemini-4-neon-cyber",
+      "benchmark": "autobaxbench",
+      "value": 76.0,
+      "date": "2026-11-18",
+      "self_reported": true,
+      "note": "Defensive measure: secure code generation at the hardest difficulty tier. Developer self-reported.",
+      "source": "https://deepmind.google/models/model-cards/gemini-4-neon/",
       "auto": true
     }
   ]

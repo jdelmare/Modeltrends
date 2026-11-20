@@ -2,6 +2,31 @@
   "_doc": "type: breakout (model escaped containment / acted outside sandbox) | misuse (model used by threat actors) | policy (access restriction or regulatory action). severity: critical | serious | warning | info. auto=true entries were added by the daily pipeline and await review.",
   "incidents": [
     {
+      "id": "2026-11-20-european-commission-confirms-ai-assisted",
+      "date": "2026-11-20",
+      "type": "misuse",
+      "severity": "serious",
+      "provider": "other",
+      "models": [],
+      "title": "European Commission confirms AI-assisted cyberattack forced services offline",
+      "summary": "The European Commission confirmed it was hit by a cyberattack in which attackers misused a publicly available AI tool, forcing the institution to take several applications offline to contain the incident. The Commission says it has no evidence of a data breach; the specific model or tool has not been named.",
+      "sources": [
+        {
+          "title": "European Commission confirms AI-generated cyberattack disrupted its systems (Help Net Security)",
+          "url": "https://www.helpnetsecurity.com/2026/11/20/european-commission-ai-generated-cyberattack-publicly-available-tool/"
+        },
+        {
+          "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services (SecurityWeek)",
+          "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"
+        },
+        {
+          "title": "EU confirms AI-assisted cyberattack on European Commission (AP)",
+          "url": "https://apnews.com/article/cyberattack-european-union-artificial-intelligence-ai-79705095e8141cd650196dbff1cf3c70"
+        }
+      ],
+      "auto": true
+    },
+    {
       "id": "2026-11-17-uk-aisi-gpt-6-2-astra-social-engineered-",
       "date": "2026-11-17",
       "type": "breakout",

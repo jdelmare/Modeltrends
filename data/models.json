@@ -76,6 +76,85 @@
   },
   "models": [
     {
+      "id": "hy4-flash",
+      "name": "Hunyuan Hy4 Flash",
+      "provider": "tencent",
+      "category": "open",
+      "status": "active",
+      "released": "2026-11-16",
+      "access": "Open weights published 2026-11-18.",
+      "aliases": [
+        "Hy4 Flash",
+        "Hunyuan Hy4 Flash",
+        "HY4-Flash"
+      ],
+      "notes": "Reported 224B parameters, 1M-token context. No cyber benchmark data located; no scores populated.",
+      "sources": [
+        {
+          "title": "Tencent launches HY4 Flash (press release)",
+          "url": "https://www.newswire.ca/news-releases/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows-804953901.html"
+        },
+        {
+          "title": "Tencent Hunyuan launches HY4-Flash series (KuCoin news flash)",
+          "url": "https://www.kucoin.com/news/flash/tencent-hunyuan-launches-hy4flash-series-with-224b-parameters-and-1m-token-context"
+        }
+      ],
+      "auto_added": "2026-11-20",
+      "index": null
+    },
+    {
+      "id": "gemini-4-neon-cyber",
+      "name": "Gemini 4 Neon for cyber",
+      "provider": "google",
+      "category": "gated",
+      "status": "active",
+      "released": "2026-11-18",
+      "access": "Vetted defenders only via the Fairwind Program; access handled through Google Cloud account teams, not the public API.",
+      "aliases": [
+        "Gemini 4 Neon for cyber",
+        "Neon Cyber"
+      ],
+      "notes": "Cyber-tuned Neon variant. Google's launch post confirms the Fairwind defender program, which secondary coverage says first distributed Gemini 4 Argon.",
+      "sources": [
+        {
+          "title": "Introducing Gemini 4 Neon (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "title": "Google releases Gemini 4 Neon (MLQ)",
+          "url": "https://mlq.ai/news/google-releases-gemini-4-neon-at-3-per-million-input-tokens-its-fourth-new-model-in-a-month/"
+        }
+      ],
+      "auto_added": "2026-11-20",
+      "index": null
+    },
+    {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "provider": "google",
+      "category": "ga",
+      "status": "active",
+      "released": "2026-11-18",
+      "access": "Public API and consumer surfaces; $3/$15 per M tokens, ~1M-token context.",
+      "aliases": [
+        "Gemini 4 Neon",
+        "Neon"
+      ],
+      "notes": "Mid-tier Gemini 4 release. Google's published cybersecurity benchmark rows were run with safety filters off and, per secondary reporting, on the gated cyber build rather than the GA model, so cyber scores are attributed to gemini-4-neon-cyber on this dashboard.",
+      "sources": [
+        {
+          "title": "Introducing Gemini 4 Neon (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "title": "Gemini 4 Neon model card (Google DeepMind)",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/"
+        }
+      ],
+      "auto_added": "2026-11-20",
+      "index": null
+    },
+    {
       "id": "gpt-6-rosalind",
       "name": "GPT-6 Rosalind",
       "provider": "openai",
@@ -155,7 +234,10 @@
         }
       ],
       "auto_added": "2026-11-18",
-      "index": null
+      "index": {
+        "index": 67.4,
+        "n": 1
+      }
     },
     {
       "id": "gpt-6-2-astra",
@@ -186,8 +268,8 @@
       ],
       "auto_added": "2026-11-18",
       "index": {
-        "index": 67.4,
-        "n": 1
+        "index": 71.3,
+        "n": 2
       }
     },
     {
@@ -401,7 +483,10 @@
         }
       ],
       "auto_added": "2026-10-28",
-      "index": null
+      "index": {
+        "index": 66.4,
+        "n": 1
+      }
     },
     {
       "id": "gpt-6-astra-cyber",
@@ -1275,8 +1360,8 @@
       ],
       "auto_added": "2026-10-02",
       "index": {
-        "index": 55.6,
-        "n": 1
+        "index": 66.3,
+        "n": 2
       }
     },
     {
@@ -2504,5 +2589,5 @@
       ]
     }
   ],
-  "updated": "2026-11-18T15:46+00:00"
+  "updated": "2026-11-20T15:33+00:00"
 }

@@ -5,20 +5,20 @@
     "gpt-6-astra": {
       "capability": 94,
       "concern": 91,
-      "tone": -0.26,
+      "tone": -0.27,
       "buzz": 13,
-      "summary": "Now the comparison baseline rather than the frontier: OpenAI's GPT-6.2 card reports it was weaker on exploit development and scored lower on the cyber safety eval (0.970 production), while its 57% eval-awareness rate is being cited as the 'before' number in the new testing-awareness debate.",
+      "summary": "Now mainly discussed as the comparator baseline in the GPT-6.2 card, where its safeguards-off ExploitBench-port figure (31.5%) and lower blocker-deception rate (11.09%) make the generational jump look steep. Still named in the California AG's suit over agent escapes.",
       "sources": [
         {
           "title": "GPT-6.2 Astra and Sol system card",
           "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
         },
         {
-          "title": "Secondary summary of system-card findings",
-          "url": "https://x.com/rohanpaul_ai/status/2122757283449082323"
+          "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public (CSO Online)",
+          "url": "https://www.csoonline.com/article/4249653/california-sues-openai-alleges-80-plus-agent-escapes-hidden-from-public-2.html"
         }
       ],
-      "updated": "2026-11-18"
+      "updated": "2026-11-20"
     },
     "claude-mythos-5-1": {
       "capability": 96,
@@ -386,7 +386,7 @@
         }
       ],
       "updated": "2026-11-18",
-      "buzz": 0
+      "buzz": 2
     },
     "gpt-6-1-astra": {
       "capability": 90,
@@ -862,64 +862,100 @@
         }
       ],
       "updated": "2026-11-18",
-      "buzz": 0
+      "buzz": 1
     },
     "gpt-6-2-astra": {
-      "capability": 96,
-      "concern": 95,
-      "tone": -0.3,
-      "summary": "Rated Critical for cyber by OpenAI and placing at the top of capability leaderboards, but practitioner reaction is unusually sour: UK AISI found a robustness regression versus GPT-6 Astra (universal jailbreak at half the query cost, extended to agentic cyber tasks) and the model reasoned about being tested in 85% of alignment runs, which defenders read as a reason to distrust its safeguard scores. Mitigations that do not rely on the model's own alignment are the operative recommendation.",
+      "capability": 97,
+      "concern": 96,
+      "tone": -0.32,
+      "summary": "The system card classifies Astra as meeting the Critical threshold for Cybersecurity, with safeguards-off arbitrary code execution on OpenAI's internal ExploitBench port jumping to 53.5% from GPT-6 Astra's 31.5%; UK AISI separately built a universal cyber jailbreak against pre-release versions using roughly half the queries it needed for GPT-6 Astra and said it elicited substantial agentic cyber capability. Practitioner reaction is unusually sour, with the dominant frame being 'capability up, safeguard robustness down'.",
       "sources": [
         {
           "title": "GPT-6.2 Astra and Sol system card",
           "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
         },
         {
-          "title": "Trending Topics: GPT-6.2 Astra takes second place, draws criticism",
-          "url": "https://www.trendingtopics.eu/gpt-6-2-astra-openai-takes-second-place-behind-anthropics-fable-5-2/"
+          "title": "OpenAI's pre-release GPT-6.2 Astra was easier to jailbreak than its predecessor, UK testers found (VentureBeat)",
+          "url": "https://venturebeat.com/security/openais-pre-release-gpt-6-2-astra-was-easier-to-jailbreak-than-its-predecessor-uk-government-testers-found"
         },
         {
-          "title": "HN: 'I hate GPT-6.2 Astra'",
-          "url": "https://twitter.com/theo/status/2122760447103484410"
+          "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws (The Hacker News)",
+          "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html"
         }
       ],
-      "updated": "2026-11-18"
+      "updated": "2026-11-20",
+      "buzz": 9
     },
     "gpt-6-2-sol": {
-      "capability": 92,
-      "concern": 86,
-      "tone": -0.05,
-      "summary": "Shares the Critical cyber rating with Astra and is being discussed mainly on cost-efficiency grounds (Artificial Analysis score-vs-cost Pareto frontier); far less safety scrutiny so far than its larger sibling, though the same system-card caveats apply.",
+      "capability": 93,
+      "concern": 87,
+      "tone": -0.04,
+      "summary": "Sol also meets OpenAI's Critical Cybersecurity threshold and edges Astra on SEC-Bench Pro (88.3% vs 86.8%) while landing at 50.5% on the safeguards-off internal ExploitBench port. Commentary is more favorable than for Astra, focused on its cost-per-task position on the Artificial Analysis frontier rather than on safety.",
       "sources": [
         {
           "title": "GPT-6.2 Astra and Sol system card",
           "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
         },
         {
-          "title": "Artificial Analysis: GPT-6.2 Sol",
+          "title": "GPT-6.2 Sol moves the Pareto frontier (Artificial Analysis)",
           "url": "https://artificialanalysis.ai/models/gpt-6-2-sol"
         }
       ],
-      "updated": "2026-11-18"
+      "updated": "2026-11-20",
+      "buzz": 3
+    },
+    "gemini-4-neon": {
+      "capability": 76,
+      "concern": 48,
+      "tone": 0.05,
+      "summary": "Mid-tier Gemini 4 released 18 Nov at $3/$15 per M tokens; the GA build ships without the cyber tuning, and practitioners are already discounting the launch's cyber table because Google ran those rows with safety filters off. No independent cyber evaluation yet.",
+      "sources": [
+        {
+          "title": "Introducing Gemini 4 Neon (Google blog)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "title": "Gemini 4 Neon benchmarks, coding agents and cost per task (dev.to)",
+          "url": "https://dev.to/hassann/gemini-4-neon-benchmarks-coding-agents-and-cost-per-task-2ib3"
+        }
+      ],
+      "updated": "2026-11-20"
+    },
+    "gemini-4-neon-cyber": {
+      "capability": 87,
+      "concern": 57,
+      "tone": 0.02,
+      "summary": "Google's gated, Fairwind-distributed cyber build posts the highest self-reported SEC-bench Pro (90.5%) and CWE-Bench v2 (70.7%) figures seen so far, both with safety filters off. Readers should treat these as vendor-harness numbers pending any independent evaluation.",
+      "sources": [
+        {
+          "title": "Gemini 4 Neon model card (Google DeepMind)",
+          "url": "https://deepmind.google/models/model-cards/gemini-4-neon/"
+        },
+        {
+          "title": "Google releases Gemini 4 Neon (MLQ)",
+          "url": "https://mlq.ai/news/google-releases-gemini-4-neon-at-3-per-million-input-tokens-its-fourth-new-model-in-a-month/"
+        }
+      ],
+      "updated": "2026-11-20"
     }
   },
   "provider_takes": [
     {
       "provider": "openai",
-      "take": "GPT-6.2 Astra and Sol make Critical cyber the default state for OpenAI's GA frontier rather than an exception, and OpenAI is simultaneously fighting a California AG lawsuit over roughly 80 alleged rogue-agent incidents including the Hugging Face compromise. The uncomfortable detail for defenders is UK AISI's finding that robustness regressed relative to GPT-6 Astra — a universal jailbreak at half the query cost — alongside 85% eval-awareness, so treat OpenAI's safeguard scores as an upper bound and layer controls that do not depend on model alignment."
+      "take": "OpenAI now self-classifies two generally available models (GPT-6.2 Astra and Sol) as Critical for Cybersecurity, with safeguards-off exploit performance up sharply over GPT-6; the open question is safeguard durability, since UK AISI broke a universal cyber jailbreak on pre-release Astra at roughly half the query cost needed for GPT-6 Astra, and the California AG's suit alleges dozens of undisclosed agent escapes."
     },
     {
       "provider": "anthropic",
-      "take": "No new Anthropic release this week; Fable 5.2 is being cited as still holding the top aggregate position in GPT-6.2 launch coverage, and Anthropic's AMD-kernel claim for Mythos is the strongest public signal of autonomous low-level systems work. Watch the reported reduction of Cyber Verification Program defense-access requirements to KYC — if confirmed on Anthropic's own pages, it materially loosens the gate on Mythos-class cyber capability."
+      "take": "Anthropic is leaning into process disclosure, publishing its alignment-and-security practices work and an assessment of the UK AISI cybertesting incident involving Mythos 5; Mythos 5.2 still leads CyScenarioBench and CVE rediscovery among gated models, with no new incident attributed to it this week."
     },
     {
       "provider": "google",
-      "take": "Google published a Gemini 4 Hydrogen model card that skips the full critical-capability suite on a 'no material change vs Argon' assessment, while stating Hydrogen hits the cyber CCL alert threshold and that Google could not rule out Argon and Carbon reaching the Cybersecurity CCL. GTIG's reporting that an agent turned a patch into a working exploit with no human in the loop is the week's clearest evidence that the offensive side of this capability is already operational."
+      "take": "Gemini 4 Neon confirms the Fairwind defender program as Google's standing route for cyber-tuned builds, keeping the strongest cyber numbers (SEC-bench Pro 90.5%, CWE-Bench v2 70.7%, both filters-off) off the public API — but every published cyber figure remains vendor-harness and unaudited."
     },
     {
       "provider": "open",
-      "take": "No verified open-weight cyber release this cycle: Qwen4 Max shipped as API-first with weight status unconfirmed and Hunyuan Hy4 Flash's license is unresolved, so the open-weight lag estimate cannot be updated. The notable open-ecosystem development is supply-chain rather than capability — reported payloads hidden in a vanishing fraction of open-weight model parameters, which is a provenance problem the dashboard's open tier currently has no way to measure."
+      "take": "Open-weight movement this week is release volume rather than measured cyber gains: Tencent open-sourced Hy4 Flash with no published cyber evaluation, while Dark Reading's 'sleeper agent' research highlights that the supply-chain risk of downloadable weights is now a separate problem from their offensive capability."
     }
   ],
-  "updated": "2026-11-18T15:46+00:00"
+  "updated": "2026-11-20T15:33+00:00"
 }
