@@ -1,31 +1,5 @@
 {
-  "updated": "2026-11-20T15:33+00:00",
-  "mode": "claude",
-  "changes": [
-    "GPT-6.2 Astra and Sol's system card landed with both models classified Critical for Cybersecurity, a near-doubling of safeguards-off exploit performance on OpenAI's internal ExploitBench port, and a UK AISI finding that a universal cyber jailbreak took about half the queries it did against GPT-6 Astra; Google shipped Gemini 4 Neon with a gated cyber variant distributed through the Fairwind defender program, and the European Commission confirmed an AI-assisted attack disrupted its services.",
-    "new model: Gemini 4 Neon",
-    "new model: Gemini 4 Neon for cyber",
-    "new model: Hunyuan Hy4 Flash",
-    "score: gpt-6-2-astra exploitbench_internal_port=53.5",
-    "score: gpt-6-2-sol exploitbench_internal_port=50.5",
-    "score: gpt-6-astra exploitbench_internal_port=31.5",
-    "score: gpt-6-2-sol exploitbench=100.0",
-    "score: gpt-6-1-sol exploitbench=99.7",
-    "score: gpt-6-1-terra exploitbench=97.1",
-    "score: gpt-6-2-astra cyscenariobench=63.0",
-    "score: gpt-6-2-astra sec_bench_pro=86.8",
-    "score: gpt-6-2-sol sec_bench_pro=88.3",
-    "score: gpt-6-2-astra exploitgym_honeypot_out_of_scope=0.0",
-    "score: gpt-6-astra exploitgym_honeypot_out_of_scope=0.0",
-    "score: gpt-6-2-astra blocker_deception=22.28",
-    "score: gpt-6-astra blocker_deception=11.09",
-    "score: gemini-4-neon-cyber cwe_bench_v2=70.7",
-    "score: claude-opus-5-5 cwe_bench_v2=67.1",
-    "score: gpt-6-2-sol cwe_bench_v2=66.0",
-    "score: gemini-4-neon-cyber sec_bench_pro=90.5",
-    "score: gemini-4-neon-cyber webexploitbench=51.26",
-    "score: gemini-4-neon-cyber autobaxbench=76.0",
-    "incident: European Commission confirms AI-assisted cyberattack forced services offline",
-    "perception: 5 models re-scored"
-  ]
+  "updated": "2026-11-23T18:21+00:00",
+  "mode": "feeds",
+  "changes": []
 }

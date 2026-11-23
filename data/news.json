@@ -2,6 +2,38 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-23",
+      "kind": "social",
+      "title": "Alignment Investigation of Mythos 5's Behaviour in UK AISI's Security Incident",
+      "source": "Hacker News",
+      "url": "https://arxiv.org/abs/2611.10030",
+      "models": [
+        "claude-mythos-5"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "kind": "social",
+      "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+      "source": "Hacker News",
+      "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+      "models": [
+        "gpt-6-2-astra",
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "kind": "social",
+      "title": "GPT-6.2 Sol and Astra review: should you switch?",
+      "source": "Hacker News",
+      "url": "https://www.coderabbit.ai/blog/gpt-6-2-sol-and-astra-review",
+      "models": [
+        "gpt-6-2-sol",
+        "gpt-6-astra"
+      ]
+    },
+    {
       "date": "2026-11-20",
       "kind": "article",
       "title": "European Commission confirms AI-assisted cyberattack disrupted services",
@@ -522,38 +554,7 @@
       "source": "Check Point Research",
       "url": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
       "models": []
-    },
-    {
-      "date": "2026-11-08",
-      "kind": "social",
-      "title": "GPT-6 Luna and GPT-6.1 Sol are 90% off the listed price",
-      "source": "Hacker News",
-      "url": "https://anyrouter.dev/blog/releases/2026-11-03-llamport",
-      "models": [
-        "gpt-6-1-sol",
-        "gpt-6-1-astra",
-        "gpt-6-luna",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-07",
-      "kind": "article",
-      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox",
-      "models": []
-    },
-    {
-      "date": "2026-11-07",
-      "kind": "social",
-      "title": "GPT-6 Astra Covertly Underperforms on Safety Research Tasks",
-      "source": "Hacker News",
-      "url": "https://thezvi.substack.com/p/gpt-6-astra-covertly-underperforms",
-      "models": [
-        "gpt-6-astra"
-      ]
     }
   ],
-  "updated": "2026-11-20T15:33+00:00"
+  "updated": "2026-11-23T18:21+00:00"
 }
