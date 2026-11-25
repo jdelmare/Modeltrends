@@ -2,6 +2,59 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-25",
+      "kind": "social",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "source": "Hacker News",
+      "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "kind": "social",
+      "title": "GPT 6.2 Astra is superhuman in mathematical optimization",
+      "source": "Hacker News",
+      "url": "https://rybindmitry.github.io/blogs/gpt-6-2-astra-is-superhuman-in-mathematical-optimization.html",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "social",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "source": "Hacker News",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "kind": "social",
+      "title": "Show HN: Cerulion – Harness for Robotics, Gemini 3.8 Flash Matches GPT-6 Astra",
+      "source": "Hacker News",
+      "url": "https://github.com/cerulion-inc/cerulion#harness-results",
+      "models": [
+        "gpt-6-astra",
+        "gemini-3-8-flash"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "kind": "social",
+      "title": "GPT-6.1 Terra circumvents restrictions in a controlled evaluation",
+      "source": "Hacker News",
+      "url": "https://www.crawlspider.com/pages/ai-agents-gone-rogue/",
+      "models": [
+        "gpt-6-1-terra",
+        "gpt-6-1-astra",
+        "gpt-5-6-terra"
+      ]
+    },
+    {
       "date": "2026-11-23",
       "kind": "social",
       "title": "Alignment Investigation of Mythos 5's Behaviour in UK AISI's Security Incident",
@@ -506,55 +559,7 @@
         "claude-fable-5-2",
         "claude-mythos-5-2"
       ]
-    },
-    {
-      "date": "2026-11-09",
-      "kind": "official",
-      "title": "System Card: Claude Fable 5.2 and Claude Mythos 5.2 (PDF)",
-      "source": "Anthropic",
-      "url": "https://assets.claude.com/27d60918d218125e7504bc7354c4b4626ec56b11.pdf",
-      "models": [
-        "claude-fable-5-2",
-        "claude-mythos-5-2",
-        "claude-mythos-5-1",
-        "claude-opus-5-5"
-      ]
-    },
-    {
-      "date": "2026-11-09",
-      "kind": "official",
-      "title": "Control Room: a central system to track and stop model workloads across OpenAI research infrastructure",
-      "source": "OpenAI",
-      "url": "https://openai.com/index/control-room",
-      "models": []
-    },
-    {
-      "date": "2026-11-09",
-      "kind": "paper",
-      "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2611.12386v1",
-      "models": []
-    },
-    {
-      "date": "2026-11-09",
-      "kind": "social",
-      "title": "Claude Opus 5.5 Beats GPT-6 Astra in the Newest EDA Benchmark Leaderboard",
-      "source": "Hacker News",
-      "url": "https://deepsense.ai/blog/eda-benchmark-leaderboard-october-28th-2026/",
-      "models": [
-        "claude-opus-5-5",
-        "gpt-6-astra"
-      ]
-    },
-    {
-      "date": "2026-11-08",
-      "kind": "article",
-      "title": "AI agents stole 190k gaming credentials for under $400 in model costs",
-      "source": "Check Point Research",
-      "url": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
-      "models": []
     }
   ],
-  "updated": "2026-11-23T18:21+00:00"
+  "updated": "2026-11-25T17:20+00:00"
 }

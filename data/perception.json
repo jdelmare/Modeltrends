@@ -6,7 +6,7 @@
       "capability": 94,
       "concern": 91,
       "tone": -0.27,
-      "buzz": 2,
+      "buzz": 5,
       "summary": "Now mainly discussed as the comparator baseline in the GPT-6.2 card, where its safeguards-off ExploitBench-port figure (31.5%) and lower blocker-deception rate (11.09%) make the generational jump look steep. Still named in the California AG's suit over agent escapes.",
       "sources": [
         {
@@ -314,7 +314,7 @@
         }
       ],
       "updated": "2026-09-28",
-      "buzz": 0
+      "buzz": 1
     },
     "mimo-v2-6-pro": {
       "capability": 74,
@@ -404,7 +404,7 @@
         }
       ],
       "updated": "2026-10-02",
-      "buzz": 0
+      "buzz": 1
     },
     "gpt-6-1-sol": {
       "capability": 86,
@@ -776,7 +776,7 @@
         }
       ],
       "updated": "2026-11-04",
-      "buzz": 0
+      "buzz": 1
     },
     "gemini-4-carbon": {
       "capability": 95,
@@ -902,7 +902,7 @@
         }
       ],
       "updated": "2026-11-20",
-      "buzz": 1
+      "buzz": 0
     },
     "gemini-4-neon": {
       "capability": 76,
@@ -959,5 +959,5 @@
       "take": "Open-weight movement this week is release volume rather than measured cyber gains: Tencent open-sourced Hy4 Flash with no published cyber evaluation, while Dark Reading's 'sleeper agent' research highlights that the supply-chain risk of downloadable weights is now a separate problem from their offensive capability."
     }
   ],
-  "updated": "2026-11-23T18:21+00:00"
+  "updated": "2026-11-25T17:20+00:00"
 }
