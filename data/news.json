@@ -2,6 +2,56 @@
   "_doc": "Latest notable items. kind: article | blog | podcast | social | paper | official. Replaced daily by scripts/update.py (keeps most recent 60).",
   "items": [
     {
+      "date": "2026-11-27",
+      "kind": "official",
+      "title": "New on Hugging Face: AI-SecurityAgent/GLM-5.3-FP16",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/AI-SecurityAgent/GLM-5.3-FP16",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "official",
+      "title": "New on Hugging Face: AI-SecurityAgent/GLM-5.3-FP8",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/AI-SecurityAgent/GLM-5.3-FP8",
+      "models": [
+        "glm-5-3"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "official",
+      "title": "New on Hugging Face: AI-SecurityAgent/DeepSeek-V4.1-Flash-1017-FP8",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/AI-SecurityAgent/DeepSeek-V4.1-Flash-1017-FP8",
+      "models": [
+        "deepseek-v4-1-flash-1017"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "social",
+      "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+      "source": "Hacker News",
+      "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+      "models": [
+        "gpt-6-astra"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "official",
+      "title": "New on Hugging Face: AI-SecurityAgent/Huihui-Qwen3.8-27B-abliterated-GGUF-Q4_K",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/AI-SecurityAgent/Huihui-Qwen3.8-27B-abliterated-GGUF-Q4_K",
+      "models": [
+        "qwen3-8-27b"
+      ]
+    },
+    {
       "date": "2026-11-25",
       "kind": "social",
       "title": "GPT 6.2 Astra Solves a Historical Mystery",
@@ -511,55 +561,7 @@
       "models": [
         "claude-mythos-5-2"
       ]
-    },
-    {
-      "date": "2026-11-10",
-      "kind": "blog",
-      "title": "Gemini 4 Carbon, previously limited to a subset of cyber defenders, is now available to everyone",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-      "models": [
-        "gemini-4-carbon",
-        "gemini-4-argon"
-      ]
-    },
-    {
-      "date": "2026-11-10",
-      "kind": "article",
-      "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-      "models": []
-    },
-    {
-      "date": "2026-11-10",
-      "kind": "article",
-      "title": "Fireworks AI gets burned twice as customer data exposure widens (model weights, LLMjacking)",
-      "source": "The Register",
-      "url": "https://www.theregister.com/cyber-crime/2026/11/10/fireworks_ai_gets_burned_twice_as_customer_data_exposure_widens/5308722",
-      "models": [
-        "ember-1"
-      ]
-    },
-    {
-      "date": "2026-11-10",
-      "kind": "paper",
-      "title": "BypassGym: A Benchmark for Evaluating AI Agents' Endpoint Defense Evasion Capabilities",
-      "source": "arXiv cs.CR",
-      "url": "https://arxiv.org/abs/2611.13684v1",
-      "models": []
-    },
-    {
-      "date": "2026-11-09",
-      "kind": "official",
-      "title": "Claude Fable 5.2 and Claude Mythos 5.2",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "models": [
-        "claude-fable-5-2",
-        "claude-mythos-5-2"
-      ]
     }
   ],
-  "updated": "2026-11-25T17:20+00:00"
+  "updated": "2026-11-27T16:46+00:00"
 }
